@@ -1,0 +1,146 @@
+.modal-backdrop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #000000;
+  z-index: 10;
+}
+.modal-dialog {
+  //margin: 75px auto;
+}
+
+.modal-footer {
+  padding-top: 5px;
+  padding-bottom:5px;
+}
+
+.task-details .modal-header {
+  background:@accentcolor5;
+  padding-top: 5px;
+  padding-bottom:5px;
+}
+.task-details .modal-header .modal-title{
+  color: #ffffff;
+}
+
+.task-details .list-group i {
+  margin-right: 5px;
+  color: darken(@accentcolor5, 20%);
+}
+
+.sd-modal {
+  border: solid 1px;
+}
+
+.sd-modal.announcement {
+  border-color: @brand-warning;
+}
+
+.sd-modal.informational {
+  border-color: @accentcolor5;
+}
+
+.sd-modal .sd-modal-visual {
+  border-right: solid 1px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 5px;
+}
+
+.sd-modal.announcement .sd-modal-visual {
+  background:@brand-warning;
+  border-right-color:@brand-warning;
+
+}
+
+
+.sd-modal.informational .sd-modal-visual {
+  background:@accentcolor5;
+  border-right-color:@accentcolor5;
+
+}
+.sd-modal .sd-modal-visual i {
+  font-size: 32px;
+}
+
+
+.sd-modal-content   {
+  width: 100%;
+  button.btn-more{
+  	margin-bottom:10px;
+  }
+}
+
+
+
+.sd-modal.announcement .sd-modal-visual i {
+  color:lighten(@brand-warning, 20%);
+}
+.sd-modal.announcement .sd-modal-content {
+  background: lighten(@brand-warning, 50%);
+}
+
+
+.sd-modal.informational .sd-modal-visual i {
+  color:lighten(@accentcolor5, 20%);
+}
+.sd-modal.informational .sd-modal-content {
+  background: lighten(@accentcolor5, 60%);
+}
+
+
+
+.sd-modal-block {
+  //border-bottom: solid 1px #efefef;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom:20px;
+}
+.sd-modal-block h4 {
+  font-size: 14px;
+  margin-top: 0px;
+}
+.sd-modal-footer {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.sd-modal-dismissed {
+  .text-muted;
+  //.text-center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 20px;
+  font-style: italic;
+  display: none;
+}
+
+.blockquote-box {
+  border-right: none;
+  margin-bottom: 25px
+}
+.blockquote-box .square {
+  width: 1%;
+  min-height: 0px;
+  margin-right: 22px;
+  text-align: center!important;
+  background-color: #E6E6E6;
+  padding: 0px 0
+}
+.blockquote-box.blockquote-warning {
+  border-color: #EEA236;
+  background: #f5f5f5
+}
+.blockquote-box.blockquote-warning .square {
+  background-color: #FFD995;
+  color: orange;
+  font-size: 30px;
+}
+
+
+
+.modal-content > .container-fluid {
+  padding: 0px;
+}

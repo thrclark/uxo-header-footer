@@ -1,0 +1,185 @@
+.launch-notifications {
+  .container-badge {
+    -ms-transform: scale(.8);
+    -webkit-transform: scale(.8);
+    right: 6px;
+    top: 0px;
+    transform: scale(.8);
+    .badge {
+      background: @notifications-background;
+      border: solid 1px darken(@notifications-background, 10%);
+      color:@notifications-textcolor;
+    }
+  }
+}
+
+
+
+
+.notifications {
+  bottom: inherit;
+  left: inherit;
+  position: absolute;
+  right: 0px;
+  top: -16px;
+  .modal-dialog {
+    &:before {
+      -ms-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      background: @notifications-background;
+      border-left: solid 1px #CCCCCC;
+      border-top: solid 1px #dedede;
+      content: "";
+      height: 25px;
+      position: absolute;
+      right: 135px;
+      top: -12px;
+      transform: rotate(45deg);
+      width: 25px;
+      z-index: 1;
+    }
+    .modal-content {
+      -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+      border-color: #cccccc;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+
+      .modal-header {
+        background: @notifications-background;
+        color:@notifications-textcolor;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        .close {
+          margin-top: 2px;
+          opacity: 1;
+          color: @notifications-textcolor;
+          text-shadow: 0 1px 0 @notifications-textcolor;
+        }
+      }
+      .list-group {
+        max-height: 350px;
+        overflow: auto;
+        .list-group-item {
+          border-left: none;
+          border-right: none;
+          font-size: 12px;
+          position: inherit;
+          &:first-child {
+            border-top: none;
+          }
+          &:last-child {
+            border-bottom: none;
+          }
+          .message {
+            .message-header {
+              padding-bottom: 5px;
+              padding-top: 0px;
+              .message-title {
+                font-size: 12px;
+                .label {
+                  background-color:@notifications-background;
+                  color: @notifications-textcolor;
+                  border: solid 1px fade(@notifications-textcolor, 20%);
+                }
+              }
+              .message-meta {
+                .message-date {
+                  color: #999999;
+                }
+              }
+            }
+            .message-content {
+              clear: both;
+              margin-bottom: 0px;
+              p {
+                font-size: 12px;
+                margin: 0px;
+              }
+            }
+          }
+        }
+        .list-group-item.new {
+          background: fade(@notifications-background, 8%);
+
+          &:hover {
+          background: fade(@notifications-background, 6%);
+
+          }
+        }
+      }
+      .modal-footer {
+        height:10px;
+        background: @notifications-background;
+        padding: 0px;
+      }
+    }
+  }
+}
+
+
+
+
+
+@media (max-width: 991px) {
+  .notifications {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right:0;
+    top: 0;
+    .modal-dialog {
+      &:before {
+        display:none;
+      }
+      .modal-content {
+        -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+        border-color: @notifications-background;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+        .modal-header {
+          .label.label-primary {
+            right: 50px;
+          }
+        }
+      }
+    }
+  }
+  .mobile-menu {
+    .launch-notifications {
+      color: #FFFFFF;
+      position: relative;
+      .icon-bell-alt {
+        position: absolute;
+        right: 12px;
+        top: -2px;
+        z-index: 20;
+      }
+      .container-badge {
+        right: 3px;
+        top: -10px;
+        .badge {
+          box-shadow: 0px 0px 0px 1px @notifications-background;
+        }
+      }
+    }
+  }
+
+
+
+}
+
+
+
+@media (max-width: 767px) {
+
+  .notifications .modal-dialog .modal-content .list-group {
+    //max-height: inherit;
+    //overflow: inherit;
+  }
+
+
+
+
+}
+
+.utilities-bar .badge, .launch-notifications .container-badge .badge{
+  border-radius:10px;
+  padding: 3px 5px;}

@@ -1,0 +1,27 @@
+.comment {
+  overflow: hidden;
+  fieldset {
+    legend {
+      border-bottom: none;
+      font-size: 14px;
+      font-weight: normal;
+      margin-bottom: 10px;
+    }
+  }
+  .reply {
+    border-left: 2px solid @comment-borderreply;
+    margin-left: 30px;
+    margin-top: 10px;
+    padding-left: 10px;
+  }
+}
+.comment.new {
+  background-color: @comment-backgroundnew;
+}
+.comment.new.active {
+  -moz-transition:background-color 2s;
+  -o-transition:background-color 2s;
+  -webkit-transition:background-color 2s;
+  background-color: transparent;
+  transition:background-color 2s;
+}

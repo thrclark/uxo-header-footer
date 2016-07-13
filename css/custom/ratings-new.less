@@ -1,0 +1,72 @@
+
+// Ratings Star Bar
+
+.ratings {
+  .icon-star {color: #FFA500}
+  .icon-star-empty{color: #BFBFBF}
+  .icon-star-empty:before {
+    content: '\e809';
+  }
+}
+
+
+// TDP Ratings section
+
+.ratings-hero {
+  .progress.star-graph {
+    display: inline-block;
+    height: 5px;
+    margin-bottom: 2px;
+    margin-right: 40px;
+    width: 150px;
+  }
+  .ratings-overview {
+    font-size: 32px;
+  }
+  .rating-label {
+    display: inline-block;
+    font-size: 12px;
+    width: 50px;
+  }
+}
+
+
+
+
+@media (max-width: @screen-md-max) {
+  .ratings-hero .progress.star-graph {
+    width: 138px;
+    margin-right: 10px;
+  }
+  .ratings-hero .ratings-overview {
+    font-size: 26px;
+  }
+}
+
+
+@media (max-width:@screen-sm-max) {
+
+  .ratings-hero .progress.star-graph {
+    width: 100px;
+    margin-right: 0px;
+  }
+  .ratings-hero .ratings-overview {
+    font-size: 20px;
+  }
+
+}
+
+
+
+
+@media (max-width: @screen-xs-max) {
+
+  .ratings-hero .progress.star-graph {
+    width: 200px;
+    margin-right: 0px;
+  }
+  .ratings-hero .ratings-overview {
+    font-size: 34px;
+  }
+
+}

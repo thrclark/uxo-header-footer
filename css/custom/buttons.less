@@ -1,0 +1,50 @@
+.btn-mainsearch {
+  .button-variant (@header-text; @searchbutton-background; #ccc);
+}
+.btn-signon {
+  .btn-success;
+}
+.btn-usercontrols {
+ .btn;
+ .btn-primary;
+ background-color: @header-background;
+ border:none;
+}
+.btn-usercontrols:hover,
+.btn-usercontrols:visited,
+.btn-usercontrols:focus{
+  background-color: @header-background;
+}
+.btn-vote {
+  width: 50px;
+}
+.btn-vote + small {
+  margin-right: 10px;
+}
+.btn.btn-more {
+  display:block;
+  margin: 0 auto 0 auto;
+  width: 100px;
+}
+
+.button-list {
+  overflow:auto;
+  position:relative;
+  > button, > div {
+    margin-right:10px;
+    margin-bottom:5px;
+  }
+  li {
+    text-align:left;
+    padding:5px;
+    background-color:#ffffff;
+    border:1px solid #cccccc;
+    button {
+      margin:0;
+    }
+  }
+  p {
+    margin-bottom:2px;
+    text-align:left;
+  }
+}

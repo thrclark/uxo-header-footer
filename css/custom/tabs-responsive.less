@@ -1,0 +1,163 @@
+.nav.nav-tabs.nav-tabs-responsive {
+  //border-bottom: 1px solid #cccccc;
+  a {
+    color: #555555;
+    font-family: BentonSansCondBold;
+    font-size: 18px;
+    padding: 10px 31px;
+  }
+  .nav-tabs-counter {
+    font-family: BentonSansRegular;
+    font-size: 14px;
+  }
+}
+.nav.nav-tabs.nav-tabs-responsive>li.active>a {
+  background-color: #ffffff;
+  //border-bottom-color: transparent;
+  //border-bottom:none;
+  //border: 1px solid #cccccc;
+  &:hover {
+    background-color: #ffffff;
+    //border-bottom-color: transparent;
+    //border: 1px solid #cccccc;
+  }
+  &:focus {
+    background-color: #ffffff;
+    //border-bottom-color: transparent;
+    //border: 1px solid #cccccc;
+  }
+}
+
+
+.tab-content {
+  background: white;
+  border-bottom: none;
+  border-top: none;
+  border-left: solid 1px @nav-tabs-active-link-hover-border-color;
+  border-right: solid 1px @nav-tabs-active-link-hover-border-color;
+  .tab-pane {
+    background: whitesmoke;
+    border-bottom: solid 1px #cccccc;
+    //margin-bottom: 20px;
+    padding-top: 0px;
+    .panel-main {
+      background: white;
+      border-right: 1px solid #ebebeb;
+      min-height: 500px;
+      padding-left: 15px;
+      padding-right: 15px;
+      .panel-actionheader {
+        border-bottom: solid 1px #CCCCCC;
+        //margin-bottom: 15px;
+        .panel-controls {
+          margin-top: 15px;
+        }
+      }
+    }
+    .panel-aside {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+.panel-group {
+  .panel {
+    .panel-heading{
+      position: relative;
+      .panel-title {
+        a {
+          display: block;
+          &:hover, &:focus{
+            text-decoration: none;
+          }
+          .container-badge {
+            .badge{
+              background-color: red;
+            }
+          }
+        }
+      }
+    }
+    .panel-body {
+      .panel-main {
+        .panel-actionheader {
+          border-bottom: solid 1px #CCCCCC;
+          margin-bottom: 15px;
+          .panel-controls {
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.panel-group .panel .panel-body h5,
+.tab-content .tab-pane h5,
+ {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+  .panel-group {
+    .panel {
+      .panel-heading {
+        border-bottom: solid 1px #dddddd;
+        border-top: solid 1px #ffffff;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 10px 8px;
+        .panel-title {
+          font-size: 18px;
+        }
+      }
+      .panel-body {
+        .panel-main {
+          border-right: none;
+          min-height: inherit;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+  .panel-group {
+    .panel {
+      margin-left: -5px;
+      margin-right: -5px;
+      .panel-body {
+        .panel-main {
+          border-right: none;
+          min-height: inherit;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+        .panel-aside {
+          padding-bottom: 20px;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+    }
+  }
+}
+
+
+
+

@@ -1,0 +1,41 @@
+.release-notes {
+  max-height: 255px;
+  overflow-y: auto;
+  line-height: 14px;
+  margin-bottom: 0;
+}
+
+.release-notes ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 15px;
+  padding-left: 1.2em;
+  text-indent: -1.2em;
+}
+
+.form-group > .release-notes ul {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+}
+
+.release-notes ul li:before {
+  content: "-";
+  display: block;
+  float: left;
+  width: 1.2em;
+  font-weight: bold;
+}
+
+.form-group > .release-notes ul li:before {
+  content: "";
+  display: none;
+}
+
+.release-notes ul li + li {
+  margin-top: 10px;
+}
+
+.release-notes ul li button {
+  margin-right: 8px;
+}

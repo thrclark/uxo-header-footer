@@ -1,0 +1,87 @@
+.twitter-typeahead {
+	display: inherit ! important;
+	width: 100%;
+	height: 100%;
+	span.filters {
+		margin-left: 20px;
+	}
+
+	p.dropdown-header {
+		color: @text-color;
+		padding: 3px 3px 10px 0;
+		margin: 10px 20px 5px 20px;
+		border-bottom: 1px solid #ccc;
+		sup {
+			font-weight: normal;
+			font-size: 0.65em;
+			a {
+				color: #999;
+				text-decoration: none;
+			}
+
+			a:hover {
+				color: @text-color;
+			}
+		}
+	}
+
+	.tt-dropdown-menu {
+		color: @text-color;
+		width: 100%;
+		min-width: 160px;
+		margin-top: 2px;
+		padding: 5px 0;
+		background-color: #fff;
+		border: 1px solid #ccc;
+		border: 1px solid rgba(0, 0, 0, .2);
+		*border-right-width: 2px;
+		*border-bottom-width: 2px;
+		-webkit-background-clip: padding-box;
+		-moz-background-clip: padding;
+		background-clip: padding-box;
+	}
+
+	.tt-hint {
+		//padding: 6px 12px;
+		opacity: 1;
+		width: 100%;
+		height: 100%;
+		margin-bottom: 0;
+        padding: 0px;
+	}
+
+	.tt-query {
+		background-color: #fff ! important;
+		margin-bottom: 0;
+        padding:0px;
+	}
+
+	.tt-suggestion {
+		display: block;
+		padding: 3px 3px 3px 20px;
+		color: @text-color;
+		text-decoration: none;
+		p {
+			margin: 0;
+		}
+	}
+
+	.tt-suggestion.tt-is-under-cursor {
+		color: #fff;
+		background-color: @brand-primary;
+		a {
+			color: #fff;
+		}
+
+		.text-muted {
+			color: #fff;
+		}
+	}
+}
+
+@media (max-width: @screen-sm-max) {
+	.twitter-typeahead {
+		//display: none ! important;
+	}
+}
+

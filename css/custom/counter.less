@@ -1,0 +1,14 @@
+// character counter box on textareas
+.counter-container {
+  position: relative;
+  > span {
+    -moz-transition: opacity 0.25s ease-in-out;
+    -o-transition: opacity 0.25s ease-in-out;
+    -webkit-transition: opacity 0.25s ease-in-out;
+    opacity: 0;
+    transition: opacity 0.25s ease-in-out;
+  }
+  input:focus~span, textarea:focus~span {
+      opacity: 1;
+  }
+}

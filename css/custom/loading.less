@@ -1,0 +1,31 @@
+div.loading {
+  position:fixed;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  background-color:rgba(0,0,0,0.8);
+  z-index:10000;
+  -webkit-transition:visibility 0s 0.25s, opacity 0.25s ease-in-out;
+  -moz-transition:visibility 0s 0.25s, opacity 0.25s ease-in-out;
+  -o-transition:visibility 0s 0.25s, opacity 0.25s ease-in-out;
+  transition:visibility 0s 0.25s, opacity 0.25s ease-in-out;
+  opacity:0;
+  visibility:hidden;
+  span {
+    color:white;
+    font-weight:bold;
+    position:absolute;
+    top:49%;
+    left:49%;
+    z-index:10001;
+  }
+}
+div.loading.in {
+  opacity:1;
+  visibility:visible;
+  -webkit-transition:opacity 0.25s ease-in-out;
+  -moz-transition:opacity 0.25s ease-in-out;
+  -o-transition:opacity 0.25s ease-in-out;
+  transition:opacity 0.25s ease-in-out;
+}

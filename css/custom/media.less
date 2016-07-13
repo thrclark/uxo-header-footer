@@ -1,0 +1,50 @@
+//used for screenshots & video on task definition (publishing)
+
+.media-list {
+  overflow:auto;
+  position:relative;
+  ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+    li {
+      float:left;
+      text-align:center;
+      margin-right:10px;
+      margin-bottom:10px;
+    }
+  }
+  img {
+    width:auto;
+    max-height:100px;
+    margin-bottom:5px;
+  }
+  iframe, video {
+    width:auto;
+    max-height:100px;
+  }
+}
+
+//used for screenshots & video on task definition (store)
+
+.media-scroll {
+  overflow:auto;
+  -webkit-overflow-scrolling:touch;
+  z-index:0;
+  a, iframe, video {
+    width:auto;
+    height:150px;
+    display:inline-block;
+    margin-right:10px;
+    vertical-align:bottom;
+  }
+  .media-scroll-wrap {
+    float:left;
+    margin-right:-30000px;
+  }
+  img {
+    cursor:pointer;
+    width:auto;
+    height:150px;
+  }
+}

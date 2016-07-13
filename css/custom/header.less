@@ -1,0 +1,245 @@
+header {
+	background: @header-background;
+	a {
+		color: @header-text;
+		&:hover , &:focus {
+			text-decoration: none;
+			color: @header-text;
+		}
+	}
+
+	.app-header {
+		background: @header-background;
+		padding-top: 5px;
+		min-height: 88px;
+		
+		&.small {
+			min-height: 45px;
+		}
+		
+		.dropdown-menu {
+			i[class *= 'icon-'] {
+				margin-right: 10px;
+			}
+		}
+
+		.logo {
+			display: block;
+			margin-top: 9px;
+			margin-bottom: 10px;
+			
+			h1 {
+				display: inline;
+				vertical-align: middle;
+				margin: 0px;
+				font-size: 30px;
+
+				span {
+					color: @header-text;
+				}
+			}
+		}
+
+		.well {
+			background: @header-background;
+			border-color: @header-background;
+			position: absolute;
+			left: 0;
+			z-index: 100;
+			width: 100%;
+			margin-bottom: 0;
+			.mainsearch {
+				padding: 0;
+                .form-control {
+                  padding: 0px;
+                }
+				.catfilter {
+					background: #ffffff;
+					background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+					background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #e5e5e5));
+					background: -webkit-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+					background: -o-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+					background: -ms-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+					background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5', GradientType=0 );
+					-webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.22);
+					-moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.22);
+					box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.22);
+					z-index: 1111;
+					padding: 5px 10px;
+				}
+
+				#cleartext {
+					color: #999999;
+					position: absolute;
+					right: 61px;
+					top: -1px;
+					z-index: 11;
+					font-size: 27px;
+					cursor: pointer;
+				}
+
+              .form-control, .tt-hint  {
+                .input-lg;
+                padding: 0 0 0 10px;
+                height: 35px;
+              }
+
+				.btn-mainsearch {
+					.btn;
+					.btn-lg;
+					padding: 5px 16px;
+				}
+
+				.dropdown-menu {
+					min-width: 855px;
+					padding-top: 10px;
+					> li > a {
+						padding-left: 0px;
+						padding-right: 0px;
+					}
+				}
+			}
+			
+			> div {
+				padding-top: 7px;
+			}
+
+			.browsecat {
+				vertical-align: inherit;
+				display: inline-block;
+				.browsecat-panel {
+					overflow: hidden;
+
+					ul {
+						min-width: 913px;
+						margin: 0;
+						padding: 10px 0 0 0;
+						
+						&::after {
+						    visibility: hidden;
+							display: block;
+							font-size: 0;
+							content: " ";
+							clear: both;
+							height: 0;
+						}
+
+						li {
+							padding-top: 5px;
+							padding-bottom: 5px;
+							padding-left: 0px;
+							a {
+								color: @header-text;
+								text-decoration: none;
+								i {
+									& when (lightness(@header-background) < 50) {
+										color: lighten(@header-background, 20%);
+									}
+									& when (lightness(@header-background) >= 50) {
+										color: darken(@header-background, 20%);
+									}
+									font-size: 20px;
+									margin-right: 5px;
+								}
+							}
+						}
+
+						li.divider {
+							border-bottom: solid 1px lighten(@header-background, 20%);
+						}
+					}
+				}
+			}
+
+			.text-right .dropdown {
+				display: inline;
+				&:first-child {
+					margin-right: 10px;
+				}
+			}
+			
+			ul.dropdown-menu.checked-list li a span {
+				margin-right: 30px;
+			}
+		}
+
+		.well.open {
+			background: -webkit-linear-gradient(lighten(@header-background, 10%), darken(@header-background, 15%));
+			background: -o-linear-gradient(lighten(@header-background, 10%), darken(@header-background, 15%));
+			background: -moz-linear-gradient(lighten(@header-background, 10%), darken(@header-background, 15%));
+			background: linear-gradient(lighten(@header-background, 10%), darken(@header-background, 15%));
+			border-color: darken(@header-background, 5%);
+			margin-bottom: 0px;
+		}
+	}
+}
+
+@media (max-width: @screen-lg-min) {
+	header .app-header .well {
+		.browsecat .browsecat-panel ul {
+			min-width: 692px;
+		}
+
+		.mainsearch .dropdown-menu {
+			min-width: 692px;
+			padding-top: 10px;
+		}
+	}
+}
+
+@media (max-width: @screen-md-min) {
+	header {
+		.app-header {
+
+			.logo {
+				margin: 0;
+				img {
+					max-height: 34px;
+				}
+			}
+
+			.search .well {
+				position: inherit;
+				&.well-sm {
+					padding: 0px;
+					background: none;
+					border: none;
+					margin-bottom: 0px;
+				}
+
+				.mainsearch {
+					margin-top: 6px;
+					#cleartext {
+						right: 48px;
+					}
+
+					.dropdown-menu {
+						min-width: 719px;
+					}
+
+					.catfilter {
+						padding-bottom: 4px;
+					}
+
+					.form-control {
+						height: 34px;
+					}
+
+					.btn-mainsearch {
+						.btn;
+						padding: 0px 12px;
+						padding-bottom: 7px;
+						padding-top: 6px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: @screen-sm-min) {
+	header .app-header .well .input-group.mainsearch .dropdown-menu {
+		min-width: 305px;
+	}
+}
