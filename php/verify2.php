@@ -51,15 +51,8 @@ hr {
                 </div>
             </div>
         </div>
-        <p> 
-				
-					
-					
-						Your login has been interrupted for the purpose of verifying important information. For more information on why you are seeing this page, <a href="https://uits.iu.edu/cas-interrupts" target="_blank">click here</a> to read more about CAS Interrupts.
-					
-				
-			</p>
-<div class="well">
+        <p> Your login has been interrupted for the purpose of verifying important information. For more information on why you are seeing this page, <a href="https://uits.iu.edu/cas-interrupts" target="_blank">click here</a> to read more about CAS Interrupts. </p>
+        <div class="well">
             <div class="row">
                 <div class="col-xs-6">
                     <h4>IU Notify</h4>
@@ -72,7 +65,7 @@ hr {
                     </div>--> 
                 </div>
             </div>
-               <p class="verify-desc">  Displayed below is the contact information on file for you. Please review and update or correct it is to receive critical alerts from IU. For more information, see about emergency notifications at Indiana University.</p>
+            <p class="verify-desc"> Displayed below is the contact information on file for you. Please review and update or correct it is to receive critical alerts from IU. For more information, see about emergency notifications at Indiana University.</p>
             <hr>
             <div class="form-horizontal">
                 <div class="form-group form-group-sm">
@@ -139,7 +132,7 @@ hr {
             <div class="radio">
                 <label>
                     <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                I do not want to verify this information at this time (verification must be completed within 8 days). </label>
+                    I do not want to verify this information at this time (verification must be completed within 8 days). </label>
             </div>
             <div class="row">
                 <div class="col-md-12 text-center" style="padding-bottom:15px; padding-top:15px;"> <a href="#" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#verify_error" > Submit</a> </div>
