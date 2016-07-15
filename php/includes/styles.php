@@ -71,10 +71,10 @@ input[type=radio].with-font:checked ~ label:before, input[type=checkbox].with-fo
 	letter-spacing: 5px;
 }
 input[type=checkbox].with-font ~ label:before {
-	content: '\eb9f';
+	content: '\eb9e';
 }
 input[type=checkbox].with-font:checked ~ label:before {
-	content: '\eb9f';
+	content: '\eb9d';
 	color: #555555;
 }
 input[type=radio].with-font:focus ~ label:before, input[type=checkbox].with-font:focus ~ label:before, input[type=radio].with-font:focus ~ label, input[type=checkbox].with-font:focus ~ label {

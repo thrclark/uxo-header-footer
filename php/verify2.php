@@ -32,13 +32,7 @@
         <div class="col-xs-6">
             <h4>IU Notify</h4>
         </div>
-        <div class="col-xs-6" style="padding-top:10px"> 
-            <!-- <div class="dropdown pull-right"> <a id="drop6" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Help <span class="caret"></span> </a>
-                        <ul id="menu3" class="dropdown-menu" aria-labelledby="drop6">
-                            <li><a href="#">What is IU Notify?</a></li>
-                        </ul>
-                    </div>--> 
-        </div>
+        <div class="col-xs-6" style="padding-top:10px"> </div>
     </div>
     <p class="verify-desc"> Displayed below is the contact information on file for you. Please review and update or correct it is to receive critical alerts from IU. For more information, see about emergency notifications at Indiana University.</p>
     <hr>
@@ -113,23 +107,14 @@
         <input id="question2" name="question"type="radio" class="with-font" value="sel"/>
         <label for="question2" class="lead">I choose to verify this information later.<br>
             <span style=" font-size:14px; display:block">(verification must be completed within 8 days)</span></label>
-        <div>
-            <div class="row">
-                <div class="col-md-12 text-center" style="padding-bottom:15px; padding-top:15px;"> <button class="btn btn-lg btn-primary" id="submit"> Submit</button> </div>
-            </div>
-            </form>
+    </div>
+    <div class="row">
+        <div class="col-md-12 text-center" style="padding-bottom:15px; padding-top:15px;">
+            <button class="btn btn-lg btn-primary" id="submit"> Submit</button>
         </div>
     </div>
 </div>
 <?php include ('includes/brand-footer.php') ?>
-<script>
-    $(document).ready(function() {
-        $('.nav-tabs-responsive').tabCollapse();
-        $('.nav-tabs-responsive').on('shown-tabs.bs.tabcollapse', function() {
-            $('.nav-tabs-responsive a:first').tab('show')
-        });
-    });
-</script> 
 <script>
     $(document).ready(function() {
         $("#submit").click(function() {
@@ -144,32 +129,9 @@
             });
         });
 		$("#close-alert-success").click(function() {
-            $("#alert-success").slideUp(500, function() {
+            $("#alert-success").slideUp(000, function() {
             });
 			
-        });
-		
-		
-		
-    });
-</script> 
-<script type="text/javascript">
-    $(function() {
-        $('#birthdate').datetimepicker({
-            format: 'MM/DD/YYYY'
-        });
-        $('#datetimepicker6').datetimepicker({
-            format: 'MM/DD/YYYY'
-        });
-        $('#datetimepicker7').datetimepicker({
-            format: 'MM/DD/YYYY',
-            useCurrent: false //Important! See issue #1075
-        });
-        $("#datetimepicker6").on("dp.change", function(e) {
-            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
-        });
-        $("#datetimepicker7").on("dp.change", function(e) {
-            $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
         });
     });
 </script>
