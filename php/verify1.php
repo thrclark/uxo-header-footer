@@ -53,9 +53,9 @@
                         <p class="form-control-static">Not a Veteran </p>
                     </div>
                 </div>
-                <div class="form-group form-group-sm">
-                    <div class="col-md-12 text-right"> <a href="#" class="btn btn-xs btn-default">Refresh</a> <a href="#" class="btn btn-xs btn-primary">Edit</a> </div>
-                </div>
+               <div class="form-group form-group-sm form-section-control">
+            <div class="col-sm-offset-2 col-sm-10 text-right"> <a href="#" class="btn btn-xs btn-default" id="refresh">Refresh</a> <a href="#" class="btn btn-xs btn-primary">Edit</a> </div>
+        </div>
             </div>
         </div>
         <div class="well">
@@ -80,27 +80,28 @@
                         <p class="form-control-static">Not Specified </p>
                     </div>
                 </div>
-                <div class="form-group form-group-sm">
-                    <div class="col-md-12 text-right"> <a href="#" class="btn btn-xs btn-default">Refresh</a> <a href="#" class="btn btn-xs btn-primary">Edit</a> </div>
-                </div>
+               <div class="form-group form-group-sm form-section-control">
+            <div class="col-sm-offset-2 col-sm-10 text-right"> <a href="#" class="btn btn-xs btn-default" id="refresh">Refresh</a> <a href="#" class="btn btn-xs btn-primary">Edit</a> </div>
+        </div>
             </div>
         </div>
-        <h2 style="font-size:24px">Verify</h2>
-        <form>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-                    I have reviewed and/or updated the information presented above. </label>
-            </div>
-            <div class="radio">
-                <label>
-                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                    I do not want to verify this information at this time (verification must be completed within 8 days). </label>
-            </div>
+    <div class="submission">
+    <div class="radio">
+        <input id="question1" name="question" type="radio" class="with-font" value="sel" />
+        <label for="question1" class="lead">I have verified that the above information is up to date and correct.</label>
+    </div>
+    <div class="radio">
+        <input id="question2" name="question"type="radio" class="with-font" value="sel"/>
+        <label for="question2" class="lead">I choose to verify this information later.<br>
+            <span style=" font-size:14px; display:block">(verification must be completed within 8 days)</span></label>
+        <div>
             <div class="row">
-                <div class="col-md-12 text-center" style="padding-bottom:15px; padding-top:15px;"> <a href="verify2.php" class="btn btn-lg btn-primary" data-toggle="" data-target="" >Submit</a> </div>
+                <div class="col-md-12 text-center" style="padding-bottom:15px; padding-top:15px;"> <button class="btn btn-lg btn-primary" id="submit"> Submit</button> </div>
             </div>
-        </form>
+            </form>
+        </div>
+    </div>
+</div>
     </div>
 </div>
 <?php include ('includes/brand-footer.php') ?>
