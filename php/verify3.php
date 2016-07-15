@@ -5,28 +5,6 @@
 <head>
 <?php include ('includes/head-meta.php') ?>
 <?php include ('includes/styles.php') ?>
-<style type="text/css">
-.form-control.disabled[type="text"] {
-	background-color: transparent;
-	border-color: transparent;
-	box-shadow: none;
-	cursor: default;
-}
-legend {
-	font-size: 16px;
-}
-.form-horizontal .form-group-sm .control-label {
-	padding-top: 1px;
-}
-.form-group-sm .form-control-static {
-	height: 15px;
-	min-height: 15px;
-	padding: 0px 10px;
-}
-hr {
-	border-top: 1px solid #ccc;
-}
-</style>
 <?php include ('includes/scripts.php') ?>
 </head>
 <body id="top" >
@@ -51,14 +29,7 @@ hr {
                 </div>
             </div>
         </div>
-        <p> 
-				
-					
-					
-						Your login has been interrupted for the purpose of verifying important information. For more information on why you are seeing this page, <a href="https://uits.iu.edu/cas-interrupts" target="_blank">click here</a> to read more about CAS Interrupts.
-					
-				
-			</p>
+        <p> Your login has been interrupted for the purpose of verifying important information. For more information on why you are seeing this page, <a href="https://uits.iu.edu/cas-interrupts" target="_blank">click here</a> to read more about CAS Interrupts. </p>
         <div class="well">
             <div class="row">
                 <div class="col-xs-6">
