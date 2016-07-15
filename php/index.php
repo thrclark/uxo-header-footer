@@ -25,9 +25,25 @@ header .app-header h1 {
         <div class="" style="margin-top:40px; margin-bottom:40px">
             <h2 class="">Prototype Screens</h2>
             <ul>
-                <li><a href="verify1.php" target="_blank">Example 1</a> </li>
-                <li><a href="verify2.php" target="_blank">Example 2</a> </li>
-
+                <li><a href="verify1.php" target="_blank">Example 1</a>
+                    <ul>
+                        <li>content in separate sections</li>
+                    </ul>
+                </li>
+                <li><a href="verify2.php" target="_blank">Example 2</a>
+                    <ul>
+                        <li> single section</li>
+                        <li>radio selections at bottom</li>
+                        <li>with validation (click 'submit' button, and then 'refresh' button)</li>
+                    </ul>
+                </li>
+                <li><a href="verify3.php" target="_blank">Example 3</a>
+                    <ul>
+                        <li> single section</li>
+                        <li>checkbox selection at bottom</li>
+                        <li>with validation (click 'submit' button, and then 'refresh' button)</li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
