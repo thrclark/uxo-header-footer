@@ -19,7 +19,7 @@
                 <!--          <div class="controls hidden-xs" style="position:absolute; top:0px; right:0px"> <a href="#" class="btn btn-sm btn-default favorite" style="background:#EBEBEB"> <i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i> <span class="hidden-sm hidden-xs">Favorite</span></a> </div>-->
                 
                 <div class="controls">
-                    <div class="dropdown"> <a id="drop6" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Help <span class="caret"></span> </a>
+                    <div class="dropdown"> <a id="drop6" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Help <span class="caret"></span> </a>
                         <ul id="menu3" class="dropdown-menu" aria-labelledby="drop6">
                             <li><a href="#">What are IU Verifications?</a></li>
                             <li><a href="#">Help Link 2</a></li>
@@ -33,7 +33,7 @@
         <div class="well">
             <div class="row">
                 <div class="col-xs-6">
-                    <h4> Military Status</h4>
+                    <h3 class="h4"> Military Status</h3>
                 </div>
                 <div class="col-xs-6" style="padding-top:10px"> 
                     <!-- <div class="dropdown pull-right"> <a id="drop6" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Help <span class="caret"></span> </a>
@@ -53,15 +53,15 @@
                         <p class="form-control-static">Not a Veteran </p>
                     </div>
                 </div>
-               <div class="form-group form-group-sm form-section-control">
-            <div class="col-sm-offset-2 col-sm-10 text-right"> <a href="#" class="btn btn-xs btn-default" id="refresh">Refresh</a> <a href="#" class="btn btn-xs btn-primary">Edit</a> </div>
-        </div>
+                <div class="form-group form-group-sm form-section-control">
+                    <div class="col-sm-offset-2 col-sm-10 text-right"> <a href="#" class="btn btn-xs btn-default">Refresh</a> <a href="#" class="btn btn-xs btn-primary">Edit</a> </div>
+                </div>
             </div>
         </div>
         <div class="well">
             <div class="row">
                 <div class="col-xs-6">
-                    <h4>Disabled Status</h4>
+                    <h3 class="h4">Disabled Status</h3>
                 </div>
                 <div class="col-xs-6" style="padding-top:10px"> 
                     <!--  <div class="dropdown pull-right"> <a id="drop6" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Help <span class="caret"></span> </a>
@@ -80,33 +80,33 @@
                         <p class="form-control-static">Not Specified </p>
                     </div>
                 </div>
-               <div class="form-group form-group-sm form-section-control">
-            <div class="col-sm-offset-2 col-sm-10 text-right"> <a href="#" class="btn btn-xs btn-default" id="refresh">Refresh</a> <a href="#" class="btn btn-xs btn-primary">Edit</a> </div>
-        </div>
+                <div class="form-group form-group-sm form-section-control">
+                    <div class="col-sm-offset-2 col-sm-10 text-right"> <a href="#" class="btn btn-xs btn-default">Refresh</a> <a href="#" class="btn btn-xs btn-primary">Edit</a> </div>
+                </div>
             </div>
         </div>
-    <div class="submission">
-    <div class="radio">
-        <input id="question1" name="question" type="radio" class="with-font" value="sel" />
-        <label for="question1" class="lead">I have verified that the above information is up to date and correct.</label>
-    </div>
-    <div class="radio">
-        <input id="question2" name="question"type="radio" class="with-font" value="sel"/>
-        <label for="question2" class="lead">I choose to verify this information later.<br>
-            <span style=" font-size:14px; display:block">(verification must be completed within 8 days)</span></label>
-        <div>
+        <div class="submission">
+            <fieldset>
+                <legend class="sr-only">Verify</legend>
+                <div class="radio">
+                    <input id="question1" name="question" type="radio" class="with-font" value="sel" />
+                    <label for="question1" class="lead">I have verified that the above information is up to date and correct.</label>
+                </div>
+                <div class="radio">
+                    <input id="question2" name="question" type="radio" class="with-font" value="sel"/>
+                    <label for="question2" class="lead">I choose to verify this information later.<br>
+                        <span style=" font-size:14px; display:block">(verification must be completed within 8 days)</span></label>
+                </div>
+            </fieldset>
             <div class="row">
-                <div class="col-md-12 text-center" style="padding-bottom:15px; padding-top:15px;"> <button class="btn btn-lg btn-primary" id="submit"> Submit</button> </div>
+                <div class="col-md-12 text-center" style="padding-bottom:15px; padding-top:15px;">
+                    <button class="btn btn-lg btn-primary" id="submit"> Submit</button>
+                </div>
             </div>
-            </form>
         </div>
-    </div>
-</div>
     </div>
 </div>
 <?php include ('includes/brand-footer.php') ?>
-<?php include ('modal/verify-error.php') ?>
-announcement-task.php 
 <script>
     $(document).ready(function() {
 
