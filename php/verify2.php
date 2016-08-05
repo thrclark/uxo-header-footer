@@ -12,21 +12,7 @@
 <?php include ('includes/header2.php') ?>
 <div class="main-content container" role="main">
     <div id="main-content">
-        <div class="tcptdp-header">
-            <div class="media-body">
-                <h2 class="media-heading">All up to date?</h2>
-                <div class="controls">
-                    <div class="dropdown"> <a id="drop6" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Help <span class="caret"></span> </a>
-                        <ul id="menu3" class="dropdown-menu" aria-labelledby="drop6">
-                            <li><a href="#">What are IU Verifications?</a></li>
-                            <li><a href="#">Help Link 2</a></li>
-                            <li><a href="#">Help Link 3</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <p> Your login has been interrupted for the purpose of verifying important information. For more information on why you are seeing this page, <a href="https://uits.iu.edu/cas-interrupts" target="_blank">click here</a> to read more about CAS Interrupts. </p>
+        <?php include ('includes/instructions-top.php') ?>
         <div class="well">
             <div class="row">
                 <div class="col-xs-6">
@@ -38,9 +24,6 @@
             <hr>
             <div class="form-horizontal">
                 <div class="alert alert-danger" role="alert" id="alert-error" style="display:none">Some items in this section have not been fully verified. Select 'edit' to complete verification, and then refresh this section.</div>
-                <div class="alert alert-info alert-dismissible" role="alert" id="alert-success" style="display:none">
-                    <button type="button" class="close" id="close-alert-success"><span aria-hidden="true">&times;</span></button>
-                    Verification is complete.</div>
                 <div class="form-group form-group-sm">
                     <div class="col-sm-3 control-label">IU Office:</div>
                     <div class="col-sm-9">
@@ -98,7 +81,7 @@
                 </div>
             </div>
         </div>
-        <div class="submission">
+        <div class="submission">      <?php include ('includes/instructions-bottom.php') ?>
             <fieldset>
                 <legend class="sr-only">Verify</legend>
                 <div class="radio">
@@ -123,20 +106,11 @@
 <script>
     $(document).ready(function() {
         $("#submit").click(function() {
-            $("#alert-error").fadeIn("slow", function() {
-            });
+            $("#alert-error").fadeIn("slow", function() {});
         });
-		
-		$("#refresh").click(function() {
-            $("#alert-error").hide(000, function() {
-            });
-			$("#alert-success").slideDown(000, function() {
-            });
-        });
-		$("#close-alert-success").click(function() {
-            $("#alert-success").slideUp(000, function() {
-            });
-			
+
+        $("#refresh").click(function() {
+            location.reload();
         });
     });
 </script>

@@ -16,7 +16,7 @@ header .app-header h1 {
 </head>
 <body style="background:#FFFFFF" data-market-key="" data-market-name="All Markets" data-all-markets-key="all" data-task-collection="" ondragstart="return false;" ondrop="return false;" id="top" >
 <header >
-    <div class="container togglecontainer app-header" style="padding-top:15px;background: #82786F;">
+    <div class="container togglecontainer app-header" style="padding-top:15px;background:;">
         <h1 style="margin-left: auto; margin-right: auto; color:#ffffff ">IU Verify</h1>
     </div>
 </header>
@@ -34,14 +34,20 @@ header .app-header h1 {
                     <ul>
                         <li> single section</li>
                         <li>radio selections at bottom</li>
-                        <li>with validation (click 'submit' button, and then 'refresh' button)</li>
+                        <li>with validation (click 'submit' button)</li>
                     </ul>
                 </li>
                 <li><a href="verify3.php" target="_blank">Example 3</a>
                     <ul>
                         <li> single section</li>
                         <li>checkbox selection at bottom</li>
-                        <li>with validation (click 'submit' button, and then 'refresh' button)</li>
+                        <li>with validation (click 'submit' button)</li>
+                    </ul>
+                </li>
+                <li><a href="verify4.php" target="_blank">Example 4 ('escape hatch')</a>
+                    <ul>
+                        <li>with 'escape hatch' mechanism, for cases when external system doesn't respond</li>
+                        <li>click 'submit' to see</li>
                     </ul>
                 </li>
             </ul>
