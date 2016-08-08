@@ -12,24 +12,7 @@
 <?php include ('includes/header2.php') ?>
 <div class="main-content container" role="main">
     <div id="main-content">
-        <div class="tcptdp-header">
-            <div class="media-body">
-                <h2 class="media-heading">All up to date?</h2>
-                
-                <!--          <div class="controls hidden-xs" style="position:absolute; top:0px; right:0px"> <a href="#" class="btn btn-sm btn-default favorite" style="background:#EBEBEB"> <i class="icon-heart-empty"></i><i class="icon-heart" style="display:none; color:#eba2a3"></i> <span class="hidden-sm hidden-xs">Favorite</span></a> </div>-->
-                
-                <div class="controls">
-                    <div class="dropdown"> <a id="drop6" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Help <span class="caret"></span> </a>
-                        <ul id="menu3" class="dropdown-menu" aria-labelledby="drop6">
-                            <li><a href="#">What are IU Verifications?</a></li>
-                            <li><a href="#">Help Link 2</a></li>
-                            <li><a href="#">Help Link 3</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <p> Your login has been interrupted for the purpose of verifying important information. For more information on why you are seeing this page, <a href="https://uits.iu.edu/cas-interrupts" target="_blank">click here</a> to read more about CAS Interrupts. </p>
+        <?php include ('includes/instructions-top.php') ?>
         <div class="well">
             <div class="row">
                 <div class="col-xs-6">
@@ -86,6 +69,7 @@
             </div>
         </div>
         <div class="submission">
+            <?php include ('includes/instructions-bottom.php') ?>
             <fieldset>
                 <legend class="sr-only">Verify</legend>
                 <div class="radio">

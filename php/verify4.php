@@ -88,23 +88,14 @@
             </div>
             <div class="row">
                 <div class="col-md-12 text-center" style="padding-bottom:15px; padding-top:15px;">
-                    <button class="btn btn-lg btn-primary" id="submit"> Submit</button>
+                    <button class="btn btn-lg btn-primary" id="submit" data-toggle="modal" data-target="#verify_error"> Submit</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <?php include ('includes/brand-footer.php') ?>
-<script>
-    $(document).ready(function() {
-        $("#submit").click(function() {
-            $("#alert-error").fadeIn("slow", function() {});
-        });
+<?php include ('modal/verify-error.php') ?>
 
-        $("#refresh").click(function() {
-            location.reload();
-        });
-    });
-</script>
 </body>
 </html>
