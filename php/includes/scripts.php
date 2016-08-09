@@ -4,3 +4,8 @@
 <script type="text/javascript" src="../bower_components/moment/min/moment-with-locales.min.js"></script>
 <script type="text/javascript" src="../bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
 <script type="text/javascript" src="../js/bootstrap-tabcollapse.js"></script>
+
+
+
+<script type="text/javascript" src="../js/angular.min.js"></script>
+
