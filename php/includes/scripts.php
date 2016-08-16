@@ -9,3 +9,12 @@
 
 <script type="text/javascript" src="../js/angular.min.js"></script>
 
+
+
+
+
+
+<script type="text/javascript" src="../js/doT.min.js"></script>
+<script type="text/javascript" src="../js/jQuery.extendext.min.js"></script>
+<script type="text/javascript" src="../js/moment.min.js"></script>
+<script type="text/javascript" src="../js/query-builder.min.js"></script>
