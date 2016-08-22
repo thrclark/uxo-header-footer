@@ -10,7 +10,7 @@
     border-radius: 5px;
     padding: 5px;
     border: 1px solid #EEE;
-    background: rgba(255, 255, 255, .9)
+    background:#efefef;
 }
 
 .query-builder .drag-handle, .query-builder .error-container, .query-builder .rule-container .rule-filter-container, .query-builder .rule-container .rule-operator-container, .query-builder .rule-container .rule-value-container {
@@ -22,7 +22,7 @@
 .query-builder .rules-group-container {
     padding: 10px 10px 6px;
     border: 1px solid #DCC896;
-    background: rgba(250, 240, 210, .5)
+    background:#ffffff;
 }
 
 .query-builder .rules-group-header {

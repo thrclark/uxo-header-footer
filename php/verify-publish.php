@@ -22,7 +22,7 @@
 }
 .view-admin .main-content .col-md-9 > .well {
 	margin-top: -53px;
-	min-height: 600px;
+	min-heighttt: 600px;
 }
 .help-block {
 	margin-top: 0px;
@@ -36,6 +36,33 @@ label {
 	right: 9px;
 	top: 12px;
 	color: #cccccc;
+}
+.query-builder .rules-group-header .btn-group.group-conditions {
+	text-transform: lowercase;
+}
+.query-builder .rules-group-header .btn-group.group-conditions .btn.btn-xs.btn-default.active {
+	background: #2879b8;
+	color: #ffffff;
+	border-color: #236ba3;
+}
+.query-builder .rules-group-header .btn-group.group-conditions .btn.btn-xs.btn-default.active.disabled {
+	background: #ffffff;
+	color: #333;
+	border-color: #cccccc;
+}
+.query-builder .rules-group-body .rules-list .rule-header .btn.btn-xs.btn-link {
+	color: #555;
+	margin-top: 5px;
+}
+.query-builder [data-add="group"] {
+	display: none
+}
+.wizard-actions {
+	background: #f5f5f5;
+	margin-bottom: -29px;
+	margin-top: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 </style>
 <?php include ('includes/scripts.php') ?>
@@ -93,9 +120,7 @@ margin-top: 20px;">IU Verify</h1>
                                     <td>{{ roll.name }}</td>
                                     <td>{{ roll.status }}</td>
                                     <td>{{ roll.created }}</td>
-                                    <td class="text-center"><!--<a href="#" class="btn btn-link btn-xs"><i class="icon-menu"></i></a>-->
-                                        
-                                        <div class="dropdown">
+                                    <td class="text-center"><div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                 <li><a href="#">Preview</a></li>
@@ -113,7 +138,7 @@ margin-top: 20px;">IU Verify</h1>
                     <section id="create_new" style="display:none">
                         <div class="row section-head">
                             <div class="col-md-12 section-header">
-                                <h3> <i class="icon-left-open-mini"></i> Create New Verification</h3>
+                                <h3> <i class="icon-left-open-mini" style="    margin: -10px;"></i> Create New Verification</h3>
                             </div>
                         </div>
                         <div class="row">
@@ -127,9 +152,12 @@ margin-top: 20px;">IU Verify</h1>
                                             <p>Data</p>
                                         </div>
                                         <div class="stepwizard-step"> <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="icon-flash"></i></a>
-                                            <p>Triggers</p>
+                                            <p>Recipients</p>
                                         </div>
-                                        <div class="stepwizard-step"> <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="icon-eye"></i></a>
+                                        <div class="stepwizard-step"> <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="icon-calendar-3"></i></a>
+                                            <p>Scheduling</p>
+                                        </div>
+                                        <div class="stepwizard-step"> <a href="#step-5" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="icon-eye"></i></a>
                                             <p>Preview/Save</p>
                                         </div>
                                     </div>
@@ -181,7 +209,11 @@ margin-top: 20px;">IU Verify</h1>
                                                 <label class="control-label sr-only" for="verify_later_custom"> 'Verify Later' Custom Text </label>
                                                 <textarea class="form-control" cols="40" id="verify_later_custom" name="textarea1" rows="2" style="display:none"></textarea>
                                             </div>
-                                            <button class="btn btn-primary nextBtn pull-right" type="button" >Next</button>
+                                        </div>
+                                        <div class="col-xs-12 wizard-actions">
+                                            <div class="btn-group pull-right" role="group" aria-label="">
+                                                <button class="btn btn-primary nextBtn " type="button" >Next<i class="icon-angle-right"></i> </button>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row setup-content" id="step-2">
@@ -218,8 +250,9 @@ margin-top: 20px;">IU Verify</h1>
                                                             <table class="table table-condensed table-responsive table-actions" id="myTable">
                                                                 <thead>
                                                                     <tr>
-                                                                        <th> API <span class="small" style="font-weight:normal">(pull)</span> </th>
-                                                                        <th> API <span class="small" style="font-weight:normal">(callback)</span></th>
+                                                                        <th>Data Pull </th>
+                                                                        <th>Callback</th>
+                                                                        <th>Unique Key</th>
                                                                         <th> URL <span class="small" style="font-weight:normal">(initiate edit)</span> </th>
                                                                         <th> Actions </th>
                                                                     </tr>
@@ -242,7 +275,8 @@ margin-top: 20px;">IU Verify</h1>
                                                                                 <option>API Source 4</option>
                                                                                 <option>API Source 5</option>
                                                                             </select></td>
-                                                                        <td><input type="text" class="form-control" placeholder="Text input"></td>
+                                                                        <td><input type="text" class="form-control"></td>
+                                                                        <td><input type="text" class="form-control"></td>
                                                                         <td><a href="#" class="btn btn-xs btn-default disabled" style="margin-top:5px">delete</a></td>
                                                                     </tr>
                                                                 </tbody>
@@ -252,46 +286,123 @@ margin-top: 20px;">IU Verify</h1>
                                                 </div>
                                             </div>
                                             <button class="btn btn-xs btn-default btn-add-panel pull-right"> <i class="icon-plus-2"></i>section</button>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+                                        </div>
+                                        <div class="col-xs-12 wizard-actions">
+                                            <div class="btn-group pull-right" role="group" aria-label="">
+                                                <button class="btn btn-default prevBtn " type="button" ><i class="icon-angle-left"></i>Previous</button>
+                                                <button class="btn btn-primary nextBtn " type="button" >Next<i class="icon-angle-right"></i> </button>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="row setup-content" id="step-3">
                                         <div class="col-xs-12">
-                                            <div class="col-md-12">
-                                                <h3> Step 3</h3>
-                                                
-                                                
-                                                
-                                                <div id="builder-basic"></div>
-
-
-
-
-                                                <button class="btn btn-primary nextBtn btn-lg pull-right" type="button" >Next</button>
+                                            <p class="lead"> Recipients</p>
+                                            <p>Specify the rules to identify the audience that you wish to target for this verification.</p>
+                                            <div id="builder-basic"> </div>
+                                        </div>
+                                        <div class="col-xs-12 wizard-actions">
+                                            <div class="btn-group pull-right" role="group" aria-label="">
+                                                <button class="btn btn-default prevBtn " type="button" ><i class="icon-angle-left"></i>Previous</button>
+                                                <button class="btn btn-primary nextBtn " type="button" >Next<i class="icon-angle-right"></i> </button>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row setup-content" id="step-4">
                                         <div class="col-xs-12">
-                                            <div class="col-md-12">
-                                                <h3> Step 4</h3>
-                                                <button class="btn btn-success btn-lg pull-right" type="submit">Finish!</button>
+                                            <p class="lead"> Scheduling</p>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <label class="control-label"> Active Date Range/Status <span class="small text-muted" style="font-weight:normal">(currently active)</span> </label>
+                                                    <span class="help-block small" id=""> Specify the date range for this verification to be active, and the specific date of posting for the verification.</span>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="activate" id="optionsRadios1" value="1">
+                                                            Specify by Status </label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label>
+                                                            <input type="radio" name="activate" id="optionsRadios2" value="2">
+                                                            Specify by Date Range </label>
+                                                    </div>
+                                                    <div class="form-group activate-option"  style="display:none" id="activate1">
+                                                        <div class="row">
+                                                            <div class="col-xs-12">
+                                                                <label for="">Status</label>
+                                                            </div>
+                                                            <div class="col-xs-6">
+                                                                <select class="select form-control" id="" name="select">
+                                                                    <option value="Active"> Active </option>
+                                                                    <option value="Inactive"> Inactive </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row activate-option" style="display:none; margin-bottom:15px" id="activate2">
+                                                        <div class="col-xs-3">
+                                                            <div class="form-group">
+                                                                <label for="">Begin</label>
+                                                                <input type="text" class="form-control col-xs-6" id="" >
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-3">
+                                                            <div class="form-group">
+                                                                <label for="">End</label>
+                                                                <input type="text" class="form-control col-xs-6" id="" >
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group " style="margin-bottom:0px">
+                                                        <label class="control-label" for="name"> Scheduled Posting Date </label>
+                                                        <span class="help-block small" id=""> Specify a date on which this verification will post. Note that the posting will only happen within the date range specified above, or when the verification is set to status 'Active'.</span>
+                                                        <div class="row">
+                                                            <div class="col-xs-3">
+                                                                <input class="form-control" id="name" name="name" type="text"  required="required"/>
+                                                            </div>
+                                                            <div class="col-xs-5" style="padding-left:0px">
+                                                                <div class="checkbox small">
+                                                                    <label>
+                                                                        <input type="checkbox">
+                                                                        recur annually </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 wizard-actions">
+                                            <div class="btn-group pull-right" role="group" aria-label="">
+                                                <button class="btn btn-default prevBtn " type="button" ><i class="icon-angle-left"></i>Previous</button>
+                                                <button class="btn btn-primary nextBtn " type="button" >Next<i class="icon-angle-right"></i> </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row setup-content" id="step-5">
+                                        <div class="col-xs-12">
+                                            <p class="lead"> Preview/Save</p>
+                                            <hr>
+                                            <label class="control-label"> Verification Message Preview </label>
+                                            <p> The content and layout of this verification may be previewed in a new window <a href="verify-preview.php" target="_blank">here</a>.</p>
+                                            <hr>
+                                            <label class="control-label"> Verification Recipients </label>
+                                            <p>The following users will be targeted for this verification if they meet ALL of the following criteria: </p>
+                                            <ul>
+                                                <li> Group ID contains: BL-UITS </li>
+                                                <li> Role ID is not: Student </li>
+                                            </ul>
+                                            <hr>
+                                            <label class="control-label"> Verification Scheduling </label>
+                                            <p>This verification will be activated and posted according to the following dates:</p>
+                                            <ul>
+                                                <li> Verification Active Dates: 08/28/2016 - 08/28/2020 </li>
+                                                <li> Verification Post Date: 09/15/YYYY </li>
+                                                <li> Recurs Annually: yes </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xs-12 wizard-actions">
+                                            <div class="btn-group pull-right" role="group" aria-label="">
+                                                <button class="btn btn-default prevBtn" type="button" ><i class="icon-angle-left"></i>Previous</button>
+                                                <button class="btn btn-primary" type="button" >Save</button>
                                             </div>
                                         </div>
                                     </div>
@@ -461,17 +572,14 @@ $(".btn-add-panel").on("click", function () {
 <script type="text/javascript">
 $(document).ready(function() {
     $('a.addstuff').click(function() {
-       $('#myTable tbody').append('<tr> <td><select class="form-control"> <option>unspecified</option> <option>API Source 1</option> <option>API Source 2</option> <option>API Source 3</option> <option>API Source 4</option> <option>API Source 5</option> </select></td> <td><select class="form-control"> <option>unspecified</option> <option>API Source 1</option> <option>API Source 2</option> <option>API Source 3</option> <option>API Source 4</option> <option>API Source 5</option> </select></td> <td><input type="text" class="form-control" placeholder="Text input"></td> <td> <a href="#" class="btn btn-xs btn-default deleterow" style="margin-top:5px">delete</a> </td> </tr>');
+       $('#myTable tbody').append('<tr> <td><select class="form-control"> <option>unspecified</option> <option>API Source 1</option> <option>API Source 2</option> <option>API Source 3</option> <option>API Source 4</option> <option>API Source 5</option> </select></td> <td><select class="form-control"> <option>unspecified</option> <option>API Source 1</option> <option>API Source 2</option> <option>API Source 3</option> <option>API Source 4</option> <option>API Source 5</option> </select></td> <td><input type="text" class="form-control"></td> <td><input type="text" class="form-control"></td> <td> <a href="#" class="btn btn-xs btn-default deleterow" style="margin-top:5px">delete</a> </td> </tr>');
     });
 	
 	    
 
 
 });
-</script>
-
-
-
+</script> 
 <script>
 $(document).ready(function(){
 
@@ -481,100 +589,104 @@ $(document).ready(function(){
 
 });
 
-</script>
-
-
-
+</script> 
 <script>
-var rules_basic = {
-  condition: 'AND',
-  rules: [{
-    id: 'price',
-    operator: 'less',
-    value: 10.25
-  }, {
-    condition: 'OR',
-    rules: [{
-      id: 'category',
-      operator: 'equal',
-      value: 2
-    }, {
-      id: 'category',
-      operator: 'equal',
-      value: 1
-    }]
-  }]
-};
 
-$('#builder-basic').queryBuilder({
-  plugins: ['bt-tooltip-errors'],
-  
-  filters: [{
-    id: 'name',
-    label: 'Name',
-    type: 'string'
-  }, {
-    id: 'category',
-    label: 'Category',
-    type: 'integer',
-    input: 'select',
-    values: {
-      1: 'Books',
-      2: 'Movies',
-      3: 'Music',
-      4: 'Tools',
-      5: 'Goodies',
-      6: 'Clothes'
-    },
-    operators: ['equal', 'not_equal', 'in', 'not_in', 'is_null', 'is_not_null']
-  }, {
-    id: 'in_stock',
-    label: 'In stock',
-    type: 'integer',
-    input: 'radio',
-    values: {
-      1: 'Yes',
-      0: 'No'
-    },
-    operators: ['equal']
-  }, {
-    id: 'price',
-    label: 'Price',
-    type: 'double',
-    validation: {
-      min: 0,
-      step: 0.01
-    }
-  }, {
-    id: 'id',
-    label: 'Identifier',
-    type: 'string',
-    placeholder: '____-____-____',
-    operators: ['equal', 'not_equal'],
-    validation: {
-      format: /^.{4}-.{4}-.{4}$/
-    }
-  }],
+    var rules_basic = {
+        condition: 'AND',
+        rules: [{
+            id: 'groupid'
+           
+        }]
+    };
 
-  rules: rules_basic
+    $('#builder-basic').queryBuilder({
+        plugins: ['bt-tooltip-errors'],
+
+        filters: [{
+            id: 'firstname',
+            label: 'First Name',
+            type: 'string'
+        },
+		{
+            id: 'lastname',
+            label: 'Last Name',
+            type: 'string'
+        },
+		
+		
+		{
+            id: 'email',
+            label: 'Email',
+            type: 'string'
+        },
+		
+		{
+            id: 'username',
+            label: 'Username',
+            type: 'string'
+        },
+		{
+            id: 'groupid',
+            label: 'Group ID',
+            type: 'string'
+        },
+		
+		{
+            id: 'personid',
+            label: 'Person ID',
+            type: 'string'
+        },
+		
+		
+		
+		
+		 {
+            id: 'role',
+            label: 'Role',
+            type: 'integer',
+            input: 'select',
+            values: {
+                1: 'Faculty',
+                2: 'Staff',
+                3: 'Student',
+                
+            },
+            operators: ['equal', 'not_equal', 'in', 'not_in', 'is_null', 'is_not_null']
+        } 
+		 ],
+
+        rules: rules_basic
+    });
+
+    $('#btn-reset').on('click', function() {
+        $('#builder-basic').queryBuilder('reset');
+    });
+
+    $('#btn-set').on('click', function() {
+        $('#builder-basic').queryBuilder('setRules', rules_basic);
+    });
+
+    $('#btn-get').on('click', function() {
+        var result = $('#builder-basic').queryBuilder('getRules');
+
+        if (!$.isEmptyObject(result)) {
+            alert(JSON.stringify(result, null, 2));
+        }
+    });
+</script> 
+<script>
+
+$(document).ready(function() {
+    $("input[name$='activate']").click(function() {
+        var test = $(this).val();
+
+            $(".activate-option").hide();
+        $("#activate" + test).show();
+    });
 });
 
-$('#btn-reset').on('click', function() {
-  $('#builder-basic').queryBuilder('reset');
-});
 
-$('#btn-set').on('click', function() {
-  $('#builder-basic').queryBuilder('setRules', rules_basic);
-});
-
-$('#btn-get').on('click', function() {
-  var result = $('#builder-basic').queryBuilder('getRules');
-  
-  if (!$.isEmptyObject(result)) {
-    alert(JSON.stringify(result, null, 2));
-  }
-});</script>
-
-
+</script>
 </body>
 </html>
