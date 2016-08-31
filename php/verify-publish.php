@@ -54,9 +54,6 @@ label {
 	color: #555;
 	margin-top: 5px;
 }
-.query-builder [data-add="group"] {
-	display: none
-}
 .wizard-actions {
 	background: #f5f5f5;
 	margin-bottom: -29px;
@@ -64,11 +61,50 @@ label {
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
+.query-builder .rules-group-header .group-actions .dropdown-menu {
+	min-width: 110px
+}
+.query-builder .rules-group-header .group-actions .dropdown-menu .btn-link.btn-block {
+	text-align: left;
+	color: #333;
+	padding-left: 10px;
+}
+.rules-group-container .rules-group-container .rule-post-container {
+	display: none !important;
+}
+.editable-container.editable-popup .popover-title {
+	display: none;
+}
+.editable-container.editable-popup .popover-content .editable-date.well {
+	box-shadow: none;
+	padding: 0px;
+}
+.editable-container.editable-popup .popover-content .editable-clear {
+	float: right;
+}
+.editable-container.editable-popup .popover-content .datepicker-switch {
+	text-align: center;
+	font-weight: bold;
+	font-size: 24px;
+}
+.old, .new {
+	color: #cccccc;
+}
+.query-builder .rules-group-container .rules-group-body .rules-list .rule-container .rule-header .rule-actions .btn .icon-cancel-2 {
+	color: #cccccc;
+}
+.query-builder .rules-group-container .rules-group-body .rules-list .rule-container:first-child > .rule-header .rule-actions .btn .icon-cancel-2 {
+	display: none;
+}
+.query-builder .rules-group-container .rules-group-body .rules-list .rules-group-container .rules-group-body .rules-list .rule-container .rule-header .rule-actions .btn .icon-cancel-2 {
+	display: block;
+}
 </style>
 <?php include ('includes/scripts.php') ?>
 </head>
 <body class="view-admin" id="top">
 <?php include ('includes/brand-header2.php') ?>
+
 <header style="min-height:115px">
     <div class="container">
         <div class="row">
@@ -155,7 +191,7 @@ margin-top: 20px;">IU Verify</h1>
                                             <p>Recipients</p>
                                         </div>
                                         <div class="stepwizard-step"> <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="icon-calendar-3"></i></a>
-                                            <p>Scheduling</p>
+                                            <p>Activate</p>
                                         </div>
                                         <div class="stepwizard-step"> <a href="#step-5" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="icon-eye"></i></a>
                                             <p>Preview/Save</p>
@@ -297,8 +333,36 @@ margin-top: 20px;">IU Verify</h1>
                                     <div class="row setup-content" id="step-3">
                                         <div class="col-xs-12">
                                             <p class="lead"> Recipients</p>
-                                            <p>Specify the rules to identify the audience that you wish to target for this verification.</p>
+                                            <label class="control-label"> Set Target Audience </label>
+                                            <span class="help-block small" id="">Specify the rules to identify the audience that you wish to target for this verification.</span>
                                             <div id="builder-basic"> </div>
+                                            <div class="posting-date" id="posting_date_all" style="display:none;background: white;height: 45px;margin-top: -4px;margin-left: 25px;margin-right: 10px;border: 2px solid #f5f5f5; position:relative">
+                                                <div class="" style="font-style: italic;position: absolute;right: 100px; top:10px;">Verification Start: <a href="#" id="dob" data-type="date" data-pk="1" data-url="/post" data-title="Select date">09/05/2017</a></div>
+                                            </div>
+                                            <div class="form-group" style="margin-top:40px">
+                                                <label class="control-label" for="name">Confirmation Leeway</label>
+                                                <span class="help-block small" id=""> Specify the number of days before new users are required to renew this verification.<!-- Note that the posting will only happen within the date range specified above, or when the verification is set to status 'Active'.--></span>
+                                                <div class="row">
+                                                    <div class="col-xs-3">
+                                                        <input class="form-control" id="name" name="name" type="text"  required="required"/>
+                                                    </div>
+                                                    <!-- <div class="col-xs-5" style="padding-left:0px">
+                                                                <div class="checkbox small">
+                                                                    <label>
+                                                                        <input type="checkbox">
+                                                                        recur annually </label>
+                                                                </div>
+                                                            </div>--> 
+                                                </div>
+                                            </div>
+                                            <div class="form-group ">
+                                                <label class="control-label " for=""> Verification Recurrance </label>
+                                                <span class="help-block small" id=""> Select whether this verification will be posted annualy, or only once </span>
+                                                <select class="select form-control" id="" name="select" style="width:200px">
+                                                    <option value=""> Annually</option>
+                                                    <option value="">One Time </option>
+                                                </select>
+                                            </div>
                                         </div>
                                         <div class="col-xs-12 wizard-actions">
                                             <div class="btn-group pull-right" role="group" aria-label="">
@@ -309,7 +373,7 @@ margin-top: 20px;">IU Verify</h1>
                                     </div>
                                     <div class="row setup-content" id="step-4">
                                         <div class="col-xs-12">
-                                            <p class="lead"> Scheduling</p>
+                                            <p class="lead"> Activate</p>
                                             <div class="row">
                                                 <div class="col-xs-12">
                                                     <label class="control-label"> Active Date Range/Status <span class="small text-muted" style="font-weight:normal">(currently active)</span> </label>
@@ -348,22 +412,6 @@ margin-top: 20px;">IU Verify</h1>
                                                             <div class="form-group">
                                                                 <label for="">End</label>
                                                                 <input type="text" class="form-control col-xs-6" id="" >
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group " style="margin-bottom:0px">
-                                                        <label class="control-label" for="name"> Scheduled Posting Date </label>
-                                                        <span class="help-block small" id=""> Specify a date on which this verification will post. Note that the posting will only happen within the date range specified above, or when the verification is set to status 'Active'.</span>
-                                                        <div class="row">
-                                                            <div class="col-xs-3">
-                                                                <input class="form-control" id="name" name="name" type="text"  required="required"/>
-                                                            </div>
-                                                            <div class="col-xs-5" style="padding-left:0px">
-                                                                <div class="checkbox small">
-                                                                    <label>
-                                                                        <input type="checkbox">
-                                                                        recur annually </label>
-                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -606,36 +654,42 @@ $(document).ready(function(){
         filters: [{
             id: 'firstname',
             label: 'First Name',
-            type: 'string'
+            type: 'string',
+			operators: ['equal', 'not_equal']
         },
 		{
             id: 'lastname',
             label: 'Last Name',
-            type: 'string'
+            type: 'string',
+			operators: ['equal', 'not_equal']
         },
 		
 		
 		{
             id: 'email',
             label: 'Email',
-            type: 'string'
+            type: 'string',
+			operators: ['equal', 'not_equal']
         },
 		
 		{
             id: 'username',
             label: 'Username',
-            type: 'string'
+            type: 'string',
+			operators: ['equal', 'not_equal']
         },
 		{
             id: 'groupid',
             label: 'Group ID',
-            type: 'string'
+            type: 'string',
+			operators: ['equal', 'not_equal']
         },
 		
 		{
             id: 'personid',
             label: 'Person ID',
-            type: 'string'
+            type: 'string',
+			operators: ['equal', 'not_equal']
         },
 		
 		
@@ -652,7 +706,7 @@ $(document).ready(function(){
                 3: 'Student',
                 
             },
-            operators: ['equal', 'not_equal', 'in', 'not_in', 'is_null', 'is_not_null']
+            operators: ['equal', 'not_equal']
         } 
 		 ],
 
@@ -675,6 +729,29 @@ $(document).ready(function(){
         }
     });
 </script> 
+<script type="text/javascript">
+   // $(document).ready(function() {
+        $('input[type="radio"]').click(function() {
+            if ($(this).attr("value") == "AND") {
+
+                $("#posting_date_all").show();
+                $(".rule-post-container").hide();
+            }
+            if ($(this).attr("value") == "OR") {
+                $("#posting_date_all").hide();
+                $(".rule-post-container").show();
+            }
+        });
+        $('button[data-add="rule"]').click(function() {
+           
+            $(".rule-post-container").hide();
+			 $("#posting_date_all").show();
+			
+			
+			
+        });
+ //   });
+</script> 
 <script>
 
 $(document).ready(function() {
@@ -684,6 +761,41 @@ $(document).ready(function() {
             $(".activate-option").hide();
         $("#activate" + test).show();
     });
+});
+
+
+</script> 
+<script>
+
+
+$(document).ready(function() {
+           $(".rule-post-container").show();
+});
+
+
+
+</script> 
+<script>
+
+$(document).ready(function() {
+    //toggle `popup` / `inline` mode
+    $('#dob').editable({
+        format: 'mm-dd-yyyy',    
+        viewformat: 'mm/dd/yyyy',    
+        datepicker: {
+                weekStart: 1
+           }
+        });
+		
+		
+		$('.postdate').editable({
+        format: 'mm-dd-yyyy',      
+        viewformat: 'mm/dd/yyyy',    
+        datepicker: {
+                weekStart: 1
+           }
+        });
+		
 });
 
 

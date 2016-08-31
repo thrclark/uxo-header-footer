@@ -18,3 +18,6 @@
 <script type="text/javascript" src="../js/jQuery.extendext.min.js"></script>
 <script type="text/javascript" src="../js/moment.min.js"></script>
 <script type="text/javascript" src="../js/query-builder.min.js"></script>
+
+
+<script type="text/javascript" src="../js/bootstrap-editable.min.js"></script>

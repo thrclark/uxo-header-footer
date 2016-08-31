@@ -10,12 +10,13 @@
 	border-radius: 0px;
 	padding: 5px;
 
-	background:#efefef;
+	background:#f5f5f5;
 }
-.query-builder .drag-handle, .query-builder .error-container, .query-builder .rule-container .rule-filter-container, .query-builder .rule-container .rule-operator-container, .query-builder .rule-container .rule-value-container {
+.query-builder .drag-handle, .query-builder .error-container, .query-builder .rule-container .rule-filter-container, .query-builder .rule-container .rule-operator-container, .query-builder .rule-container .rule-value-container,.query-builder .rule-container .rule-post-container {
 	display: inline-block;
 	margin: 0 5px 0 0;
-	vertical-align: middle
+	vertical-align: middle;
+
 }
 .query-builder .rules-group-container {
 	padding: 10px 10px 6px;
@@ -38,8 +39,19 @@
 }
 .query-builder .rule-value-container {
 	border-left: 1px solid #DDD;
-	padding-left: 5px
+	padding-left: 10px
 }
+
+.query-builder .rule-post-container {
+
+    position: absolute;
+    right: 75px;
+    top: 10px;
+}
+
+.query-builder .rule-post-container + .rule-post-container {
+display: none}
+
 .query-builder .rule-value-container label {
 	margin-bottom: 0;
 	font-weight: 400
