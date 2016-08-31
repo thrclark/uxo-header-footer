@@ -50,6 +50,16 @@ header .app-header h1 {
                         <li>click 'submit' to see</li>
                     </ul>
                 </li>
+                
+                
+                
+                 <li><a href="verify-publish.php" target="_blank">Publishing</a>
+                    
+                </li>
+                
+                
+                
+                
             </ul>
         </div>
     </div>
