@@ -37,40 +37,12 @@ label {
 	top: 12px;
 	color: #cccccc;
 }
-.query-builder .rules-group-header .btn-group.group-conditions {
-	text-transform: lowercase;
-}
-.query-builder .rules-group-header .btn-group.group-conditions .btn.btn-xs.btn-default.active {
-	background: #2879b8;
-	color: #ffffff;
-	border-color: #236ba3;
-}
-.query-builder .rules-group-header .btn-group.group-conditions .btn.btn-xs.btn-default.active.disabled {
-	background: #ffffff;
-	color: #333;
-	border-color: #cccccc;
-}
-.query-builder .rules-group-body .rules-list .rule-header .btn.btn-xs.btn-link {
-	color: #555;
-	margin-top: 5px;
-}
 .wizard-actions {
 	background: #f5f5f5;
 	margin-bottom: -29px;
 	margin-top: 20px;
 	padding-top: 15px;
 	padding-bottom: 15px;
-}
-.query-builder .rules-group-header .group-actions .dropdown-menu {
-	min-width: 110px
-}
-.query-builder .rules-group-header .group-actions .dropdown-menu .btn-link.btn-block {
-	text-align: left;
-	color: #333;
-	padding-left: 10px;
-}
-.rules-group-container .rules-group-container .rule-post-container {
-	display: none !important;
 }
 .editable-container.editable-popup .popover-title {
 	display: none;
@@ -87,24 +59,14 @@ label {
 	font-weight: bold;
 	font-size: 24px;
 }
-.old, .new {
-	color: #cccccc;
-}
-.query-builder .rules-group-container .rules-group-body .rules-list .rule-container .rule-header .rule-actions .btn .icon-cancel-2 {
-	color: #cccccc;
-}
-.query-builder .rules-group-container .rules-group-body .rules-list .rule-container:first-child > .rule-header .rule-actions .btn .icon-cancel-2 {
-	display: none;
-}
-.query-builder .rules-group-container .rules-group-body .rules-list .rules-group-container .rules-group-body .rules-list .rule-container .rule-header .rule-actions .btn .icon-cancel-2 {
-	display: block;
+.rules-group-container .rules-group-container .rule-post-container {
+	display: none !important;
 }
 </style>
 <?php include ('includes/scripts.php') ?>
 </head>
 <body class="view-admin" id="top">
 <?php include ('includes/brand-header2.php') ?>
-
 <header style="min-height:115px">
     <div class="container">
         <div class="row">
