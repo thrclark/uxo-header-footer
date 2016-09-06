@@ -3,7 +3,7 @@
 <html lang=en-us>
 <head>
 <?php include ('includes/head-meta.php') ?>
-<?php include ('includes/styles.php') ?>
+<?php include ('includes/styles-publishing.php') ?>
 <style>
 .list-group-item {
 	border-left: none;

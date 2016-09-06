@@ -4,15 +4,12 @@
 <html lang="en-us">
 <head>
 <?php include ('includes/head-meta.php') ?>
-<?php include ('includes/styles.php') ?>
+<?php include ('includes/styles-publishing.php') ?>
 <?php include ('includes/scripts.php') ?>
 </head>
 <body id="top">
-<div class="banner-demo-only" style="    background: repeating-linear-gradient(125deg, #c30000, #c30000 10px, #bd0000 10px, #bd0000 20px);
-    margin-bottom: 0;
-    padding-bottom: 20px;
-    padding-top: 20px;">
-    <div class="text-center" style="text-shadow: 1px 1px 1px #000000; color:#ffffff; font-size:36px; font-weight:bold">Preview Only</div>
+<div class="banner-preview">
+    <div class="preview-text">Preview Only</div>
 </div>
 <?php include ('includes/brand-header2.php') ?>
 <?php include ('includes/header2.php') ?>
