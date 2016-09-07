@@ -5,6 +5,12 @@
 <head>
 <?php include ('includes/head-meta.php') ?>
 <?php include ('includes/styles.php') ?>
+
+
+
+
+
+
 <?php include ('includes/scripts.php') ?>
 </head>
 <body id="top" >

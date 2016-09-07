@@ -1,0 +1,27 @@
+.permission-tree {
+	ul {
+		list-style: none;
+		padding-left: 0;
+	  
+		&:not(:first-child) {
+	  		border-left: 1px solid #eee;
+	  		padding-left: 27px;
+		}
+
+		li {
+			margin-top: 3px;
+		}
+	}
+	
+	.dropdown.expression {
+		display: inline-block;
+		
+		> ul {
+			padding-left: 0;
+		}
+	  
+		button {
+			padding-right: 25px;
+		}
+	}
+}
