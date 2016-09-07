@@ -62,6 +62,12 @@ label {
 .rules-group-container .rules-group-container .rule-post-container {
 	display: none !important;
 }
+.panel-group .panel .panel-heading .panel-title a {
+	display: block;
+}
+.panel-group .panel .panel-heading {
+	position: relative;
+}
 </style>
 <?php include ('includes/scripts.php') ?>
 </head>
@@ -160,7 +166,7 @@ margin-top: 20px;">IU Verify</h1>
                                         </div>
                                     </div>
                                 </div>
-                                <form role="form">
+                                <form role="form" style="padding-bottom:15px">
                                     <div class="row setup-content" id="step-1">
                                         <div class="col-xs-12">
                                             <p class="lead"> Setup</p>
@@ -217,20 +223,12 @@ margin-top: 20px;">IU Verify</h1>
                                     <div class="row setup-content" id="step-2">
                                         <div class="col-xs-12">
                                             <p class="lead"> Data</p>
-                                            <div class="panel-group" id="accordion"> 
-                                                <!-- <div class="panel panel-default">
+                                            <div class="panel-group" id="accordion1">
+                                                <div class="panel panel-default template-add-data">
                                                     <div class="panel-heading">
-                                                        <h4 class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> Collapsible Group Item #1 </a> </h4>
+                                                        <p class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse-data1"> Section 1 </a> </p>
                                                     </div>
-                                                    <div id="collapseOne" class="panel-collapse collapse in">
-                                                        <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. </div>
-                                                    </div>
-                                                </div>-->
-                                                <div class="panel panel-default template">
-                                                    <div class="panel-heading">
-                                                        <p class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"> Section 1 </a> </p>
-                                                    </div>
-                                                    <div id="collapseThree" class="panel-collapse collapse in">
+                                                    <div id="collapse-data1" class="panel-collapse collapse in">
                                                         <div class="panel-body">
                                                             <div class="form-group ">
                                                                 <label class="control-label" for="section_title"> Section Title </label>
@@ -283,7 +281,7 @@ margin-top: 20px;">IU Verify</h1>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button class="btn btn-xs btn-default btn-add-panel pull-right"> <i class="icon-plus-2"></i>section</button>
+                                            <button class="btn btn-xs btn-default btn-add-data pull-right"> <i class="icon-plus-2"></i>section</button>
                                         </div>
                                         <div class="col-xs-12 wizard-actions">
                                             <div class="btn-group pull-right" role="group" aria-label="">
@@ -295,12 +293,33 @@ margin-top: 20px;">IU Verify</h1>
                                     <div class="row setup-content" id="step-3">
                                         <div class="col-xs-12">
                                             <p class="lead"> Recipients</p>
-                                            <label class="control-label"> Set Target Audience </label>
-                                            <span class="help-block small" id="">Specify the rules to identify the audience that you wish to target for this verification.</span>
-                                            <div id="builder-basic"> </div>
-                                            <div class="posting-date" id="posting_date_all" style="display:none;background: white;height: 45px;margin-top: -4px;margin-left: 25px;margin-right: 10px;border: 2px solid #f5f5f5; position:relative">
-                                                <div class="" style="font-style: italic;position: absolute;right: 100px; top:10px;">Verification Start: <a href="#" id="dob" data-type="date" data-pk="1" data-url="/post" data-title="Select date">09/05/2017</a></div>
+                                            <div class="panel-group" id="accordion2">
+                                                <div class="panel panel-default template-add-group">
+                                                    <div class="panel-heading">
+                                                        <p class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse-group1"> Recipient Group 1 </a> </p>
+                                                    </div>
+                                                    <div id="collapse-group1" class="panel-collapse collapse in">
+                                                        <div class="panel-body"> 
+                                                        
+                                                        
+                                                        
+                                                          <div id="builder-basic"> </div>
+                                                          
+                                                          Verification will initiate on <a href="#" id="dob" data-type="date" data-pk="1" data-url="/post" data-title="Select date" class="editable editable-click" data-original-title="" title="">09/05/2017</a> for this group.
+                                                          
+                                                           </div>
+                                                    </div>
+                                                </div>
                                             </div>
+                                            <button class="btn btn-xs btn-default btn-add-group pull-right"> <i class="icon-plus-2"></i>group</button>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                       
+                                          
+                                          
                                             <div class="form-group" style="margin-top:40px">
                                                 <label class="control-label" for="name">Confirmation Leeway</label>
                                                 <span class="help-block small" id=""> Specify the number of days before new users are required to renew this verification.<!-- Note that the posting will only happen within the date range specified above, or when the verification is set to status 'Active'.--></span>
@@ -547,37 +566,48 @@ $(document).ready(function() {
             $('#' + $(this).val()).show();
         });
 		
-    });</script> 
-<script type='text/javascript'>//<![CDATA[
-$(window).load(function(){
-var $template = $(".template");
+    });
+    
+    </script> 
+<script type='text/javascript'>
+    //<![CDATA[
+    $(document).ready(function() {
+        var $template = $(".template-add-data");
+        var hash = 1;
+        $(".btn-add-data").on("click", function() {
+            var $newPanel = $template.clone();
+            $newPanel.find(".collapse").removeClass("in");
+            $newPanel.find(".accordion-toggle").attr("href", "#collapse-data" + (++hash))
+                .text("Section " + hash);
+            $newPanel.find(".panel-collapse").attr("id", "collapse-data" + (hash)).addClass("collapse").removeClass("in");
+            $newPanel.find(".panel-heading").append("<span class='pull-right'><i class='icon-cancel-2 clickable'></i></span>");
+            $("#accordion1").append($newPanel.fadeIn());
+            $(document).on('click', '.icon-cancel-2', function() {
+                $(this).parents('.panel').get(0).remove();
+            });
+        });
 
-var hash = 1;
-$(".btn-add-panel").on("click", function () {
-    var $newPanel = $template.clone();
-    $newPanel.find(".collapse").removeClass("in");
-    $newPanel.find(".accordion-toggle").attr("href",  "#" + (++hash))
-             .text("Section " + hash);
-    $newPanel.find(".panel-collapse").attr("id", hash).addClass("collapse").removeClass("in");
-	
-	
-	
-	$newPanel.find(".panel-heading").append("<span class='pull-right'><i class='icon-cancel-2 clickable'></i></span>");
-	
-	
-    $("#accordion").append($newPanel.fadeIn());
-	
-	
-	$(document).on('click', '.icon-cancel-2', function () {
-    $(this).parents('.panel').get(0).remove();
-});
+    }); //]]>
+</script> 
+<script type='text/javascript'>
+    //<![CDATA[
+    $(window).load(function() {
+        var $template = $(".template-add-group");
+        var hash = 1;
+        $(".btn-add-group").on("click", function() {
+            var $newPanel = $template.clone();
+            $newPanel.find(".collapse").removeClass("in");
+            $newPanel.find(".accordion-toggle").attr("href", "#collapse-group" + (++hash))
+                .text("Recipient Group " + hash);
+            $newPanel.find(".panel-collapse").attr("id", "collapse-group" + (hash)).addClass("collapse").removeClass("in");
+            $newPanel.find(".panel-heading").append("<span class='pull-right'><i class='icon-cancel-2 clickable'></i></span>");
+            $("#accordion2").append($newPanel.fadeIn());
+            $(document).on('click', '.icon-cancel-2', function() {
+                $(this).parents('.panel').get(0).remove();
+            });
+        });
 
-
-
-});
-
-});//]]> 
-
+    }); //]]>
 </script> 
 <script type="text/javascript">
 $(document).ready(function() {
