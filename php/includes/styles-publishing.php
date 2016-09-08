@@ -12,5 +12,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	line-height: 1.1;
 	color: inherit;
 }
+
+.toggle.btn {
+    min-width: 170px;
+ 
+}
+
 </style>
 
