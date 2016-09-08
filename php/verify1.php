@@ -4,6 +4,51 @@
 <html lang="en-us">
 <head>
 <?php include ('includes/head-meta.php') ?>
+<style type="text/css">
+.well .test-loader {
+	background: white;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin-left: -19px;
+	margin-top: -19px;
+	z-index: 10;
+	opacity: 0.8;
+}
+
+
+.well .test-loader:before{
+	font-family:FontAwesome;
+    content:"\f021";
+	position:absolute;
+	top:40%;
+	left:49%;
+	font-size:46px;
+	 animation: spin 2s linear infinite;
+	
+	}
+	
+	
+	
+	
+	@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+	
+.updated {
+	background: #eefbff;
+}
+
+
+
+
+</style>
 <?php include ('includes/styles.php') ?>
 
 
@@ -19,7 +64,12 @@
 <div class="main-content container" role="main">
     <div id="main-content">
         <?php include ('includes/instructions-top.php') ?>
-        <div class="well">
+        <div class="well" style="position:relative">
+        
+        
+        
+        
+        
             <div class="row">
                 <div class="col-xs-6">
                     <h3 class="h4"> Military Status</h3>
@@ -36,18 +86,18 @@
             <p class="verify-desc"> Indiana University periodically invites all employees to update their veteran status. At this time, we ask all employees to review their current status below and click edit if this information is incorrect. Definitions of each veteran category can be seen by clicking the edit button. Data collected will be used for reporting and analysis purposes and will not be used against you in anyway. </p>
             <hr>
             <div class="form-horizontal">
-                <div class="form-group form-group-sm">
+                <div class="form-group form-group-sm" id="test-updated">
                     <label class="col-sm-3 control-label">Military Status:</label>
                     <div class="col-sm-9">
-                        <p class="form-control-static">Not a Veteran </p>
+                        <p class="form-control-static" id="checkmark-here">Not a Veteran  </p>
                     </div>
                 </div>
                 <div class="form-group form-group-sm form-section-control">
-                    <div class="col-sm-offset-2 col-sm-10 text-right"> <a href="#" class="btn btn-xs btn-default">Refresh</a> <a href="#" class="btn btn-xs btn-primary">Edit</a> </div>
+                    <div class="col-sm-offset-2 col-sm-10 text-right"> <!--<a href="#" class="btn btn-xs btn-default">Refresh</a>--> <a href="#" class="btn btn-xs btn-primary">Edit</a> </div>
                 </div>
             </div>
         </div>
-        <div class="well">
+           <div class="well" style="position:relative">
             <div class="row">
                 <div class="col-xs-6">
                     <h3 class="h4">Disabled Status</h3>
@@ -70,7 +120,7 @@
                     </div>
                 </div>
                 <div class="form-group form-group-sm form-section-control">
-                    <div class="col-sm-offset-2 col-sm-10 text-right"> <a href="#" class="btn btn-xs btn-default">Refresh</a> <a href="#" class="btn btn-xs btn-primary">Edit</a> </div>
+                    <div class="col-sm-offset-2 col-sm-10 text-right"> <!--<a href="#" class="btn btn-xs btn-default">Refresh</a>--> <a href="#" class="btn btn-xs btn-primary">Edit</a> </div>
                 </div>
             </div>
         </div>
@@ -85,18 +135,57 @@
                 <div class="radio">
                     <input id="question2" name="question" type="radio" class="with-font" value="sel"/>
                     <label for="question2" class="lead">I choose to verify this information later.<br>
-                        <span style=" font-size:14px; display:block">(verification must be completed within 8 days)</span></label>
+                        <span style=" font-size:14px; display:block">(you may bypass this verification 8 more times)</span></label>
                 </div>
             </fieldset>
             <div class="row">
                 <div class="col-md-12 text-center" style="padding-bottom:15px; padding-top:15px;">
-                    <button class="btn btn-lg btn-primary" id="submit"> Submit</button>
+                <button class="btn btn-lg btn-default" id=""> Refresh</button>     <button class="btn btn-lg btn-primary" id="submit"> Submit</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <?php include ('includes/brand-footer.php') ?>
+
+
+
+
+
+
+
+<script type='text/javascript'>//<![CDATA[
+$(window).load(function(){
+$('.well').prepend("<div class='test-loader'></div>");
+setTimeout(function() {
+  $('.test-loader').fadeOut();
+}, 2000);
+});//]]> 
+
+</script>
+
+
+
+<script>
+    $(document).ready(function() {
+
+$("#test-updated").delay(2000).queue(function(next) {
+  $(this).addClass("updated");
+  $('#checkmark-here').append("<i class='fa fa-check-circle' aria-hidden='true'style='color:#2879b8;margin-left: 5px;'></i>");
+  next();
+});
+
+
+
+
+    });
+	
+</script>
+
+
+
+
+
 <script>
     $(document).ready(function() {
 
