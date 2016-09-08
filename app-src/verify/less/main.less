@@ -1,0 +1,155 @@
+/**
+ * Copyright 2014 Indiana University Research and Technology Corporation
+ */
+ 
+.sidebar-container {
+	float: left;
+	padding-left: 20px;
+	padding-right: 0;
+	width: 275px;
+	.logo.short {
+		margin-top: 0;
+	}
+}
+
+.collection {
+  	font-size:0;
+    margin-right: -5px;
+    margin-left: -5px;
+  	
+  	p {
+  		font-size: 14px;
+  	}
+  }
+
+@media (max-width: @screen-sm-max) {
+  .container {
+    padding-left: 5px;
+    padding-right: 5px;
+    max-width: none;
+  }
+
+
+
+  .row {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+@media (max-width: @screen-xs-max) {
+
+  .collection {
+    margin-right:5px;
+  }
+
+
+  .hidden-inline-xs, .hidden-table-cell-xs, .hidden-inline-block-xs {
+    display: none !important;
+  }
+
+  .visible-inline-xs {
+    display: inline !important;
+  }
+
+  body {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .sub-header {
+    padding-top: 5px;
+  }
+
+  .sidebar-container {
+    padding-left: 5px;
+  }
+
+  .task {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-bottom: 5px;
+    min-height: 45px;
+  }
+
+  .task .image {
+    padding-bottom: 0;
+  }
+
+  header small {
+    font-size: 16pt;
+  }
+
+  header small.searchFilterButton {
+    font-size: 85%;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  h2, .h2 {
+    font-size: 20px;
+  }
+
+  .input-append.input-block-level input {
+    width: 100%;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  h3.category {
+    /*border-bottom: none;
+    padding-bottom: 0px;*/
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .task-collection {
+    padding-top: 5px;
+  }
+
+  .carousel .featured-image-small, .ah-carousel .carousel-item .featured-image-small {
+    margin-right: 15px;
+  }
+
+  .ah-carousel .carousel-item .featured-text {
+    padding: 5px;
+  }
+
+  .main-content ul.breadcrumb {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+
+  .sidebar-container-pub a {
+    font-size: 1em;
+    padding: 8px;
+  }
+
+  .sidebar-container-pub .active  {
+    border-color: #ccc;
+    font-weight: bold;
+  }
+
+  .sidebar-container-pub a.active + a {
+    border-top: none;
+  }
+
+  .ah-carousel .carousel-item h3 {
+    font-size: 1em;
+  }
+
+  .ah-carousel .carousel-item .featured-text p {
+    font-size: 0.8em;
+  }
+}
