@@ -142,26 +142,26 @@ margin-top: 20px;">IU Verify</h1>
                     <section id="create_new" style="display:none">
                         <div class="row section-head">
                             <div class="col-md-12 section-header">
-                                <h3> <i class="icon-left-open-mini" style="    margin: -10px;"></i> Create New Verification</h3>
+                                <h3> Create New Verification</h3>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="stepwizard">
                                     <div class="stepwizard-row setup-panel">
-                                        <div class="stepwizard-step"> <a href="#step-1" type="button" class="btn btn-primary btn-circle"><i class="icon-wrench"></i></a>
+                                        <div class="stepwizard-step"> <a href="#step-1" type="button" class="btn btn-primary btn-circle"><i class="fa fa-wrench" aria-hidden="true"></i></a>
                                             <p>Setup</p>
                                         </div>
-                                        <div class="stepwizard-step"> <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="icon-database"></i></a>
+                                        <div class="stepwizard-step"> <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-database" aria-hidden="true"></i></a>
                                             <p>Data</p>
                                         </div>
-                                        <div class="stepwizard-step"> <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="icon-flash"></i></a>
+                                        <div class="stepwizard-step"> <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-users"></i></a>
                                             <p>Recipients</p>
                                         </div>
-                                        <div class="stepwizard-step"> <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="icon-calendar-3"></i></a>
+                                        <div class="stepwizard-step"> <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-bolt"></i></a>
                                             <p>Activate</p>
                                         </div>
-                                        <div class="stepwizard-step"> <a href="#step-5" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="icon-eye"></i></a>
+                                        <div class="stepwizard-step"> <a href="#step-5" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-eye"></i></a>
                                             <p>Preview/Save</p>
                                         </div>
                                     </div>
@@ -277,11 +277,11 @@ margin-top: 20px;">IU Verify</h1>
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
-                                                            <a href="#" class="addstuff btn btn-xs btn-default pull-right"><i class="icon-plus-2"></i> field group</a> </div>
+                                                            <a href="#" class="addstuff btn btn-xs btn-default pull-right"><i class="fa fa-plus"></i> field group</a> </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button class="btn btn-xs btn-default btn-add-data pull-right"> <i class="icon-plus-2"></i>section</button>
+                                            <button class="btn btn-xs btn-default btn-add-data pull-right"> <i class="fa fa-plus"></i> section</button>
                                         </div>
                                         <div class="col-xs-12 wizard-actions">
                                             <div class="btn-group pull-right" role="group" aria-label="">
@@ -299,33 +299,19 @@ margin-top: 20px;">IU Verify</h1>
                                                         <p class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse-group1"> Recipient Group 1 </a> </p>
                                                     </div>
                                                     <div id="collapse-group1" class="panel-collapse collapse in">
-                                                        <div class="panel-body"> 
-                                                        
-                                                        
-                                                        
-                                                          <div id="builder-basic"> </div>
-                                                          
-                                                          Verification will initiate on <a href="#" id="dob" data-type="date" data-pk="1" data-url="/post" data-title="Select date" class="editable editable-click" data-original-title="" title="">09/05/2017</a> for this group.
-                                                          
-                                                           </div>
+                                                        <div class="panel-body">
+                                                            <div id="builder-basic"> </div>
+                                                            Verification will begin on <a href="#" id="dob" data-type="date" data-pk="1" data-url="/post" data-title="Select date" class="editable editable-click" data-original-title="" title="">09/05/2017</a> for this group. </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button class="btn btn-xs btn-default btn-add-group pull-right"> <i class="icon-plus-2"></i>group</button>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                       
-                                          
-                                          
+                                            <button class="btn btn-xs btn-default btn-add-group pull-right"> <i class="fa fa-plus"></i> group</button>
                                             <div class="form-group" style="margin-top:40px">
-                                                <label class="control-label" for="name">Confirmation Leeway</label>
+                                                <label class="control-label" for="name">New User Leeway</label>
                                                 <span class="help-block small" id=""> Specify the number of days before new users are required to renew this verification.<!-- Note that the posting will only happen within the date range specified above, or when the verification is set to status 'Active'.--></span>
                                                 <div class="row">
                                                     <div class="col-xs-3">
-                                                        <input class="form-control" id="name" name="name" type="text"  required="required"/>
+                                                        <input class="form-control" id="name" name="name" type="text"/>
                                                     </div>
                                                     <!-- <div class="col-xs-5" style="padding-left:0px">
                                                                 <div class="checkbox small">
@@ -335,14 +321,6 @@ margin-top: 20px;">IU Verify</h1>
                                                                 </div>
                                                             </div>--> 
                                                 </div>
-                                            </div>
-                                            <div class="form-group ">
-                                                <label class="control-label " for=""> Verification Recurrance </label>
-                                                <span class="help-block small" id=""> Select whether this verification will be posted annualy, or only once </span>
-                                                <select class="select form-control" id="" name="select" style="width:200px">
-                                                    <option value=""> Annually</option>
-                                                    <option value="">One Time </option>
-                                                </select>
                                             </div>
                                         </div>
                                         <div class="col-xs-12 wizard-actions">
@@ -354,9 +332,29 @@ margin-top: 20px;">IU Verify</h1>
                                     </div>
                                     <div class="row setup-content" id="step-4">
                                         <div class="col-xs-12">
-                                            <p class="lead"> Activate</p>
+                                            <p class="lead"> Scheduling</p>
                                             <div class="row">
-                                                <div class="col-xs-12">
+                                                <div class="col-xs-12"><br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
+                                                    <br>
                                                     <label class="control-label"> Active Date Range/Status <span class="small text-muted" style="font-weight:normal">(currently active)</span> </label>
                                                     <span class="help-block small" id=""> Specify the date range for this verification to be active, and the specific date of posting for the verification.</span>
                                                     <div class="radio">
@@ -395,6 +393,14 @@ margin-top: 20px;">IU Verify</h1>
                                                                 <input type="text" class="form-control col-xs-6" id="" >
                                                             </div>
                                                         </div>
+                                                    </div>
+                                                    <div class="form-group ">
+                                                        <label class="control-label " for=""> Verification Recurrance </label>
+                                                        <span class="help-block small" id=""> Select whether this verification will be posted annualy, or only once </span>
+                                                        <select class="select form-control" id="" name="select" style="width:200px">
+                                                            <option value=""> Annually</option>
+                                                            <option value="">One Time </option>
+                                                        </select>
                                                     </div>
                                                 </div>
                                             </div>
@@ -580,9 +586,9 @@ $(document).ready(function() {
             $newPanel.find(".accordion-toggle").attr("href", "#collapse-data" + (++hash))
                 .text("Section " + hash);
             $newPanel.find(".panel-collapse").attr("id", "collapse-data" + (hash)).addClass("collapse").removeClass("in");
-            $newPanel.find(".panel-heading").append("<span class='pull-right'><i class='icon-cancel-2 clickable'></i></span>");
+            $newPanel.find(".panel-heading").append("<span class='pull-right'><i class='fa fa-close clickable'></i></span>");
             $("#accordion1").append($newPanel.fadeIn());
-            $(document).on('click', '.icon-cancel-2', function() {
+            $(document).on('click', '.fa.fa-close', function() {
                 $(this).parents('.panel').get(0).remove();
             });
         });
@@ -600,9 +606,9 @@ $(document).ready(function() {
             $newPanel.find(".accordion-toggle").attr("href", "#collapse-group" + (++hash))
                 .text("Recipient Group " + hash);
             $newPanel.find(".panel-collapse").attr("id", "collapse-group" + (hash)).addClass("collapse").removeClass("in");
-            $newPanel.find(".panel-heading").append("<span class='pull-right'><i class='icon-cancel-2 clickable'></i></span>");
+            $newPanel.find(".panel-heading").append("<span class='pull-right'><i class='fa fa-close clickable'></i></span>");
             $("#accordion2").append($newPanel.fadeIn());
-            $(document).on('click', '.icon-cancel-2', function() {
+            $(document).on('click', '.fa.fa-close', function() {
                 $(this).parents('.panel').get(0).remove();
             });
         });
