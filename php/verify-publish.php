@@ -38,9 +38,9 @@ label {
 	color: #cccccc;
 }
 .wizard-actions {
-	background: #f5f5f5;
+	border-top: solid 1px #dddddd;
 	margin-bottom: -29px;
-	margin-top: 20px;
+	margin-top: 50px;
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
@@ -67,6 +67,12 @@ label {
 }
 .panel-group .panel .panel-heading {
 	position: relative;
+}
+.vfy-activate .btn-lg {
+	padding: 7px 16px;
+}
+.vfy-activate .btn:active, .btn.active {
+	box-shadow: none;
 }
 </style>
 <?php include ('includes/scripts.php') ?>
@@ -158,8 +164,8 @@ margin-top: 20px;">IU Verify</h1>
                                         <div class="stepwizard-step"> <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-users"></i></a>
                                             <p>Recipients</p>
                                         </div>
-                                        <div class="stepwizard-step"> <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-bolt"></i></a>
-                                            <p>Activate</p>
+                                        <div class="stepwizard-step"> <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-calendar"></i></a>
+                                            <p>Scheduling</p>
                                         </div>
                                         <div class="stepwizard-step"> <a href="#step-5" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-eye"></i></a>
                                             <p>Preview/Save</p>
@@ -334,73 +340,31 @@ margin-top: 20px;">IU Verify</h1>
                                         <div class="col-xs-12">
                                             <p class="lead"> Scheduling</p>
                                             <div class="row">
-                                                <div class="col-xs-12"><br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
-                                                    <label class="control-label"> Active Date Range/Status <span class="small text-muted" style="font-weight:normal">(currently active)</span> </label>
-                                                    <span class="help-block small" id=""> Specify the date range for this verification to be active, and the specific date of posting for the verification.</span>
-                                                    <div class="radio">
-                                                        <label>
-                                                            <input type="radio" name="activate" id="optionsRadios1" value="1">
-                                                            Specify by Status </label>
-                                                    </div>
-                                                    <div class="radio">
-                                                        <label>
-                                                            <input type="radio" name="activate" id="optionsRadios2" value="2">
-                                                            Specify by Date Range </label>
-                                                    </div>
-                                                    <div class="form-group activate-option"  style="display:none" id="activate1">
+                                                <div class="col-xs-12">
+                                                    <div class="well well-sm vfy-activate" style="background:#F5F5F5">
                                                         <div class="row">
-                                                            <div class="col-xs-12">
-                                                                <label for="">Status</label>
-                                                            </div>
-                                                            <div class="col-xs-6">
-                                                                <select class="select form-control" id="" name="select">
-                                                                    <option value="Active"> Active </option>
-                                                                    <option value="Inactive"> Inactive </option>
-                                                                </select>
+                                                            <div class="col-md-8" style="padding-top:5px;">
+                                                                <label class="control-label" style="font-weight:normal; margin-bottom:0px"> Verification Status </label>
+                                                                <span class="help-block small" id=""> Specify the status of this verification upon saving.</span> </div>
+                                                            <div class="col-md-4 text-right" style="    padding-top: 8px;">
+                                                                <input id="toggle_status" type="checkbox" checked data-toggle="toggle" data-on="Active" data-off="Inactive" data-onstyle="primary" data-offstyle="default" data-size="large">
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row activate-option" style="display:none; margin-bottom:15px" id="activate2">
-                                                        <div class="col-xs-3">
-                                                            <div class="form-group">
-                                                                <label for="">Begin</label>
-                                                                <input type="text" class="form-control col-xs-6" id="" >
-                                                            </div>
+                                                    <div class="hideable">
+                                                        <div class="form-group ">
+                                                            <label class="control-label " for=""> Verification Recurrance </label>
+                                                            <span class="help-block small" id=""> Select whether this verification will be posted annually, or only once. </span>
+                                                            <select class="select form-control" id="vfy_recurrance" name="select" style="width:200px">
+                                                                <option value="" selected>One Time </option>
+                                                                <option name="annual" value="annual">Annually</option>
+                                                            </select>
                                                         </div>
-                                                        <div class="col-xs-3">
-                                                            <div class="form-group">
-                                                                <label for="">End</label>
-                                                                <input type="text" class="form-control col-xs-6" id="" >
-                                                            </div>
+                                                        <div class="form-group " id="select_end_date">
+                                                            <label class="control-label " for=""> Verification End Date <span class="small" style="font-weight:normal">(optional)</span></label>
+                                                            <span class="help-block small" id=""> Choose an ending date for this verification. </span>
+                                                            <input type="text" class="form-control" style="width:200px" >
                                                         </div>
-                                                    </div>
-                                                    <div class="form-group ">
-                                                        <label class="control-label " for=""> Verification Recurrance </label>
-                                                        <span class="help-block small" id=""> Select whether this verification will be posted annualy, or only once </span>
-                                                        <select class="select form-control" id="" name="select" style="width:200px">
-                                                            <option value=""> Annually</option>
-                                                            <option value="">One Time </option>
-                                                        </select>
                                                     </div>
                                                 </div>
                                             </div>
@@ -417,21 +381,36 @@ margin-top: 20px;">IU Verify</h1>
                                             <p class="lead"> Preview/Save</p>
                                             <hr>
                                             <label class="control-label"> Verification Message Preview </label>
-                                            <p> The content and layout of this verification may be previewed in a new window <a href="verify-preview.php" target="_blank">here</a>.</p>
+                                            <p> The content and layout of this verification may be previewed in a new window.</p>
+                                            <p><a href="verify-preview.php" class="btn btn-xs btn-default" target="_blank">Preview</a></p>
                                             <hr>
                                             <label class="control-label"> Verification Recipients </label>
-                                            <p>The following users will be targeted for this verification if they meet ALL of the following criteria: </p>
+                                            <p>The following recipient groups will receive this verification </p>
                                             <ul>
-                                                <li> Group ID contains: BL-UITS </li>
-                                                <li> Role ID is not: Student </li>
+                                                <li> Recipient Group 1
+                                                    <ul>
+                                                        
+                                                        <li> Role ID is: Student </li>
+                                                          <li> Role ID is: Staff </li>
+                                                        <li> Verification to be sent on 09/23/2016</li>
+                                                    </ul>
+                                                </li>
+                                               <li> Recipient Group 2
+                                                    <ul>
+                                                        
+                                                        <li> Role ID is: Faculty </li>
+                                                          
+                                                        <li> Verification to be sent on 10/23/2016</li>
+                                                    </ul>
+                                                </li>
                                             </ul>
                                             <hr>
                                             <label class="control-label"> Verification Scheduling </label>
-                                            <p>This verification will be activated and posted according to the following dates:</p>
+                                            <p>The scheduling for this verification is as follows:</p>
                                             <ul>
-                                                <li> Verification Active Dates: 08/28/2016 - 08/28/2020 </li>
-                                                <li> Verification Post Date: 09/15/YYYY </li>
-                                                <li> Recurs Annually: yes </li>
+                                                <li> Status: Active</li>
+                                                <li> Recurrance: Annually</li>
+                                                <li> Recurrance Date: 12/14 of every year. </li>
                                             </ul>
                                         </div>
                                         <div class="col-xs-12 wizard-actions">
@@ -561,20 +540,40 @@ $(document).ready(function() {
     });
 </script> 
 <script>
-      $(document).ready(function() {
-        $('#verify_now_select').change(function(){
+    $(document).ready(function() {
+        $('#verify_now_select').change(function() {
             $('#verify_now_custom, #verify_now_standard').hide();
             $('#' + $(this).val()).show();
         });
-		
-		 $('#verify_later_select').change(function(){
+
+        $('#verify_later_select').change(function() {
             $('#verify_later_custom, #verify_later_standard').hide();
             $('#' + $(this).val()).show();
         });
-		
     });
-    
-    </script> 
+</script> 
+<script type='text/javascript'>
+    $(document).ready(function() {
+        $(function() {
+            $('#select_end_date').hide();
+            $('#vfy_recurrance').change(function() {
+                if ($('#vfy_recurrance').val() == 'annual') {
+                    $('#select_end_date').show();
+                } else {
+                    $('#select_end_date').hide();
+                }
+            });
+        });
+    });
+</script> 
+<script>
+  $(function() {
+    $('#toggle_status').change(function() {
+	
+       $('.hideable').fadeToggle();
+    })
+  })
+</script> 
 <script type='text/javascript'>
     //<![CDATA[
     $(document).ready(function() {
