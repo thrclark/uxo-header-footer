@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="form-group form-group-sm form-section-control">
-                    <div class="col-sm-offset-2 col-sm-10 text-right"> <a href="#" class="btn btn-xs btn-default" id="refresh">Refresh</a> <a href="#" class="btn btn-xs btn-primary">Edit</a> </div>
+                    <div class="col-sm-offset-2 col-sm-10 text-right"> <!--<a href="#" class="btn btn-xs btn-default" id="refresh">Refresh</a>--> <a href="#" class="btn btn-xs btn-primary">Edit</a> </div>
                 </div>
                 <div class="form-group form-group-sm">
                     <div class="col-sm-3 control-label">Non-IU Email:</div>
@@ -77,7 +77,7 @@
                     </div>
                 </div>
                 <div class="form-group form-group-sm form-section-control">
-                    <div class="col-sm-offset-2 col-sm-10 text-right"> <a href="#" class="btn btn-xs btn-default">Refresh</a> <a href="#" class="btn btn-xs btn-primary">Edit</a> </div>
+                    <div class="col-sm-offset-2 col-sm-10 text-right"> <!--<a href="#" class="btn btn-xs btn-default">Refresh</a>--> <a href="#" class="btn btn-xs btn-primary">Edit</a> </div>
                 </div>
             </div>
         </div>
@@ -92,12 +92,12 @@
                 <div class="radio">
                     <input id="question2" name="question" type="radio" class="with-font" value="sel"/>
                     <label for="question2" class="lead">I choose to verify this information later.<br>
-                        <span style=" font-size:14px; display:block">(verification must be completed within 8 days)</span></label>
+                        <span style=" font-size:14px; display:block">(you may bypass this verification 8 more times)</span></label>
                 </div>
             </fieldset>
             <div class="row">
                 <div class="col-md-12 text-center" style="padding-bottom:15px; padding-top:15px;">
-                    <button class="btn btn-lg btn-primary" id="submit"> Submit</button>
+                     <button class="btn btn-lg btn-default" id=""> Refresh</button>  <button class="btn btn-lg btn-primary" id="submit"> Submit</button>
                 </div>
             </div>
         </div>
