@@ -15,47 +15,28 @@
 	z-index: 10;
 	opacity: 0.8;
 }
-
-
-.well .test-loader:before{
-	font-family:FontAwesome;
-    content:"\f021";
-	position:absolute;
-	top:40%;
-	left:49%;
-	font-size:46px;
-	 animation: spin 2s linear infinite;
-	
-	}
-	
-	
-	
-	
-	@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+.well .test-loader:before {
+	font-family: FontAwesome;
+	content: "\f1ce";
+	position: absolute;
+	top: 40%;
+	left: 49%;
+	font-size: 46px;
+	animation: spin 2s linear infinite;
 }
-
-
-
-
-
-	
+ @keyframes spin {
+ 0% {
+transform: rotate(0deg);
+}
+ 100% {
+transform: rotate(360deg);
+}
+}
 .updated {
 	background: #eefbff;
 }
-
-
-
-
 </style>
 <?php include ('includes/styles.php') ?>
-
-
-
-
-
-
 <?php include ('includes/scripts.php') ?>
 </head>
 <body id="top" >
@@ -65,11 +46,6 @@
     <div id="main-content">
         <?php include ('includes/instructions-top.php') ?>
         <div class="well" style="position:relative">
-        
-        
-        
-        
-        
             <div class="row">
                 <div class="col-xs-6">
                     <h3 class="h4"> Military Status</h3>
@@ -89,7 +65,7 @@
                 <div class="form-group form-group-sm" id="test-updated">
                     <label class="col-sm-3 control-label">Military Status:</label>
                     <div class="col-sm-9">
-                        <p class="form-control-static" id="checkmark-here">Not a Veteran  </p>
+                        <p class="form-control-static" id="checkmark-here">Not a Veteran </p>
                     </div>
                 </div>
                 <div class="form-group form-group-sm form-section-control">
@@ -97,7 +73,7 @@
                 </div>
             </div>
         </div>
-           <div class="well" style="position:relative">
+        <div class="well" style="position:relative">
             <div class="row">
                 <div class="col-xs-6">
                     <h3 class="h4">Disabled Status</h3>
@@ -140,20 +116,14 @@
             </fieldset>
             <div class="row">
                 <div class="col-md-12 text-center" style="padding-bottom:15px; padding-top:15px;">
-                <button class="btn btn-lg btn-default" id=""> Refresh</button>     <button class="btn btn-lg btn-primary" id="submit"> Submit</button>
+                    <button class="btn btn-lg btn-default" id=""> Refresh</button>
+                    <button class="btn btn-lg btn-primary" id="submit"> Submit</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <?php include ('includes/brand-footer.php') ?>
-
-
-
-
-
-
-
 <script type='text/javascript'>//<![CDATA[
 $(window).load(function(){
 $('.well').prepend("<div class='test-loader'></div>");
@@ -162,10 +132,7 @@ setTimeout(function() {
 }, 2000);
 });//]]> 
 
-</script>
-
-
-
+</script> 
 <script>
     $(document).ready(function() {
 
@@ -180,12 +147,7 @@ $("#test-updated").delay(2000).queue(function(next) {
 
     });
 	
-</script>
-
-
-
-
-
+</script> 
 <script>
     $(document).ready(function() {
 
