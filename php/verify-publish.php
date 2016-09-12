@@ -389,17 +389,14 @@ margin-top: 20px;">IU Verify</h1>
                                             <ul>
                                                 <li> Recipient Group 1
                                                     <ul>
-                                                        
                                                         <li> Role ID is: Student </li>
-                                                          <li> Role ID is: Staff </li>
+                                                        <li> Role ID is: Staff </li>
                                                         <li> Verification to be sent on 09/23/2016</li>
                                                     </ul>
                                                 </li>
-                                               <li> Recipient Group 2
+                                                <li> Recipient Group 2
                                                     <ul>
-                                                        
                                                         <li> Role ID is: Faculty </li>
-                                                          
                                                         <li> Verification to be sent on 10/23/2016</li>
                                                     </ul>
                                                 </li>
@@ -484,7 +481,6 @@ $(document).ready(function() {
     });
     //# sourceURL=pen.js
 </script> 
- 
 <script>
     $(document).ready(function() {
 
@@ -543,7 +539,6 @@ $(document).ready(function() {
         });
     });
 </script> 
-
 <script>
   $(function() {
     $('#toggle_status').change(function() {

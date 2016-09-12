@@ -148,7 +148,6 @@ $("#test-updated").delay(2000).queue(function(next) {
     });
 	
 </script> 
- 
 <script type="text/javascript">
     $(function () {
 		$('#birthdate').datetimepicker({

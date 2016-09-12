@@ -1,6 +1,6 @@
 
 <div class="modal fade" id="verify_error" tabindex="-1" role="dialog" aria-labelledby="modalPaycheckLabel" aria-hidden="true">
-   <div class="modal-dialog modal-error">
+    <div class="modal-dialog modal-error">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
