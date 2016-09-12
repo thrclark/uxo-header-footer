@@ -552,20 +552,7 @@ $(document).ready(function() {
         });
     });
 </script> 
-<script type='text/javascript'>
-    $(document).ready(function() {
-        $(function() {
-            $('#select_end_date').hide();
-            $('#vfy_recurrance').change(function() {
-                if ($('#vfy_recurrance').val() == 'annual') {
-                    $('#select_end_date').show();
-                } else {
-                    $('#select_end_date').hide();
-                }
-            });
-        });
-    });
-</script> 
+
 <script>
   $(function() {
     $('#toggle_status').change(function() {
