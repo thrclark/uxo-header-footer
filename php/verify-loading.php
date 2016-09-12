@@ -148,17 +148,7 @@ $("#test-updated").delay(2000).queue(function(next) {
     });
 	
 </script> 
-<script>
-    $(document).ready(function() {
-
-        $('.nav-tabs-responsive').tabCollapse();
-		$('.nav-tabs-responsive').on('shown-tabs.bs.tabcollapse', function(){
-    		$('.nav-tabs-responsive a:first').tab('show')
-});
-
-    });
-	
-</script> 
+ 
 <script type="text/javascript">
     $(function () {
 		$('#birthdate').datetimepicker({

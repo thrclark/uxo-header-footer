@@ -484,16 +484,7 @@ $(document).ready(function() {
     });
     //# sourceURL=pen.js
 </script> 
-<script>
-    $(document).ready(function() {
-
-        $('.nav-tabs-responsive').tabCollapse();
-        $('.nav-tabs-responsive').on('shown-tabs.bs.tabcollapse', function() {
-            $('.nav-tabs-responsive a:first').tab('show')
-        });
-
-    });
-</script> 
+ 
 <script>
     $(document).ready(function() {
 
