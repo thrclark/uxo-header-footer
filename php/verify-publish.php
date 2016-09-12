@@ -389,17 +389,14 @@ margin-top: 20px;">IU Verify</h1>
                                             <ul>
                                                 <li> Recipient Group 1
                                                     <ul>
-                                                        
                                                         <li> Role ID is: Student </li>
-                                                          <li> Role ID is: Staff </li>
+                                                        <li> Role ID is: Staff </li>
                                                         <li> Verification to be sent on 09/23/2016</li>
                                                     </ul>
                                                 </li>
-                                               <li> Recipient Group 2
+                                                <li> Recipient Group 2
                                                     <ul>
-                                                        
                                                         <li> Role ID is: Faculty </li>
-                                                          
                                                         <li> Verification to be sent on 10/23/2016</li>
                                                     </ul>
                                                 </li>
@@ -487,16 +484,6 @@ $(document).ready(function() {
 <script>
     $(document).ready(function() {
 
-        $('.nav-tabs-responsive').tabCollapse();
-        $('.nav-tabs-responsive').on('shown-tabs.bs.tabcollapse', function() {
-            $('.nav-tabs-responsive a:first').tab('show')
-        });
-
-    });
-</script> 
-<script>
-    $(document).ready(function() {
-
         var navListItems = $('div.setup-panel div a'),
             allWells = $('.setup-content'),
             allNextBtn = $('.nextBtn');
@@ -552,7 +539,6 @@ $(document).ready(function() {
         });
     });
 </script> 
-
 <script>
   $(function() {
     $('#toggle_status').change(function() {

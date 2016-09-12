@@ -81,14 +81,16 @@
                 </div>
             </div>
         </div>
-        <div class="submission">      <?php include ('includes/instructions-bottom.php') ?>
+        <div class="submission">
+            <?php include ('includes/instructions-bottom.php') ?>
             <div class="radio">
                 <input id="box1" type="checkbox" class="with-font" />
                 <label for="box1" class="lead">I have verified that the above information is up to date and correct.</label>
             </div>
             <div class="row">
                 <div class="col-md-12 text-center" style="padding-bottom:15px; padding-top:15px;">
-                      <button class="btn btn-lg btn-default" id=""> Refresh</button>  <button class="btn btn-lg btn-primary" id="submit" data-toggle="modal" data-target="#verify_error"> Submit</button>
+                    <button class="btn btn-lg btn-default" id=""> Refresh</button>
+                    <button class="btn btn-lg btn-primary" id="submit" data-toggle="modal" data-target="#verify_error"> Submit</button>
                 </div>
             </div>
         </div>
@@ -96,6 +98,5 @@
 </div>
 <?php include ('includes/brand-footer.php') ?>
 <?php include ('modal/verify-error.php') ?>
-
 </body>
 </html>
