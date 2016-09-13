@@ -16,16 +16,5 @@
     </div>
 </div>
 <?php include ('includes/brand-footer.php') ?>
-<script>
-    $(document).ready(function() {
-
-        $('.nav-tabs-responsive').tabCollapse();
-		$('.nav-tabs-responsive').on('shown-tabs.bs.tabcollapse', function(){
-    		$('.nav-tabs-responsive a:first').tab('show')
-});
-
-    });
-	
-</script>
 </body>
 </html>

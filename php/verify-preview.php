@@ -28,55 +28,54 @@
             <div class="form-horizontal">
                 <div class="alert alert-danger" role="alert" id="alert-error" style="display:none">Some items in this section have not been fully verified. Select 'edit' to complete verification, and then refresh this section.</div>
                 <div class="form-group form-group-sm">
-                    <div class="col-sm-3 control-label">IU Office:</div>
+                    <div class="col-sm-3 control-label">Label:</div>
                     <div class="col-sm-9">
-                        <p class="form-control-static">812-855-5555</p>
+                        <p class="form-control-static">xxxxxxxxxx</p>
                     </div>
                 </div>
                 <div class="form-group form-group-sm">
-                    <div class="col-sm-3 control-label">Home:</div>
+                    <div class="col-sm-3 control-label">Label:</div>
                     <div class="col-sm-9">
-                        <p class="form-control-static">812-336-0510</p>
+                        <p class="form-control-static">xxxxxxxxxx</p>
                     </div>
                 </div>
                 <div class="form-group form-group-sm">
-                    <div class="col-sm-3 control-label">Secondary Home:</div>
+                    <div class="col-sm-3 control-label">Label:</div>
                     <div class="col-sm-9">
-                        <p class="form-control-static">Not Specified</p>
+                        <p class="form-control-static">xxxxxxxxxx</p>
                     </div>
                 </div>
                 <div class="form-group form-group-sm">
-                    <div class="col-sm-3 control-label">Mobile 1:</div>
+                    <div class="col-sm-3 control-label">Label:</div>
                     <div class="col-sm-9">
-                        <p class="form-control-static">812-369-9664</p>
+                        <p class="form-control-static">xxxxxxxxxx</p>
                     </div>
                 </div>
                 <div class="form-group form-group-sm">
-                    <div class="col-sm-3 control-label">Mobile 2:</div>
+                    <div class="col-sm-3 control-label">Label:</div>
                     <div class="col-sm-9">
-                        <p class="form-control-static">Not Specified</p>
-                    </div>
-                </div>
-                <div class="form-group form-group-sm">
-                    <div class="col-sm-3 control-label">Mobile 3:</div>
-                    <div class="col-sm-9">
-                        <p class="form-control-static">Not Specified</p>
+                        <p class="form-control-static">xxxxxxxxxx</p>
                     </div>
                 </div>
                 <div class="form-group form-group-sm form-section-control">
                     <div class="col-sm-offset-2 col-sm-10 text-right"> <!--<a href="#" class="btn btn-xs btn-default" id="refresh">Refresh</a>--> <a href="#" class="btn btn-xs btn-primary">Edit</a> </div>
                 </div>
                 <div class="form-group form-group-sm">
-                    <div class="col-sm-3 control-label">Non-IU Email:</div>
+                    <div class="col-sm-3 control-label">Label:</div>
                     <div class="col-sm-9">
-                        <p class="form-control-static">thrclark@gmail.com</p>
+                        <p class="form-control-static">xxxxxxxxxx</p>
                     </div>
                 </div>
                 <div class="form-group form-group-sm">
-                    <div class="col-sm-3 control-label">Recieve notices from:</div>
+                    <div class="col-sm-3 control-label">Label:</div>
                     <div class="col-sm-9">
-                        <p class="form-control-static">IU Bloomington<br>
-                            IU Kokomo </p>
+                        <p class="form-control-static">xxxxxxxxxx</p>
+                    </div>
+                </div>
+                <div class="form-group form-group-sm">
+                    <div class="col-sm-3 control-label">Label:</div>
+                    <div class="col-sm-9">
+                        <p class="form-control-static">xxxxxxxxxx</p>
                     </div>
                 </div>
                 <div class="form-group form-group-sm form-section-control">
@@ -100,7 +99,8 @@
             </fieldset>
             <div class="row">
                 <div class="col-md-12 text-center" style="padding-bottom:15px; padding-top:15px;">
-                    <button class="btn btn-lg btn-default" id=""> Refresh</button>   <button class="btn btn-lg btn-primary" id="submit"> Submit</button>
+                    <button class="btn btn-lg btn-default" id=""> Refresh</button>
+                    <button class="btn btn-lg btn-primary" id="submit"> Submit</button>
                 </div>
             </div>
         </div>
