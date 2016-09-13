@@ -5,33 +5,6 @@
 <head>
 <?php include ('includes/head-meta.php') ?>
 <style type="text/css">
-.well .test-loader {
-	background: white;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	margin-left: -19px;
-	margin-top: -19px;
-	z-index: 10;
-	opacity: 0.8;
-}
-.well .test-loader:before {
-	font-family: FontAwesome;
-	content: "\f1ce";
-	position: absolute;
-	top: 40%;
-	left: 49%;
-	font-size: 46px;
-	animation: spin 2s linear infinite;
-}
- @keyframes spin {
- 0% {
-transform: rotate(0deg);
-}
- 100% {
-transform: rotate(360deg);
-}
-}
 .updated {
 	background: #eefbff;
 }
@@ -45,7 +18,7 @@ transform: rotate(360deg);
 <div class="main-content container" role="main">
     <div id="main-content">
         <?php include ('includes/instructions-top.php') ?>
-        <div class="well" style="position:relative">
+        <div class="well vfy-group">
             <div class="row">
                 <div class="col-xs-6">
                     <h3 class="h4"> Military Status</h3>
@@ -69,11 +42,11 @@ transform: rotate(360deg);
                     </div>
                 </div>
                 <div class="form-group form-group-sm form-section-control">
-                    <div class="col-sm-offset-2 col-sm-10 text-right"> <a href="#" class="btn btn-xs btn-default">Refresh</a><a href="#" class="btn btn-xs btn-primary">Edit</a> </div>
+                    <div class="col-sm-offset-2 col-sm-10 text-right"> <!--<a href="#" class="btn btn-xs btn-default">Refresh</a>--> <a href="#" class="btn btn-xs btn-primary edit-group">Edit</a> </div>
                 </div>
             </div>
         </div>
-        <div class="well" style="position:relative">
+        <div class="well vfy-group">
             <div class="row">
                 <div class="col-xs-6">
                     <h3 class="h4">Disabled Status</h3>
@@ -96,7 +69,7 @@ transform: rotate(360deg);
                     </div>
                 </div>
                 <div class="form-group form-group-sm form-section-control">
-                    <div class="col-sm-offset-2 col-sm-10 text-right"> <a href="#" class="btn btn-xs btn-default">Refresh</a><a href="#" class="btn btn-xs btn-primary">Edit</a> </div>
+                    <div class="col-sm-offset-2 col-sm-10 text-right"> <!--<a href="#" class="btn btn-xs btn-default">Refresh</a>--> <a href="#" class="btn btn-xs btn-primary edit-group">Edit</a> </div>
                 </div>
             </div>
         </div>
@@ -116,7 +89,6 @@ transform: rotate(360deg);
             </fieldset>
             <div class="row">
                 <div class="col-md-12 text-center" style="padding-bottom:15px; padding-top:15px;">
-                  
                     <button class="btn btn-lg btn-primary" id="submit"> Submit</button>
                 </div>
             </div>
@@ -124,47 +96,21 @@ transform: rotate(360deg);
     </div>
 </div>
 <?php include ('includes/brand-footer.php') ?>
-<script type='text/javascript'>//<![CDATA[
-$(window).load(function(){
-$('.well').prepend("<div class='test-loader'></div>");
-setTimeout(function() {
-  $('.test-loader').fadeOut();
-}, 2000);
-});//]]> 
-
+<script type='text/javascript'>
+    $(window).load(function() {
+        $('.well').prepend("<div class='overlay-loader'></div>");
+        setTimeout(function() {
+            $('.overlay-loader').fadeOut();
+        }, 2000);
+    });
 </script> 
 <script>
     $(document).ready(function() {
 
-$("#test-updated").delay(2000).queue(function(next) {
-  $(this).addClass("updated");
-  $('#checkmark-here').append("<i class='fa fa-check-circle' aria-hidden='true'style='color:#2879b8;margin-left: 5px;'></i>");
-  next();
-});
-
-
-
-
-    });
-	
-</script> 
-<script type="text/javascript">
-    $(function () {
-		$('#birthdate').datetimepicker({
-			format: 'MM/DD/YYYY'
-			});
-        $('#datetimepicker6').datetimepicker({
-			format: 'MM/DD/YYYY'
-			});
-        $('#datetimepicker7').datetimepicker({
-			format: 'MM/DD/YYYY',
-            useCurrent: false //Important! See issue #1075
-        });
-        $("#datetimepicker6").on("dp.change", function (e) {
-            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
-        });
-        $("#datetimepicker7").on("dp.change", function (e) {
-            $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+        $("#test-updated").delay(2000).queue(function(next) {
+            $(this).addClass("updated");
+            $('#checkmark-here').append("<i class='fa fa-check-circle' aria-hidden='true'style='color:#2879b8;margin-left: 5px;'></i>");
+            next();
         });
     });
 </script>
