@@ -69,7 +69,7 @@ transform: rotate(360deg);
                     </div>
                 </div>
                 <div class="form-group form-group-sm form-section-control">
-                    <div class="col-sm-offset-2 col-sm-10 text-right"> <!--<a href="#" class="btn btn-xs btn-default">Refresh</a>--> <a href="#" class="btn btn-xs btn-primary">Edit</a> </div>
+                    <div class="col-sm-offset-2 col-sm-10 text-right"> <a href="#" class="btn btn-xs btn-default">Refresh</a><a href="#" class="btn btn-xs btn-primary">Edit</a> </div>
                 </div>
             </div>
         </div>
@@ -96,7 +96,7 @@ transform: rotate(360deg);
                     </div>
                 </div>
                 <div class="form-group form-group-sm form-section-control">
-                    <div class="col-sm-offset-2 col-sm-10 text-right"> <!--<a href="#" class="btn btn-xs btn-default">Refresh</a>--> <a href="#" class="btn btn-xs btn-primary">Edit</a> </div>
+                    <div class="col-sm-offset-2 col-sm-10 text-right"> <a href="#" class="btn btn-xs btn-default">Refresh</a><a href="#" class="btn btn-xs btn-primary">Edit</a> </div>
                 </div>
             </div>
         </div>
@@ -116,7 +116,7 @@ transform: rotate(360deg);
             </fieldset>
             <div class="row">
                 <div class="col-md-12 text-center" style="padding-bottom:15px; padding-top:15px;">
-                    <button class="btn btn-lg btn-default" id=""> Refresh</button>
+                  
                     <button class="btn btn-lg btn-primary" id="submit"> Submit</button>
                 </div>
             </div>
