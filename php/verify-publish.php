@@ -65,6 +65,9 @@ label {
 .panel-group .panel .panel-heading .panel-title a {
 	display: block;
 }
+.panel-group .panel .panel-heading .panel-title a:hover {
+	text-decoration: none;
+}
 .panel-group .panel .panel-heading {
 	position: relative;
 }
@@ -73,6 +76,20 @@ label {
 }
 .vfy-activate .btn:active, .btn.active {
 	box-shadow: none;
+}
+.review-item {
+	padding-left: 75px;
+	position: relative;
+}
+.review-item .fa {
+	position: absolute;
+	left: 15px;
+	font-size: 36px;
+	top: -5px;
+	color: #73a8d1;
+}
+.review-item .review-title {
+	font-weight: bold;
 }
 </style>
 <?php include ('includes/scripts.php') ?>
@@ -168,7 +185,7 @@ margin-top: 20px;">IU Verify</h1>
                                             <p>Scheduling</p>
                                         </div>
                                         <div class="stepwizard-step"> <a href="#step-5" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-eye"></i></a>
-                                            <p>Preview/Save</p>
+                                            <p>Review/Save</p>
                                         </div>
                                     </div>
                                 </div>
@@ -232,7 +249,7 @@ margin-top: 20px;">IU Verify</h1>
                                             <div class="panel-group" id="accordion1">
                                                 <div class="panel panel-default template-add-data">
                                                     <div class="panel-heading">
-                                                        <p class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse-data1"> Section 1 </a> </p>
+                                                        <p class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse-data1"> Data Group 1 </a> </p>
                                                     </div>
                                                     <div id="collapse-data1" class="panel-collapse collapse in">
                                                         <div class="panel-body">
@@ -287,7 +304,7 @@ margin-top: 20px;">IU Verify</h1>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button class="btn btn-xs btn-default btn-add-data pull-right"> <i class="fa fa-plus"></i> section</button>
+                                            <button class="btn btn-xs btn-default btn-add-data pull-right"> <i class="fa fa-plus"></i> group</button>
                                         </div>
                                         <div class="col-xs-12 wizard-actions">
                                             <div class="btn-group pull-right" role="group" aria-label="">
@@ -307,7 +324,12 @@ margin-top: 20px;">IU Verify</h1>
                                                     <div id="collapse-group1" class="panel-collapse collapse in">
                                                         <div class="panel-body">
                                                             <div id="builder-basic"> </div>
-                                                            Verification will begin on <a href="#" id="dob" data-type="date" data-pk="1" data-url="/post" data-title="Select date" class="editable editable-click" data-original-title="" title="">09/05/2017</a> for this group. </div>
+                                                            <div class="form-group " >
+                                                                <label class="control-label " for=""> Verification Start Date </label>
+                                                                <span class="help-block small" > Select the date on which the verification will be sent to this recipient group.</span>
+                                                                <input type="text" class="form-control" style="width:200px">
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -380,35 +402,37 @@ margin-top: 20px;">IU Verify</h1>
                                         <div class="col-xs-12">
                                             <p class="lead"> Preview/Save</p>
                                             <hr>
-                                            <label class="control-label"> Verification Message Preview </label>
-                                            <p> The content and layout of this verification may be previewed in a new window.</p>
-                                            <p><a href="verify-preview.php" class="btn btn-xs btn-default" target="_blank">Preview</a></p>
+                                            <div class="review-item"> <i class="fa fa-eye" aria-hidden="true"></i>
+                                                <div class="review-title"> Verification Message Preview </div>
+                                                <p> The content and layout of this verification may be previewed in a new window.</p>
+                                                <p><a href="verify-preview.php" class="btn btn-xs btn-default" target="_blank">Preview</a></p>
+                                            </div>
                                             <hr>
-                                            <label class="control-label"> Verification Recipients </label>
-                                            <p>The following recipient groups will receive this verification </p>
-                                            <ul>
-                                                <li> Recipient Group 1
-                                                    <ul>
-                                                        <li> Role ID is: Student </li>
-                                                        <li> Role ID is: Staff </li>
-                                                        <li> Verification to be sent on 09/23/2016</li>
-                                                    </ul>
-                                                </li>
-                                                <li> Recipient Group 2
-                                                    <ul>
-                                                        <li> Role ID is: Faculty </li>
-                                                        <li> Verification to be sent on 10/23/2016</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
+                                            <div class="review-item"> <i class="fa fa-user" aria-hidden="true"></i>
+                                                <div class="review-title"> Verification Recipients </div>
+                                                <p>The following recipient groups will receive this verification </p>
+                                                <p> Recipient Group 1</p>
+                                                <ul>
+                                                    <li> Role ID is: Student </li>
+                                                    <li> Role ID is: Staff </li>
+                                                    <li> Verification to be sent on 09/23/2016</li>
+                                                </ul>
+                                                <p> Recipient Group 2</p>
+                                                <ul>
+                                                    <li> Role ID is: Faculty </li>
+                                                    <li> Verification to be sent on 10/23/2016</li>
+                                                </ul>
+                                            </div>
                                             <hr>
-                                            <label class="control-label"> Verification Scheduling </label>
-                                            <p>The scheduling for this verification is as follows:</p>
-                                            <ul>
-                                                <li> Status: Active</li>
-                                                <li> Recurrance: Annually</li>
-                                                <li> Recurrance Date: 12/14 of every year. </li>
-                                            </ul>
+                                            <div class="review-item"> <i class="fa fa-calendar" aria-hidden="true"></i>
+                                                <div class="review-title"> Verification Scheduling </div>
+                                                <p>The scheduling for this verification is as follows:</p>
+                                                <ul>
+                                                    <li> Status: Active</li>
+                                                    <li> Recurrance: Annually</li>
+                                                    <li> Recurrance Date: 12/14 of every year. </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                         <div class="col-xs-12 wizard-actions">
                                             <div class="btn-group pull-right" role="group" aria-label="">
@@ -556,7 +580,7 @@ $(document).ready(function() {
             var $newPanel = $template.clone();
             $newPanel.find(".collapse").removeClass("in");
             $newPanel.find(".accordion-toggle").attr("href", "#collapse-data" + (++hash))
-                .text("Section " + hash);
+                .text("Data Group " + hash);
             $newPanel.find(".panel-collapse").attr("id", "collapse-data" + (hash)).addClass("collapse").removeClass("in");
             $newPanel.find(".panel-heading").append("<span class='pull-right'><i class='fa fa-close clickable'></i></span>");
             $("#accordion1").append($newPanel.fadeIn());
