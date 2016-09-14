@@ -13,7 +13,7 @@
 <div class="main-content container" role="main">
     <div id="main-content">
         <?php include ('includes/instructions-top.php') ?>
-        <div class="well">
+        <div class="well vfy-group">
             <div class="row">
                 <div class="col-xs-6">
                     <h3 class="h4">IU Notify</h3>
@@ -42,7 +42,7 @@
                         <p class="form-control-static">Not Specified</p>
                     </div>
                 </div>
-                <div class="form-group form-group-sm">
+                <div class="form-group form-group-sm updated">
                     <div class="col-sm-3 control-label">Mobile 1:</div>
                     <div class="col-sm-9">
                         <p class="form-control-static">812-369-9664</p>
@@ -61,9 +61,9 @@
                     </div>
                 </div>
                 <div class="form-group form-group-sm form-section-control">
-                    <div class="col-sm-offset-2 col-sm-10 text-right"> <!--<a href="#" class="btn btn-xs btn-default" id="refresh">Refresh</a>--> <a href="#" class="btn btn-xs btn-primary">Edit</a> </div>
+                    <div class="col-sm-offset-2 col-sm-10 text-right"><!--<a href="#" class="btn btn-xs btn-default">Refresh</a>--> <a href="#" class="btn btn-xs btn-primary edit-group">Edit</a> </div>
                 </div>
-                <div class="form-group form-group-sm">
+                <div class="form-group form-group-sm updated">
                     <div class="col-sm-3 control-label">Non-IU Email:</div>
                     <div class="col-sm-9">
                         <p class="form-control-static">thrclark@gmail.com</p>
@@ -77,7 +77,7 @@
                     </div>
                 </div>
                 <div class="form-group form-group-sm form-section-control">
-                    <div class="col-sm-offset-2 col-sm-10 text-right"> <!--<a href="#" class="btn btn-xs btn-default">Refresh</a>--> <a href="#" class="btn btn-xs btn-primary">Edit</a> </div>
+                    <div class="col-sm-offset-2 col-sm-10 text-right"> <!--<a href="#" class="btn btn-xs btn-default">Refresh</a>--> <a href="#" class="btn btn-xs btn-primary edit-group">Edit</a> </div>
                 </div>
             </div>
         </div>
@@ -89,7 +89,6 @@
             </div>
             <div class="row">
                 <div class="col-md-12 text-center" style="padding-bottom:15px; padding-top:15px;">
-                    <button class="btn btn-lg btn-default" id=""> Refresh</button>
                     <button class="btn btn-lg btn-primary" id="submit"> Submit</button>
                 </div>
             </div>
@@ -105,6 +104,19 @@
 
         $("#refresh").click(function() {
             location.reload();
+        });
+    });
+</script> 
+<script>
+    $(document).ready(function() {
+        $(".edit-group").click(function() {
+            $(event.target).closest('.vfy-group').prepend(" <div class='overlay'></div><a href='#' class='btn btn-primary btn-lg refresh'><i class='fa fa-refresh' aria-hidden='true'></i> Refresh</a>");
+            $(".refresh").click(function() {
+                $(".overlay, .refresh").fadeOut("fast");
+                $(".updated").css("background", "#ecf8ff");
+
+                $(".updated .form-control-static ").append("<span class='small text-muted' style='font-style:italic'> (updated)</span> ");
+            });
         });
     });
 </script>
