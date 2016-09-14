@@ -9,3 +9,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	color: inherit;
 }
 </style>
+<style type="text/css">
+.overlay + .btn {
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	z-index: 10;
+	top: 30%;
+}
+</style>
