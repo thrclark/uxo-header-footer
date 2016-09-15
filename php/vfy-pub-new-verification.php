@@ -1,4 +1,4 @@
-<?php $page_title = "Home" ?>
+<?php $page_title = "create-new" ?>
 <!DOCTYPE html>
 <html lang=en-us>
 <head>
@@ -82,11 +82,11 @@ label {
 	position: relative;
 }
 .review-item .fa {
-	position: absolute;
-	left: 15px;
-	font-size: 36px;
-	top: -5px;
-	color: #73a8d1;
+    position: absolute;
+    left: 15px;
+    font-size: 24px;
+    top: -5px;
+    color: #2879b8;
 }
 .review-item .review-title {
 	font-weight: bold;
@@ -96,73 +96,16 @@ label {
 </head>
 <body class="view-admin" id="top">
 <?php include ('includes/brand-header2.php') ?>
-<header style="min-height:115px">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <h1 class="navbar-brand" style="font-size: 44px;
-width: 100%;
-margin-top: 20px;">IU Verify</h1>
-                <div class="small" style="color:#ffffff">Create &amp; Edit Verifications</div>
-            </div>
-            <div class="col-md-9">
-                <p class="navbar-text" style="color:#E4E4E4;margin-top: 26px;"><i class="icon-user-3"></i><span class="sr-only">User: </span>thrclark</p>
-            </div>
-        </div>
-    </div>
-</header>
+<?php include ('includes/pub-header.php') ?>
 <div class="main-content container" role=main>
     <div id="main-content">
         <div class="row">
             <div class="col-md-3">
-                <div class="list-group" style="margin-right: -30px;margin-top: 20px;"> <a href="#" class="list-group-item" id="show_create_new"> Create New Verification </a> <a href="#" class="list-group-item" id="show_all_verifications"> View All Verifications </a> <a href="#" class="list-group-item">Archived Verifications </a> <a href="#" class="list-group-item">System Settings</a></div>
+                <?php include ('includes/pub-nav.php') ?>
             </div>
             <div class="col-md-9">
                 <div class="well">
-                    <section style="display:;" id="all_verifications" ng-app=sortApp ng-controller=mainController>
-                        <div class="row section-head">
-                            <div class="col-md-6 section-header">
-                                <h3>All Verifications</h3>
-                            </div>
-                            <div class="col-md-6 text-right" style="padding-top: 9px;">
-                                <form class="form-inline" style="padding-bottom: 10px;">
-                                    <div class="form-group">
-                                        <label class="sr-only" for=filtertable>Filter</label>
-                                        <input type=text id="filtertable" class="form-control input-sm" placeholder=Filter ng-model=searchstatus>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <table class="table table-condensed table-responsive table-actions">
-                            <thead>
-                                <tr>
-                                    <td><a href="#" ng-click="sortType = 'name'; sortReverse = !sortReverse"> Name <i ng-show="sortType == 'name' &amp;&amp; !sortReverse" class="icon-angle-up"></i> <i ng-show="sortType == 'name' &amp;&amp; sortReverse" class="icon-angle-down"></i> </a></td>
-                                    <td><a href="#" ng-click="sortType = 'status'; sortReverse = !sortReverse"> Status <i ng-show="sortType == 'status' &amp;&amp; !sortReverse" class="icon-angle-up"></i> <i ng-show="sortType == 'status' &amp;&amp; sortReverse" class="icon-angle-down"></i> </a></td>
-                                    <td><a href="#" ng-click="sortType = 'created'; sortReverse = !sortReverse"> Created <i ng-show="sortType == 'created' &amp;&amp; !sortReverse" class="icon-angle-up"></i> <i ng-show="sortType == 'created' &amp;&amp; sortReverse" class="icon-angle-down"></i> </a></td>
-                                    <td><span class="">Actions</span></td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr ng-repeat="roll in sushi | orderBy:sortType:sortReverse | filter:searchstatus">
-                                    <td>{{ roll.name }}</td>
-                                    <td>{{ roll.status }}</td>
-                                    <td>{{ roll.created }}</td>
-                                    <td class="text-center"><div class="dropdown">
-                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
-                                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                <li><a href="#">Preview</a></li>
-                                                <li><a href="#">Edit</a></li>
-                                                <li><a href="#">Inactivate</a></li>
-                                                <li><a href="#">View Reports</a></li>
-                                                <li role="separator" class="divider"></li>
-                                                <li><a href="#">Archive</a></li>
-                                            </ul>
-                                        </div></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </section>
-                    <section id="create_new" style="display:none">
+                    <section>
                         <div class="row section-head">
                             <div class="col-md-12 section-header">
                                 <h3> Create New Verification</h3>
@@ -325,7 +268,7 @@ margin-top: 20px;">IU Verify</h1>
                                                         <div class="panel-body">
                                                             <div id="builder-basic"> </div>
                                                             <div class="form-group " >
-                                                                <label class="control-label " for=""> Verification Start Date </label>
+                                                                <label class="control-label " for=""> Effective Date </label>
                                                                 <span class="help-block small" > Select the date on which the verification will be sent to this recipient group.</span>
                                                                 <input type="text" class="form-control" style="width:200px">
                                                             </div>
@@ -400,7 +343,7 @@ margin-top: 20px;">IU Verify</h1>
                                     </div>
                                     <div class="row setup-content" id="step-5">
                                         <div class="col-xs-12">
-                                            <p class="lead"> Preview/Save</p>
+                                            <p class="lead"> Review/Save</p>
                                             <hr>
                                             <div class="review-item"> <i class="fa fa-eye" aria-hidden="true"></i>
                                                 <div class="review-title"> Verification Message Preview </div>
@@ -411,16 +354,40 @@ margin-top: 20px;">IU Verify</h1>
                                             <div class="review-item"> <i class="fa fa-user" aria-hidden="true"></i>
                                                 <div class="review-title"> Verification Recipients </div>
                                                 <p>The following recipient groups will receive this verification </p>
-                                                <p> Recipient Group 1</p>
+                                               <!-- <hr><p> Recipient Group 1</p>
+                                                <dl class="dl-horizontal">
+                                                    <dt>Role ID</dt>
+                                                    <dd>Student</dd>
+                                                    <dt>Role ID</dt>
+                                                    <dd>Staff</dd>
+                                                    <dt>Effective Date</dt>
+                                                    <dd>09/23/2016</dd>
+                                                </dl>
+                                                  <hr><p> Recipient Group 2</p>
+                                                <dl class="dl-horizontal">
+                                                    <dt>Role ID</dt>
+                                                    <dd>Faculty</dd>
+                                                    
+                                                    <dt>Effective Date</dt>
+                                                    <dd>10/23/2016</dd>
+                                                </dl>-->
+                                              <hr style="
+    margin-bottom: 10px;
+    margin-top: 5px;
+">
+                                               <p> <strong>Recipient Group 1</strong></p>
                                                 <ul>
                                                     <li> Role ID is: Student </li>
                                                     <li> Role ID is: Staff </li>
-                                                    <li> Verification to be sent on 09/23/2016</li>
-                                                </ul>
-                                                <p> Recipient Group 2</p>
+                                                    <li> Effective Date: 09/23/2016</li>
+                                                </ul> <hr style="
+    margin-bottom: 10px;
+    margin-top: 5px;
+">
+                                                <p> <strong>Recipient Group 2</strong></p>
                                                 <ul>
                                                     <li> Role ID is: Faculty </li>
-                                                    <li> Verification to be sent on 10/23/2016</li>
+                                                    <li> Effective Date: 10/23/2016</li>
                                                 </ul>
                                             </div>
                                             <hr>
@@ -451,22 +418,6 @@ margin-top: 20px;">IU Verify</h1>
     </div>
 </div>
 <?php include ('includes/brand-footer.php') ?>
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#show_create_new').click(function() {
-      $( "#create_new" ).show();
-	   $( "#all_verifications" ).hide();
-    });
-	
-	  $('#show_all_verifications').click(function() {
-      $( "#create_new" ).hide();
-	   $( "#all_verifications" ).show();
-    });
-	
-	
-	
-});
-</script> 
 <script>
     angular.module('sortApp', []).controller('mainController', function($scope) {
         $scope.sortType = 'name';
