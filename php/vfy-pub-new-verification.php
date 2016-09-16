@@ -82,14 +82,31 @@ label {
 	position: relative;
 }
 .review-item .fa {
-    position: absolute;
-    left: 15px;
-    font-size: 24px;
-    top: -5px;
-    color: #2879b8;
+	position: absolute;
+	left: 15px;
+	font-size: 24px;
+	top: -5px;
+	color: #2879b8;
 }
 .review-item .review-title {
 	font-weight: bold;
+}
+#sortable .panel:first-child .fa-close {
+	display: none
+}
+.toggle-handle {
+	border-radius: 20%
+}
+.review-data {
+	padding-left: 50px;
+}
+.review-data .well.well-sm {
+	background: #ffffff;
+	margin-right: 50px;
+	border: 1px solid #f5f5f5;
+}
+.review-data .wellll.wellll-sm {
+	margin-bottom: 20px;
 }
 </style>
 <?php include ('includes/scripts.php') ?>
@@ -190,60 +207,62 @@ label {
                                         <div class="col-xs-12">
                                             <p class="lead"> Data</p>
                                             <div class="panel-group" id="accordion1">
-                                                <div class="panel panel-default template-add-data">
-                                                    <div class="panel-heading">
-                                                        <p class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse-data1"> Data Group 1 </a> </p>
-                                                    </div>
-                                                    <div id="collapse-data1" class="panel-collapse collapse in">
-                                                        <div class="panel-body">
-                                                            <div class="form-group ">
-                                                                <label class="control-label" for="section_title"> Section Title </label>
-                                                                <input class="form-control" id="section_title" name="name" type="text" />
-                                                            </div>
-                                                            <div class="form-group ">
-                                                                <label class="control-label " for="section_description"> Section Description <span class="small" style="font-weight:normal">(optional)</span></label>
-                                                                <textarea class="form-control" cols="40" id="section_description" name="message" rows="2"></textarea>
-                                                            </div>
-                                                            <div class="form-group ">
-                                                                <label class="control-label" for="section_title"> Unique Key </label>
-                                                                <input class="form-control" id="section_title" name="name" type="text" />
-                                                            </div>
-                                                            <p class="control-label"> Field Groups </p>
-                                                            <table class="table table-condensed table-responsive table-actions" id="myTable">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>Data Pull </th>
-                                                                        <th>Callback</th>
-                                                                        <th>Unique Key</th>
-                                                                        <th> URL <span class="small" style="font-weight:normal">(initiate edit)</span> </th>
-                                                                        <th> Actions </th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td><select class="form-control">
-                                                                                <option>unspecified</option>
-                                                                                <option>API Source 1</option>
-                                                                                <option>API Source 2</option>
-                                                                                <option>API Source 3</option>
-                                                                                <option>API Source 4</option>
-                                                                                <option>API Source 5</option>
-                                                                            </select></td>
-                                                                        <td><select class="form-control">
-                                                                                <option>unspecified</option>
-                                                                                <option>API Source 1</option>
-                                                                                <option>API Source 2</option>
-                                                                                <option>API Source 3</option>
-                                                                                <option>API Source 4</option>
-                                                                                <option>API Source 5</option>
-                                                                            </select></td>
-                                                                        <td><input type="text" class="form-control"></td>
-                                                                        <td><input type="text" class="form-control"></td>
-                                                                        <td><a href="#" class="btn btn-xs btn-default disabled" style="margin-top:5px">delete</a></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                            <a href="#" class="addstuff btn btn-xs btn-default pull-right"><i class="fa fa-plus"></i> field group</a> </div>
+                                                <div id="sortable">
+                                                    <div class="panel panel-default template-add-data">
+                                                        <div class="panel-heading">
+                                                            <p class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse-data1"> Data Group 1 </a></p>
+                                                            <span class='pull-right'><i class='fa fa-close clickable'></i></span> </div>
+                                                        <div id="collapse-data1" class="panel-collapse collapse in">
+                                                            <div class="panel-body">
+                                                                <div class="form-group ">
+                                                                    <label class="control-label" for="section_title"> Section Title </label>
+                                                                    <input class="form-control" id="section_title" name="name" type="text" />
+                                                                </div>
+                                                                <div class="form-group ">
+                                                                    <label class="control-label " for="section_description"> Section Description <span class="small" style="font-weight:normal">(optional)</span></label>
+                                                                    <textarea class="form-control" cols="40" id="section_description" name="message" rows="2"></textarea>
+                                                                </div>
+                                                                <div class="form-group ">
+                                                                    <label class="control-label" for="section_title"> Unique Key </label>
+                                                                    <input class="form-control" id="section_title" name="name" type="text" />
+                                                                </div>
+                                                                <p class="control-label"> Field Groups </p>
+                                                                <table class="table table-condensed table-responsive table-actions" id="myTable">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Data Pull </th>
+                                                                            <th>Callback</th>
+                                                                            <th>Unique Key</th>
+                                                                            <th> URL <span class="small" style="font-weight:normal">(initiate edit)</span> </th>
+                                                                            <th> Actions </th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td><select class="form-control">
+                                                                                    <option>unspecified</option>
+                                                                                    <option>API Source 1</option>
+                                                                                    <option>API Source 2</option>
+                                                                                    <option>API Source 3</option>
+                                                                                    <option>API Source 4</option>
+                                                                                    <option>API Source 5</option>
+                                                                                </select></td>
+                                                                            <td><select class="form-control">
+                                                                                    <option>unspecified</option>
+                                                                                    <option>API Source 1</option>
+                                                                                    <option>API Source 2</option>
+                                                                                    <option>API Source 3</option>
+                                                                                    <option>API Source 4</option>
+                                                                                    <option>API Source 5</option>
+                                                                                </select></td>
+                                                                            <td><input type="text" class="form-control"></td>
+                                                                            <td><input type="text" class="form-control"></td>
+                                                                            <td><a href="#" class="btn btn-xs btn-default disabled" style="margin-top:5px">delete</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <a href="#" class="addstuff btn btn-xs btn-default pull-right"><i class="fa fa-plus"></i> field group</a> </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -278,19 +297,12 @@ label {
                                             </div>
                                             <button class="btn btn-xs btn-default btn-add-group pull-right"> <i class="fa fa-plus"></i> group</button>
                                             <div class="form-group" style="margin-top:40px">
-                                                <label class="control-label" for="name">New User Leeway</label>
-                                                <span class="help-block small" id=""> Specify the number of days before new users are required to renew this verification.<!-- Note that the posting will only happen within the date range specified above, or when the verification is set to status 'Active'.--></span>
+                                                <label class="control-label" for="name">Leeway</label>
+                                                <span class="help-block small" id=""> The number of days in which users are exempt from renewing the verification if they have previously fulfilled the verification requirements.</span>
                                                 <div class="row">
                                                     <div class="col-xs-3">
-                                                        <input class="form-control" id="name" name="name" type="text"/>
+                                                        <input class="form-control" id="name" name="name" type="text" placeholder="number of days"/>
                                                     </div>
-                                                    <!-- <div class="col-xs-5" style="padding-left:0px">
-                                                                <div class="checkbox small">
-                                                                    <label>
-                                                                        <input type="checkbox">
-                                                                        recur annually </label>
-                                                                </div>
-                                                            </div>--> 
                                                 </div>
                                             </div>
                                         </div>
@@ -344,60 +356,124 @@ label {
                                     <div class="row setup-content" id="step-5">
                                         <div class="col-xs-12">
                                             <p class="lead"> Review/Save</p>
-                                            <hr>
-                                            <div class="review-item"> <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <div class="review-title"> Verification Message Preview </div>
-                                                <p> The content and layout of this verification may be previewed in a new window.</p>
-                                                <p><a href="verify-preview.php" class="btn btn-xs btn-default" target="_blank">Preview</a></p>
-                                            </div>
-                                            <hr>
-                                            <div class="review-item"> <i class="fa fa-user" aria-hidden="true"></i>
-                                                <div class="review-title"> Verification Recipients </div>
-                                                <p>The following recipient groups will receive this verification </p>
-                                               <!-- <hr><p> Recipient Group 1</p>
-                                                <dl class="dl-horizontal">
-                                                    <dt>Role ID</dt>
-                                                    <dd>Student</dd>
-                                                    <dt>Role ID</dt>
-                                                    <dd>Staff</dd>
-                                                    <dt>Effective Date</dt>
-                                                    <dd>09/23/2016</dd>
-                                                </dl>
-                                                  <hr><p> Recipient Group 2</p>
-                                                <dl class="dl-horizontal">
-                                                    <dt>Role ID</dt>
-                                                    <dd>Faculty</dd>
-                                                    
-                                                    <dt>Effective Date</dt>
-                                                    <dd>10/23/2016</dd>
-                                                </dl>-->
-                                              <hr style="
-    margin-bottom: 10px;
-    margin-top: 5px;
-">
-                                               <p> <strong>Recipient Group 1</strong></p>
-                                                <ul>
-                                                    <li> Role ID is: Student </li>
-                                                    <li> Role ID is: Staff </li>
-                                                    <li> Effective Date: 09/23/2016</li>
-                                                </ul> <hr style="
-    margin-bottom: 10px;
-    margin-top: 5px;
-">
-                                                <p> <strong>Recipient Group 2</strong></p>
-                                                <ul>
-                                                    <li> Role ID is: Faculty </li>
-                                                    <li> Effective Date: 10/23/2016</li>
-                                                </ul>
-                                            </div>
-                                            <hr>
-                                            <div class="review-item"> <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <div class="review-title"> Verification Scheduling </div>
-                                                <p>The scheduling for this verification is as follows:</p>
-                                                <ul>
-                                                    <li> Status: Active</li>
-                                                    <li> Recurrance: Annually</li>
-                                                    <li> Recurrance Date: 12/14 of every year. </li>
+                                            <div class="comment-list">
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <div class="message">
+                                                            <div class="row message-header">
+                                                                <div class="col-xs-12 col-sm-8 message-title"> Setup </div>
+                                                                <div class="col-xs-12 col-sm-4 message-meta"> <a href="verify-preview.php" class="btn btn-xs btn-default" target="_blank">Preview</a> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
+                                                            </div>
+                                                            <div class="message-content">
+                                                                <p> The content and layout of this verification may be previewed in a new window.</p>
+                                                           
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="message">
+                                                            <div class="row message-header">
+                                                                <div class="col-xs-12 col-sm-8 message-title"> Data </div>
+                                                                <div class="col-xs-12 col-sm-4 message-meta"> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
+                                                            </div>
+                                                            <div class="message-content">
+                                                                <p>The following data will be verified in this verification: </p>
+                                                                <div class="review-data">
+                                                                    <div class="wellll wellll-sm">
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <p> Data Group 1</p>
+                                                                            </div>
+                                                                            <div class="col-md-9 small"> Data: XYX <br>
+                                                                                Data: XYX <br>
+                                                                                Data: XYX <br>
+                                                                                Data: XYX <br>
+                                                                                Data: XYX <br>
+                                                                                Data: XYX <br>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="wellll wellll-sm">
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <p> Data Group 2</p>
+                                                                            </div>
+                                                                            <div class="col-md-9 small"> Data: XYX <br>
+                                                                                Data: XYX <br>
+                                                                                Data: XYX <br>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="message">
+                                                            <div class="row message-header">
+                                                                <div class="col-xs-12 col-sm-8 message-title"> Recipients </div>
+                                                                <div class="col-xs-12 col-sm-4 message-meta"> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
+                                                            </div>
+                                                            <div class="message-content">
+                                                                <p>The following recipients will be targeted in this verification:</p>
+                                                                <div class="review-data">
+                                                                    <div class="wellll wellll-sm">
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <p> Recipient Group 1</p>
+                                                                            </div>
+                                                                            <div class="col-md-9 small"> Role ID: Student<br>
+                                                                                Role ID: Staff<br>
+                                                                                Effective Date: 09/23/2016<br>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="wellll wellll-sm">
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <p> Recipient Group 2</p>
+                                                                            </div>
+                                                                            <div class="col-md-9 small"> Role ID: Faculty<br>
+                                                                                Effective Date: 10/23/2016<br>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="message">
+                                                            <div class="row message-header">
+                                                                <div class="col-xs-12 col-sm-8 message-title"> Scheduling </div>
+                                                                <div class="col-xs-12 col-sm-4 message-meta"> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
+                                                            </div>
+                                                            <div class="message-content">
+                                                                <p>The scheduling for this verification is as follows:</p>
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                 <div class="review-data">
+                                                                    <div class="wellll wellll-sm">
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <p> Scheduling</p>
+                                                                            </div>
+                                                                            <div class="col-md-9 small"> Status: Active<br>
+                                                                                Recurrance: One time<br>
+                                                                                End Date: 9/23/2015
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                                
+                                                               
+                                                            </div>
+                                                        </div>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -418,6 +494,12 @@ label {
     </div>
 </div>
 <?php include ('includes/brand-footer.php') ?>
+<script>
+  $( function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+  } );
+  </script> 
 <script>
     angular.module('sortApp', []).controller('mainController', function($scope) {
         $scope.sortType = 'name';
@@ -533,8 +615,8 @@ label {
             $newPanel.find(".accordion-toggle").attr("href", "#collapse-data" + (++hash))
                 .text("Data Group " + hash);
             $newPanel.find(".panel-collapse").attr("id", "collapse-data" + (hash)).addClass("collapse").removeClass("in");
-            $newPanel.find(".panel-heading").append("<span class='pull-right'><i class='fa fa-close clickable'></i></span>");
-            $("#accordion1").append($newPanel.fadeIn());
+            //$newPanel.find(".panel-heading").append("<span class='pull-right'><i class='fa fa-close clickable'></i></span>");
+            $("#sortable").append($newPanel.fadeIn());
             $(document).on('click', '.fa.fa-close', function() {
                 $(this).parents('.panel').get(0).remove();
             });
