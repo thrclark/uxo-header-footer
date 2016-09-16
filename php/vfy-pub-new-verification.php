@@ -210,7 +210,7 @@ label {
                                                 <div id="sortable">
                                                     <div class="panel panel-default template-add-data">
                                                         <div class="panel-heading">
-                                                            <p class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse-data1"> Data Group 1 </a></p>
+                                                            <p class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse-data1"> Data Section 1 </a></p>
                                                             <span class='pull-right'><i class='fa fa-close clickable'></i></span> </div>
                                                         <div id="collapse-data1" class="panel-collapse collapse in">
                                                             <div class="panel-body">
@@ -266,7 +266,7 @@ label {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button class="btn btn-xs btn-default btn-add-data pull-right"> <i class="fa fa-plus"></i> group</button>
+                                            <button class="btn btn-xs btn-default btn-add-data pull-right"> <i class="fa fa-plus"></i> section</button>
                                         </div>
                                         <div class="col-xs-12 wizard-actions">
                                             <div class="btn-group pull-right" role="group" aria-label="">
@@ -281,21 +281,21 @@ label {
                                             <div class="panel-group" id="accordion2">
                                                 <div class="panel panel-default template-add-group">
                                                     <div class="panel-heading">
-                                                        <p class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse-group1"> Recipient Group 1 </a> </p>
+                                                        <p class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse-group1"> Recipient Permission 1 </a> </p>
                                                     </div>
                                                     <div id="collapse-group1" class="panel-collapse collapse in">
                                                         <div class="panel-body">
                                                             <div id="builder-basic"> </div>
                                                             <div class="form-group " >
                                                                 <label class="control-label " for=""> Effective Date </label>
-                                                                <span class="help-block small" > Select the date on which the verification will be sent to this recipient group.</span>
+                                                                <span class="help-block small" > Select the date on which the verification will be sent to this specified recipient.</span>
                                                                 <input type="text" class="form-control" style="width:200px">
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button class="btn btn-xs btn-default btn-add-group pull-right"> <i class="fa fa-plus"></i> group</button>
+                                            <button class="btn btn-xs btn-default btn-add-group pull-right"> <i class="fa fa-plus"></i> permission</button>
                                             <div class="form-group" style="margin-top:40px">
                                                 <label class="control-label" for="name">Leeway</label>
                                                 <span class="help-block small" id=""> The number of days in which users are exempt from renewing the verification if they have previously fulfilled the verification requirements.</span>
@@ -613,7 +613,7 @@ label {
             var $newPanel = $template.clone();
             $newPanel.find(".collapse").removeClass("in");
             $newPanel.find(".accordion-toggle").attr("href", "#collapse-data" + (++hash))
-                .text("Data Group " + hash);
+                .text("Data Section " + hash);
             $newPanel.find(".panel-collapse").attr("id", "collapse-data" + (hash)).addClass("collapse").removeClass("in");
             //$newPanel.find(".panel-heading").append("<span class='pull-right'><i class='fa fa-close clickable'></i></span>");
             $("#sortable").append($newPanel.fadeIn());
@@ -633,7 +633,7 @@ label {
             var $newPanel = $template.clone();
             $newPanel.find(".collapse").removeClass("in");
             $newPanel.find(".accordion-toggle").attr("href", "#collapse-group" + (++hash))
-                .text("Recipient Group " + hash);
+                .text("Recipient Permission " + hash);
             $newPanel.find(".panel-collapse").attr("id", "collapse-group" + (hash)).addClass("collapse").removeClass("in");
             $newPanel.find(".panel-heading").append("<span class='pull-right'><i class='fa fa-close clickable'></i></span>");
             $("#accordion2").append($newPanel.fadeIn());
