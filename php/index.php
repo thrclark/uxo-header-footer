@@ -52,7 +52,8 @@ header .app-header h1 {
                 </li>
                 <li><a href="verify-loading.php" target="_blank">Example 5 (section loaders &amp; updated data)</a> </li>
                 <li><a href="verify-completed.php" target="_blank">Example 6 (verifications complete)</a> </li>
-                <li><a href="verify-publish.php" target="_blank">Publishing</a> </li>
+                <li><a href="vfy-pub-home.php" target="_blank">Publishing Home</a> </li>
+                <li><a href="vfy-pub-new-verification.php" target="_blank">Publishing - New Verification</a> </li>
             </ul>
         </div>
     </div>
