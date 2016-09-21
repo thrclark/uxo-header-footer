@@ -1,4 +1,6 @@
 <script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/jquery-ui.js"></script>
+
 <script type="text/javascript" src="../js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../js/passphrase_feedback.js"></script>
 <script type="text/javascript" src="../bower_components/moment/min/moment-with-locales.min.js"></script>
@@ -12,3 +14,6 @@
 <script type="text/javascript" src="../js/moment.min.js"></script>
 <script type="text/javascript" src="../js/query-builder.min.js"></script>
 <script type="text/javascript" src="../js/bootstrap-editable.min.js"></script>
+
+
+

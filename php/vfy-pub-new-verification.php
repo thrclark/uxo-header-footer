@@ -1,4 +1,4 @@
-<?php $page_title = "Home" ?>
+<?php $page_title = "create-new" ?>
 <!DOCTYPE html>
 <html lang=en-us>
 <head>
@@ -84,85 +84,45 @@ label {
 .review-item .fa {
 	position: absolute;
 	left: 15px;
-	font-size: 36px;
+	font-size: 24px;
 	top: -5px;
-	color: #73a8d1;
+	color: #2879b8;
 }
 .review-item .review-title {
 	font-weight: bold;
+}
+#sortable .panel:first-child .fa-close {
+	display: none
+}
+.toggle-handle {
+	border-radius: 20%
+}
+.review-data {
+	padding-left: 50px;
+}
+.review-data .well.well-sm {
+	background: #ffffff;
+	margin-right: 50px;
+	border: 1px solid #f5f5f5;
+}
+.review-data .wellll.wellll-sm {
+	margin-bottom: 20px;
 }
 </style>
 <?php include ('includes/scripts.php') ?>
 </head>
 <body class="view-admin" id="top">
 <?php include ('includes/brand-header2.php') ?>
-<header style="min-height:115px">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <h1 class="navbar-brand" style="font-size: 44px;
-width: 100%;
-margin-top: 20px;">IU Verify</h1>
-                <div class="small" style="color:#ffffff">Create &amp; Edit Verifications</div>
-            </div>
-            <div class="col-md-9">
-                <p class="navbar-text" style="color:#E4E4E4;margin-top: 26px;"><i class="icon-user-3"></i><span class="sr-only">User: </span>thrclark</p>
-            </div>
-        </div>
-    </div>
-</header>
+<?php include ('includes/pub-header.php') ?>
 <div class="main-content container" role=main>
     <div id="main-content">
         <div class="row">
             <div class="col-md-3">
-                <div class="list-group" style="margin-right: -30px;margin-top: 20px;"> <a href="#" class="list-group-item" id="show_create_new"> Create New Verification </a> <a href="#" class="list-group-item" id="show_all_verifications"> View All Verifications </a> <a href="#" class="list-group-item">Archived Verifications </a> <a href="#" class="list-group-item">System Settings</a></div>
+                <?php include ('includes/pub-nav.php') ?>
             </div>
             <div class="col-md-9">
                 <div class="well">
-                    <section style="display:;" id="all_verifications" ng-app=sortApp ng-controller=mainController>
-                        <div class="row section-head">
-                            <div class="col-md-6 section-header">
-                                <h3>All Verifications</h3>
-                            </div>
-                            <div class="col-md-6 text-right" style="padding-top: 9px;">
-                                <form class="form-inline" style="padding-bottom: 10px;">
-                                    <div class="form-group">
-                                        <label class="sr-only" for=filtertable>Filter</label>
-                                        <input type=text id="filtertable" class="form-control input-sm" placeholder=Filter ng-model=searchstatus>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <table class="table table-condensed table-responsive table-actions">
-                            <thead>
-                                <tr>
-                                    <td><a href="#" ng-click="sortType = 'name'; sortReverse = !sortReverse"> Name <i ng-show="sortType == 'name' &amp;&amp; !sortReverse" class="icon-angle-up"></i> <i ng-show="sortType == 'name' &amp;&amp; sortReverse" class="icon-angle-down"></i> </a></td>
-                                    <td><a href="#" ng-click="sortType = 'status'; sortReverse = !sortReverse"> Status <i ng-show="sortType == 'status' &amp;&amp; !sortReverse" class="icon-angle-up"></i> <i ng-show="sortType == 'status' &amp;&amp; sortReverse" class="icon-angle-down"></i> </a></td>
-                                    <td><a href="#" ng-click="sortType = 'created'; sortReverse = !sortReverse"> Created <i ng-show="sortType == 'created' &amp;&amp; !sortReverse" class="icon-angle-up"></i> <i ng-show="sortType == 'created' &amp;&amp; sortReverse" class="icon-angle-down"></i> </a></td>
-                                    <td><span class="">Actions</span></td>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr ng-repeat="roll in sushi | orderBy:sortType:sortReverse | filter:searchstatus">
-                                    <td>{{ roll.name }}</td>
-                                    <td>{{ roll.status }}</td>
-                                    <td>{{ roll.created }}</td>
-                                    <td class="text-center"><div class="dropdown">
-                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
-                                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                <li><a href="#">Preview</a></li>
-                                                <li><a href="#">Edit</a></li>
-                                                <li><a href="#">Inactivate</a></li>
-                                                <li><a href="#">View Reports</a></li>
-                                                <li role="separator" class="divider"></li>
-                                                <li><a href="#">Archive</a></li>
-                                            </ul>
-                                        </div></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </section>
-                    <section id="create_new" style="display:none">
+                    <section>
                         <div class="row section-head">
                             <div class="col-md-12 section-header">
                                 <h3> Create New Verification</h3>
@@ -247,64 +207,66 @@ margin-top: 20px;">IU Verify</h1>
                                         <div class="col-xs-12">
                                             <p class="lead"> Data</p>
                                             <div class="panel-group" id="accordion1">
-                                                <div class="panel panel-default template-add-data">
-                                                    <div class="panel-heading">
-                                                        <p class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse-data1"> Data Group 1 </a> </p>
-                                                    </div>
-                                                    <div id="collapse-data1" class="panel-collapse collapse in">
-                                                        <div class="panel-body">
-                                                            <div class="form-group ">
-                                                                <label class="control-label" for="section_title"> Section Title </label>
-                                                                <input class="form-control" id="section_title" name="name" type="text" />
-                                                            </div>
-                                                            <div class="form-group ">
-                                                                <label class="control-label " for="section_description"> Section Description <span class="small" style="font-weight:normal">(optional)</span></label>
-                                                                <textarea class="form-control" cols="40" id="section_description" name="message" rows="2"></textarea>
-                                                            </div>
-                                                            <div class="form-group ">
-                                                                <label class="control-label" for="section_title"> Unique Key </label>
-                                                                <input class="form-control" id="section_title" name="name" type="text" />
-                                                            </div>
-                                                            <p class="control-label"> Field Groups </p>
-                                                            <table class="table table-condensed table-responsive table-actions" id="myTable">
-                                                                <thead>
-                                                                    <tr>
-                                                                        <th>Data Pull </th>
-                                                                        <th>Callback</th>
-                                                                        <th>Unique Key</th>
-                                                                        <th> URL <span class="small" style="font-weight:normal">(initiate edit)</span> </th>
-                                                                        <th> Actions </th>
-                                                                    </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td><select class="form-control">
-                                                                                <option>unspecified</option>
-                                                                                <option>API Source 1</option>
-                                                                                <option>API Source 2</option>
-                                                                                <option>API Source 3</option>
-                                                                                <option>API Source 4</option>
-                                                                                <option>API Source 5</option>
-                                                                            </select></td>
-                                                                        <td><select class="form-control">
-                                                                                <option>unspecified</option>
-                                                                                <option>API Source 1</option>
-                                                                                <option>API Source 2</option>
-                                                                                <option>API Source 3</option>
-                                                                                <option>API Source 4</option>
-                                                                                <option>API Source 5</option>
-                                                                            </select></td>
-                                                                        <td><input type="text" class="form-control"></td>
-                                                                        <td><input type="text" class="form-control"></td>
-                                                                        <td><a href="#" class="btn btn-xs btn-default disabled" style="margin-top:5px">delete</a></td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                            <a href="#" class="addstuff btn btn-xs btn-default pull-right"><i class="fa fa-plus"></i> field group</a> </div>
+                                                <div id="sortable">
+                                                    <div class="panel panel-default template-add-data">
+                                                        <div class="panel-heading">
+                                                            <p class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse-data1"> Data Section 1 </a></p>
+                                                            <span class='pull-right'><i class='fa fa-close clickable'></i></span> </div>
+                                                        <div id="collapse-data1" class="panel-collapse collapse in">
+                                                            <div class="panel-body">
+                                                                <div class="form-group ">
+                                                                    <label class="control-label" for="section_title"> Section Title </label>
+                                                                    <input class="form-control" id="section_title" name="name" type="text" />
+                                                                </div>
+                                                                <div class="form-group ">
+                                                                    <label class="control-label " for="section_description"> Section Description <span class="small" style="font-weight:normal">(optional)</span></label>
+                                                                    <textarea class="form-control" cols="40" id="section_description" name="message" rows="2"></textarea>
+                                                                </div>
+                                                                <div class="form-group ">
+                                                                    <label class="control-label" for="section_title"> Unique Key </label>
+                                                                    <input class="form-control" id="section_title" name="name" type="text" />
+                                                                </div>
+                                                                <p class="control-label"> Field Groups </p>
+                                                                <table class="table table-condensed table-responsive table-actions" id="myTable">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Data Pull </th>
+                                                                            <th>Callback</th>
+                                                                            <th>Unique Key</th>
+                                                                            <th> URL <span class="small" style="font-weight:normal">(initiate edit)</span> </th>
+                                                                            <th> Actions </th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td><select class="form-control">
+                                                                                    <option>unspecified</option>
+                                                                                    <option>API Source 1</option>
+                                                                                    <option>API Source 2</option>
+                                                                                    <option>API Source 3</option>
+                                                                                    <option>API Source 4</option>
+                                                                                    <option>API Source 5</option>
+                                                                                </select></td>
+                                                                            <td><select class="form-control">
+                                                                                    <option>unspecified</option>
+                                                                                    <option>API Source 1</option>
+                                                                                    <option>API Source 2</option>
+                                                                                    <option>API Source 3</option>
+                                                                                    <option>API Source 4</option>
+                                                                                    <option>API Source 5</option>
+                                                                                </select></td>
+                                                                            <td><input type="text" class="form-control"></td>
+                                                                            <td><input type="text" class="form-control"></td>
+                                                                            <td><a href="#" class="btn btn-xs btn-default disabled" style="margin-top:5px">delete</a></td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <a href="#" class="addstuff btn btn-xs btn-default pull-right"><i class="fa fa-plus"></i> field group</a> </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button class="btn btn-xs btn-default btn-add-data pull-right"> <i class="fa fa-plus"></i> group</button>
+                                            <button class="btn btn-xs btn-default btn-add-data pull-right"> <i class="fa fa-plus"></i> section</button>
                                         </div>
                                         <div class="col-xs-12 wizard-actions">
                                             <div class="btn-group pull-right" role="group" aria-label="">
@@ -319,35 +281,28 @@ margin-top: 20px;">IU Verify</h1>
                                             <div class="panel-group" id="accordion2">
                                                 <div class="panel panel-default template-add-group">
                                                     <div class="panel-heading">
-                                                        <p class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse-group1"> Recipient Group 1 </a> </p>
+                                                        <p class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse-group1"> Recipient Permission 1 </a> </p>
                                                     </div>
                                                     <div id="collapse-group1" class="panel-collapse collapse in">
                                                         <div class="panel-body">
                                                             <div id="builder-basic"> </div>
                                                             <div class="form-group " >
-                                                                <label class="control-label " for=""> Verification Start Date </label>
-                                                                <span class="help-block small" > Select the date on which the verification will be sent to this recipient group.</span>
+                                                                <label class="control-label " for=""> Effective Date </label>
+                                                                <span class="help-block small" > Select the date on which the verification will be sent to this specified recipient.</span>
                                                                 <input type="text" class="form-control" style="width:200px">
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button class="btn btn-xs btn-default btn-add-group pull-right"> <i class="fa fa-plus"></i> group</button>
+                                            <button class="btn btn-xs btn-default btn-add-group pull-right"> <i class="fa fa-plus"></i> permission</button>
                                             <div class="form-group" style="margin-top:40px">
-                                                <label class="control-label" for="name">New User Leeway</label>
-                                                <span class="help-block small" id=""> Specify the number of days before new users are required to renew this verification.<!-- Note that the posting will only happen within the date range specified above, or when the verification is set to status 'Active'.--></span>
+                                                <label class="control-label" for="name">Leeway</label>
+                                                <span class="help-block small" id=""> The number of days in which users are exempt from renewing the verification if they have previously fulfilled the verification requirements.</span>
                                                 <div class="row">
                                                     <div class="col-xs-3">
-                                                        <input class="form-control" id="name" name="name" type="text"/>
+                                                        <input class="form-control" id="name" name="name" type="text" placeholder="number of days"/>
                                                     </div>
-                                                    <!-- <div class="col-xs-5" style="padding-left:0px">
-                                                                <div class="checkbox small">
-                                                                    <label>
-                                                                        <input type="checkbox">
-                                                                        recur annually </label>
-                                                                </div>
-                                                            </div>--> 
                                                 </div>
                                             </div>
                                         </div>
@@ -400,37 +355,125 @@ margin-top: 20px;">IU Verify</h1>
                                     </div>
                                     <div class="row setup-content" id="step-5">
                                         <div class="col-xs-12">
-                                            <p class="lead"> Preview/Save</p>
-                                            <hr>
-                                            <div class="review-item"> <i class="fa fa-eye" aria-hidden="true"></i>
-                                                <div class="review-title"> Verification Message Preview </div>
-                                                <p> The content and layout of this verification may be previewed in a new window.</p>
-                                                <p><a href="verify-preview.php" class="btn btn-xs btn-default" target="_blank">Preview</a></p>
-                                            </div>
-                                            <hr>
-                                            <div class="review-item"> <i class="fa fa-user" aria-hidden="true"></i>
-                                                <div class="review-title"> Verification Recipients </div>
-                                                <p>The following recipient groups will receive this verification </p>
-                                                <p> Recipient Group 1</p>
-                                                <ul>
-                                                    <li> Role ID is: Student </li>
-                                                    <li> Role ID is: Staff </li>
-                                                    <li> Verification to be sent on 09/23/2016</li>
-                                                </ul>
-                                                <p> Recipient Group 2</p>
-                                                <ul>
-                                                    <li> Role ID is: Faculty </li>
-                                                    <li> Verification to be sent on 10/23/2016</li>
-                                                </ul>
-                                            </div>
-                                            <hr>
-                                            <div class="review-item"> <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                <div class="review-title"> Verification Scheduling </div>
-                                                <p>The scheduling for this verification is as follows:</p>
-                                                <ul>
-                                                    <li> Status: Active</li>
-                                                    <li> Recurrance: Annually</li>
-                                                    <li> Recurrance Date: 12/14 of every year. </li>
+                                            <p class="lead"> Review/Save</p>
+                                            <div class="comment-list">
+                                                <ul class="list-unstyled">
+                                                    <li>
+                                                        <div class="message">
+                                                            <div class="row message-header">
+                                                                <div class="col-xs-12 col-sm-8 message-title"> Setup </div>
+                                                                <div class="col-xs-12 col-sm-4 message-meta"> <a href="verify-preview.php" class="btn btn-xs btn-default" target="_blank">Preview</a> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
+                                                            </div>
+                                                            <div class="message-content">
+                                                                <p> The content and layout of this verification may be previewed in a new window.</p>
+                                                           
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="message">
+                                                            <div class="row message-header">
+                                                                <div class="col-xs-12 col-sm-8 message-title"> Data </div>
+                                                                <div class="col-xs-12 col-sm-4 message-meta"> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
+                                                            </div>
+                                                            <div class="message-content">
+                                                                <p>The following data will be verified in this verification: </p>
+                                                                <div class="review-data">
+                                                                    <div class="wellll wellll-sm">
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <p> Data Group 1</p>
+                                                                            </div>
+                                                                            <div class="col-md-9 small"> Data: XYX <br>
+                                                                                Data: XYX <br>
+                                                                                Data: XYX <br>
+                                                                                Data: XYX <br>
+                                                                                Data: XYX <br>
+                                                                                Data: XYX <br>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="wellll wellll-sm">
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <p> Data Group 2</p>
+                                                                            </div>
+                                                                            <div class="col-md-9 small"> Data: XYX <br>
+                                                                                Data: XYX <br>
+                                                                                Data: XYX <br>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="message">
+                                                            <div class="row message-header">
+                                                                <div class="col-xs-12 col-sm-8 message-title"> Recipients </div>
+                                                                <div class="col-xs-12 col-sm-4 message-meta"> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
+                                                            </div>
+                                                            <div class="message-content">
+                                                                <p>The following recipients will be targeted in this verification:</p>
+                                                                <div class="review-data">
+                                                                    <div class="wellll wellll-sm">
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <p> Recipient Group 1</p>
+                                                                            </div>
+                                                                            <div class="col-md-9 small"> Role ID: Student<br>
+                                                                                Role ID: Staff<br>
+                                                                                Effective Date: 09/23/2016<br>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="wellll wellll-sm">
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <p> Recipient Group 2</p>
+                                                                            </div>
+                                                                            <div class="col-md-9 small"> Role ID: Faculty<br>
+                                                                                Effective Date: 10/23/2016<br>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="message">
+                                                            <div class="row message-header">
+                                                                <div class="col-xs-12 col-sm-8 message-title"> Scheduling </div>
+                                                                <div class="col-xs-12 col-sm-4 message-meta"> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
+                                                            </div>
+                                                            <div class="message-content">
+                                                                <p>The scheduling for this verification is as follows:</p>
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                 <div class="review-data">
+                                                                    <div class="wellll wellll-sm">
+                                                                        <div class="row">
+                                                                            <div class="col-md-3">
+                                                                                <p> Scheduling</p>
+                                                                            </div>
+                                                                            <div class="col-md-9 small"> Status: Active<br>
+                                                                                Recurrance: One time<br>
+                                                                                End Date: 9/23/2015
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                   
+                                                                </div>
+                                                                
+                                                               
+                                                            </div>
+                                                        </div>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -451,22 +494,12 @@ margin-top: 20px;">IU Verify</h1>
     </div>
 </div>
 <?php include ('includes/brand-footer.php') ?>
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#show_create_new').click(function() {
-      $( "#create_new" ).show();
-	   $( "#all_verifications" ).hide();
-    });
-	
-	  $('#show_all_verifications').click(function() {
-      $( "#create_new" ).hide();
-	   $( "#all_verifications" ).show();
-    });
-	
-	
-	
-});
-</script> 
+<script>
+  $( function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+  } );
+  </script> 
 <script>
     angular.module('sortApp', []).controller('mainController', function($scope) {
         $scope.sortType = 'name';
@@ -580,10 +613,10 @@ $(document).ready(function() {
             var $newPanel = $template.clone();
             $newPanel.find(".collapse").removeClass("in");
             $newPanel.find(".accordion-toggle").attr("href", "#collapse-data" + (++hash))
-                .text("Data Group " + hash);
+                .text("Data Section " + hash);
             $newPanel.find(".panel-collapse").attr("id", "collapse-data" + (hash)).addClass("collapse").removeClass("in");
-            $newPanel.find(".panel-heading").append("<span class='pull-right'><i class='fa fa-close clickable'></i></span>");
-            $("#accordion1").append($newPanel.fadeIn());
+            //$newPanel.find(".panel-heading").append("<span class='pull-right'><i class='fa fa-close clickable'></i></span>");
+            $("#sortable").append($newPanel.fadeIn());
             $(document).on('click', '.fa.fa-close', function() {
                 $(this).parents('.panel').get(0).remove();
             });
@@ -600,7 +633,7 @@ $(document).ready(function() {
             var $newPanel = $template.clone();
             $newPanel.find(".collapse").removeClass("in");
             $newPanel.find(".accordion-toggle").attr("href", "#collapse-group" + (++hash))
-                .text("Recipient Group " + hash);
+                .text("Recipient Permission " + hash);
             $newPanel.find(".panel-collapse").attr("id", "collapse-group" + (hash)).addClass("collapse").removeClass("in");
             $newPanel.find(".panel-heading").append("<span class='pull-right'><i class='fa fa-close clickable'></i></span>");
             $("#accordion2").append($newPanel.fadeIn());
