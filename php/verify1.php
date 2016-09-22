@@ -13,7 +13,7 @@
 <div class="main-content container" role="main">
     <div id="main-content">
         <?php include ('includes/instructions-top.php') ?>
-        <div class="well vfy-group">
+        <div class="well vfy-section">
             <div class="row">
                 <div class="col-xs-6">
                     <h3 class="h4"> Military Status</h3>
@@ -41,7 +41,7 @@
                 </div>
             </div>
         </div>
-        <div class="well vfy-group">
+        <div class="well vfy-section">
             <div class="row">
                 <div class="col-xs-6">
                     <h3 class="h4">Disabled Status</h3>
@@ -94,7 +94,7 @@
 <script>
     $(document).ready(function() {
         $(".edit-group").click(function() {
-            $(event.target).closest('.vfy-group').prepend(" <div class='overlay'></div><a href='#' class='btn btn-primary btn-lg refresh'><i class='fa fa-refresh' aria-hidden='true'></i> Refresh</a>");
+            $(event.target).closest('.vfy-section').prepend(" <div class='overlay'></div><a href='#' class='btn btn-primary btn-lg refresh'><i class='fa fa-refresh' aria-hidden='true'></i> Refresh</a>");
             $(".refresh").click(function() {
                 $(".overlay, .refresh").fadeOut("fast");
                 $(".updated").css("background", "#ecf8ff");
