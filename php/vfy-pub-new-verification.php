@@ -4,111 +4,6 @@
 <head>
 <?php include ('includes/head-meta.php') ?>
 <?php include ('includes/styles-publishing.php') ?>
-<style>
-.list-group-item {
-	border-left: none;
-	border-right: none;
-	background: #ebebeb;
-}
-.table-actions td:last-child {
-	width: 1%;
-	white-space: nowrap;
-}
-.section-head {
-	margin-bottom: 15px;
-}
-.section-head .section-header h3 {
-	margin-top: 11px;
-}
-.view-admin .main-content .col-md-9 > .well {
-	margin-top: -53px;
-	min-heighttt: 600px;
-}
-.help-block {
-	margin-top: 0px;
-	margin-bottom: 5px;
-}
-label {
-	margin-bottom: 0px
-}
-.clickable {
-	position: absolute;
-	right: 9px;
-	top: 12px;
-	color: #cccccc;
-}
-.wizard-actions {
-	border-top: solid 1px #dddddd;
-	margin-bottom: -29px;
-	margin-top: 50px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-.editable-container.editable-popup .popover-title {
-	display: none;
-}
-.editable-container.editable-popup .popover-content .editable-date.well {
-	box-shadow: none;
-	padding: 0px;
-}
-.editable-container.editable-popup .popover-content .editable-clear {
-	float: right;
-}
-.editable-container.editable-popup .popover-content .datepicker-switch {
-	text-align: center;
-	font-weight: bold;
-	font-size: 24px;
-}
-.rules-group-container .rules-group-container .rule-post-container {
-	display: none !important;
-}
-.panel-group .panel .panel-heading .panel-title a {
-	display: block;
-}
-.panel-group .panel .panel-heading .panel-title a:hover {
-	text-decoration: none;
-}
-.panel-group .panel .panel-heading {
-	position: relative;
-}
-.vfy-activate .btn-lg {
-	padding: 7px 16px;
-}
-.vfy-activate .btn:active, .btn.active {
-	box-shadow: none;
-}
-.review-item {
-	padding-left: 75px;
-	position: relative;
-}
-.review-item .fa {
-	position: absolute;
-	left: 15px;
-	font-size: 24px;
-	top: -5px;
-	color: #2879b8;
-}
-.review-item .review-title {
-	font-weight: bold;
-}
-#sortable .panel:first-child .fa-close {
-	display: none
-}
-.toggle-handle {
-	border-radius: 20%
-}
-.review-data {
-	padding-left: 50px;
-}
-.review-data .well.well-sm {
-	background: #ffffff;
-	margin-right: 50px;
-	border: 1px solid #f5f5f5;
-}
-.review-data .wellll.wellll-sm {
-	margin-bottom: 20px;
-}
-</style>
 <?php include ('includes/scripts.php') ?>
 </head>
 <body class="view-admin" id="top">
@@ -121,7 +16,7 @@ label {
                 <?php include ('includes/pub-nav.php') ?>
             </div>
             <div class="col-md-9">
-                <div class="well">
+                <div class="primary-content">
                     <section>
                         <div class="row section-head">
                             <div class="col-md-12 section-header">
@@ -318,7 +213,7 @@ label {
                                             <p class="lead"> Scheduling</p>
                                             <div class="row">
                                                 <div class="col-xs-12">
-                                                    <div class="well well-sm vfy-activate" style="background:#F5F5F5">
+                                                    <div class="well well-sm vfy-activate" style="">
                                                         <div class="row">
                                                             <div class="col-md-8" style="padding-top:5px;">
                                                                 <label class="control-label" style="font-weight:normal; margin-bottom:0px"> Verification Status </label>
@@ -356,6 +251,46 @@ label {
                                     <div class="row setup-content" id="step-5">
                                         <div class="col-xs-12">
                                             <p class="lead"> Review/Save</p>
+                                            
+                                     
+                                            
+                                            
+                                                 <div class="well well-sm vfy-activate" style="">
+                                                        <div class="row">
+                                                            <div class="col-md-8">
+                                                                Setup
+                                                               </div>
+                                                            <div class="col-md-4 text-right" style="">
+                                                                <a href="verify-preview.php" class="btn btn-xs btn-default" target="_blank">Preview</a> <a href="#" class="btn btn-xs btn-default">Edit</a>
+                                                            </div>
+                                                            
+                                                            
+                                                              <div class="col-md-12"><p> The content and layout of this verification may be previewed in a new window.</p></div>
+                                                        </div>
+                                                    </div>
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <br>
                                             <div class="comment-list">
                                                 <ul class="list-unstyled">
                                                     <li>
@@ -366,7 +301,6 @@ label {
                                                             </div>
                                                             <div class="message-content">
                                                                 <p> The content and layout of this verification may be previewed in a new window.</p>
-                                                           
                                                             </div>
                                                         </div>
                                                     </li>
@@ -384,7 +318,7 @@ label {
                                                                             <div class="col-md-3">
                                                                                 <p> Data Group 1</p>
                                                                             </div>
-                                                                            <div class="col-md-9 small"> Data: XYX <br>
+                                                                            <div class="col-md-9"> Data: XYX <br>
                                                                                 Data: XYX <br>
                                                                                 Data: XYX <br>
                                                                                 Data: XYX <br>
@@ -398,7 +332,7 @@ label {
                                                                             <div class="col-md-3">
                                                                                 <p> Data Group 2</p>
                                                                             </div>
-                                                                            <div class="col-md-9 small"> Data: XYX <br>
+                                                                            <div class="col-md-9"> Data: XYX <br>
                                                                                 Data: XYX <br>
                                                                                 Data: XYX <br>
                                                                             </div>
@@ -422,7 +356,7 @@ label {
                                                                             <div class="col-md-3">
                                                                                 <p> Recipient Group 1</p>
                                                                             </div>
-                                                                            <div class="col-md-9 small"> Role ID: Student<br>
+                                                                            <div class="col-md-9"> Role ID: Student<br>
                                                                                 Role ID: Staff<br>
                                                                                 Effective Date: 09/23/2016<br>
                                                                             </div>
@@ -433,7 +367,7 @@ label {
                                                                             <div class="col-md-3">
                                                                                 <p> Recipient Group 2</p>
                                                                             </div>
-                                                                            <div class="col-md-9 small"> Role ID: Faculty<br>
+                                                                            <div class="col-md-9"> Role ID: Faculty<br>
                                                                                 Effective Date: 10/23/2016<br>
                                                                             </div>
                                                                         </div>
@@ -450,27 +384,18 @@ label {
                                                             </div>
                                                             <div class="message-content">
                                                                 <p>The scheduling for this verification is as follows:</p>
-                                                                
-                                                                
-                                                                
-                                                                
-                                                                
-                                                                 <div class="review-data">
+                                                                <div class="review-data">
                                                                     <div class="wellll wellll-sm">
                                                                         <div class="row">
                                                                             <div class="col-md-3">
                                                                                 <p> Scheduling</p>
                                                                             </div>
-                                                                            <div class="col-md-9 small"> Status: Active<br>
+                                                                            <div class="col-md-9"> Status: Active<br>
                                                                                 Recurrance: One time<br>
-                                                                                End Date: 9/23/2015
-                                                                            </div>
+                                                                                End Date: 9/23/2015 </div>
                                                                         </div>
                                                                     </div>
-                                                                   
                                                                 </div>
-                                                                
-                                                               
                                                             </div>
                                                         </div>
                                                     </li>
