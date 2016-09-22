@@ -4,94 +4,6 @@
 <head>
 <?php include ('includes/head-meta.php') ?>
 <?php include ('includes/styles-publishing.php') ?>
-<style>
-.list-group-item {
-	border-left: none;
-	border-right: none;
-	background: #ebebeb;
-}
-.table-actions td:last-child {
-	width: 1%;
-	white-space: nowrap;
-}
-.section-head {
-	margin-bottom: 15px;
-}
-.section-head .section-header h3 {
-	margin-top: 11px;
-}
-.view-admin .main-content .col-md-9 > .well {
-	margin-top: -53px;
-	min-heighttt: 600px;
-}
-.help-block {
-	margin-top: 0px;
-	margin-bottom: 5px;
-}
-label {
-	margin-bottom: 0px
-}
-.clickable {
-	position: absolute;
-	right: 9px;
-	top: 12px;
-	color: #cccccc;
-}
-.wizard-actions {
-	border-top: solid 1px #dddddd;
-	margin-bottom: -29px;
-	margin-top: 50px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-.editable-container.editable-popup .popover-title {
-	display: none;
-}
-.editable-container.editable-popup .popover-content .editable-date.well {
-	box-shadow: none;
-	padding: 0px;
-}
-.editable-container.editable-popup .popover-content .editable-clear {
-	float: right;
-}
-.editable-container.editable-popup .popover-content .datepicker-switch {
-	text-align: center;
-	font-weight: bold;
-	font-size: 24px;
-}
-.rules-group-container .rules-group-container .rule-post-container {
-	display: none !important;
-}
-.panel-group .panel .panel-heading .panel-title a {
-	display: block;
-}
-.panel-group .panel .panel-heading .panel-title a:hover {
-	text-decoration: none;
-}
-.panel-group .panel .panel-heading {
-	position: relative;
-}
-.vfy-activate .btn-lg {
-	padding: 7px 16px;
-}
-.vfy-activate .btn:active, .btn.active {
-	box-shadow: none;
-}
-.review-item {
-	padding-left: 75px;
-	position: relative;
-}
-.review-item .fa {
-	position: absolute;
-	left: 15px;
-	font-size: 36px;
-	top: -5px;
-	color: #73a8d1;
-}
-.review-item .review-title {
-	font-weight: bold;
-}
-</style>
 <?php include ('includes/scripts.php') ?>
 </head>
 <body class="view-admin" id="top">
@@ -104,7 +16,7 @@ label {
                 <?php include ('includes/pub-nav.php') ?>
             </div>
             <div class="col-md-9">
-                <div class="well" style="min-height:500px">
+                <div class="primary-content">
                     <section style="display:;" id="all_verifications" ng-app=sortApp ng-controller=mainController>
                         <div class="row section-head">
                             <div class="col-md-6 section-header">

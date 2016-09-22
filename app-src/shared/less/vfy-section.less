@@ -1,0 +1,27 @@
+
+.vfy-section {
+  position: relative;
+  .form-group-sm {
+    .control-label {
+      padding-top: 1px;
+    }
+    .form-control-static {
+      height: 15px;
+      min-height: 15px;
+      padding: 0px 10px;
+    }
+  }
+  .form-group-sm.form-section-control {
+    position: relative;
+    &:before {
+      background-color: #cccccc;
+      bottom: 0;
+      content: " ";
+      height: 1px;
+      position: absolute;
+      right: 0px;
+      top: 14px;
+      width: 100%;
+    }
+  }
+}

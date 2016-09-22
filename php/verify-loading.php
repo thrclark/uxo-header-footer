@@ -18,7 +18,7 @@
 <div class="main-content container" role="main">
     <div id="main-content">
         <?php include ('includes/instructions-top.php') ?>
-        <div class="well vfy-group">
+        <div class="well vfy-section">
             <div class="row">
                 <div class="col-xs-6">
                     <h3 class="h4"> Military Status</h3>
@@ -46,7 +46,7 @@
                 </div>
             </div>
         </div>
-        <div class="well vfy-group">
+        <div class="well vfy-section">
             <div class="row">
                 <div class="col-xs-6">
                     <h3 class="h4">Disabled Status</h3>
