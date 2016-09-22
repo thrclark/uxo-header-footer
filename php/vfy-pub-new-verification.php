@@ -213,10 +213,10 @@
                                             <p class="lead"> Scheduling</p>
                                             <div class="row">
                                                 <div class="col-xs-12">
-                                                    <div class="well well-sm vfy-activate" style="">
+                                                    <div class="well well-sm tile-content" style="">
                                                         <div class="row">
                                                             <div class="col-md-8" style="padding-top:5px;">
-                                                                <label class="control-label" style="font-weight:normal; margin-bottom:0px"> Verification Status </label>
+                                                                <div> <strong>Verification Status</strong> </div>
                                                                 <span class="help-block small" id=""> Specify the status of this verification upon saving.</span> </div>
                                                             <div class="col-md-4 text-right" style="    padding-top: 8px;">
                                                                 <input id="toggle_status" type="checkbox" checked data-toggle="toggle" data-on="Active" data-off="Inactive" data-onstyle="primary" data-offstyle="default" data-size="large">
@@ -251,155 +251,116 @@
                                     <div class="row setup-content" id="step-5">
                                         <div class="col-xs-12">
                                             <p class="lead"> Review/Save</p>
-                                            
-                                     
-                                            
-                                            
-                                                 <div class="well well-sm vfy-activate" style="">
-                                                        <div class="row">
-                                                            <div class="col-md-8">
-                                                                Setup
-                                                               </div>
-                                                            <div class="col-md-4 text-right" style="">
-                                                                <a href="verify-preview.php" class="btn btn-xs btn-default" target="_blank">Preview</a> <a href="#" class="btn btn-xs btn-default">Edit</a>
+                                            <div class="well well-sm tile-content" style="">
+                                                <div class="row">
+                                                    <div class="col-md-8"> <strong>Setup</strong> </div>
+                                                    <div class="col-md-4 text-right" style=""> <a href="verify-preview.php" class="btn btn-xs btn-default" target="_blank">Preview</a> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
+                                                    <div class="col-md-12">
+                                                        <p class="help-block"> The content and layout of this verification may be previewed in a new window.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="well well-sm tile-content" style="">
+                                                <div class="row">
+                                                    <div class="col-md-8"> <strong>Data</strong> </div>
+                                                    <div class="col-md-4 text-right" style=""> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
+                                                    <div class="col-md-12">
+                                                        <p class="help-block">The following data will be verified in this verification: </p>
+                                                        <div class="review-data">
+                                                            <div class="review-data-section">
+                                                                <div class="row">
+                                                                    <div class="col-md-3">
+                                                                        <p> Data Group 1</p>
+                                                                    </div>
+                                                                    <div class="col-md-9"> <i>
+                                                                        <ul class="list-unstyled">
+                                                                            <li> Data: XYX </li>
+                                                                            <li> Data: XYX </li>
+                                                                            <li> Data: XYX </li>
+                                                                        </ul>
+                                                                        </i> </div>
+                                                                </div>
                                                             </div>
-                                                            
-                                                            
-                                                              <div class="col-md-12"><p> The content and layout of this verification may be previewed in a new window.</p></div>
+                                                            <div class="review-data-section">
+                                                                <div class="row">
+                                                                    <div class="col-md-3">
+                                                                        <p> Data Group 2</p>
+                                                                    </div>
+                                                                    <div class="col-md-9"> <i>
+                                                                        <ul class="list-unstyled">
+                                                                            <li> Data: XYX </li>
+                                                                            <li> Data: XYX </li>
+                                                                            <li> Data: XYX </li>
+                                                                        </ul>
+                                                                        </i> </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                            
-                                            
-                                            
-                                            
-                                            
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <br>
-                                            <div class="comment-list">
-                                                <ul class="list-unstyled">
-                                                    <li>
-                                                        <div class="message">
-                                                            <div class="row message-header">
-                                                                <div class="col-xs-12 col-sm-8 message-title"> Setup </div>
-                                                                <div class="col-xs-12 col-sm-4 message-meta"> <a href="verify-preview.php" class="btn btn-xs btn-default" target="_blank">Preview</a> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
-                                                            </div>
-                                                            <div class="message-content">
-                                                                <p> The content and layout of this verification may be previewed in a new window.</p>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="message">
-                                                            <div class="row message-header">
-                                                                <div class="col-xs-12 col-sm-8 message-title"> Data </div>
-                                                                <div class="col-xs-12 col-sm-4 message-meta"> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
-                                                            </div>
-                                                            <div class="message-content">
-                                                                <p>The following data will be verified in this verification: </p>
-                                                                <div class="review-data">
-                                                                    <div class="wellll wellll-sm">
-                                                                        <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <p> Data Group 1</p>
-                                                                            </div>
-                                                                            <div class="col-md-9"> Data: XYX <br>
-                                                                                Data: XYX <br>
-                                                                                Data: XYX <br>
-                                                                                Data: XYX <br>
-                                                                                Data: XYX <br>
-                                                                                Data: XYX <br>
-                                                                            </div>
-                                                                        </div>
+                                                </div>
+                                            </div>
+                                            <div class="well well-sm tile-content" style="">
+                                                <div class="row">
+                                                    <div class="col-md-8"> <strong>Recipients</strong> </div>
+                                                    <div class="col-md-4 text-right" style=""> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
+                                                    <div class="col-md-12">
+                                                        <p class="help-block"> The following recipients will be targeted in this verification: </p>
+                                                        <div class="review-data">
+                                                            <div class="review-data-section">
+                                                                <div class="row">
+                                                                    <div class="col-md-3">
+                                                                        <p> Recipient Group 1</p>
                                                                     </div>
-                                                                    <div class="wellll wellll-sm">
-                                                                        <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <p> Data Group 2</p>
-                                                                            </div>
-                                                                            <div class="col-md-9"> Data: XYX <br>
-                                                                                Data: XYX <br>
-                                                                                Data: XYX <br>
-                                                                            </div>
-                                                                        </div>
+                                                                    <div class="col-md-9"><i>
+                                                                        <ul class="list-unstyled">
+                                                                            <li>Role ID: Student</li>
+                                                                            <li> Role ID: Staff</li>
+                                                                            <li> Effective Date: 09/23/2016</li>
+                                                                        </ul>
+                                                                        </i> </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="review-data-section">
+                                                                <div class="row">
+                                                                    <div class="col-md-3">
+                                                                        <p> Recipient Group 2</p>
                                                                     </div>
+                                                                    <div class="col-md-9"><i>
+                                                                        <ul class="list-unstyled">
+                                                                            <li>Role ID: Faculty</li>
+                                                                            <li> Effective Date: 10/23/2016</li>
+                                                                        </ul>
+                                                                        </i> </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="message">
-                                                            <div class="row message-header">
-                                                                <div class="col-xs-12 col-sm-8 message-title"> Recipients </div>
-                                                                <div class="col-xs-12 col-sm-4 message-meta"> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
-                                                            </div>
-                                                            <div class="message-content">
-                                                                <p>The following recipients will be targeted in this verification:</p>
-                                                                <div class="review-data">
-                                                                    <div class="wellll wellll-sm">
-                                                                        <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <p> Recipient Group 1</p>
-                                                                            </div>
-                                                                            <div class="col-md-9"> Role ID: Student<br>
-                                                                                Role ID: Staff<br>
-                                                                                Effective Date: 09/23/2016<br>
-                                                                            </div>
-                                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="well well-sm tile-content" style="">
+                                                <div class="row">
+                                                    <div class="col-md-8"> <strong>Scheduling</strong> </div>
+                                                    <div class="col-md-4 text-right" style=""> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
+                                                    <div class="col-md-12">
+                                                        <p class="help-block"> The scheduling for this verification is as follows: </p>
+                                                        <div class="review-data">
+                                                            <div class="review-data-section">
+                                                                <div class="row">
+                                                                    <div class="col-md-3">
+                                                                        <p> Scheduling</p>
                                                                     </div>
-                                                                    <div class="wellll wellll-sm">
-                                                                        <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <p> Recipient Group 2</p>
-                                                                            </div>
-                                                                            <div class="col-md-9"> Role ID: Faculty<br>
-                                                                                Effective Date: 10/23/2016<br>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
+                                                                    <div class="col-md-9"><i>
+                                                                        <ul class="list-unstyled">
+                                                                            <li> Status: Active</li>
+                                                                            <li> Recurrance: One time</li>
+                                                                            <li> End Date: 9/23/2015</li>
+                                                                        </ul>
+                                                                        </i> </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="message">
-                                                            <div class="row message-header">
-                                                                <div class="col-xs-12 col-sm-8 message-title"> Scheduling </div>
-                                                                <div class="col-xs-12 col-sm-4 message-meta"> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
-                                                            </div>
-                                                            <div class="message-content">
-                                                                <p>The scheduling for this verification is as follows:</p>
-                                                                <div class="review-data">
-                                                                    <div class="wellll wellll-sm">
-                                                                        <div class="row">
-                                                                            <div class="col-md-3">
-                                                                                <p> Scheduling</p>
-                                                                            </div>
-                                                                            <div class="col-md-9"> Status: Active<br>
-                                                                                Recurrance: One time<br>
-                                                                                End Date: 9/23/2015 </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
-                                                </ul>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-xs-12 wizard-actions">
