@@ -253,8 +253,8 @@
                                             <p class="lead"> Review/Save</p>
                                             <div class="well well-sm tile-content" style="">
                                                 <div class="row">
-                                                    <div class="col-md-8"> <strong>Setup</strong> </div>
-                                                    <div class="col-md-4 text-right" style=""> <a href="verify-preview.php" class="btn btn-xs btn-default" target="_blank">Preview</a> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
+                                                    <div class="col-xs-6"> <strong>Setup</strong> </div>
+                                                    <div class="col-xs-6 text-right" style=""> <a href="verify-preview.php" class="btn btn-xs btn-default" target="_blank">Preview</a> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
                                                     <div class="col-md-12">
                                                         <p class="help-block"> The content and layout of this verification may be previewed in a new window.</p>
                                                     </div>
@@ -262,8 +262,8 @@
                                             </div>
                                             <div class="well well-sm tile-content" style="">
                                                 <div class="row">
-                                                    <div class="col-md-8"> <strong>Data</strong> </div>
-                                                    <div class="col-md-4 text-right" style=""> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
+                                                    <div class="col-xs-6"> <strong>Data</strong> </div>
+                                                    <div class="col-xs-6 text-right" style=""> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
                                                     <div class="col-md-12">
                                                         <p class="help-block">The following data will be verified in this verification: </p>
                                                         <div class="review-data">
@@ -301,8 +301,8 @@
                                             </div>
                                             <div class="well well-sm tile-content" style="">
                                                 <div class="row">
-                                                    <div class="col-md-8"> <strong>Recipients</strong> </div>
-                                                    <div class="col-md-4 text-right" style=""> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
+                                                    <div class="col-xs-6"> <strong>Recipients</strong> </div>
+                                                    <div class="col-xs-6 text-right" style=""> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
                                                     <div class="col-md-12">
                                                         <p class="help-block"> The following recipients will be targeted in this verification: </p>
                                                         <div class="review-data">
@@ -339,8 +339,8 @@
                                             </div>
                                             <div class="well well-sm tile-content" style="">
                                                 <div class="row">
-                                                    <div class="col-md-8"> <strong>Scheduling</strong> </div>
-                                                    <div class="col-md-4 text-right" style=""> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
+                                                    <div class="col-xs-6"> <strong>Scheduling</strong> </div>
+                                                    <div class="col-xs-6 text-right" style=""> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
                                                     <div class="col-md-12">
                                                         <p class="help-block"> The scheduling for this verification is as follows: </p>
                                                         <div class="review-data">
