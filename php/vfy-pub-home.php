@@ -1,4 +1,7 @@
-<?php $page_title = "home" ?>
+<?php 
+$section = 'publishing';
+$page_title = 'home';
+?>
 <!DOCTYPE html>
 <html lang=en-us>
 <head>

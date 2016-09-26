@@ -11,7 +11,7 @@
                 </ul>
                 <li data-toggle="collapse" data-target="#service" class="collapsed"> <a href="#">Settings <span class="arrow"></span></a> </li>
                 <ul class="sub-menu collapse" id="service">
-                    <li <?php if ($page_title == 'settings') { echo 'class="active"'; } ?>><a href="vfy-pub-settings.php">General Settings</a></li>
+                    <li <?php if ($page_title == 'general-settings') { echo 'class="active"'; } ?>><a href="vfy-pub-settings.php">General Settings</a></li>
                     <li><a href="#">API Accounts </a></li>
                 </ul>
                 

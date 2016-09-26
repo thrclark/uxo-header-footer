@@ -1,4 +1,7 @@
-<?php $page_title = "create-new" ?>
+<?php 
+$section = 'publishing';
+$page_title = 'create-new';
+?>
 <!DOCTYPE html>
 <html lang=en-us>
 <head>

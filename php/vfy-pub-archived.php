@@ -1,4 +1,7 @@
-<?php $page_title = "archived" ?>
+<?php 
+$section = 'publishing';
+$page_title = 'archived';
+?>
 <!DOCTYPE html>
 <html lang=en-us>
 <head>
