@@ -27,4 +27,8 @@ sftp-config.json
 
 *.xml
 
+.log
+
+npm-debug.log
+
 *.log
