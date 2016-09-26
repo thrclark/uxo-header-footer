@@ -17,13 +17,13 @@ header .app-header h1 {
 <body style="background:#FFFFFF" data-market-key="" data-market-name="All Markets" data-all-markets-key="all" data-task-collection="" ondragstart="return false;" ondrop="return false;" id="top" >
 <header >
     <div class="container togglecontainer app-header" style="padding-top:15px;background:;">
-        <h1 style="margin-left: auto; margin-right: auto; color:#ffffff ">IU Verify</h1>
+        <h1 style="margin-left: auto; margin-right: auto; color:#ffffff ">IU Verify - Prototypes</h1>
     </div>
 </header>
 <div class="main-content container" style="background:#FFFFFF" role="main">
     <div id="main-content">
         <div class="" style="margin-top:40px; margin-bottom:40px">
-            <h2 class="">Prototype Screens</h2>
+            <h2 class="">End User Views </h2>
             <ul>
                 <li><a href="verify1.php" target="_blank">Example 1</a>
                     <ul>
@@ -52,8 +52,14 @@ header .app-header h1 {
                 </li>
                 <li><a href="verify-loading.php" target="_blank">Example 5 (section loaders &amp; updated data)</a> </li>
                 <li><a href="verify-completed.php" target="_blank">Example 6 (verifications complete)</a> </li>
-                <li><a href="vfy-pub-home.php" target="_blank">Publishing Home</a> </li>
+            </ul>
+            <h2 class="">Publishing/Admin Views </h2>
+            <ul>
+                <li><a href="vfy-pub-home.php" target="_blank">Publishing - Home</a> </li>
                 <li><a href="vfy-pub-new-verification.php" target="_blank">Publishing - New Verification</a> </li>
+                <li><a href="vfy-pub-archived.php" target="_blank">Publishing - Archive</a> </li>
+                <li><a href="vfy-pub-settings.php" target="_blank">Publishing - General Settings</a> </li>
+                <li><!--<a href="vfy-pub-api-accounts-home.php" target="_blank">Publishing - API Accounts</a>--> Publishing - API Accounts</li>
             </ul>
         </div>
     </div>
