@@ -26,3 +26,5 @@ sftp-config.json
 *.xml
 
 *.xml
+
+*.log
