@@ -31,19 +31,19 @@ $page_title = 'create-new';
                                 <div class="stepwizard">
                                     <div class="stepwizard-row setup-panel">
                                         <div class="stepwizard-step"> <a href="#step-1" type="button" class="btn btn-primary btn-circle"><i class="fa fa-wrench" aria-hidden="true"></i></a>
-                                            <p>Setup</p>
+                                            <p class="hidden-xs">Setup</p>
                                         </div>
                                         <div class="stepwizard-step"> <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-database" aria-hidden="true"></i></a>
-                                            <p>Data</p>
+                                            <p class="hidden-xs">Data</p>
                                         </div>
                                         <div class="stepwizard-step"> <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-users"></i></a>
-                                            <p>Recipients</p>
+                                            <p class="hidden-xs">Recipients</p>
                                         </div>
                                         <div class="stepwizard-step"> <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-calendar"></i></a>
-                                            <p>Scheduling</p>
+                                            <p class="hidden-xs">Scheduling</p>
                                         </div>
                                         <div class="stepwizard-step"> <a href="#step-5" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-eye"></i></a>
-                                            <p>Review/Save</p>
+                                            <p class="hidden-xs">Review/Save</p>
                                         </div>
                                     </div>
                                 </div>

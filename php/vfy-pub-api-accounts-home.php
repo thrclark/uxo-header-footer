@@ -22,10 +22,10 @@ $page_title = 'api-accounts';
                 <div class="primary-content">
                     <section ng-app=sortApp ng-controller=mainController>
                         <div class="row section-head">
-                            <div class="col-md-6 section-header">
+                            <div class="col-sm-6 section-header">
                                 <h3>API Accounts &amp; External Rest URLs</h3>
                             </div>
-                            <div class="col-md-6 text-right" style="padding-top: 9px;">
+                            <div class="col-sm-6 text-right" style="padding-top: 9px;">
                                 <form class="form-inline" style="padding-bottom: 10px;">
                                     <div class="form-group">
                                         <label class="sr-only" for=filtertable>Filter</label>
