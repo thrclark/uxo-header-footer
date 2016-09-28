@@ -1,14 +1,18 @@
+
+
+.stepwizard {
+  display: table;
+  width: 100%;
+  position: relative;
+}
+
 .stepwizard-step p {
   margin-top: 10px;
 }
 .stepwizard-row {
   display: table-row;
 }
-.stepwizard {
-  display: table;
-  width: 100%;
-  position: relative;
-}
+
 .stepwizard-step button[disabled] {
   opacity: 1 !important;
   filter: alpha(opacity=100) !important;
@@ -52,4 +56,12 @@
   margin-top: 50px;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+
+@media (max-width: @screen-xs-max)  {
+  .stepwizard {
+    margin-bottom: 20px;
+  }
+
 }
