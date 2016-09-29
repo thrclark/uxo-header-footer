@@ -12,6 +12,3 @@
 <script type="text/javascript" src="../js/moment.min.js"></script>
 <script type="text/javascript" src="../js/query-builder.min.js"></script>
 <script type="text/javascript" src="../js/bootstrap-editable.min.js"></script>
-<!-- Responsive Tables-->
-<script type="text/javascript" src="../js/tablesaw.js"></script>
-<script type="text/javascript" src="../js/tablesaw-init.js"></script>

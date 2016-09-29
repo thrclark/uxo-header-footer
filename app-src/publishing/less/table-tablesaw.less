@@ -23,7 +23,7 @@ table.tablesaw {
 .tablesaw th,
 .tablesaw td {
   box-sizing: border-box;
-  padding: .5em .7em;
+  //padding: .5em .7em;
 }
 
 .tablesaw thead tr:first-child th {
@@ -407,7 +407,7 @@ table.tablesaw {
   }
 }
 
-@media (max-width: 39.9375em) {
+@media (max-width: @screen-xs-max)  {
   .tablesaw-stack thead td,
   .tablesaw-stack thead th {
     display: none;
@@ -437,7 +437,7 @@ table.tablesaw {
 
 /* Media query to show as a standard table at 560px (35em x 16px) or wider */
 
-@media (min-width: 40em) {
+@media (min-width: @screen-sm-min) {
   .tablesaw-stack tr {
     display: table-row;
   }
@@ -728,4 +728,25 @@ table.tablesaw {
   filter: alpha(opacity=25);
   cursor: default;
   pointer-events: none;
+}
+
+
+// Add on
+
+@media (max-width: @screen-xs-max) {
+
+  .tablesaw.table-actions td:last-child {
+    width: 100%;
+    white-space: inherit;
+    padding-bottom: 10px;
+  }
+
+  .tablesaw td:first-child {
+    padding-top: 10px;
+  }
+
+  .table.tablesaw td {
+    border: none;
+  }
+
 }

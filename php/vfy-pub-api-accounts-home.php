@@ -8,6 +8,9 @@ $page_title = 'api-accounts';
 <?php include ('includes/head-meta.php') ?>
 <?php include ('includes/styles-publishing.php') ?>
 <?php include ('includes/scripts.php') ?>
+<!-- Responsive Tables-->
+<script type="text/javascript" src="../js/tablesaw.js"></script>
+<script type="text/javascript" src="../js/tablesaw-init.js"></script>
 </head>
 <body class="view-admin" id="top">
 <?php include ('includes/brand-header2.php') ?>
@@ -34,34 +37,199 @@ $page_title = 'api-accounts';
                                 </form>
                             </div>
                         </div>
-                        <table class="table table-condensed table-responsive table-actions">
+                        <table class="table table-condensed table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack">
                             <thead>
                                 <tr>
-                                    <td><a href="#" ng-click="sortType = 'name'; sortReverse = !sortReverse"> Name <i ng-show="sortType == 'name' &amp;&amp; !sortReverse" class="icon-angle-up"></i> <i ng-show="sortType == 'name' &amp;&amp; sortReverse" class="icon-angle-down"></i> </a></td>
-                                    <td><a href="#" ng-click="sortType = 'type'; sortReverse = !sortReverse"> Type <i ng-show="sortType == 'type' &amp;&amp; !sortReverse" class="icon-angle-up"></i> <i ng-show="sortType == 'type' &amp;&amp; sortReverse" class="icon-angle-down"></i> </a></td>
-                                    <td><a href="#" ng-click="sortType = 'access'; sortReverse = !sortReverse"> Access Level <i ng-show="sortType == 'access' &amp;&amp; !sortReverse" class="icon-angle-up"></i> <i ng-show="sortType == 'access' &amp;&amp; sortReverse" class="icon-angle-down"></i> </a></td>
-                                    <td><a href="#" ng-click="sortType = 'auth'; sortReverse = !sortReverse"> Auth Type <i ng-show="sortType == 'auth' &amp;&amp; !sortReverse" class="icon-angle-up"></i> <i ng-show="sortType == 'auth' &amp;&amp; sortReverse" class="icon-angle-down"></i> </a></td>
-                                    <td><a href="#" ng-click="sortType = 'status'; sortReverse = !sortReverse">Status <i ng-show="sortType == 'status' &amp;&amp; !sortReverse" class="icon-angle-up"></i> <i ng-show="sortType == 'status' &amp;&amp; sortReverse" class="icon-angle-down"></i> </a></td>
-                                    <td><span class="">Actions</span></td>
+                                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="1">Name</th>
+                                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Type</th>
+                                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Access Level</th>
+                                     <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Auth Type</th>
+                                      <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Status</th>
+                                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4"><span class="visible-xs">Actions</span></th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr ng-repeat="roll in sushi | orderBy:sortType:sortReverse | filter:searchstatus">
-                                    <td>{{ roll.name }}</td>
-                                    <td>{{ roll.type }}</td>
-                                    <td>{{ roll.access }}</td>
-                                    <td>{{ roll.auth }}</td>
-                                    <td>{{ roll.status }}</td>
-                                    <td class="text-center"><div class="dropdown">
-                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
-                                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                <li><a href="xxx.php" target="_blank">Edit</a></li>
-                                                <li><a href="#">Delete</a></li>
-                                                <li><a href="#">Activate</a></li>
-                                            </ul>
-                                        </div></td>
-                                </tr>
-                            </tbody>
+                       <tbody>
+        <tr>
+            <td >API Account 1</td>
+            <td >external</td>
+            <td >publisher</td>
+            <td >basic</td>
+            <td >active</td>
+            <td class="text-center"><div class="dropdown">
+                    <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                        <li><a href="xxx.php" target="_blank">Edit</a></li>
+                        <li><a href="#">Delete</a></li>
+                        <li><a href="#">Activate</a></li>
+                    </ul>
+                </div></td>
+        </tr>
+        <tr>
+            <td >API Account 10</td>
+            <td >maintenance</td>
+            <td >admin</td>
+            <td >basic</td>
+            <td >inactive</td>
+            <td class="text-center"><div class="dropdown">
+                    <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+                        <li><a href="xxx.php" target="_blank">Edit</a></li>
+                        <li><a href="#">Delete</a></li>
+                        <li><a href="#">Activate</a></li>
+                    </ul>
+                </div></td>
+        </tr>
+        <tr>
+            <td >API Account 11</td>
+            <td >external</td>
+            <td >publisher</td>
+            <td >basic</td>
+            <td >active</td>
+            <td class="text-center"><div class="dropdown">
+                    <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu3">
+                        <li><a href="xxx.php" target="_blank">Edit</a></li>
+                        <li><a href="#">Delete</a></li>
+                        <li><a href="#">Activate</a></li>
+                    </ul>
+                </div></td>
+        </tr>
+        <tr>
+            <td >API Account 12</td>
+            <td >maintenance</td>
+            <td >admin</td>
+            <td >basic</td>
+            <td >inactive</td>
+            <td class="text-center"><div class="dropdown">
+                    <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu4">
+                        <li><a href="xxx.php" target="_blank">Edit</a></li>
+                        <li><a href="#">Delete</a></li>
+                        <li><a href="#">Activate</a></li>
+                    </ul>
+                </div></td>
+        </tr>
+        <tr>
+            <td >API Account 2</td>
+            <td >maintenance</td>
+            <td >admin</td>
+            <td >basic</td>
+            <td >inactive</td>
+            <td class="text-center"><div class="dropdown">
+                    <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu5">
+                        <li><a href="xxx.php" target="_blank">Edit</a></li>
+                        <li><a href="#">Delete</a></li>
+                        <li><a href="#">Activate</a></li>
+                    </ul>
+                </div></td>
+        </tr>
+        <tr>
+            <td >API Account 3</td>
+            <td >external</td>
+            <td >publisher</td>
+            <td >basic</td>
+            <td >active</td>
+            <td class="text-center"><div class="dropdown">
+                    <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu6">
+                        <li><a href="xxx.php" target="_blank">Edit</a></li>
+                        <li><a href="#">Delete</a></li>
+                        <li><a href="#">Activate</a></li>
+                    </ul>
+                </div></td>
+        </tr>
+        <tr>
+            <td >API Account 4</td>
+            <td >maintenance</td>
+            <td >admin</td>
+            <td >basic</td>
+            <td >inactive</td>
+            <td class="text-center"><div class="dropdown">
+                    <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu7">
+                        <li><a href="xxx.php" target="_blank">Edit</a></li>
+                        <li><a href="#">Delete</a></li>
+                        <li><a href="#">Activate</a></li>
+                    </ul>
+                </div></td>
+        </tr>
+        <tr>
+            <td >API Account 5</td>
+            <td >external</td>
+            <td >publisher</td>
+            <td >basic</td>
+            <td >active</td>
+            <td class="text-center"><div class="dropdown">
+                    <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu8">
+                        <li><a href="xxx.php" target="_blank">Edit</a></li>
+                        <li><a href="#">Delete</a></li>
+                        <li><a href="#">Activate</a></li>
+                    </ul>
+                </div></td>
+        </tr>
+        <tr>
+            <td >API Account 6</td>
+            <td >maintenance</td>
+            <td >admin</td>
+            <td >basic</td>
+            <td >inactive</td>
+            <td class="text-center"><div class="dropdown">
+                    <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu9" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu9">
+                        <li><a href="xxx.php" target="_blank">Edit</a></li>
+                        <li><a href="#">Delete</a></li>
+                        <li><a href="#">Activate</a></li>
+                    </ul>
+                </div></td>
+        </tr>
+        <tr>
+            <td >API Account 7</td>
+            <td >external</td>
+            <td >publisher</td>
+            <td >basic</td>
+            <td >active</td>
+            <td class="text-center"><div class="dropdown">
+                    <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu10">
+                        <li><a href="xxx.php" target="_blank">Edit</a></li>
+                        <li><a href="#">Delete</a></li>
+                        <li><a href="#">Activate</a></li>
+                    </ul>
+                </div></td>
+        </tr>
+        <tr>
+            <td >API Account 8</td>
+            <td >maintenance</td>
+            <td >admin</td>
+            <td >basic</td>
+            <td >inactive</td>
+            <td class="text-center"><div class="dropdown">
+                    <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu11" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu11">
+                        <li><a href="xxx.php" target="_blank">Edit</a></li>
+                        <li><a href="#">Delete</a></li>
+                        <li><a href="#">Activate</a></li>
+                    </ul>
+                </div></td>
+        </tr>
+        <tr>
+            <td >API Account 9</td>
+            <td >external</td>
+            <td >publisher</td>
+            <td >basic</td>
+            <td >active</td>
+            <td class="text-center"><div class="dropdown">
+                    <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu12">
+                        <li><a href="xxx.php" target="_blank">Edit</a></li>
+                        <li><a href="#">Delete</a></li>
+                        <li><a href="#">Activate</a></li>
+                    </ul>
+                </div></td>
+        </tr>
+    </tbody>
                         </table>
                     </section>
                 </div>
@@ -70,7 +238,8 @@ $page_title = 'api-accounts';
     </div>
 </div>
 <?php include ('includes/brand-footer.php') ?>
-<script>
+
+<!--<script>
     angular.module('sortApp', []).controller('mainController', function($scope) {
         $scope.sortType = 'name';
         $scope.sortReverse = false;
@@ -163,6 +332,7 @@ $page_title = 'api-accounts';
 		
 		];
     });
-</script>
+</script>-->
+
 </body>
 </html>

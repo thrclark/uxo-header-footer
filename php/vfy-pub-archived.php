@@ -8,6 +8,9 @@ $page_title = 'archived';
 <?php include ('includes/head-meta.php') ?>
 <?php include ('includes/styles-publishing.php') ?>
 <?php include ('includes/scripts.php') ?>
+<!-- Responsive Tables-->
+<script type="text/javascript" src="../js/tablesaw.js"></script>
+<script type="text/javascript" src="../js/tablesaw-init.js"></script>
 </head>
 <body class="view-admin" id="top">
 <?php include ('includes/brand-header2.php') ?>
@@ -34,20 +37,72 @@ $page_title = 'archived';
                                 </form>
                             </div>
                         </div>
-                        <table class="table table-condensed table-responsive table-actions">
+                        <table class="table table-condensed table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack">
                             <thead>
                                 <tr>
-                                    <td><a href="#" ng-click="sortType = 'name'; sortReverse = !sortReverse"> Name <i ng-show="sortType == 'name' &amp;&amp; !sortReverse" class="icon-angle-up"></i> <i ng-show="sortType == 'name' &amp;&amp; sortReverse" class="icon-angle-down"></i> </a></td>
-                                    <td><a href="#" ng-click="sortType = 'status'; sortReverse = !sortReverse"> Status <i ng-show="sortType == 'status' &amp;&amp; !sortReverse" class="icon-angle-up"></i> <i ng-show="sortType == 'status' &amp;&amp; sortReverse" class="icon-angle-down"></i> </a></td>
-                                    <td><a href="#" ng-click="sortType = 'created'; sortReverse = !sortReverse"> Created <i ng-show="sortType == 'created' &amp;&amp; !sortReverse" class="icon-angle-up"></i> <i ng-show="sortType == 'created' &amp;&amp; sortReverse" class="icon-angle-down"></i> </a></td>
-                                    <td><span class="">Actions</span></td>
+                                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="1">Name</th>
+                                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Status</th>
+                                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Created</th>
+                                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4"><span class="visible-xs">Actions</span></th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr ng-repeat="roll in sushi | orderBy:sortType:sortReverse | filter:searchstatus">
-                                    <td>{{ roll.name }}</td>
-                                    <td>{{ roll.status }}</td>
-                                    <td>{{ roll.created }}</td>
+                                <tr ng-repeat="roll in sushi | orderBy:sortType:sortReverse | filter:searchstatus" class="ng-scope">
+                                    <td>Campus Access Code Agreement</td>
+                                    <td>inactive</td>
+                                    <td>2015-03-15</td>
+                                    <td class="text-center"><div class="dropdown">
+                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                <li><a href="verify-preview.php" target="_blank">Preview</a></li>
+                                                <li><a href="#">Unarchive</a></li>
+                                                <li><a href="#">View Reports</a></li>
+                                            </ul>
+                                        </div></td>
+                                </tr>
+                                <tr ng-repeat="roll in sushi | orderBy:sortType:sortReverse | filter:searchstatus" class="ng-scope">
+                                    <td>Citizenship - Test</td>
+                                    <td>inactive</td>
+                                    <td>2015-04-04</td>
+                                    <td class="text-center"><div class="dropdown">
+                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                <li><a href="verify-preview.php" target="_blank">Preview</a></li>
+                                                <li><a href="#">Unarchive</a></li>
+                                                <li><a href="#">View Reports</a></li>
+                                            </ul>
+                                        </div></td>
+                                </tr>
+                                <tr ng-repeat="roll in sushi | orderBy:sortType:sortReverse | filter:searchstatus" class="ng-scope">
+                                    <td>Direct Deposit Consent</td>
+                                    <td>inactive</td>
+                                    <td>2015-02-02</td>
+                                    <td class="text-center"><div class="dropdown">
+                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                <li><a href="verify-preview.php" target="_blank">Preview</a></li>
+                                                <li><a href="#">Unarchive</a></li>
+                                                <li><a href="#">View Reports</a></li>
+                                            </ul>
+                                        </div></td>
+                                </tr>
+                                <tr ng-repeat="roll in sushi | orderBy:sortType:sortReverse | filter:searchstatus" class="ng-scope">
+                                    <td>FS - Tax Information</td>
+                                    <td>inactive</td>
+                                    <td>2015-05-18</td>
+                                    <td class="text-center"><div class="dropdown">
+                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                <li><a href="verify-preview.php" target="_blank">Preview</a></li>
+                                                <li><a href="#">Unarchive</a></li>
+                                                <li><a href="#">View Reports</a></li>
+                                            </ul>
+                                        </div></td>
+                                </tr>
+                                <tr ng-repeat="roll in sushi | orderBy:sortType:sortReverse | filter:searchstatus" class="ng-scope">
+                                    <td>Manditory Health Screening</td>
+                                    <td>inactive</td>
+                                    <td>2015-03-18</td>
                                     <td class="text-center"><div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
@@ -66,33 +121,5 @@ $page_title = 'archived';
     </div>
 </div>
 <?php include ('includes/brand-footer.php') ?>
-<script>
-    angular.module('sortApp', []).controller('mainController', function($scope) {
-        $scope.sortType = 'name';
-        $scope.sortReverse = false;
-        $scope.searchstatus = '';
-        $scope.sushi = [{
-            name: 'Campus Access Code Agreement',
-            status: 'inactive',
-            created: '2015-03-15'
-        }, {
-            name: 'Direct Deposit Consent',
-            status: 'inactive',
-            created: '2015-02-02'
-        }, {
-            name: 'Manditory Health Screening',
-            status: 'inactive',
-            created: '2015-03-18'
-        }, {
-            name: 'FS - Tax Information',
-            status: 'inactive',
-            created: '2015-05-18'
-        },  {
-            name: 'Citizenship - Test',
-            status: 'inactive',
-            created: '2015-04-04'
-        }];
-    });
-</script>
 </body>
 </html>

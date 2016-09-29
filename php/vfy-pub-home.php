@@ -8,6 +8,9 @@ $page_title = 'home';
 <?php include ('includes/head-meta.php') ?>
 <?php include ('includes/styles-publishing.php') ?>
 <?php include ('includes/scripts.php') ?>
+<!-- Responsive Tables-->
+<script type="text/javascript" src="../js/tablesaw.js"></script>
+<script type="text/javascript" src="../js/tablesaw-init.js"></script>
 </head>
 <body class="view-admin" id="top">
 <?php include ('includes/brand-header2.php') ?>
@@ -34,23 +37,151 @@ $page_title = 'home';
                                 </form>
                             </div>
                         </div>
-                        <table class="table table-condensed table-responsive table-actions">
+                        <table class="table table-condensed table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack">
                             <thead>
                                 <tr>
-                                    <td><a href="#" ng-click="sortType = 'name'; sortReverse = !sortReverse"> Name <i ng-show="sortType == 'name' &amp;&amp; !sortReverse" class="icon-angle-up"></i> <i ng-show="sortType == 'name' &amp;&amp; sortReverse" class="icon-angle-down"></i> </a></td>
-                                    <td><a href="#" ng-click="sortType = 'status'; sortReverse = !sortReverse"> Status <i ng-show="sortType == 'status' &amp;&amp; !sortReverse" class="icon-angle-up"></i> <i ng-show="sortType == 'status' &amp;&amp; sortReverse" class="icon-angle-down"></i> </a></td>
-                                    <td><a href="#" ng-click="sortType = 'created'; sortReverse = !sortReverse"> Created <i ng-show="sortType == 'created' &amp;&amp; !sortReverse" class="icon-angle-up"></i> <i ng-show="sortType == 'created' &amp;&amp; sortReverse" class="icon-angle-down"></i> </a></td>
-                                    <td><span class="">Actions</span></td>
+                                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="1">Name</th>
+                                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Status</th>
+                                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Created</th>
+                                    <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4"><span class="visible-xs">Actions</span></th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr ng-repeat="roll in sushi | orderBy:sortType:sortReverse | filter:searchstatus">
-                                    <td>{{ roll.name }}</td>
-                                    <td>{{ roll.status }}</td>
-                                    <td>{{ roll.created }}</td>
+                                <tr>
+                                    <td>FS - Direct Deposit</td>
+                                    <td>inactive</td>
+                                    <td>2016-03-18</td>
                                     <td class="text-center"><div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                <li><a href="verify-preview.php" target="_blank">Preview</a></li>
+                                                <li><a href="#">Edit</a></li>
+                                                <li><a href="#">Inactivate</a></li>
+                                                <li><a href="#">View Reports</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">Archive</a></li>
+                                            </ul>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>FS - Tax Information</td>
+                                    <td>inactive</td>
+                                    <td>2016-05-18</td>
+                                    <td class="text-center"><div class="dropdown">
+                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+                                                <li><a href="verify-preview.php" target="_blank">Preview</a></li>
+                                                <li><a href="#">Edit</a></li>
+                                                <li><a href="#">Inactivate</a></li>
+                                                <li><a href="#">View Reports</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">Archive</a></li>
+                                            </ul>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>FS - W2 Update</td>
+                                    <td>active</td>
+                                    <td>2016-02-02</td>
+                                    <td class="text-center"><div class="dropdown">
+                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu3">
+                                                <li><a href="verify-preview.php" target="_blank">Preview</a></li>
+                                                <li><a href="#">Edit</a></li>
+                                                <li><a href="#">Inactivate</a></li>
+                                                <li><a href="#">View Reports</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">Archive</a></li>
+                                            </ul>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>HC - Immunization Records</td>
+                                    <td>inactive</td>
+                                    <td>2016-05-17</td>
+                                    <td class="text-center"><div class="dropdown">
+                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu4">
+                                                <li><a href="verify-preview.php" target="_blank">Preview</a></li>
+                                                <li><a href="#">Edit</a></li>
+                                                <li><a href="#">Inactivate</a></li>
+                                                <li><a href="#">View Reports</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">Archive</a></li>
+                                            </ul>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>HRMS - Citizenship</td>
+                                    <td>active</td>
+                                    <td>2016-03-15</td>
+                                    <td class="text-center"><div class="dropdown">
+                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu5">
+                                                <li><a href="verify-preview.php" target="_blank">Preview</a></li>
+                                                <li><a href="#">Edit</a></li>
+                                                <li><a href="#">Inactivate</a></li>
+                                                <li><a href="#">View Reports</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">Archive</a></li>
+                                            </ul>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>HRMS - Military Status</td>
+                                    <td>active</td>
+                                    <td>2016-04-04</td>
+                                    <td class="text-center"><div class="dropdown">
+                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu6">
+                                                <li><a href="verify-preview.php" target="_blank">Preview</a></li>
+                                                <li><a href="#">Edit</a></li>
+                                                <li><a href="#">Inactivate</a></li>
+                                                <li><a href="#">View Reports</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">Archive</a></li>
+                                            </ul>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>IU Notify - Conatct Info</td>
+                                    <td>inactive</td>
+                                    <td>2016-05-28</td>
+                                    <td class="text-center"><div class="dropdown">
+                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu7">
+                                                <li><a href="verify-preview.php" target="_blank">Preview</a></li>
+                                                <li><a href="#">Edit</a></li>
+                                                <li><a href="#">Inactivate</a></li>
+                                                <li><a href="#">View Reports</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">Archive</a></li>
+                                            </ul>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>IU Notify - Email Update</td>
+                                    <td>inactive</td>
+                                    <td>2016-05-15</td>
+                                    <td class="text-center"><div class="dropdown">
+                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                                                <li><a href="verify-preview.php" target="_blank">Preview</a></li>
+                                                <li><a href="#">Edit</a></li>
+                                                <li><a href="#">Inactivate</a></li>
+                                                <li><a href="#">View Reports</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">Archive</a></li>
+                                            </ul>
+                                        </div></td>
+                                </tr>
+                                <tr>
+                                    <td>IU Notify - Phone Update</td>
+                                    <td>inactive</td>
+                                    <td>2016-05-17</td>
+                                    <td class="text-center"><div class="dropdown">
+                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu8">
                                                 <li><a href="verify-preview.php" target="_blank">Preview</a></li>
                                                 <li><a href="#">Edit</a></li>
                                                 <li><a href="#">Inactivate</a></li>
