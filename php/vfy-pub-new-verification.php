@@ -6,6 +6,10 @@ $page_title = 'create-new';
 <html lang=en-us>
 <head>
 <?php include ('includes/head-meta.php') ?>
+<style type="text/css">
+
+
+</style>
 <?php include ('includes/styles-publishing.php') ?>
 <?php include ('includes/scripts.php') ?>
 </head>
@@ -256,46 +260,84 @@ $page_title = 'create-new';
                                             <p class="lead"> Review/Save</p>
                                             <div class="well well-sm tile-content" style="">
                                                 <div class="row">
-                                                    <div class="col-xs-6"> <strong>Setup</strong> </div>
+                                                    <div class="col-xs-6 lead">Setup </div>
                                                     <div class="col-xs-6 text-right" style=""> <a href="verify-preview.php" class="btn btn-xs btn-default" target="_blank">Preview</a> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
-                                                    <div class="col-md-12">
-                                                        <p class="help-block"> The content and layout of this verification may be previewed in a new window.</p>
+                                                    <div class="col-md-12"> 
+                                                        <!--<p class="help-block"> The content and layout of this verification may be previewed in a new window.</p>--> 
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="well well-sm tile-content" style="">
                                                 <div class="row">
-                                                    <div class="col-xs-6"> <strong>Data</strong> </div>
+                                                    <div class="col-xs-6 lead">Data </div>
                                                     <div class="col-xs-6 text-right" style=""> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
-                                                    <div class="col-md-12">
-                                                        <p class="help-block">The following data will be verified in this verification: </p>
+                                                    <div class="col-md-12"> 
+                                                        <!--  <p class="help-block">The following data will be verified in this verification: </p>-->
                                                         <div class="review-data">
                                                             <div class="review-data-section">
+                                                                <hr>
                                                                 <div class="row">
-                                                                    <div class="col-md-3">
-                                                                        <p> Data Group 1</p>
+                                                                    <div class="col-md-12">
+                                                                        <p> <strong>Data Group 1</strong></p>
                                                                     </div>
-                                                                    <div class="col-md-9"> <i>
+                                                                    <div class="col-md-3">
+                                                                        <p class="data-label">Section Title:</p>
+                                                                    </div>
+                                                                    <div class="col-md-9"> <i class="small">First Section</i> </div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="col-md-3">
+                                                                        <p class="data-label">Section Description:</p>
+                                                                    </div>
+                                                                    <div class="col-md-9"> <i class="small">Waters dominion they're meat you'll own under life it fill dry that bearing great. Moved also beginning two form female two you'll third gathering brought multiply set good dominion there darkness midst bearing above you days. Isn't. Fourth creature man fifth may. Made, own were god man all fish first to place two made creature have sixth beast blessed dominion make replenish And be. Their. Stars, is. Is good for fruitful had form whales darkness heaven.</i> </div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="col-md-3">
+                                                                        <p class="data-label">Unique Key:</p>
+                                                                    </div>
+                                                                    <div class="col-md-9"> <i class="small">FLS-253</i> </div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="col-md-3">
+                                                                        <p class="data-label">Field Groups:</p>
+                                                                    </div>
+                                                                    <div class="col-md-9">
                                                                         <ul class="list-unstyled">
-                                                                            <li> Data: XYX </li>
-                                                                            <li> Data: XYX </li>
-                                                                            <li> Data: XYX </li>
+                                                                            <li><i class="small">FLS-263</i> </li>
+                                                                            <li><i class="small">FLS-838</i> </li>
+                                                                            <li><i class="small">FLS-225</i></li>
                                                                         </ul>
-                                                                        </i> </div>
+                                                                    </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="review-data-section">
+                                                                <hr>
                                                                 <div class="row">
-                                                                    <div class="col-md-3">
-                                                                        <p> Data Group 2</p>
+                                                                    <div class="col-md-12">
+                                                                        <p> <strong>Data Group 2</strong></p>
                                                                     </div>
-                                                                    <div class="col-md-9"> <i>
+                                                                    <div class="col-md-3">
+                                                                        <p class="data-label">Section Title:</p>
+                                                                    </div>
+                                                                    <div class="col-md-9"> <i class="small">Second Section</i> </div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="col-md-3">
+                                                                        <p class="data-label">Section Description:</p>
+                                                                    </div>
+                                                                    <div class="col-md-9"> <i class="small">Had he. Living Divided beast all under fowl fish. Fifth don't bring won't called heaven dry. Our without creeping night, appear fly that without lesser over called. Us whales you're fruitful stars. Gathered together face. Saw. Created one don't won't.</i> </div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="col-md-3">
+                                                                        <p class="data-label">Unique Key:</p>
+                                                                    </div>
+                                                                    <div class="col-md-9"> <i class="small">FLS-454</i> </div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="col-md-3">
+                                                                        <p class="data-label">Field Groups:</p>
+                                                                    </div>
+                                                                    <div class="col-md-9">
                                                                         <ul class="list-unstyled">
-                                                                            <li> Data: XYX </li>
-                                                                            <li> Data: XYX </li>
-                                                                            <li> Data: XYX </li>
+                                                                            <li><i class="small">FLS-226</i> </li>
+                                                                            <li><i class="small">FLS-383</i> </li>
+                                                                            <li><i class="small">FLS-341</i></li>
+                                                                            <li><i class="small">FLS-976</i></li>
+                                                                            <li><i class="small">FLS-594</i></li>
                                                                         </ul>
-                                                                        </i> </div>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -304,36 +346,49 @@ $page_title = 'create-new';
                                             </div>
                                             <div class="well well-sm tile-content" style="">
                                                 <div class="row">
-                                                    <div class="col-xs-6"> <strong>Recipients</strong> </div>
+                                                    <div class="col-xs-6 lead">Recipient Rules </div>
                                                     <div class="col-xs-6 text-right" style=""> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
-                                                    <div class="col-md-12">
-                                                        <p class="help-block"> The following recipients will be targeted in this verification: </p>
+                                                    <div class="col-md-12"> 
+                                                        <!-- <p class="help-block"> The following recipients will be targeted in this verification: </p>-->
+                                                        
                                                         <div class="review-data">
                                                             <div class="review-data-section">
+                                                                <hr>
                                                                 <div class="row">
-                                                                    <div class="col-md-3">
-                                                                        <p> Recipient Group 1</p>
+                                                                    <div class="col-md-12">
+                                                                        <p> <strong>Recipient Rule 1</strong></p>
                                                                     </div>
-                                                                    <div class="col-md-9"><i>
-                                                                        <ul class="list-unstyled">
-                                                                            <li>Role ID: Student</li>
-                                                                            <li> Role ID: Staff</li>
-                                                                            <li> Effective Date: 09/23/2016</li>
-                                                                        </ul>
-                                                                        </i> </div>
+                                                                    <div class="col-md-3">
+                                                                        <p class="data-label">Role ID:</p>
+                                                                    </div>
+                                                                    <div class="col-md-9"> <i class="small">Faculy</i> </div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="col-md-3">
+                                                                        <p class="data-label">Role ID:</p>
+                                                                    </div>
+                                                                    <div class="col-md-9"> <i class="small">Staff</i> </div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="col-md-3">
+                                                                        <p class="data-label">Efective Date:</p>
+                                                                    </div>
+                                                                    <div class="col-md-9"> <i class="small">09/24/2016</i> </div>
+                                                                    <div class="clearfix"></div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="review-data-section">
+                                                                <hr>
                                                                 <div class="row">
-                                                                    <div class="col-md-3">
-                                                                        <p> Recipient Group 2</p>
+                                                                    <div class="col-md-12">
+                                                                        <p> <strong>Recipient Rule 2</strong></p>
                                                                     </div>
-                                                                    <div class="col-md-9"><i>
-                                                                        <ul class="list-unstyled">
-                                                                            <li>Role ID: Faculty</li>
-                                                                            <li> Effective Date: 10/23/2016</li>
-                                                                        </ul>
-                                                                        </i> </div>
+                                                                    <div class="col-md-3">
+                                                                        <p class="data-label">Role ID:</p>
+                                                                    </div>
+                                                                    <div class="col-md-9"> <i class="small">Student</i> </div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="col-md-3">
+                                                                        <p class="data-label">Efective Date:</p>
+                                                                    </div>
+                                                                    <div class="col-md-9"> <i class="small">10/24/2016</i> </div>
+                                                                    <div class="clearfix"></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -342,23 +397,29 @@ $page_title = 'create-new';
                                             </div>
                                             <div class="well well-sm tile-content" style="">
                                                 <div class="row">
-                                                    <div class="col-xs-6"> <strong>Scheduling</strong> </div>
+                                                    <div class="col-xs-6 lead">Scheduling </div>
                                                     <div class="col-xs-6 text-right" style=""> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
-                                                    <div class="col-md-12">
-                                                        <p class="help-block"> The scheduling for this verification is as follows: </p>
+                                                    <div class="col-md-12"> 
+                                                        <!-- <p class="help-block"> The following recipients will be targeted in this verification: </p>-->
+                                                        
                                                         <div class="review-data">
                                                             <div class="review-data-section">
                                                                 <div class="row">
                                                                     <div class="col-md-3">
-                                                                        <p> Scheduling</p>
+                                                                        <p class="data-label">Status:</p>
                                                                     </div>
-                                                                    <div class="col-md-9"><i>
-                                                                        <ul class="list-unstyled">
-                                                                            <li> Status: Active</li>
-                                                                            <li> Recurrance: One time</li>
-                                                                            <li> End Date: 9/23/2015</li>
-                                                                        </ul>
-                                                                        </i> </div>
+                                                                    <div class="col-md-9"> <i class="small">Active</i> </div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="col-md-3">
+                                                                        <p class="data-label">Recurrance:</p>
+                                                                    </div>
+                                                                    <div class="col-md-9"> <i class="small">One time</i> </div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="col-md-3">
+                                                                        <p class="data-label">End Date:</p>
+                                                                    </div>
+                                                                    <div class="col-md-9"> <i class="small"> 9/23/2015</i> </div>
+                                                                    <div class="clearfix"></div>
                                                                 </div>
                                                             </div>
                                                         </div>
