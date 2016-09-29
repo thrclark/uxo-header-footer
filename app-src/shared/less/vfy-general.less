@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 hr {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #ebebeb;
 }
 
 
@@ -128,6 +128,9 @@ hr {
       padding: 7px 16px;
     }
   }
+  .lead {
+    margin-bottom: 0px;
+  }
 }
 
 
@@ -142,6 +145,23 @@ hr {
 .tile-content .review-data .review-data-section {
   margin-top: 15px;
 }
+
+
+.tile-content .review-data .review-data-section .data-label {
+  text-align: right;
+}
+@media (max-width: @screen-sm-max)  {
+  .tile-content .review-data .review-data-section .data-label {
+    text-align: left;
+    margin-bottom: 0px;
+  }
+  .tile-content .review-data .review-data-section .row .col-md-9 {
+    margin-bottom: 20px;
+  }
+}
+
+
+
 .tile-content .list-unstyled li {
   margin-bottom: 5px;
 }
@@ -184,7 +204,7 @@ label {
 
 
 .review-data {
-  padding-left: 50px;
+  //padding-left: 50px;
 }
 
 
