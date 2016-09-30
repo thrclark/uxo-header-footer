@@ -6,10 +6,6 @@ $page_title = 'create-new';
 <html lang=en-us>
 <head>
 <?php include ('includes/head-meta.php') ?>
-<style type="text/css">
-
-
-</style>
 <?php include ('includes/styles-publishing.php') ?>
 <?php include ('includes/scripts.php') ?>
 </head>
@@ -135,7 +131,7 @@ $page_title = 'create-new';
                                                                             <th>Data Pull </th>
                                                                             <th>Callback</th>
                                                                             <th>Unique Key</th>
-                                                                            <th> URL <span class="small" style="font-weight:normal">(initiate edit)</span> </th>
+                                                                            <th> Initiate URL</th>
                                                                             <th> Actions </th>
                                                                         </tr>
                                                                     </thead>
@@ -299,11 +295,43 @@ $page_title = 'create-new';
                                                                         <p class="data-label">Field Groups:</p>
                                                                     </div>
                                                                     <div class="col-md-9">
-                                                                        <ul class="list-unstyled">
-                                                                            <li><i class="small">FLS-263</i> </li>
-                                                                            <li><i class="small">FLS-838</i> </li>
-                                                                            <li><i class="small">FLS-225</i></li>
-                                                                        </ul>
+                                                                        <table class="table table-condensed table-responsive">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>Data Pull</th>
+                                                                                    <th>Callback</th>
+                                                                                    <th>Unique Key</th>
+                                                                                    <th>Initiate URL</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>API Source 1</td>
+                                                                                    <td>API Source 2</td>
+                                                                                    <td>FLS-364</td>
+                                                                                    <td>http://someurlgoeshere.edu</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>API Source 3</td>
+                                                                                    <td>API Source 4</td>
+                                                                                    <td>FLS-374</td>
+                                                                                    <td>http://someurlgoeshere.edu</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>API Source 5</td>
+                                                                                    <td>API Source 6</td>
+                                                                                    <td>FLS-443</td>
+                                                                                    <td>http://someurlgoeshere.edu</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>API Source 7</td>
+                                                                                    <td>API Source 8</td>
+                                                                                    <td>FLS-834</td>
+                                                                                    <td>http://someurlgoeshere.edu</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                       
                                                                     </div>
                                                                 </div>
                                                                 <hr>
@@ -330,13 +358,31 @@ $page_title = 'create-new';
                                                                         <p class="data-label">Field Groups:</p>
                                                                     </div>
                                                                     <div class="col-md-9">
-                                                                        <ul class="list-unstyled">
-                                                                            <li><i class="small">FLS-226</i> </li>
-                                                                            <li><i class="small">FLS-383</i> </li>
-                                                                            <li><i class="small">FLS-341</i></li>
-                                                                            <li><i class="small">FLS-976</i></li>
-                                                                            <li><i class="small">FLS-594</i></li>
-                                                                        </ul>
+                                                                        <table class="table table-condensed table-responsive">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>Data Pull</th>
+                                                                                    <th>Callback</th>
+                                                                                    <th>Unique Key</th>
+                                                                                    <th>Initiate URL</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>API Source 1</td>
+                                                                                    <td>API Source 2</td>
+                                                                                    <td>FLS-364</td>
+                                                                                    <td>http://someurlgoeshere.edu</td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td>API Source 3</td>
+                                                                                    <td>API Source 4</td>
+                                                                                    <td>FLS-374</td>
+                                                                                    <td>http://someurlgoeshere.edu</td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                       
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -346,7 +392,7 @@ $page_title = 'create-new';
                                             </div>
                                             <div class="well well-sm tile-content" style="">
                                                 <div class="row">
-                                                    <div class="col-xs-6 lead">Recipient Rules </div>
+                                                    <div class="col-xs-6 lead">Recipients</div>
                                                     <div class="col-xs-6 text-right" style=""> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
                                                     <div class="col-md-12"> 
                                                         <!-- <p class="help-block"> The following recipients will be targeted in this verification: </p>-->
