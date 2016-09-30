@@ -12,3 +12,11 @@
 <script type="text/javascript" src="../js/moment.min.js"></script>
 <script type="text/javascript" src="../js/query-builder.min.js"></script>
 <script type="text/javascript" src="../js/bootstrap-editable.min.js"></script>
+<script type="text/javascript" src="../bower_components/markitup/jquery.markitup.js"></script>
+<script type="text/javascript" src="../bower_components/markitup/sets/default/set.js"></script>
+
+
+
+
+
+

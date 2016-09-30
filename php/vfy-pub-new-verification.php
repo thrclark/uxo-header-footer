@@ -823,5 +823,16 @@ $(document).ready(function() {
 
 
 </script>
+
+
+<script type="text/javascript" >
+   $(document).ready(function() {
+      $("#description").markItUp(mySettings);
+   });
+</script>
+
+
+
+
 </body>
 </html>
