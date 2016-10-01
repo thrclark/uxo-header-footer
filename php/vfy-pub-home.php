@@ -6,6 +6,9 @@ $page_title = 'home';
 <html lang=en-us>
 <head>
 <?php include ('includes/head-meta.php') ?>
+<style type="text/css">
+
+</style>
 <?php include ('includes/styles-publishing.php') ?>
 <?php include ('includes/scripts.php') ?>
 <!-- Responsive Tables-->
@@ -50,8 +53,7 @@ $page_title = 'home';
                                 <tr>
                                     <td>FS - Direct Deposit</td>
                                     <td>inactive</td>
-                                    <td>2016-03-18</td>
-                                    <td class="text-center"><div class="dropdown">
+                                    <td>2016-03-18</td> <td class="text-center"><a href="vfy-pub-new-verification.php" class="btn btn-xs btn-default"> edit </a><!--<div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                 <li><a href="verify-preview.php" target="_blank">Preview</a></li>
@@ -61,13 +63,12 @@ $page_title = 'home';
                                                 <li role="separator" class="divider"></li>
                                                 <li><a href="#">Archive</a></li>
                                             </ul>
-                                        </div></td>
+                                        </div>--></td>
                                 </tr>
                                 <tr>
                                     <td>FS - Tax Information</td>
                                     <td>inactive</td>
-                                    <td>2016-05-18</td>
-                                    <td class="text-center"><div class="dropdown">
+                                    <td>2016-05-18</td> <td class="text-center"><a href="vfy-pub-new-verification.php" class="btn btn-xs btn-default">edit</a><!--<div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
                                                 <li><a href="verify-preview.php" target="_blank">Preview</a></li>
@@ -76,14 +77,12 @@ $page_title = 'home';
                                                 <li><a href="#">View Reports</a></li>
                                                 <li role="separator" class="divider"></li>
                                                 <li><a href="#">Archive</a></li>
-                                            </ul>
-                                        </div></td>
+                                            </ul> </div>--></td>
                                 </tr>
                                 <tr>
                                     <td>FS - W2 Update</td>
                                     <td>active</td>
-                                    <td>2016-02-02</td>
-                                    <td class="text-center"><div class="dropdown">
+                                    <td>2016-02-02</td> <td class="text-center"><a href="vfy-pub-new-verification.php" class="btn btn-xs btn-default">edit</a><!--<div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu3">
                                                 <li><a href="verify-preview.php" target="_blank">Preview</a></li>
@@ -92,14 +91,12 @@ $page_title = 'home';
                                                 <li><a href="#">View Reports</a></li>
                                                 <li role="separator" class="divider"></li>
                                                 <li><a href="#">Archive</a></li>
-                                            </ul>
-                                        </div></td>
+                                            </ul> </div>--></td>
                                 </tr>
                                 <tr>
                                     <td>HC - Immunization Records</td>
                                     <td>inactive</td>
-                                    <td>2016-05-17</td>
-                                    <td class="text-center"><div class="dropdown">
+                                    <td>2016-05-17</td> <td class="text-center"><a href="vfy-pub-new-verification.php" class="btn btn-xs btn-default">edit</a><!--<div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu4">
                                                 <li><a href="verify-preview.php" target="_blank">Preview</a></li>
@@ -108,14 +105,12 @@ $page_title = 'home';
                                                 <li><a href="#">View Reports</a></li>
                                                 <li role="separator" class="divider"></li>
                                                 <li><a href="#">Archive</a></li>
-                                            </ul>
-                                        </div></td>
+                                            </ul> </div>--></td>
                                 </tr>
                                 <tr>
                                     <td>HRMS - Citizenship</td>
                                     <td>active</td>
-                                    <td>2016-03-15</td>
-                                    <td class="text-center"><div class="dropdown">
+                                    <td>2016-03-15</td> <td class="text-center"><a href="vfy-pub-new-verification.php" class="btn btn-xs btn-default">edit</a><!--<div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu5">
                                                 <li><a href="verify-preview.php" target="_blank">Preview</a></li>
@@ -124,14 +119,12 @@ $page_title = 'home';
                                                 <li><a href="#">View Reports</a></li>
                                                 <li role="separator" class="divider"></li>
                                                 <li><a href="#">Archive</a></li>
-                                            </ul>
-                                        </div></td>
+                                            </ul> </div>--></td>
                                 </tr>
                                 <tr>
                                     <td>HRMS - Military Status</td>
                                     <td>active</td>
-                                    <td>2016-04-04</td>
-                                    <td class="text-center"><div class="dropdown">
+                                    <td>2016-04-04</td> <td class="text-center"><a href="vfy-pub-new-verification.php" class="btn btn-xs btn-default">edit</a><!--<div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu6">
                                                 <li><a href="verify-preview.php" target="_blank">Preview</a></li>
@@ -140,14 +133,12 @@ $page_title = 'home';
                                                 <li><a href="#">View Reports</a></li>
                                                 <li role="separator" class="divider"></li>
                                                 <li><a href="#">Archive</a></li>
-                                            </ul>
-                                        </div></td>
+                                            </ul> </div>--></td>
                                 </tr>
                                 <tr>
                                     <td>IU Notify - Conatct Info</td>
                                     <td>inactive</td>
-                                    <td>2016-05-28</td>
-                                    <td class="text-center"><div class="dropdown">
+                                    <td>2016-05-28</td> <td class="text-center"><a href="vfy-pub-new-verification.php" class="btn btn-xs btn-default">edit</a><!--<div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu7">
                                                 <li><a href="verify-preview.php" target="_blank">Preview</a></li>
@@ -156,14 +147,12 @@ $page_title = 'home';
                                                 <li><a href="#">View Reports</a></li>
                                                 <li role="separator" class="divider"></li>
                                                 <li><a href="#">Archive</a></li>
-                                            </ul>
-                                        </div></td>
+                                            </ul> </div>--></td>
                                 </tr>
                                 <tr>
                                     <td>IU Notify - Email Update</td>
                                     <td>inactive</td>
-                                    <td>2016-05-15</td>
-                                    <td class="text-center"><div class="dropdown">
+                                    <td>2016-05-15</td> <td class="text-center"><a href="vfy-pub-new-verification.php" class="btn btn-xs btn-default">edit</a><!--<div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                 <li><a href="verify-preview.php" target="_blank">Preview</a></li>
@@ -172,14 +161,12 @@ $page_title = 'home';
                                                 <li><a href="#">View Reports</a></li>
                                                 <li role="separator" class="divider"></li>
                                                 <li><a href="#">Archive</a></li>
-                                            </ul>
-                                        </div></td>
+                                            </ul> </div>--></td>
                                 </tr>
                                 <tr>
                                     <td>IU Notify - Phone Update</td>
                                     <td>inactive</td>
-                                    <td>2016-05-17</td>
-                                    <td class="text-center"><div class="dropdown">
+                                    <td>2016-05-17</td> <td class="text-center"><a href="vfy-pub-new-verification.php" class="btn btn-xs btn-default">edit</a><!--<div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu8">
                                                 <li><a href="verify-preview.php" target="_blank">Preview</a></li>
@@ -188,8 +175,7 @@ $page_title = 'home';
                                                 <li><a href="#">View Reports</a></li>
                                                 <li role="separator" class="divider"></li>
                                                 <li><a href="#">Archive</a></li>
-                                            </ul>
-                                        </div></td>
+                                            </ul> </div>--></td>
                                 </tr>
                             </tbody>
                         </table>
