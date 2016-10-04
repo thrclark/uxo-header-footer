@@ -54,7 +54,8 @@ $page_title = 'create-new';
                                             <div class="form-group ">
                                                 <label class="control-label" for="name"> Name </label>
                                                 <span class="help-block small" id=""> Add a name for this verification. This name will not be displayed on the verification itself, but will be used for identification within the publishing system.</span>
-                                                <input class="form-control" id="name" name="name" type="text"  required="required"/>
+                                                <div class="row">
+                                                                <div class="col-sm-4"> <input class="form-control" id="name" name="name" type="text"  required="required"/></div></div>
                                             </div>
                                             <div class="form-group ">
                                                 <label class="control-label " for="description"> Description <span class="small" style="font-weight:normal">(optional)</span></label>
@@ -69,10 +70,11 @@ $page_title = 'create-new';
                                             <div class="form-group ">
                                                 <label class="control-label " for="verify_now_select"> 'Verify Now' Text </label>
                                                 <span class="help-block small" id="hint_textarea1"> Select the text that will appear next to the 'Verify Now' radio/checkbox control. </span>
-                                                <select class="select form-control" id="verify_now_select" name="select" style="width:200px">
+                                                <div class="row">
+                                                                <div class="col-sm-4"> <select class="select form-control" id="verify_now_select" name="select">
                                                     <option value="verify_now_standard"> Use Default Text </option>
                                                     <option value="verify_now_custom"> Enter Custom Text </option>
-                                                </select>
+                                                </select></div></div>
                                             </div>
                                             <div class="form-group ">
                                                 <div style=" display:block">
@@ -87,10 +89,11 @@ $page_title = 'create-new';
                                             <div class="form-group ">
                                                 <label class="control-label " for="verify_later_select"> 'Verify Later' Text </label>
                                                 <span class="help-block small" id="hint_textarea1"> Select the text that will appear next to the 'Verify Now' radio/checkbox control. </span>
-                                                <select class="select form-control" id="verify_later_select" name="select" style="width:200px">
+                                                 <div class="row">
+                                                                <div class="col-sm-4"><select class="select form-control" id="verify_later_select" name="select" >
                                                     <option value="verify_later_standard"> Use Default Text </option>
                                                     <option value="verify_later_custom"> Enter Custom Text </option>
-                                                </select>
+                                                </select></div></div>
                                             </div>
                                             <div class="form-group ">
                                                 <div style=" display:block">
@@ -175,7 +178,7 @@ $page_title = 'create-new';
                                             <button class="btn btn-xs btn-default btn-add-data pull-right"> <i class="fa fa-plus"></i> section</button>
                                         </div>
                                         <div class="col-xs-12 wizard-actions">
-                                            <div class="btn-group pull-right" role="group" aria-label="">
+                                            <div class="pull-right" role="group" aria-label="">
                                                 <button class="btn btn-default prevBtn " type="button" ><i class="icon-angle-left"></i>Previous</button>
                                                 <button class="btn btn-primary nextBtn " type="button" >Next<i class="icon-angle-right"></i> </button>
                                             </div>
@@ -213,7 +216,7 @@ $page_title = 'create-new';
                                             </div>
                                         </div>
                                         <div class="col-xs-12 wizard-actions">
-                                            <div class="btn-group pull-right" role="group" aria-label="">
+                                            <div class="pull-right" role="group" aria-label="">
                                                 <button class="btn btn-default prevBtn " type="button" ><i class="icon-angle-left"></i>Previous</button>
                                                 <button class="btn btn-primary nextBtn " type="button" >Next<i class="icon-angle-right"></i> </button>
                                             </div>
@@ -238,22 +241,30 @@ $page_title = 'create-new';
                                                         <div class="form-group ">
                                                             <label class="control-label " for=""> Verification Recurrance </label>
                                                             <span class="help-block small" id=""> Select whether this verification will be posted annually, or only once. </span>
-                                                            <select class="select form-control" id="vfy_recurrance" name="select" style="width:200px">
-                                                                <option value="" selected>One Time </option>
-                                                                <option name="annual" value="annual">Annually</option>
-                                                            </select>
+                                                            <div class="row">
+                                                                <div class="col-sm-4">
+                                                                    <select class="select form-control" id="vfy_recurrance" name="select">
+                                                                        <option value="" selected>One Time </option>
+                                                                        <option name="annual" value="annual">Annually</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                         <div class="form-group " id="select_end_date">
                                                             <label class="control-label " for=""> Verification End Date <span class="small" style="font-weight:normal">(optional)</span></label>
                                                             <span class="help-block small" id=""> Choose an ending date for this verification. </span>
-                                                            <input type="text" class="form-control" style="width:200px" >
+                                                            <div class="row">
+                                                                <div class="col-sm-4">
+                                                                    <input type="text" class="form-control" >
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-xs-12 wizard-actions">
-                                            <div class="btn-group pull-right" role="group" aria-label="">
+                                            <div class="pull-right" role="group" aria-label="">
                                                 <button class="btn btn-default prevBtn " type="button" ><i class="icon-angle-left"></i>Previous</button>
                                                 <button class="btn btn-primary nextBtn " type="button" >Next<i class="icon-angle-right"></i> </button>
                                             </div>
@@ -423,7 +434,7 @@ $page_title = 'create-new';
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="well well-sm tile-content" style="">
+                                            <div class="well well-sm tile-content" id="review_section_haserror">
                                                 <div class="row">
                                                     <div class="col-xs-6 lead">Recipients</div>
                                                     <div class="col-xs-6 text-right" style=""> <a href="#" class="btn btn-xs btn-danger" id="review_button_fixerror" style="display:none">Fix Errors</a> <a href="#" class="btn btn-xs btn-default" id="recipients_edit">Edit</a> </div>
@@ -448,7 +459,7 @@ $page_title = 'create-new';
                                                                     <div class="col-md-3">
                                                                         <p class="data-label">Effective Date:</p>
                                                                     </div>
-                                                                    <div class="col-md-9"> <i class="small">09/24/2016</i> </div>
+                                                                    <div class="col-md-9"> <i class="small">09/24/2016</i> <i class="fa fa-close" style="color:red; margin-left:10px; display:none" aria-hidden="true" id="review_field_error"></i> </div>
                                                                     <div class="clearfix"></div>
                                                                 </div>
                                                                 <hr>
@@ -516,7 +527,7 @@ $page_title = 'create-new';
                                             </div>
                                         </div>
                                         <div class="col-xs-12 wizard-actions">
-                                            <div class="btn-group pull-right" role="group" aria-label="">
+                                            <div class="pull-right" role="group" aria-label="">
                                                 <button class="btn btn-default prevBtn" type="button" ><i class="icon-angle-left"></i>Previous</button>
                                                 <button class="btn btn-primary" type="button" id="form_save">Save</button>
                                             </div>
@@ -919,20 +930,15 @@ $(document).ready(function() {
     });
 </script> 
 <script>
-$( "#form_save" ).click(function() {
-   $("#review_button_fixerror").show();
-   
-   $("#recipients_edit").hide();
-   
-   
-   $( "#step_recipients" ).removeClass( "btn-default" );
-   
-   $( "#step_recipients" ).addClass( "btn-danger" );
-   $( "#step_recipients_label" ).css( "color", "red" );
-   
-   
-   
-});
+    $("#form_save").click(function() {
+        $("#review_button_fixerror").show();
+        $("#review_field_error").show();
+        $("#recipients_edit").hide();
+        $("#step_recipients").removeClass("btn-default");
+        $("#step_recipients").addClass("btn-danger");
+        $("#step_recipients_label").css("color", "red");
+        $("#review_section_haserror").css("background", "#fff6f6");
+    });
 </script>
 </body>
 </html>
