@@ -59,12 +59,12 @@ $page_title = 'create-new';
                                             <div class="form-group ">
                                                 <label class="control-label " for="description"> Description <span class="small" style="font-weight:normal">(optional)</span></label>
                                                 <span class="help-block small" id=""> Add a description that will appear below the first paragraph and above the verification data. </span>
-                                                <textarea class="form-control" cols="40" id="description" name="message" rows="2"></textarea>
+                                                <textarea class="form-control text-formatter" cols="40" id="description" name="message" rows="3"></textarea>
                                             </div>
                                             <div class="form-group ">
                                                 <label class="control-label " for="disclaimer"> Disclaimer Text <span class="small" style="font-weight:normal">(optional)</span></label>
                                                 <span class="help-block small" id=""> Add disclaimer text that will appear below the verification data and above the verification radio/checkbox controls. </span>
-                                                <textarea class="form-control" cols="40" id="disclaimer" name="textarea" rows="2"></textarea>
+                                                <textarea class="form-control text-formatter" cols="40" id="disclaimer" name="textarea" rows="3"></textarea>
                                             </div>
                                             <div class="form-group ">
                                                 <label class="control-label " for="verify_now_select"> 'Verify Now' Text </label>
@@ -75,10 +75,10 @@ $page_title = 'create-new';
                                                 </select>
                                             </div>
                                             <div class="form-group ">
-                                                <label class="control-label sr-only" for="verify_now_standard"> 'Verify Now' Standard Text </label>
-                                                <textarea class="form-control" cols="40" id="verify_now_standard" name="textarea1" rows="2" disabled>I have verified that the above information is up to date and correct.</textarea>
-                                                <label class="control-label sr-only" for="verify_now_custom"> 'Verify Now' Custom Text </label>
-                                                <textarea class="form-control" cols="40" id="verify_now_custom" name="textarea1" rows="2" style="display:none"></textarea>
+                                                <div style=" display:block"><label class="control-label sr-only" for="verify_now_standard"> 'Verify Now' Standard Text </label>
+                                                <textarea class="form-control" cols="40" id="verify_now_standard" name="textarea1" rows="3" disabled>I have verified that the above information is up to date and correct.</textarea></div>
+                                                <div id="verify_now_custom" style="display:none"><label class="control-label sr-only" for="verify_now_custommm"> 'Verify Now' Custom Text </label>
+                                                <textarea class="form-control" cols="40" id="verify_now_custommm" name="textarea1" rows="3" ></textarea></div>
                                             </div>
                                             <div class="form-group ">
                                                 <label class="control-label " for="verify_later_select"> 'Verify Later' Text </label>
@@ -89,10 +89,14 @@ $page_title = 'create-new';
                                                 </select>
                                             </div>
                                             <div class="form-group ">
-                                                <label class="control-label sr-only" for="verify_later_standard"> 'Verify Later' Standard Text </label>
-                                                <textarea class="form-control" cols="40" id="verify_later_standard" name="textarea1" rows="2" disabled>I choose to verify this information later.</textarea>
-                                                <label class="control-label sr-only" for="verify_later_custom"> 'Verify Later' Custom Text </label>
-                                                <textarea class="form-control" cols="40" id="verify_later_custom" name="textarea1" rows="2" style="display:none"></textarea>
+                                                <div style=" display:block">
+                                                    <label class="control-label sr-only" for="verify_later_standard"> 'Verify Later' Standard Text </label>
+                                                    <textarea class="form-control" cols="40" id="verify_later_standard" name="textarea1" rows="3" disabled>I choose to verify this information later.</textarea>
+                                                </div>
+                                                <div id="verify_later_custom" style=" display:none">
+                                                    <label class="control-label sr-only" for="verify_later_custommm"> 'Verify Later' Custom Text </label>
+                                                    <textarea class="form-control" cols="40" id="verify_later_custommm" name="textarea1" rows="3"></textarea>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="col-xs-12 wizard-actions">
@@ -118,7 +122,7 @@ $page_title = 'create-new';
                                                                 </div>
                                                                 <div class="form-group ">
                                                                     <label class="control-label " for="section_description"> Section Description <span class="small" style="font-weight:normal">(optional)</span></label>
-                                                                    <textarea class="form-control" cols="40" id="section_description" name="message" rows="2"></textarea>
+                                                                    <textarea class="form-control text-formatter" cols="40" id="section_description" name="message" rows="3"></textarea>
                                                                 </div>
                                                                 <div class="form-group ">
                                                                     <label class="control-label" for="section_title"> Unique Key </label>
@@ -331,7 +335,6 @@ $page_title = 'create-new';
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>
-                                                                       
                                                                     </div>
                                                                 </div>
                                                                 <hr>
@@ -382,7 +385,6 @@ $page_title = 'create-new';
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>
-                                                                       
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -436,6 +438,18 @@ $page_title = 'create-new';
                                                                     <div class="col-md-9"> <i class="small">10/24/2016</i> </div>
                                                                     <div class="clearfix"></div>
                                                                 </div>
+                                                                
+                                                                 <hr>
+                                                                 
+                                                                  <div class="row">
+                                                                    <div class="col-md-3">
+                                                                        <p class="data-label">Leeway:</p>
+                                                                    </div>
+                                                                    <div class="col-md-9"> <i class="small">90 Days</i> </div>
+                                                                  
+                                                                </div>
+                                                                 
+                                                                 
                                                             </div>
                                                         </div>
                                                     </div>
@@ -822,17 +836,11 @@ $(document).ready(function() {
 });
 
 
-</script>
-
-
+</script> 
 <script type="text/javascript" >
    $(document).ready(function() {
-      $("#description").markItUp(mySettings);
+      $(".text-formatter").markItUp(mySettings);
    });
 </script>
-
-
-
-
 </body>
 </html>
