@@ -6,7 +6,6 @@ $page_title = 'home';
 <html lang=en-us>
 <head>
 <?php include ('includes/head-meta.php') ?>
-<style type="text/css"></style>
 <?php include ('includes/styles-publishing.php') ?>
 <?php include ('includes/scripts.php') ?>
 <!-- Responsive Tables-->
@@ -39,6 +38,9 @@ $page_title = 'home';
                             </div>
                         </div>
                         <table class="table table-condensed table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack">
+                            <caption class="sr-only">
+                            Index of current verifications
+                            </caption>
                             <thead>
                                 <tr>
                                     <th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="1">Name</th>
