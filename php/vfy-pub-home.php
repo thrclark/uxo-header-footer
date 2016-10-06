@@ -32,7 +32,7 @@ $page_title = 'home';
                                 <div class="form-inline" style="padding-bottom: 10px;">
                                     <div class="form-group">
                                         <label class="sr-only" for=filtertable>Filter</label>
-                                        <input type=text id="filtertable" class="form-control input-sm">
+                                        <input type=text id="filtertable" class="form-control input-sm" placeholder="Filter">
                                     </div>
                                 </div>
                             </div>
