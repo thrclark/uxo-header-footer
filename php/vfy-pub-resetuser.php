@@ -37,10 +37,10 @@ $page_title = 'resetuser';
                                             <div class="col-xs-12">
                                                 <div class="well well-sm tile-content" style="">
                                                     <div class="row">
-                                                        <div class="col-md-8" style="padding-top:5px;">
+                                                        <div class="col-sm-6" style="padding-top:5px;">
                                                             <div> <strong>User Verification Status</strong> </div>
                                                             <span class="help-block small"> Search for a user to determine their verification status or reset their verifications.</span> </div>
-                                                        <div class="col-md-4 text-right" style="    padding-top: 8px;">
+                                                        <div class="col-sm-6 text-right" style="    padding-top: 8px;">
                                                             <div class="input-group">
                                                                 <input type="text" class="form-control" placeholder="Username/ID/Email">
                                                                 <span class="input-group-btn">
@@ -62,30 +62,40 @@ $page_title = 'resetuser';
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr class="ng-scope">
-                                                            <td><b class="tablesaw-cell-label">Name</b><span class="tablesaw-cell-content">thrclark</span></td>
-                                                            <td><b class="tablesaw-cell-label">Name</b><span class="tablesaw-cell-content">Clark, Tom</span></td>
-                                                            <td class="text-center"><b class="tablesaw-cell-label"><span class="visible-xs">Actions</span></b><span class="tablesaw-cell-content"><a href="#" class="btn btn-xs btn-default">view</a></span></td>
+                                                        <tr>
+                                                            <td>thrclark</td>
+                                                            <td>Clark, Tom</td>
+                                                            <td><a href="#" class="btn btn-xs btn-default">view</a></td>
                                                         </tr>
-                                                        <tr class="ng-scope">
-                                                            <td><b class="tablesaw-cell-label">Name</b><span class="tablesaw-cell-content">taclark</span></td>
-                                                            <td><b class="tablesaw-cell-label">Name</b><span class="tablesaw-cell-content">Clark, Tamara</span></td>
-                                                            <td class="text-center"><b class="tablesaw-cell-label"><span class="visible-xs">Actions</span></b><span class="tablesaw-cell-content"><a href="#" class="btn btn-xs btn-default">view</a></span></td>
+                                                        <tr>
+                                                            <td>trclark</td>
+                                                            <td>Clark, Troy</td>
+                                                            <td><a href="#" class="btn btn-xs btn-default">view</a></td>
                                                         </tr>
-                                                        <tr class="ng-scope">
-                                                            <td><b class="tablesaw-cell-label">Name</b><span class="tablesaw-cell-content">timclark</span></td>
-                                                            <td><b class="tablesaw-cell-label">Name</b><span class="tablesaw-cell-content">Clark, Timothy</span></td>
-                                                            <td class="text-center"><b class="tablesaw-cell-label"><span class="visible-xs">Actions</span></b><span class="tablesaw-cell-content"><a href="#" class="btn btn-xs btn-default">view</a></span></td>
+                                                        <tr>
+                                                            <td>tamclark</td>
+                                                            <td>Clark, Tamara</td>
+                                                            <td><a href="#" class="btn btn-xs btn-default">view</a></td>
                                                         </tr>
-                                                        <tr class="ng-scope">
-                                                            <td><b class="tablesaw-cell-label">Name</b><span class="tablesaw-cell-content">tedclark</span></td>
-                                                            <td><b class="tablesaw-cell-label">Name</b><span class="tablesaw-cell-content">Clark, Ted</span></td>
-                                                            <td class="text-center"><b class="tablesaw-cell-label"><span class="visible-xs">Actions</span></b><span class="tablesaw-cell-content"><a href="#" class="btn btn-xs btn-default">view</a></span></td>
+                                                        <tr>
+                                                            <td>thecalrk</td>
+                                                            <td>Clark, Theresa</td>
+                                                            <td><a href="#" class="btn btn-xs btn-default">view</a></td>
                                                         </tr>
-                                                        <tr class="ng-scope">
-                                                            <td><b class="tablesaw-cell-label">Name</b><span class="tablesaw-cell-content">tryclark</span></td>
-                                                            <td><b class="tablesaw-cell-label">Name</b><span class="tablesaw-cell-content">Clark, Troy</span></td>
-                                                            <td class="text-center"><b class="tablesaw-cell-label"><span class="visible-xs">Actions</span></b><span class="tablesaw-cell-content"><a href="#" class="btn btn-xs btn-default">view</a></span></td>
+                                                        <tr>
+                                                            <td>timclark</td>
+                                                            <td>Clark, Timothy</td>
+                                                            <td><a href="#" class="btn btn-xs btn-default">view</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>trlcalrk</td>
+                                                            <td>Clark, Tarleton</td>
+                                                            <td><a href="#" class="btn btn-xs btn-default">view</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>tadclark</td>
+                                                            <td>Clark, Tad</td>
+                                                            <td><a href="#" class="btn btn-xs btn-default">view</a></td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
