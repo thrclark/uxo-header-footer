@@ -30,7 +30,7 @@ $page_title = 'general-settings';
                             <div class="col-md-12">
                                 <div class="form-group ">
                                     <label class="control-label" for="enable-email"> Enable Email </label>
-                                    <span class="help-block small" id="">Turn on email functionality. Default is 'Disabled'.</span>
+                                    <span class="help-block small" >Turn on email functionality. Default is 'Disabled'.</span>
                                     <div class="row">
                                         <div class="col-md-3">
                                             <select class="form-control" id="enable-email">
@@ -42,7 +42,7 @@ $page_title = 'general-settings';
                                 </div>
                                 <div class="form-group ">
                                     <label class="control-label" for="mr-pagecount">Maintenance Resource Page Count</label>
-                                    <span class="help-block small" id="">The number of items displayed on a page at one time.</span>
+                                    <span class="help-block small" >The number of items displayed on a page at one time.</span>
                                     <div class="row">
                                         <div class="col-md-3">
                                             <input type="text" class="form-control" id="mr-pagecount" placeholder="enter value">
@@ -51,7 +51,7 @@ $page_title = 'general-settings';
                                 </div>
                                 <div class="form-group ">
                                     <label class="control-label" for="sys-email">System Email</label>
-                                    <span class="help-block small" id="">Email address from which email is sent.</span>
+                                    <span class="help-block small" >Email address from which email is sent.</span>
                                     <div class="row">
                                         <div class="col-md-3">
                                             <input type="email" class="form-control" id="sys-email" placeholder="">

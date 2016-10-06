@@ -23,63 +23,69 @@ $page_title = 'create-new';
                     <section>
                         <div class="row section-head">
                             <div class="col-md-12 section-header">
-                                <h3> Create New Verification</h3>
+                                <h2 class="h3"> Create New Verification</h2>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xs-12">
                                 <div class="stepwizard">
                                     <div class="stepwizard-row setup-panel">
-                                        <div class="stepwizard-step"> <a href="#step-1" type="button" class="btn btn-primary btn-circle"><i class="fa fa-wrench" aria-hidden="true"></i></a>
+                                        <div class="stepwizard-step"> <a href="#step-1"  class="btn btn-primary btn-circle"><i class="fa fa-wrench" aria-hidden="true"></i></a>
                                             <p class="hidden-xs">Setup</p>
                                         </div>
-                                        <div class="stepwizard-step"> <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-database" aria-hidden="true"></i></a>
+                                        <div class="stepwizard-step"> <a href="#step-2"  class="btn btn-default btn-circle" ><i class="fa fa-database" aria-hidden="true"></i></a>
                                             <p class="hidden-xs">Data</p>
                                         </div>
-                                        <div class="stepwizard-step"> <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled" id="step_recipients"><i class="fa fa-users"></i></a>
+                                        <div class="stepwizard-step"> <a href="#step-3" class="btn btn-default btn-circle"  id="step_recipients"><i class="fa fa-users"></i></a>
                                             <p class="hidden-xs" id="step_recipients_label">Recipients</p>
                                         </div>
-                                        <div class="stepwizard-step"> <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-calendar"></i></a>
+                                        <div class="stepwizard-step"> <a href="#step-4" class="btn btn-default btn-circle"><i class="fa fa-calendar"></i></a>
                                             <p class="hidden-xs">Scheduling</p>
                                         </div>
-                                        <div class="stepwizard-step"> <a href="#step-5" type="button" class="btn btn-default btn-circle" disabled="disabled"><i class="fa fa-eye"></i></a>
+                                        <div class="stepwizard-step"> <a href="#step-5" class="btn btn-default btn-circle"><i class="fa fa-eye"></i></a>
                                             <p class="hidden-xs">Review/Save</p>
                                         </div>
                                     </div>
                                 </div>
-                                <form role="form" style="padding-bottom:15px">
+                                <form style="padding-bottom:15px">
                                     <div class="row setup-content" id="step-1">
                                         <div class="col-xs-12">
                                             <p class="lead"> Setup</p>
                                             <div class="form-group ">
                                                 <label class="control-label" for="name"> Name </label>
-                                                <span class="help-block small" id=""> Add a name for this verification. This name will not be displayed on the verification itself, but will be used for identification within the publishing system.</span>
+                                                <span class="help-block small" > Add a name for this verification. This name will not be displayed on the verification itself, but will be used for identification within the publishing system.</span>
                                                 <div class="row">
-                                                                <div class="col-sm-4"> <input class="form-control" id="name" name="name" type="text"  required="required"/></div></div>
+                                                    <div class="col-sm-4">
+                                                        <input class="form-control" id="name" name="name" type="text"  required="required"/>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="form-group ">
                                                 <label class="control-label " for="description"> Description <span class="small" style="font-weight:normal">(optional)</span></label>
-                                                <span class="help-block small" id=""> Add a description that will appear below the first paragraph and above the verification data. </span>
+                                                <span class="help-block small" > Add a description that will appear below the first paragraph and above the verification data. </span>
                                                 <textarea class="form-control text-formatter" cols="40" id="description" name="message" rows="3"></textarea>
                                             </div>
                                             <div class="form-group ">
                                                 <label class="control-label " for="disclaimer"> Disclaimer Text <span class="small" style="font-weight:normal">(optional)</span></label>
-                                                <span class="help-block small" id=""> Add disclaimer text that will appear below the verification data and above the verification radio/checkbox controls. </span>
+                                                <span class="help-block small" > Add disclaimer text that will appear below the verification data and above the verification radio/checkbox controls. </span>
                                                 <textarea class="form-control text-formatter" cols="40" id="disclaimer" name="textarea" rows="3"></textarea>
                                             </div>
                                             <div class="form-group ">
                                                 <label class="control-label " for="verify_now_select"> 'Verify Now' Text </label>
-                                                <span class="help-block small" id="hint_textarea1"> Select the text that will appear next to the 'Verify Now' radio/checkbox control. </span>
+                                                <span class="help-block small" > Select the text that will appear next to the 'Verify Now' radio/checkbox control. </span>
                                                 <div class="row">
-                                                                <div class="col-sm-4"> <select class="select form-control" id="verify_now_select" name="select">
-                                                    <option value="verify_now_standard"> Use Default Text </option>
-                                                    <option value="verify_now_custom"> Enter Custom Text </option>
-                                                </select></div></div>
+                                                    <div class="col-sm-4">
+                                                        <select class="select form-control" id="verify_now_select" name="select">
+                                                            <option value="verify_now_standard"> Use Default Text </option>
+                                                            <option value="verify_now_custom"> Enter Custom Text </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="form-group ">
                                                 <div style=" display:block">
                                                     <label class="control-label sr-only" for="verify_now_standard"> 'Verify Now' Standard Text </label>
-                                                    <textarea class="form-control" cols="40" id="verify_now_standard" name="textarea1" rows="3" disabled>I have verified that the above information is up to date and correct.</textarea>
+                                                    <textarea class="form-control" cols="40" id="verify_now_standard" name="textarea1" rows="3" disabled>I have verified that the information on this page is currently accurate.</textarea>
                                                 </div>
                                                 <div id="verify_now_custom" style="display:none">
                                                     <label class="control-label sr-only" for="verify_now_custommm"> 'Verify Now' Custom Text </label>
@@ -88,12 +94,15 @@ $page_title = 'create-new';
                                             </div>
                                             <div class="form-group ">
                                                 <label class="control-label " for="verify_later_select"> 'Verify Later' Text </label>
-                                                <span class="help-block small" id="hint_textarea1"> Select the text that will appear next to the 'Verify Now' radio/checkbox control. </span>
-                                                 <div class="row">
-                                                                <div class="col-sm-4"><select class="select form-control" id="verify_later_select" name="select" >
-                                                    <option value="verify_later_standard"> Use Default Text </option>
-                                                    <option value="verify_later_custom"> Enter Custom Text </option>
-                                                </select></div></div>
+                                                <span class="help-block small" > Select the text that will appear next to the 'Verify Now' radio/checkbox control. </span>
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <select class="select form-control" id="verify_later_select" name="select" >
+                                                            <option value="verify_later_standard"> Use Default Text </option>
+                                                            <option value="verify_later_custom"> Enter Custom Text </option>
+                                                        </select>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="form-group ">
                                                 <div style=" display:block">
@@ -132,8 +141,8 @@ $page_title = 'create-new';
                                                                     <textarea class="form-control text-formatter" cols="40" id="section_description" name="message" rows="3"></textarea>
                                                                 </div>
                                                                 <div class="form-group ">
-                                                                    <label class="control-label" for="section_title"> Unique Key </label>
-                                                                    <input class="form-control" id="section_title" name="name" type="text" />
+                                                                    <label class="control-label" for="unique_key"> Unique Key </label>
+                                                                    <input class="form-control" id="unique_key" name="name" type="text" />
                                                                 </div>
                                                                 <p class="control-label"> Field Groups </p>
                                                                 <table class="table table-condensed table-responsive table-actions" id="myTable">
@@ -196,9 +205,9 @@ $page_title = 'create-new';
                                                         <div class="panel-body">
                                                             <div id="builder-basic"> </div>
                                                             <div class="form-group " >
-                                                                <label class="control-label " for=""> Effective Date </label>
+                                                                <label class="control-label " for="effective_date"> Effective Date </label>
                                                                 <span class="help-block small" > Select the date on which the verification will be sent to this specified recipient.</span>
-                                                                <input type="text" class="form-control" style="width:200px">
+                                                                <input type="text" class="form-control" style="width:200px" id="effective_date">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -206,11 +215,11 @@ $page_title = 'create-new';
                                             </div>
                                             <button class="btn btn-xs btn-default btn-add-group pull-right"> <i class="fa fa-plus"></i> rule</button>
                                             <div class="form-group" style="margin-top:40px">
-                                                <label class="control-label" for="name">Leeway</label>
-                                                <span class="help-block small" id=""> The number of days in which users are exempt from renewing the verification if they have previously fulfilled the verification requirements.</span>
+                                                <label class="control-label" for="leeway">Leeway</label>
+                                                <span class="help-block small" > The number of days in which users are exempt from renewing the verification if they have previously fulfilled the verification requirements.</span>
                                                 <div class="row">
                                                     <div class="col-md-4 col-xs-6">
-                                                        <input class="form-control" id="name" name="name" type="text" placeholder="how many days?"/>
+                                                        <input class="form-control" id="leeway" name="leeway" type="text" placeholder="how many days?"/>
                                                     </div>
                                                 </div>
                                             </div>
@@ -231,7 +240,7 @@ $page_title = 'create-new';
                                                         <div class="row">
                                                             <div class="col-md-8" style="padding-top:5px;">
                                                                 <div> <strong>Verification Status</strong> </div>
-                                                                <span class="help-block small" id=""> Specify the status of this verification upon saving.</span> </div>
+                                                                <span class="help-block small" > Specify the status of this verification upon saving.</span> </div>
                                                             <div class="col-md-4 text-right" style="    padding-top: 8px;">
                                                                 <input id="toggle_status" type="checkbox" checked data-toggle="toggle" data-on="Active" data-off="Inactive" data-onstyle="primary" data-offstyle="default" data-size="large">
                                                             </div>
@@ -239,23 +248,23 @@ $page_title = 'create-new';
                                                     </div>
                                                     <div class="hideable">
                                                         <div class="form-group ">
-                                                            <label class="control-label " for=""> Verification Recurrance </label>
-                                                            <span class="help-block small" id=""> Select whether this verification will be posted annually, or only once. </span>
+                                                            <label class="control-label " for="vfy_recurrance"> Verification Recurrance </label>
+                                                            <span class="help-block small" > Select whether this verification will be posted annually, or only once. </span>
                                                             <div class="row">
                                                                 <div class="col-sm-4">
                                                                     <select class="select form-control" id="vfy_recurrance" name="select">
-                                                                        <option value="" selected>One Time </option>
-                                                                        <option name="annual" value="annual">Annually</option>
+                                                                        <option value="one-time" selected>One Time </option>
+                                                                        <option value="annual">Annually</option>
                                                                     </select>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="form-group " id="select_end_date">
-                                                            <label class="control-label " for=""> Verification End Date <span class="small" style="font-weight:normal">(optional)</span></label>
-                                                            <span class="help-block small" id=""> Choose an ending date for this verification. </span>
+                                                            <label class="control-label " for="vfy_enddate"> Verification End Date <span class="small" style="font-weight:normal">(optional)</span></label>
+                                                            <span class="help-block small" > Choose an ending date for this verification. </span>
                                                             <div class="row">
                                                                 <div class="col-sm-4">
-                                                                    <input type="text" class="form-control" >
+                                                                    <input type="text" class="form-control" id="vfy_enddate" >
                                                                 </div>
                                                             </div>
                                                         </div>
