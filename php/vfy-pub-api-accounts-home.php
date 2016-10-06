@@ -32,9 +32,12 @@ $page_title = 'api-accounts';
                                 <div class="form-inline" style="padding-bottom: 10px;">
                                     <div class="form-group">
                                         <label class="sr-only" for=filtertable>Filter</label>
-                                      <input type=text id="filtertable" class="form-control input-sm" placeholder="Filter">
+                                        <input type=text id="filtertable" class="form-control input-sm" placeholder="Filter">
                                     </div>
                                 </div>
+                            </div>
+                          <div class="col-xs-12">
+                                <a href="#" class="btn btn-xs btn-default"> <i class="fa fa-plus" aria-hidden="true"></i> new</a>
                             </div>
                         </div>
                         <table class="table table-condensed table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack">
@@ -63,7 +66,6 @@ $page_title = 'api-accounts';
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                 <li><a href="xxx.php" target="_blank">Edit</a></li>
                                                 <li><a href="#">Delete</a></li>
-                                                <li><a href="#">Activate</a></li>
                                             </ul>
                                         </div></td>
                                 </tr>
@@ -78,7 +80,6 @@ $page_title = 'api-accounts';
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
                                                 <li><a href="xxx.php" target="_blank">Edit</a></li>
                                                 <li><a href="#">Delete</a></li>
-                                                <li><a href="#">Activate</a></li>
                                             </ul>
                                         </div></td>
                                 </tr>
@@ -93,7 +94,6 @@ $page_title = 'api-accounts';
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu3">
                                                 <li><a href="xxx.php" target="_blank">Edit</a></li>
                                                 <li><a href="#">Delete</a></li>
-                                                <li><a href="#">Activate</a></li>
                                             </ul>
                                         </div></td>
                                 </tr>
@@ -108,7 +108,6 @@ $page_title = 'api-accounts';
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu4">
                                                 <li><a href="xxx.php" target="_blank">Edit</a></li>
                                                 <li><a href="#">Delete</a></li>
-                                                <li><a href="#">Activate</a></li>
                                             </ul>
                                         </div></td>
                                 </tr>
@@ -123,7 +122,6 @@ $page_title = 'api-accounts';
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu5">
                                                 <li><a href="xxx.php" target="_blank">Edit</a></li>
                                                 <li><a href="#">Delete</a></li>
-                                                <li><a href="#">Activate</a></li>
                                             </ul>
                                         </div></td>
                                 </tr>
@@ -138,7 +136,6 @@ $page_title = 'api-accounts';
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu6">
                                                 <li><a href="xxx.php" target="_blank">Edit</a></li>
                                                 <li><a href="#">Delete</a></li>
-                                                <li><a href="#">Activate</a></li>
                                             </ul>
                                         </div></td>
                                 </tr>
@@ -153,7 +150,6 @@ $page_title = 'api-accounts';
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu7">
                                                 <li><a href="xxx.php" target="_blank">Edit</a></li>
                                                 <li><a href="#">Delete</a></li>
-                                                <li><a href="#">Activate</a></li>
                                             </ul>
                                         </div></td>
                                 </tr>
@@ -168,7 +164,6 @@ $page_title = 'api-accounts';
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu8">
                                                 <li><a href="xxx.php" target="_blank">Edit</a></li>
                                                 <li><a href="#">Delete</a></li>
-                                                <li><a href="#">Activate</a></li>
                                             </ul>
                                         </div></td>
                                 </tr>
@@ -183,7 +178,6 @@ $page_title = 'api-accounts';
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu9">
                                                 <li><a href="xxx.php" target="_blank">Edit</a></li>
                                                 <li><a href="#">Delete</a></li>
-                                                <li><a href="#">Activate</a></li>
                                             </ul>
                                         </div></td>
                                 </tr>
@@ -198,7 +192,6 @@ $page_title = 'api-accounts';
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu10">
                                                 <li><a href="xxx.php" target="_blank">Edit</a></li>
                                                 <li><a href="#">Delete</a></li>
-                                                <li><a href="#">Activate</a></li>
                                             </ul>
                                         </div></td>
                                 </tr>
@@ -213,7 +206,6 @@ $page_title = 'api-accounts';
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu11">
                                                 <li><a href="xxx.php" target="_blank">Edit</a></li>
                                                 <li><a href="#">Delete</a></li>
-                                                <li><a href="#">Activate</a></li>
                                             </ul>
                                         </div></td>
                                 </tr>
@@ -228,7 +220,6 @@ $page_title = 'api-accounts';
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu12">
                                                 <li><a href="xxx.php" target="_blank">Edit</a></li>
                                                 <li><a href="#">Delete</a></li>
-                                                <li><a href="#">Activate</a></li>
                                             </ul>
                                         </div></td>
                                 </tr>
