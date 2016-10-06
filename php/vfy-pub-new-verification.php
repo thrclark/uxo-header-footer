@@ -57,6 +57,7 @@ $page_title = 'create-new';
                                                 <div class="row">
                                                     <div class="col-sm-4">
                                                         <input class="form-control" id="name" name="name" type="text"  required="required"/>
+                                                        <div class="validation-fieldmessage" style="display:none" id="validate_name"> <i class="fa fa-minus-circle" aria-hidden="true"></i> A name is required for this verification.</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -112,6 +113,24 @@ $page_title = 'create-new';
                                                 <div id="verify_later_custom" style=" display:none">
                                                     <label class="control-label sr-only" for="verify_later_custommm"> 'Verify Later' Custom Text </label>
                                                     <textarea class="form-control" cols="40" id="verify_later_custommm" name="textarea1" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group ">
+                                                <label class="control-label" for="deferral_limit"> Deferral Limit </label>
+                                                <span class="help-block small" > Specify the number of times a user is allowed to defer this verification ('verify later'). '0' will require immediate verification, and leaving the field blank will allow unlimited deferrals.</span>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <input class="form-control" id="deferral_limit" name="deferral_limit" type="text" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group ">
+                                                <label class="control-label" for="deferral_limit"> Deferral Intervals </label>
+                                                <span class="help-block small" > Specify the amount of time to elapse after the user defers verification and before the user sees the verification again (in minutes). The maximum is 43200 minutes (30 days).</span>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <input class="form-control" id="deferral_limit" name="deferral_limit" type="text" />
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -204,10 +223,15 @@ $page_title = 'create-new';
                                                     <div id="collapse-group1" class="panel-collapse collapse in">
                                                         <div class="panel-body">
                                                             <div id="builder-basic"> </div>
-                                                            <div class="form-group " >
+                                                            <div class="form-group" >
                                                                 <label class="control-label " for="effective_date"> Effective Date </label>
                                                                 <span class="help-block small" > Select the date on which the verification will be sent to this specified recipient.</span>
-                                                                <input type="text" class="form-control" style="width:200px" id="effective_date">
+                                                                <div class="row">
+                                                                    <div class="col-sm-4">
+                                                                        <input class="form-control" id="effective_date" name="effective_date" type="text">
+                                                                        <div class="validation-fieldmessage" style="display:none" id="validate_effectivedate"> <i class="fa fa-minus-circle" aria-hidden="true"></i> Please provide correct date formatting.</div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -302,6 +326,16 @@ $page_title = 'create-new';
                                                                         <p class="data-label">Verification Content:</p>
                                                                     </div>
                                                                     <div class="col-md-9"> <a href="verify-preview.php" class="btn btn-xs btn-default" target="_blank">Preview</a> </div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="col-md-3">
+                                                                        <p class="data-label">Deferral Limit:</p>
+                                                                    </div>
+                                                                    <div class="col-md-9"> <i class="small">10</i> </div>
+                                                                    <div class="clearfix"></div>
+                                                                    <div class="col-md-3">
+                                                                        <p class="data-label">Deferral Intervals:</p>
+                                                                    </div>
+                                                                    <div class="col-md-9"> <i class="small">1440 minutes</i> </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -552,6 +586,11 @@ $page_title = 'create-new';
     </div>
 </div>
 <?php include ('includes/brand-footer.php') ?>
+<script type="text/javascript">
+    $(function() {
+        $('#vfy_enddate, #effective_date').datetimepicker();
+    });
+</script> 
 <script>
   $( function() {
     $( "#sortable" ).sortable();
@@ -630,7 +669,7 @@ $page_title = 'create-new';
             for (var i = 0; i < curInputs.length; i++) {
                 if (!curInputs[i].validity.valid) {
                     isValid = false;
-                    $(curInputs[i]).closest(".form-group").addClass("has-error");
+                    //$(curInputs[i]).closest(".form-group").addClass("has-error");
                 }
             }
 
@@ -892,9 +931,12 @@ $(document).ready(function() {
 </script> 
 <script>
     $("#next1").click(function() {
+		
+		 $("#validate_name").removeAttr("style");
+		
         if (!$('#name').val()) {
             $.toast({
-    text: "A name is required for this verification. Please provide a name before proceeding.", // Text that is to be shown in the toast
+    text: "A name is required for this verification.", // Text that is to be shown in the toast
     heading: 'Error - Name', // Optional heading to be shown on the toast
      showHideTransition: 'fade', // fade, slide or plain
     allowToastClose: true, // Boolean value true or false
@@ -945,8 +987,16 @@ $(document).ready(function() {
         $("#recipients_edit").hide();
         $("#step_recipients").removeClass("btn-default");
         $("#step_recipients").addClass("btn-danger");
-        $("#step_recipients_label").css("color", "red");
+        $("#step_recipients_label").css("color", "#a94442");
         $("#review_section_haserror").css("background", "#fff6f6");
+		 $("#validate_effectivedate").css("display", "block");
+		
+		
+		
+		
+		
+		
+		
     });
 </script>
 </body>
