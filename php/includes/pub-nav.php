@@ -18,6 +18,7 @@
                         <li <?php if ($page_title == 'api-accounts') { echo 'class="active"'; } ?>><a href="vfy-pub-api-accounts-home.php">API Accounts </a></li>
                         <li <?php if ($page_title == 'publishers') { echo 'class="active"'; } ?>><a href="vfy-pub-publishers-home.php">Publishers </a></li>
                         <li <?php if ($page_title == 'resetuser') { echo 'class="active"'; } ?>><a href="vfy-pub-resetuser.php"> View/Reset User Verifications </a></li>
+                        <li <?php if ($page_title == 'branding') { echo 'class="active"'; } ?>><a href="vfy-pub-branding.php"> Header/Footer Branding</a></li>
                     </ul>
                 </li>
             </ul>
