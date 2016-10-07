@@ -1,6 +1,17 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 body {
   background-color: @bodybackground;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 
@@ -9,36 +20,9 @@ header {
   background: @header-background;
 }
 
-
-//sticky footer
-
-
-html {
-  height: 100%;
-  box-sizing: border-box;
+.main-content {
+  flex: 1 0 auto;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-body {
-  position: relative;
-  min-height: 100%;
-}
-
-
-.main-content.container {
-  padding-bottom: 200px;
-}
-
-
-footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-align: center;
-}
-
 
 .list-unstyled li {
   margin-bottom: 15px;
@@ -52,69 +36,46 @@ footer {
   margin:0px;
   color:#FFFFFF;
 }
-
-
 .navbar-inverse .navbar-brand {
   color: #ffffff;
 }
-
 .navbar-text {
 
   float: right;
   .small;
 
 }
-
 .btn-xs .fa-plus,
 .btn-xs .fa-close {
   font-size: 12px;
 }
-
-
 .well {
-
   -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   border: none;
 
 }
-
-
-
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-
   //need a different place for Benton
   font-family: BentonSansCondBold;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
 }
-
 hr {
   border-top: 1px solid #ebebeb;
 }
-
-
-
 .section-head {
   margin-bottom: 15px;
 }
 .section-head .section-header h3 {
   margin-top: 11px;
 }
-
-
-
-
 .view-admin .main-content .primary-content {
   .well;
   margin-top: -53px;
   min-height: 600px;
 }
-
-
-
-
 .tile-content {
   background: #ffffff;
   border: solid 1px #ebebeb;
@@ -132,26 +93,19 @@ hr {
     margin-bottom: 0px;
   }
 }
-
-
 .tile-content .btn:active, .btn.active {
   box-shadow: none;
 }
-
-
 .tile-content .review-data {
   margin-top: 20px;
 }
 .tile-content .review-data .review-data-section {
   margin-top: 15px;
 }
-
 .review-data .review-data-section hr {
   margin-bottom: 5px;
   margin-top: 5px;
 }
-
-
 .tile-content .review-data .review-data-section .data-label {
   text-align: right;
 }
@@ -164,7 +118,6 @@ hr {
     margin-bottom: 20px;
   }
 }
-
 .tile-content .review-data .review-data-section .table.table-condensed tr td {
   .small;
   font-style: italic;
@@ -176,9 +129,6 @@ hr {
 .tile-content .list-unstyled li {
   margin-bottom: 5px;
 }
-
-
-
 .table-actions td:last-child {
   width: 1%;
   white-space: nowrap;
@@ -187,15 +137,11 @@ hr {
   padding-left: 10px;
   padding-right: 10px;
 }
-
 .help-block {
   margin-top: 0px;
   margin-bottom: 5px;
   color: lighten(@text-color, 12%); // lighten the text some for contrast
 }
-
-
-
 label {
   margin-bottom: 0px
 }
@@ -205,7 +151,6 @@ label {
   top: 12px;
   color: #cccccc;
 }
-
 .rules-group-container .rules-group-container .rule-post-container {
   display: none !important;
 }
@@ -218,14 +163,6 @@ label {
 .panel-group .panel .panel-heading {
   position: relative;
 }
-
-
-
-.review-data {
-  //padding-left: 50px;
-}
-
-
 #data-sortable .panel:first-child .fa-close {
   display: none
 }
