@@ -23,21 +23,24 @@ $page_title = 'archived';
             </div>
             <div class="col-md-9">
                 <div class="primary-content">
-                    <section style="display:;" id="all_verifications" ng-app=sortApp ng-controller=mainController>
+                    <section style="display:;" id="all_verifications">
                         <div class="row section-head">
                             <div class="col-sm-6 section-header">
-                                <h3>Archived Verifications</h3>
+                                <h2 class="h3">Archived Verifications</h2>
                             </div>
                             <div class="col-sm-6 text-right" style="padding-top: 9px;">
-                                <form class="form-inline" style="padding-bottom: 10px;">
+                                <div class="form-inline" style="padding-bottom: 10px;">
                                     <div class="form-group">
                                         <label class="sr-only" for=filtertable>Filter</label>
-                                        <input type=text id="filtertable" class="form-control input-sm" placeholder=Filter ng-model=searchstatus>
+                                       <input type=text id="filtertable" class="form-control input-sm" placeholder="Filter">
                                     </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                         <table class="table table-condensed table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack">
+                            <caption class="sr-only">
+                            Index of archived verifications
+                            </caption>
                             <thead>
                                 <tr>
                                     <th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="1">Name</th>

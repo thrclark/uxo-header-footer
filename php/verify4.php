@@ -85,7 +85,7 @@
             <?php include ('includes/instructions-bottom.php') ?>
             <div class="radio">
                 <input id="box1" type="checkbox" class="with-font" />
-                <label for="box1" class="lead">I have verified that the above information is up to date and correct.</label>
+                <label for="box1" class="lead">I have verified that the information on this page is currently accurate.</label>
             </div>
             <div class="row">
                 <div class="col-md-12 text-center" style="padding-bottom:15px; padding-top:15px;">

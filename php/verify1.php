@@ -74,12 +74,12 @@
                 <legend class="sr-only">Verify</legend>
                 <div class="radio">
                     <input id="question1" name="question" type="radio" class="with-font" value="sel" />
-                    <label for="question1" class="lead">I have verified that the above information is up to date and correct.</label>
+                    <label for="question1" class="lead">I have verified that the information on this page is currently accurate.</label>
                 </div>
                 <div class="radio">
                     <input id="question2" name="question" type="radio" class="with-font" value="sel"/>
                     <label for="question2" class="lead">I choose to verify this information later.<br>
-                        <span style=" font-size:14px; display:block">(verification must be completed within 8 days)</span></label>
+                        <span style=" font-size:14px; display:block">(you may bypass this verification 8 more times)</span></label>
                 </div>
             </fieldset>
             <div class="row">
