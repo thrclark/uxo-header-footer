@@ -36,7 +36,7 @@ $page_title = 'publishers';
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xs-12"> <a href="#" class="btn btn-xs btn-default"> <i class="fa fa-plus" aria-hidden="true"></i> new</a> </div>
+                            <div class="col-xs-12"> <a href="vfy-pub-publishers-new.php" class="btn btn-xs btn-default"> <i class="fa fa-plus" aria-hidden="true"></i> new</a> </div>
                         </div>
                         <table class="table table-condensed table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack">
                             <caption class="sr-only">
