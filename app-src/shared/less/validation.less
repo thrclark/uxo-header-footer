@@ -1,6 +1,29 @@
-.validation-fieldmessage {
+
+
+.has-error {
+background: fade(@brand-danger, 5%);
+}
+
+.has-error  hr {
+  border-top: 1px solid fade(@brand-danger, 10%);
+}
+
+.has-error .validation-fieldmessage {
   .text-danger;
   .small;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.has-error .help-block,
+.has-error .control-label{
+
+  color: @text-color;
+}
+
+
+.form-group.has-error {
+  margin-left: -10px;
+  margin-right: -10px;
+  padding:10px;
 }

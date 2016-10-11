@@ -51,7 +51,7 @@ $page_title = 'create-new';
                                     <div class="row setup-content" id="step-1">
                                         <div class="col-xs-12">
                                             <p class="lead"> Setup</p>
-                                            <div class="form-group ">
+                                            <div class="form-group" id="vfy_name">
                                                 <label class="control-label" for="name"> Name </label>
                                                 <span class="help-block small" > Add a name for this verification. This name will not be displayed on the verification itself, but will be used for identification within the publishing system.</span>
                                                 <div class="row">
@@ -477,7 +477,9 @@ $page_title = 'create-new';
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="well well-sm tile-content" id="review_section_haserror">
+                                            <div class="well well-sm tile-content has-error" id="review_section_haserror">
+                                            
+                                            
                                                 <div class="row">
                                                     <div class="col-xs-6 lead">Recipients</div>
                                                     <div class="col-xs-6 text-right" style=""> <a href="#" class="btn btn-xs btn-danger" id="review_button_fixerror" style="display:none">Fix Errors</a> <a href="#" class="btn btn-xs btn-default" id="recipients_edit">Edit</a> </div>
@@ -931,29 +933,32 @@ $(document).ready(function() {
 </script> 
 <script>
     $("#next1").click(function() {
+        $("#vfy_name").toggleClass("has-error");
+        //$("#validate_name").removeAttr("style");
 		
-		 $("#validate_name").removeAttr("style");
 		
+		
+		
+
         if (!$('#name').val()) {
             $.toast({
-    text: "A name is required for this verification.", // Text that is to be shown in the toast
-    heading: 'Error - Name', // Optional heading to be shown on the toast
-     showHideTransition: 'fade', // fade, slide or plain
-    allowToastClose: true, // Boolean value true or false
-    hideAfter: 5000, // false to make it sticky or number representing the miliseconds as time after which toast needs to be hidden
-    stack: 5, // false if there should be only one toast at a time or a number representing the maximum number of toasts to be shown at a time
-    position: 'bottom-right', // bottom-left or bottom-right or bottom-center or top-left or top-right or top-center or mid-center or an object representing the left, right, top, bottom values
-    
-    bgColor: '#df0200',  // Background color of the toast
-    textColor: '#ffffff',  // Text color of the toast
-    textAlign: 'left',  // Text alignment i.e. left, right or center
-    loader: true,  // Whether to show loader or not. True by default
-    loaderBg: '#9EC600',  // Background color of the toast loader
-    beforeShow: function () {}, // will be triggered before the toast is shown
-    afterShown: function () {}, // will be triggered after the toat has been shown
-    beforeHide: function () {}, // will be triggered before the toast gets hidden
-    afterHidden: function () {}  // will be triggered after the toast has been hidden
-});
+                text: "A name is required for this verification.", // Text that is to be shown in the toast
+                heading: 'Error - Name', // Optional heading to be shown on the toast
+                showHideTransition: 'fade', // fade, slide or plain
+                allowToastClose: true, // Boolean value true or false
+                hideAfter: 5000, // false to make it sticky or number representing the miliseconds as time after which toast needs to be hidden
+                stack: 5, // false if there should be only one toast at a time or a number representing the maximum number of toasts to be shown at a time
+                position: 'bottom-right', // bottom-left or bottom-right or bottom-center or top-left or top-right or top-center or mid-center or an object representing the left, right, top, bottom values
+                bgColor: '#df0200', // Background color of the toast
+                textColor: '#ffffff', // Text color of the toast
+                textAlign: 'left', // Text alignment i.e. left, right or center
+                loader: true, // Whether to show loader or not. True by default
+                loaderBg: '#9EC600', // Background color of the toast loader
+                beforeShow: function() {}, // will be triggered before the toast is shown
+                afterShown: function() {}, // will be triggered after the toat has been shown
+                beforeHide: function() {}, // will be triggered before the toast gets hidden
+                afterHidden: function() {} // will be triggered after the toast has been hidden
+            });
         }
     });
 </script> 
