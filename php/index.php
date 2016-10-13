@@ -15,6 +15,8 @@ header .app-header h1 {
 </style>
 </head>
 <body style="background:#FFFFFF" data-market-key="" data-market-name="All Markets" data-all-markets-key="all" data-task-collection="" ondragstart="return false;" ondrop="return false;" id="top" >
+<div class="wrapper">
+
 <header >
     <div class="container togglecontainer app-header" style="padding-top:15px;background:;">
         <h1 style="margin-left: auto; margin-right: auto; color:#ffffff ">IU Verify - Prototypes</h1>
@@ -63,6 +65,7 @@ header .app-header h1 {
             </ul>
         </div>
     </div>
+</div>
 </div>
 </body>
 </html>

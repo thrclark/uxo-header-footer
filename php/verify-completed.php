@@ -8,6 +8,7 @@
 <?php include ('includes/scripts.php') ?>
 </head>
 <body id="top" >
+<div class="wrapper">
 <?php include ('includes/brand-header2.php') ?>
 <?php include ('includes/header2.php') ?>
 <div class="main-content container" role="main">
@@ -16,5 +17,6 @@
     </div>
 </div>
 <?php include ('includes/brand-footer.php') ?>
+</div>
 </body>
 </html>
