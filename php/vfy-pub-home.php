@@ -47,7 +47,6 @@ $page_title = 'home';
                                     <tr>
                                         <th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="1">Name</th>
                                         <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Status</th>
-                                        <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Created</th>
                                         <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4"><span class="visible-xs">Actions</span></th>
                                     </tr>
                                 </thead>
@@ -55,7 +54,6 @@ $page_title = 'home';
                                     <tr>
                                         <td>FS - Direct Deposit</td>
                                         <td>inactive</td>
-                                        <td>2016-03-18</td>
                                         <td class="text-center"><a href="vfy-pub-new-verification.php" class="btn btn-xs btn-default"> edit </a><!--<div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
@@ -71,7 +69,6 @@ $page_title = 'home';
                                     <tr>
                                         <td>FS - Tax Information</td>
                                         <td>inactive</td>
-                                        <td>2016-05-18</td>
                                         <td class="text-center"><a href="vfy-pub-new-verification.php" class="btn btn-xs btn-default">edit</a><!--<div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
@@ -86,7 +83,6 @@ $page_title = 'home';
                                     <tr>
                                         <td>FS - W2 Update</td>
                                         <td>active</td>
-                                        <td>2016-02-02</td>
                                         <td class="text-center"><a href="vfy-pub-new-verification.php" class="btn btn-xs btn-default">edit</a><!--<div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu3">
@@ -101,7 +97,6 @@ $page_title = 'home';
                                     <tr>
                                         <td>HC - Immunization Records</td>
                                         <td>inactive</td>
-                                        <td>2016-05-17</td>
                                         <td class="text-center"><a href="vfy-pub-new-verification.php" class="btn btn-xs btn-default">edit</a><!--<div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu4">
@@ -116,7 +111,6 @@ $page_title = 'home';
                                     <tr>
                                         <td>HRMS - Citizenship</td>
                                         <td>active</td>
-                                        <td>2016-03-15</td>
                                         <td class="text-center"><a href="vfy-pub-new-verification.php" class="btn btn-xs btn-default">edit</a><!--<div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu5">
@@ -131,7 +125,6 @@ $page_title = 'home';
                                     <tr>
                                         <td>HRMS - Military Status</td>
                                         <td>active</td>
-                                        <td>2016-04-04</td>
                                         <td class="text-center"><a href="vfy-pub-new-verification.php" class="btn btn-xs btn-default">edit</a><!--<div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu6">
@@ -146,7 +139,6 @@ $page_title = 'home';
                                     <tr>
                                         <td>IU Notify - Conatct Info</td>
                                         <td>inactive</td>
-                                        <td>2016-05-28</td>
                                         <td class="text-center"><a href="vfy-pub-new-verification.php" class="btn btn-xs btn-default">edit</a><!--<div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu7">
@@ -161,7 +153,6 @@ $page_title = 'home';
                                     <tr>
                                         <td>IU Notify - Email Update</td>
                                         <td>inactive</td>
-                                        <td>2016-05-15</td>
                                         <td class="text-center"><a href="vfy-pub-new-verification.php" class="btn btn-xs btn-default">edit</a><!--<div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
@@ -176,7 +167,6 @@ $page_title = 'home';
                                     <tr>
                                         <td>IU Notify - Phone Update</td>
                                         <td>inactive</td>
-                                        <td>2016-05-17</td>
                                         <td class="text-center"><a href="vfy-pub-new-verification.php" class="btn btn-xs btn-default">edit</a><!--<div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu8">
