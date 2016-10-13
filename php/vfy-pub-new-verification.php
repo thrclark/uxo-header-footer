@@ -478,8 +478,6 @@ $page_title = 'create-new';
                                                 </div>
                                             </div>
                                             <div class="well well-sm tile-content has-error" id="review_section_haserror">
-                                            
-                                            
                                                 <div class="row">
                                                     <div class="col-xs-6 lead">Recipients</div>
                                                     <div class="col-xs-6 text-right" style=""> <a href="#" class="btn btn-xs btn-danger" id="review_button_fixerror" style="display:none">Fix Errors</a> <a href="#" class="btn btn-xs btn-default" id="recipients_edit">Edit</a> </div>
@@ -933,13 +931,7 @@ $(document).ready(function() {
 </script> 
 <script>
     $("#next1").click(function() {
-        $("#vfy_name").toggleClass("has-error");
-        //$("#validate_name").removeAttr("style");
-		
-		
-		
-		
-
+        
         if (!$('#name').val()) {
             $.toast({
                 text: "A name is required for this verification.", // Text that is to be shown in the toast
@@ -960,6 +952,8 @@ $(document).ready(function() {
                 afterHidden: function() {} // will be triggered after the toast has been hidden
             });
         }
+		$("#vfy_name").addClass("form-group-error");
+        $("#validate_name").removeAttr("style");
     });
 </script> 
 <script>
