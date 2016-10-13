@@ -7,15 +7,16 @@
       .section-head {
         margin-bottom: 15px;
         .section-header {
-          h3 {
-            margin-top: 11px;
+          .h3 {
+            margin-top: 0px;
           }
         }
+        .section-controls{
+        .text-right}
       }
     }
   }
 }
-
 @media (max-width: @screen-sm-max) {
   .view-admin {
     .main-content {
@@ -26,20 +27,27 @@
         .section-head {
           margin-bottom: 15px;
           .section-header {
-            h3 {
-              margin-top: 11px;
+            .h3 {
+              margin-top: 0px;
             }
           }
         }
       }
     }
   }
-
 }
-
 @media (max-width:@screen-xs-max) {
-  .main-content {
-    width: 100%;
+  .view-admin {
+    .main-content {
+      width: 100%;
+      .primary-content {
+        .well;
+        .section-head {
+          .section-controls{
+            .text-left}
+        }
+      }
+    }
   }
-}
 
+}

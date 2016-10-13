@@ -26,18 +26,10 @@ $page_title = 'api-accounts';
                     <div class="primary-content">
                         <section>
                             <div class="row section-head">
-                                <div class="col-sm-6 section-header">
+                                <div class="col-xs-12 col-sm-9 section-header">
                                     <h2 class="h3">API Accounts &amp; External Rest URLs</h2>
                                 </div>
-                                <div class="col-sm-6 text-right" style="padding-top: 9px;">
-                                    <div class="form-inline" style="padding-bottom: 10px;">
-                                        <div class="form-group">
-                                            <label class="sr-only" for=filtertable>Filter</label>
-                                            <input type=text id="filtertable" class="form-control input-sm" placeholder="Filter">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12"> <a href="vfy-pub-api-accounts-new.php" class="btn btn-xs btn-default"> <i class="fa fa-plus" aria-hidden="true"></i> new</a> </div>
+                                <div class="col-xs-12  col-sm-3 section-controls"> <a href="vfy-pub-api-accounts-new.php" class="btn btn-xs btn-default"> <i class="fa fa-plus" aria-hidden="true"></i> new</a> </div>
                             </div>
                             <table class="table table-condensed table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack">
                                 <caption class="sr-only">

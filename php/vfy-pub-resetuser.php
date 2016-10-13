@@ -50,56 +50,6 @@ $page_title = 'resetuser';
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <h3 class="h4">Search Results</h3>
-                                                    <table class="table table-condensed table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack" id="tablesaw-4611">
-                                                        <caption class="sr-only">
-                                                        Index of archived verifications
-                                                        </caption>
-                                                        <thead>
-                                                            <tr>
-                                                                <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-sortable-default-col="" data-tablesaw-priority="1">Username</th>
-                                                                <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-sortable-default-col="" data-tablesaw-priority="1">Given Name</th>
-                                                                <th scope="col" data-tablesaw-sortable-col="" data-tablesaw-priority="4"><span class="visible-xs">Actions</span></th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>thrclark</td>
-                                                                <td>Clark, Tom</td>
-                                                                <td><a href="#" class="btn btn-xs btn-default">view</a></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>trclark</td>
-                                                                <td>Clark, Troy</td>
-                                                                <td><a href="#" class="btn btn-xs btn-default">view</a></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>tamclark</td>
-                                                                <td>Clark, Tamara</td>
-                                                                <td><a href="#" class="btn btn-xs btn-default">view</a></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>thecalrk</td>
-                                                                <td>Clark, Theresa</td>
-                                                                <td><a href="#" class="btn btn-xs btn-default">view</a></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>timclark</td>
-                                                                <td>Clark, Timothy</td>
-                                                                <td><a href="#" class="btn btn-xs btn-default">view</a></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>trlcalrk</td>
-                                                                <td>Clark, Tarleton</td>
-                                                                <td><a href="#" class="btn btn-xs btn-default">view</a></td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>tadclark</td>
-                                                                <td>Clark, Tad</td>
-                                                                <td><a href="#" class="btn btn-xs btn-default">view</a></td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
                                                 </div>
                                             </div>
                                         </div>
