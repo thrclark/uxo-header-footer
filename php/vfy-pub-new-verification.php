@@ -195,16 +195,16 @@ $page_title = 'create-new';
                                                                                     </select></td>
                                                                                 <td><input type="text" class="form-control"></td>
                                                                                 <td><input type="text" class="form-control"></td>
-                                                                                <td><a href="#" class="btn btn-xs btn-default disabled" style="margin-top:5px">delete</a></td>
+                                                                                <td><a href="#" class="btn btn-xs btn-default disabled" style="margin-top:5px">Delete</a></td>
                                                                             </tr>
                                                                         </tbody>
                                                                     </table>
-                                                                    <a href="#" class="addstuff btn btn-xs btn-default pull-right"><i class="fa fa-plus"></i> field group</a> </div>
+                                                                    <a href="#" class="addstuff btn btn-xs btn-default pull-right"><i class="fa fa-plus"></i> Field Group</a> </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <button class="btn btn-xs btn-default btn-add-data pull-right"> <i class="fa fa-plus"></i> section</button>
+                                                <button class="btn btn-xs btn-default btn-add-data pull-right"> <i class="fa fa-plus"></i> Section</button>
                                             </div>
                                             <div class="col-xs-12 wizard-actions">
                                                 <div class="pull-right" role="group" aria-label="">
@@ -224,7 +224,7 @@ $page_title = 'create-new';
                                                         <div id="collapse-group1" class="panel-collapse collapse in">
                                                             <div class="panel-body">
                                                                 <div id="builder-basic"> </div>
-                                                                <div class="form-group" >
+                                                                <div class="form-group" id="vfy_effectivedate">
                                                                     <label class="control-label " for="effective_date"> Effective Date </label>
                                                                     <span class="help-block small" > Select the date on which the verification will be sent to this specified recipient.</span>
                                                                     <div class="row">
@@ -238,7 +238,7 @@ $page_title = 'create-new';
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <button class="btn btn-xs btn-default btn-add-group pull-right"> <i class="fa fa-plus"></i> rule</button>
+                                                <button class="btn btn-xs btn-default btn-add-group pull-right"> <i class="fa fa-plus"></i> Rule</button>
                                                 <div class="form-group" style="margin-top:40px">
                                                     <label class="control-label" for="leeway">Leeway</label>
                                                     <span class="help-block small" > The number of days in which users are exempt from renewing the verification if they have previously fulfilled the verification requirements.</span>
@@ -503,7 +503,9 @@ $page_title = 'create-new';
                                                                         <div class="col-md-3">
                                                                             <p class="data-label">Effective Date:</p>
                                                                         </div>
-                                                                        <div class="col-md-9"> <i class="small">09/24/2016</i> <i class="fa fa-close" style="color:red; margin-left:10px; display:none" aria-hidden="true" id="review_field_error"></i> </div>
+                                                                        <div class="col-md-9"> <i class="small">09/24/2016</i>
+                                                                            <div class="validation-fieldmessage" id="review_field_error" style="display:none"> <i class="fa fa-minus-circle" aria-hidden="true"></i> Please provide correct date formatting.</div>
+                                                                        </div>
                                                                         <div class="clearfix"></div>
                                                                     </div>
                                                                     <hr>
@@ -980,7 +982,7 @@ $(document).ready(function() {
 });
     });
 </script> 
-    <script>
+<script>
     $("#form_save").click(function() {
         $("#review_button_fixerror").show();
         $("#review_field_error").show();
@@ -989,14 +991,8 @@ $(document).ready(function() {
         $("#step_recipients").addClass("btn-danger");
         $("#step_recipients_label").css("color", "#a94442");
         $("#review_section_haserror").css("background", "#fff6f6");
-		 $("#validate_effectivedate").css("display", "block");
-		
-		
-		
-		
-		
-		
-		
+		$("#validate_effectivedate").css("display", "block");
+		$("#vfy_effectivedate").addClass("form-group-error");
     });
 </script> 
 </div>

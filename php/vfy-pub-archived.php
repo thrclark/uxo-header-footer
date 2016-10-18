@@ -53,7 +53,7 @@ $page_title = 'archived';
                                     <tr ng-repeat="roll in sushi | orderBy:sortType:sortReverse | filter:searchstatus" class="ng-scope">
                                         <td>Campus Access Code Agreement</td>
                                         <td>2015-03-15</td>
-                                        <td class="text-center"><a href="#" class="btn btn-xs btn-default">unarchive</a><!--<div class="dropdown">
+                                        <td class="text-center"><a href="#" class="btn btn-xs btn-default">Unarchive</a><!--<div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                 <li><a href="verify-preview.php" target="_blank">Preview</a></li>
@@ -65,7 +65,7 @@ $page_title = 'archived';
                                     <tr ng-repeat="roll in sushi | orderBy:sortType:sortReverse | filter:searchstatus" class="ng-scope">
                                         <td>Citizenship - Test</td>
                                         <td>2015-04-04</td>
-                                        <td class="text-center"><a href="#" class="btn btn-xs btn-default">unarchive</a><!--<div class="dropdown">
+                                        <td class="text-center"><a href="#" class="btn btn-xs btn-default">Unarchive</a><!--<div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                 <li><a href="verify-preview.php" target="_blank">Preview</a></li>
@@ -77,7 +77,7 @@ $page_title = 'archived';
                                     <tr ng-repeat="roll in sushi | orderBy:sortType:sortReverse | filter:searchstatus" class="ng-scope">
                                         <td>Direct Deposit Consent</td>
                                         <td>2015-02-02</td>
-                                        <td class="text-center"><a href="#" class="btn btn-xs btn-default">unarchive</a><!--<div class="dropdown">
+                                        <td class="text-center"><a href="#" class="btn btn-xs btn-default">Unarchive</a><!--<div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                 <li><a href="verify-preview.php" target="_blank">Preview</a></li>
@@ -89,7 +89,7 @@ $page_title = 'archived';
                                     <tr ng-repeat="roll in sushi | orderBy:sortType:sortReverse | filter:searchstatus" class="ng-scope">
                                         <td>FS - Tax Information</td>
                                         <td>2015-05-18</td>
-                                        <td class="text-center"><a href="#" class="btn btn-xs btn-default">unarchive</a><!--<div class="dropdown">
+                                        <td class="text-center"><a href="#" class="btn btn-xs btn-default">Unarchive</a><!--<div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                 <li><a href="verify-preview.php" target="_blank">Preview</a></li>
@@ -101,7 +101,7 @@ $page_title = 'archived';
                                     <tr ng-repeat="roll in sushi | orderBy:sortType:sortReverse | filter:searchstatus" class="ng-scope">
                                         <td>Manditory Health Screening</td>
                                         <td>2015-03-18</td>
-                                        <td class="text-center"><a href="#" class="btn btn-xs btn-default">unarchive</a><!--<div class="dropdown">
+                                        <td class="text-center"><a href="#" class="btn btn-xs btn-default">Unarchive</a><!--<div class="dropdown">
                                             <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                             <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
                                                 <li><a href="verify-preview.php" target="_blank">Preview</a></li>
