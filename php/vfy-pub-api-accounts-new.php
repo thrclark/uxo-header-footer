@@ -32,8 +32,8 @@ $page_title = 'api-accounts';
                                     <fieldset>
                                         <legend>Setup</legend>
                                         <div class="form-group ">
-                                            <label class="control-label" for="title"> Title </label>
-                                            <span class="help-block small">The API Account title is how the API Account will be referred to throughout the system.</span>
+                                            <label class="control-label" for="title"> API Account Name </label>
+                                            <span class="help-block small">The API account name is how the API account will be referred to throughout the system.</span>
                                             <div class="row">
                                                 <div class="col-sm-6">
                                                     <input class="form-control" id="title" name="title" type="text" required="required">
@@ -43,6 +43,7 @@ $page_title = 'api-accounts';
                                         </div>
                                         <div class="form-group ">
                                             <label class="control-label " for="status">Status </label>
+                                            <span class="help-block small">Herb seasons which days darkness. Together called. Man said. Great life brought fish Whose. Have without. Saying void man him.</span>
                                             <div class="row">
                                                 <div class="col-sm-6">
                                                     <select class="select form-control" id="status" name="select">
@@ -56,6 +57,7 @@ $page_title = 'api-accounts';
                                         </div>
                                         <div class="form-group ">
                                             <label class="control-label " for="api_account_type"> API Account Type </label>
+                                            <span class="help-block small"> They're there i set have night morning fowl won't likeness. Fifth. Multiply forth given so seasons beginning. Under deep the. </span>
                                             <div class="row">
                                                 <div class="col-sm-6">
                                                     <select class="select form-control" id="api_account_type" name="select">
@@ -67,26 +69,19 @@ $page_title = 'api-accounts';
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group show4maintapi">
-                                            <label class="control-label " for="">Renewal </label>
-                                            <span class="help-block small">This account may be renewed within 30 days of expiration (expires on Tue Oct 18 2016).</span>
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <input type="checkbox">
-                                                    <small>Renew </small> </div>
-                                            </div>
+                                        <div class="checkbox show4maintapi">
+                                            <label>
+                                                <input type="checkbox">
+                                                Renew Account <span class="help-block small">This account may be renewed within 30 days of expiration (expires on Tue Oct 18 2016).</span> </label>
                                         </div>
-                                        <div class="form-group show4maintapi">
-                                            <label class="control-label " for="">Locked </label>
-                                            <span class="help-block small">Unlock this API Account so it may be used again.</span>
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <input type="checkbox">
-                                                    <small>Locked </small> </div>
-                                            </div>
+                                        <div class="checkbox show4maintapi">
+                                            <label>
+                                                <input type="checkbox">
+                                                Unlock Account <span class="help-block small">Unlock this API Account so it may be used again.</span> </label>
                                         </div>
                                         <div class="form-group show4maintapi">
                                             <label class="control-label " for="permissionAccessLevel"> Permission Access Level </label>
+                                            <span class="help-block small"> Shall. Itself deep she'd good behold you're made lights fly.</span>
                                             <div class="row">
                                                 <div class="col-sm-6">
                                                     <select name="permissionAccessLevel" id="permissionAccessLevel"  class="form-control" aria-invalid="false">
@@ -106,12 +101,65 @@ $page_title = 'api-accounts';
                                                 </div>
                                             </div>
                                         </div>
+                                        
+                                        
+                                        
+                                        
+                                          <div class="form-group show4extapi">
+                                          
+                                         <div style="    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;"> External Rest API URLs</div>
+                                          <table class="table table-condensed table-responsive table-actions" id="myTable">
+                                            <thead>
+                                                <tr>
+                                                    <th>Title</th>
+                                                    <th>URL</th>
+                                                    <th>Type</th>
+                                                    <th>Version</th>
+                                                    <th> Timeout <span class="small">(milliseconds)</span></th>
+                                                    <th> Actions </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><input type="text" class="form-control"></td>
+                                                    <td><input type="text" class="form-control"></td>
+                                                    <td><select name="select2" class="form-control">
+                                                            <option>Live Data API</option>
+                                                            <option>Callback API</option>
+                                                        </select></td>
+                                                    <td><select name="select3" class="form-control">
+                                                            <option>1.0</option>
+                                                            <option>1.2</option>
+                                                            <option>1.3</option>
+                                                            <option>1.6</option>
+                                                            <option>1.7</option>
+                                                            <option>1.9</option>
+                                                            <option>2.0</option>
+                                                        </select></td>
+                                                    <td><input type="text" class="form-control" placeholder="milliseconds"></td>
+                                                    <td><a href="#" class="btn btn-xs btn-default disabled" style="margin-top:5px">Delete</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                           <a href="#myTable" class="addstuff btn btn-xs btn-default pull-right"><i class="fa fa-plus"></i> URL</a>
+                                          </div>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
                                     </fieldset>
                                     <fieldset>
                                         <legend>Publishers</legend>
                                         <div class="form-group ">
                                             <div class="row">
-                                                <div class="col-xs-3">
+                                                <div class="col-xs-5">
                                                     <label class="control-label " for="add_publisher">Select Publisher </label>
                                                     <select name="from[]" id="multiselect" class="form-control" size="5" multiple="multiple">
                                                         <option value="1">VS Team</option>
@@ -121,13 +169,13 @@ $page_title = 'api-accounts';
                                                         <option value="3">FAC Team</option>
                                                     </select>
                                                 </div>
-                                                <div class="col-xs-1" style="padding-top:22px">
+                                                <div class="col-xs-2" style="padding-top:22px">
                                                     <button type="button" id="multiselect_rightAll" class="btn btn-xs btn-default btn-block"><i class="glyphicon glyphicon-forward"></i></button>
                                                     <button type="button" id="multiselect_rightSelected" class="btn btn-xs btn-default btn-block"><i class="glyphicon glyphicon-chevron-right"></i></button>
                                                     <button type="button" id="multiselect_leftSelected" class="btn btn-xs btn-default btn-block"><i class="glyphicon glyphicon-chevron-left"></i></button>
                                                     <button type="button" id="multiselect_leftAll" class="btn btn-xs btn-default btn-block"><i class="glyphicon glyphicon-backward"></i></button>
                                                 </div>
-                                                <div class="col-xs-3">
+                                                <div class="col-xs-5">
                                                     <label class="control-label " for="added_publisher">Added Publishers </label>
                                                     <select name="to[]" id="multiselect_to" class="form-control" size="5" multiple="multiple">
                                                     </select>
@@ -184,43 +232,7 @@ $page_title = 'api-accounts';
                                             </div>
                                         </div>
                                     </fieldset>
-                                    <fieldset>
-                                        <legend>External Rest API URLs</legend>
-                                        <table class="table table-condensed table-responsive table-actions" id="myTable">
-                                            <thead>
-                                                <tr>
-                                                    <th>Title</th>
-                                                    <th>URL</th>
-                                                    <th>Type</th>
-                                                    <th>Version</th>
-                                                    <th> Timeout <span class="small">(milliseconds)</span></th>
-                                                    <th> Actions </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><input type="text" class="form-control"></td>
-                                                    <td><input type="text" class="form-control"></td>
-                                                    <td><select name="select2" class="form-control">
-                                                            <option>Live Data API</option>
-                                                            <option>Callback API</option>
-                                                        </select></td>
-                                                    <td><select name="select3" class="form-control">
-                                                            <option>1.0</option>
-                                                            <option>1.2</option>
-                                                            <option>1.3</option>
-                                                            <option>1.6</option>
-                                                            <option>1.7</option>
-                                                            <option>1.9</option>
-                                                            <option>2.0</option>
-                                                        </select></td>
-                                                    <td><input type="text" class="form-control" placeholder="milliseconds"></td>
-                                                    <td><a href="#" class="btn btn-xs btn-default disabled" style="margin-top:5px">Delete</a></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <a href="#myTable" class="addstuff btn btn-xs btn-default pull-right"><i class="fa fa-plus"></i> URL</a>
-                                    </fieldset>
+                                  
                                     <div class="text-right"> <a href="vfy-pub-api-accounts-home.php" class="btn btn-default">Cancel</a>
                                         <button type="submit" class="btn btn-primary" id="form_save">Save</button>
                                     </div>
@@ -234,28 +246,20 @@ $page_title = 'api-accounts';
         </div>
     </div>
     <?php include ('includes/brand-footer.php') ?>
-    
-    
-    
-    
-    
-<script type="text/javascript">
+    <script type="text/javascript">
     $(document).ready(function() {
         $('a.addstuff').click(function() {
             $('#myTable tbody').append('<tr> <td><input type="text" class="form-control"></td> <td><input type="text" class="form-control"></td> <td><select name="select2" class="form-control"> <option>Live Data API</option> <option>Callback API</option> </select></td> <td><select name="select3" class="form-control"> <option>1.0</option> <option>1.2</option> <option>1.3</option> <option>1.6</option> <option>1.7</option> <option>1.9</option> <option>2.0</option> </select></td> <td><input type="text" class="form-control" ></td> <td><a href="#myTable" class="btn btn-xs btn-default deleterow" style="margin-top:5px">Delete</a></td> </tr>');
         });
     });
-</script>
-<script>
+</script> 
+    <script>
     $(document).ready(function() {
         $("table").on('click', '.deleterow', function() {
             $(this).closest('tr').remove();
         });
     });
-</script>
-
-
-
+</script> 
     <script>
     $("#form_save").click(function() {
        $.toast({
@@ -300,12 +304,14 @@ jQuery(document).ready(function($) {
     <script type='text/javascript'>//<![CDATA[
 $(window).load(function(){
 $(function() {
-    $('.show4maintapi').hide(); 
+    $('.show4maintapi, .show4extapi').hide(); 
     $('#api_account_type').change(function(){
         if($('#api_account_type').val() == 'MAINTENANCE_API') {
-            $('.show4maintapi').slideDown(); 
+            $('.show4extapi').slideUp();
+			$('.show4maintapi').slideDown(); 
         } else {
             $('.show4maintapi').slideUp(); 
+			$('.show4extapi').slideDown(); 
         } 
     });
 });
