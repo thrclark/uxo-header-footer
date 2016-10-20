@@ -56,6 +56,51 @@ $page_title = 'resetuser';
                                     </div>
                                 </div>
                             </div>
+                            
+                           <h3 class="h4"> Verifications for thrclark</h3>
+                            
+                                 <table class="table table-condensed table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack">
+                                <caption class="sr-only">
+                                Index of current verifications
+                                </caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="1">Name</th>
+                                        <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4"><span class="visible-xs">Actions</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>HC - Immunization Records</td>
+                                        <td class="text-center"><a href="#" class="btn btn-xs btn-default">Reset</a><!--<div class="dropdown">
+                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu4">
+                                                <li><a href="verify-preview.php" target="_blank">Preview</a></li>
+                                                <li><a href="#">Edit</a></li>
+                                                <li><a href="#">Inactivate</a></li>
+                                                <li><a href="#">View Reports</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">Archive</a></li>
+                                            </ul> </div>--></td>
+                                    </tr>
+                                    <tr>
+                                        <td>HRMS - Citizenship</td>
+                                        <td class="text-center"><a href="#" class="btn btn-xs btn-default">Reset</a><!--<div class="dropdown">
+                                            <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
+                                            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu5">
+                                                <li><a href="verify-preview.php" target="_blank">Preview</a></li>
+                                                <li><a href="#">Edit</a></li>
+                                                <li><a href="#">Inactivate</a></li>
+                                                <li><a href="#">View Reports</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">Archive</a></li>
+                                            </ul> </div>--></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            
+                            
+                            
                         </section>
                     </div>
                 </div>
