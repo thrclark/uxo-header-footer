@@ -15,10 +15,11 @@
                 <li data-toggle="collapse" data-target="#service" class="collapsed"><a href="#">Settings <span class="arrow"></span></a>
                     <ul <?php if ($section == 'settings') {echo 'class="sub-menu"';} else {echo 'class="sub-menu collapse"';} ?> id="service">
                         <li <?php if ($page_title == 'general-settings') { echo 'class="active"'; } ?>><a href="vfy-pub-settings.php">General</a></li>
+                        <li <?php if ($page_title == 'ldap') { echo 'class="active"'; } ?>><a href="vfy-pub-ldap.php">LDAP Configuration</a></li>
                         <li <?php if ($page_title == 'api-accounts') { echo 'class="active"'; } ?>><a href="vfy-pub-api-accounts-home.php">API Accounts </a></li>
                         <li <?php if ($page_title == 'publishers') { echo 'class="active"'; } ?>><a href="vfy-pub-publishers-home.php">Publishers </a></li>
                         <li <?php if ($page_title == 'resetuser') { echo 'class="active"'; } ?>><a href="vfy-pub-resetuser.php">View/Reset User Verifications </a></li>
-                        <li <?php if ($page_title == 'branding') { echo 'class="active"'; } ?>><a href="vfy-pub-branding.php">Header/Footer Branding</a></li>
+                        <li <?php if ($page_title == 'branding') { echo 'class="active"'; } ?>><a href="vfy-pub-branding.php">Branding</a></li>
                     </ul>
                 </li>
             </ul>

@@ -1,5 +1,5 @@
 <footer>
-    <div class="container togglecontainer">
+    <div class="container">
         <div class="row pad">
             <p class="tagline">Fulfilling <span>the</span> Promise</p>
             <img src="http://assets.iu.edu/brand/legacy/block-iu.png" alt="Indiana University">

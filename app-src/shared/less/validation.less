@@ -1,6 +1,31 @@
-.validation-fieldmessage {
+
+
+.form-group-error {
+background: fade(@brand-danger, 5%);
+}
+
+.form-group-error hr {
+  border-top: 1px solid fade(@brand-danger, 10%);
+}
+
+.form-group-error .validation-fieldmessage,
+.has-error .validation-fieldmessage {
   .text-danger;
   .small;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.form-group-error .help-block,
+.form-group-error .control-label{
+
+  color: @text-color;
+}
+
+
+.form-group.form-group-error {
+  margin-left: -10px;
+  margin-right: -10px;
+  padding:10px;
+  background: fade(@brand-danger, 5%);
 }

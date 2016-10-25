@@ -10,86 +10,88 @@ $page_title = 'publishers';
 <?php include ('includes/scripts.php') ?>
 </head>
 <body class="view-admin" id="top">
-<?php include ('includes/brand-header2.php') ?>
-<?php include ('includes/pub-header.php') ?>
-<div class="main-content container" role=main>
-    <div id="main-content">
-        <div class="row">
-            <div class="col-md-3">
-                <?php include ('includes/pub-nav.php') ?>
-            </div>
-            <div class="col-md-9">
-                <div class="primary-content">
-                    <section>
-                        <div class="row section-head">
-                            <div class="col-sm-12 section-header">
-                                <h2 class="h3">Create New Publisher</h2>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-xs-12">
-                                <div class="form-group ">
-                                    <label class="control-label" for="name"> Name </label>
-                                    <span class="help-block small">Enter the display name for this publisher.</span>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <input class="form-control" id="name" name="name" type="text" required="required">
-                                            <div class="validation-fieldmessage" style="display:none" id="val_name"> <i class="fa fa-minus-circle" aria-hidden="true"></i> A name is required for this verification.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group ">
-                                    <label class="control-label" for="func_contact"> Functional Contact <span class="small">(Tier 2)</span> </label>
-                                    <span class="help-block small">Enter the Tier 2 functional contact information.</span>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <input class="form-control" id="func_contact" name="func_contact" type="text" required="required">
-                                            <div class="validation-fieldmessage" style="display:none" id="val_name"> <i class="fa fa-minus-circle" aria-hidden="true"></i> A name is required for this verification.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group ">
-                                    <label class="control-label" for="tech_contact"> Technical Contact <span class="small">(Tier 2)</span> </label>
-                                    <span class="help-block small">Enter the Tier 2 technical contact information.</span>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <input class="form-control" id="tech_contact" name="func_contact" type="text" required="required">
-                                            <div class="validation-fieldmessage" style="display:none" id="val_name"> <i class="fa fa-minus-circle" aria-hidden="true"></i> A name is required for this verification.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <label for="description" class="control-label">Description</label>
-                                    <span class="help-block small">Description of the publisher. This is helpful for discriminating between publishers with similar names.</span>
-                                    <textarea id="description" ng-model="publisherCtrl.publisher.description" name="description" class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched" rows="5" ng-maxlength="1000" countdown="" popover="" data-original-title="" title="" aria-invalid="false"></textarea>
-                                </div>
-                                
-                               <div class="form-group">  <label for="description" class="control-label">Publisher Permissions</label> <div id="builder-basic"> </div></div>
-                              
-                                <div class="form-group ">
-                                    <label class="control-label" for="email"> Email </label>
-                                    <span class="help-block small">The email address is used to send updates/information to the publisher.</span>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <input class="form-control" id="email" name="email" type="email" required="required">
-                                            <div class="validation-fieldmessage" style="display:none" id="val_email"> <i class="fa fa-minus-circle" aria-hidden="true"></i> Please provide an email address.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="text-right"> <a href="vfy-pub-publishers-home.php" class="btn btn-default">Cancel</a>
-                                    <button type="submit" class="btn btn-primary" id="form_save">Save</button>
+<div class="wrapper">
+    <?php include ('includes/brand-header2.php') ?>
+    <?php include ('includes/pub-header.php') ?>
+    <div class="main-content container" role=main>
+        <div id="main-content">
+            <div class="row">
+                <div class="col-md-3">
+                    <?php include ('includes/pub-nav.php') ?>
+                </div>
+                <div class="col-md-9">
+                    <div class="primary-content">
+                        <section>
+                            <div class="row section-head">
+                                <div class="col-sm-12 section-header">
+                                    <h2 class="h3">Create New Publisher</h2>
                                 </div>
                             </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </section>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group ">
+                                        <label class="control-label" for="name"> Name </label>
+                                        <span class="help-block small">Enter the display name for this publisher.</span>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <input class="form-control" id="name" name="name" type="text" required="required">
+                                                <div class="validation-fieldmessage" style="display:none" id="val_name"> <i class="fa fa-minus-circle" aria-hidden="true"></i> A name is required for this verification.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label class="control-label" for="func_contact"> Functional Contact <span class="small">(Tier 2)</span> </label>
+                                        <span class="help-block small">Enter the Tier 2 functional contact information.</span>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <input class="form-control" id="func_contact" name="func_contact" type="text" required="required">
+                                                <div class="validation-fieldmessage" style="display:none" id="val_name"> <i class="fa fa-minus-circle" aria-hidden="true"></i> A name is required for this verification.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label class="control-label" for="tech_contact"> Technical Contact <span class="small">(Tier 2)</span> </label>
+                                        <span class="help-block small">Enter the Tier 2 technical contact information.</span>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <input class="form-control" id="tech_contact" name="func_contact" type="text" required="required">
+                                                <div class="validation-fieldmessage" style="display:none" id="val_name"> <i class="fa fa-minus-circle" aria-hidden="true"></i> A name is required for this verification.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="description" class="control-label">Description</label>
+                                        <span class="help-block small">Description of the publisher. This is helpful for discriminating between publishers with similar names.</span>
+                                        <textarea id="description" ng-model="publisherCtrl.publisher.description" name="description" class="form-control ng-pristine ng-valid ng-empty ng-valid-maxlength ng-touched" rows="5" ng-maxlength="1000" countdown="" popover="" data-original-title="" title="" aria-invalid="false"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="description" class="control-label">Publisher Permissions</label>
+                                        <div id="builder-basic"> </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label class="control-label" for="email"> Email </label>
+                                        <span class="help-block small">The email address is used to send updates/information to the publisher.</span>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <input class="form-control" id="email" name="email" type="email" required="required">
+                                                <div class="validation-fieldmessage" style="display:none" id="val_email"> <i class="fa fa-minus-circle" aria-hidden="true"></i> Please provide an email address.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-right"> <a href="vfy-pub-publishers-home.php" class="btn btn-default">Cancel</a>
+                                        <button type="submit" class="btn btn-primary" id="form_save">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </section>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<?php include ('includes/brand-footer.php') ?>
-<script>
+    <?php include ('includes/brand-footer.php') ?>
+    <script>
     $("#form_save").click(function() {
        $.toast({
     text: "Please fill out the missing fields.", // Text that is to be shown in the toast
@@ -112,7 +114,7 @@ $page_title = 'publishers';
 });
     });
 </script> 
-<script>
+    <script>
     $("#form_save").click(function() {
         $("#val_name, #val_api, #val_status, #val_auth, #val_email").show();
        
@@ -124,11 +126,8 @@ $page_title = 'publishers';
 		
 		
     });
-</script>
-
-
-
-<script>
+</script> 
+    <script>
 
     var rules_basic = {
         condition: 'AND',
@@ -219,8 +218,6 @@ $page_title = 'publishers';
         }
     });
 </script> 
-
-
-
+</div>
 </body>
 </html>
