@@ -181,10 +181,10 @@ $page_title = 'api-accounts';
                                                                 </select>
                                                             </div>
                                                             <div class="col-xs-2">
-                                                                <button type="button" id="multiselect_rightAll" class="btn btn-xs btn-default btn-block"><i class="glyphicon glyphicon-forward"></i></button>
-                                                                <button type="button" id="multiselect_rightSelected" class="btn btn-xs btn-default btn-block"><i class="glyphicon glyphicon-chevron-right"></i></button>
-                                                                <button type="button" id="multiselect_leftSelected" class="btn btn-xs btn-default btn-block"><i class="glyphicon glyphicon-chevron-left"></i></button>
-                                                                <button type="button" id="multiselect_leftAll" class="btn btn-xs btn-default btn-block"><i class="glyphicon glyphicon-backward"></i></button>
+                                                                
+                                                    <button type="button" id="multiselect_rightSelected" class="btn btn-xs btn-default btn-block"><i class="glyphicon glyphicon-chevron-right"></i></button>
+                                                    <button type="button" id="multiselect_leftSelected" class="btn btn-xs btn-default btn-block"><i class="glyphicon glyphicon-chevron-left"></i></button>
+                        
                                                             </div>
                                                             <div class="col-xs-5">
                                                                 <label class="control-label sr-only " for="added_publisher">Added Publishers </label>

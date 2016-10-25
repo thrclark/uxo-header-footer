@@ -101,59 +101,45 @@ $page_title = 'api-accounts';
                                                 </div>
                                             </div>
                                         </div>
-                                        
-                                        
-                                        
-                                        
-                                          <div class="form-group show4extapi">
-                                          
-                                         <div style="    display: inline-block;
+                                        <div class="form-group show4extapi">
+                                            <div style="    display: inline-block;
     max-width: 100%;
     margin-bottom: 5px;
     font-weight: bold;"> External Rest API URLs</div>
-                                          <table class="table table-condensed table-responsive table-actions" id="myTable">
-                                            <thead>
-                                                <tr>
-                                                    <th>Title</th>
-                                                    <th>URL</th>
-                                                    <th>Type</th>
-                                                    <th>Version</th>
-                                                    <th> Timeout <span class="small">(milliseconds)</span></th>
-                                                    <th> Actions </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td><input type="text" class="form-control"></td>
-                                                    <td><input type="text" class="form-control"></td>
-                                                    <td><select name="select2" class="form-control">
-                                                            <option>Live Data API</option>
-                                                            <option>Callback API</option>
-                                                        </select></td>
-                                                    <td><select name="select3" class="form-control">
-                                                            <option>1.0</option>
-                                                            <option>1.2</option>
-                                                            <option>1.3</option>
-                                                            <option>1.6</option>
-                                                            <option>1.7</option>
-                                                            <option>1.9</option>
-                                                            <option>2.0</option>
-                                                        </select></td>
-                                                    <td><input type="text" class="form-control" placeholder="milliseconds"></td>
-                                                    <td><a href="#" class="btn btn-xs btn-default disabled" style="margin-top:5px">Delete</a></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                           <a href="#myTable" class="addstuff btn btn-xs btn-default pull-right"><i class="fa fa-plus"></i> URL</a>
-                                          </div>
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
+                                            <table class="table table-condensed table-responsive table-actions" id="myTable">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Title</th>
+                                                        <th>URL</th>
+                                                        <th>Type</th>
+                                                        <th>Version</th>
+                                                        <th> Timeout <span class="small">(milliseconds)</span></th>
+                                                        <th> Actions </th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><input type="text" class="form-control"></td>
+                                                        <td><input type="text" class="form-control"></td>
+                                                        <td><select name="select2" class="form-control">
+                                                                <option>Live Data API</option>
+                                                                <option>Callback API</option>
+                                                            </select></td>
+                                                        <td><select name="select3" class="form-control">
+                                                                <option>1.0</option>
+                                                                <option>1.2</option>
+                                                                <option>1.3</option>
+                                                                <option>1.6</option>
+                                                                <option>1.7</option>
+                                                                <option>1.9</option>
+                                                                <option>2.0</option>
+                                                            </select></td>
+                                                        <td><input type="text" class="form-control" placeholder="milliseconds"></td>
+                                                        <td><a href="#" class="btn btn-xs btn-default disabled" style="margin-top:5px">Delete</a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <a href="#myTable" class="addstuff btn btn-xs btn-default pull-right"><i class="fa fa-plus"></i> URL</a> </div>
                                     </fieldset>
                                     <fieldset>
                                         <legend>Publishers</legend>
@@ -170,10 +156,8 @@ $page_title = 'api-accounts';
                                                     </select>
                                                 </div>
                                                 <div class="col-xs-2" style="padding-top:22px">
-                                                    <button type="button" id="multiselect_rightAll" class="btn btn-xs btn-default btn-block"><i class="glyphicon glyphicon-forward"></i></button>
                                                     <button type="button" id="multiselect_rightSelected" class="btn btn-xs btn-default btn-block"><i class="glyphicon glyphicon-chevron-right"></i></button>
                                                     <button type="button" id="multiselect_leftSelected" class="btn btn-xs btn-default btn-block"><i class="glyphicon glyphicon-chevron-left"></i></button>
-                                                    <button type="button" id="multiselect_leftAll" class="btn btn-xs btn-default btn-block"><i class="glyphicon glyphicon-backward"></i></button>
                                                 </div>
                                                 <div class="col-xs-5">
                                                     <label class="control-label " for="added_publisher">Added Publishers </label>
@@ -232,7 +216,6 @@ $page_title = 'api-accounts';
                                             </div>
                                         </div>
                                     </fieldset>
-                                  
                                     <div class="text-right"> <a href="vfy-pub-api-accounts-home.php" class="btn btn-default">Cancel</a>
                                         <button type="submit" class="btn btn-primary" id="form_save">Save</button>
                                     </div>

@@ -27,7 +27,7 @@ $page_title = 'api-accounts';
                         <section>
                             <div class="row section-head">
                                 <div class="col-xs-12 col-sm-9 section-header">
-                                    <h2 class="h3">API Accounts &amp; External Rest URLs</h2>
+                                    <h2 class="h3">API Accounts</h2>
                                 </div>
                                 <div class="col-xs-12  col-sm-3 section-controls"> <a href="vfy-pub-api-accounts-new.php" class="btn btn-xs btn-default"> <i class="fa fa-plus" aria-hidden="true"></i> new</a> </div>
                             </div>
