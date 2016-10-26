@@ -173,6 +173,7 @@ $page_title = 'home';
                                     </tr>
                                 </tbody>
                             </table>
+                            <div class="text-center"> <a href="#" class="btn btn-xs btn-default"><i class="fa fa-angle-down" aria-hidden="true"></i> View More </a> </div>
                         </section>
                     </div>
                 </div>
