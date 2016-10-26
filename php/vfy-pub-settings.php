@@ -27,7 +27,7 @@ $page_title = 'general-settings';
                         <section>
                             <div class="row section-head">
                                 <div class="col-xs-12 col-sm-9 section-header">
-                                    <h2 class="h3">General</h2>
+                                    <h2 class="h3">General Settings</h2>
                                 </div>
                                 <div class="col-xs-12  col-sm-3 section-controls"> </div>
                             </div>
@@ -50,7 +50,7 @@ $page_title = 'general-settings';
                                         <td><span aria-hidden="false" class="">
                                             <div ></div>
                                             </span></td>
-                                        <td><a href="#" class="btn btn-default btn-xs" >Edit</a></td>
+                                        <td><a href="vfy-pub-settings-sysemail.php" class="btn btn-default btn-xs" >Edit</a></td>
                                     </tr>
                                     <tr >
                                         <td >Enable Email</td>
@@ -58,7 +58,7 @@ $page_title = 'general-settings';
                                         <td><span aria-hidden="false" class="">
                                             <div >No</div>
                                             </span></td>
-                                        <td><a href="#" class="btn btn-default btn-xs" >Edit</a></td>
+                                        <td><a href="#" class="btn btn-default btn-xs" data-toggle="modal" data-target="#settings_enableemail"  >Edit</a></td>
                                     </tr>
                                     <tr >
                                         <td >Maintenance Resource Page Count</td>
@@ -133,6 +133,38 @@ $page_title = 'general-settings';
         </div>
     </div>
     <?php include ('includes/brand-footer.php') ?>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="settings_enableemail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-default" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title"><i class="icon-user-3"></i>General Settings</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group" id="vfy_name">
+                        <label class="control-label" for="name"> Enable Email </label>
+                        <span class="help-block small"> Turn on email functionality. Default is no.</span>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <select class="form-control">
+                                    <option> Yes</option>
+                                    <option>No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary btn-sm">Save</button>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
