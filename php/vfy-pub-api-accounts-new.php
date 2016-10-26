@@ -77,7 +77,7 @@ $page_title = 'api-accounts';
                                         <div class="checkbox show4maintapi">
                                             <label>
                                                 <input type="checkbox">
-                                                Unlock Account <span class="help-block small">Unlock this API Account so it may be used again.</span> </label>
+                                                Locked Account <span class="help-block small">Unlock this API Account so it may be used again.</span> </label>
                                         </div>
                                         <div class="form-group show4maintapi">
                                             <label class="control-label" for=""> Maximum New Resources </label>
