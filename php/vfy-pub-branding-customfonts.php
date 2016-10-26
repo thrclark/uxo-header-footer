@@ -32,7 +32,7 @@ $page_title = 'custom-fonts';
                         <section>
                             <div class="row section-head">
                                 <div class="col-sm-12 section-header">
-                                    <h2 class="h3">Branding</h2>
+                                    <h2 class="h3">Custom Fonts</h2>
                                 </div>
                             </div>
                             <div id="sortable">
