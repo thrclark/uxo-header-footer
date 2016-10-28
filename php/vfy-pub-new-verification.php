@@ -228,9 +228,13 @@ $page_title = 'create-new';
                                                                     <label class="control-label " for="effective_date"> Effective Date </label>
                                                                     <span class="help-block small" > Select the date on which the verification will be sent to this specified recipient.</span>
                                                                     <div class="row">
-                                                                        <div class="col-sm-4">
-                                                                            <input class="form-control" id="effective_date" name="effective_date" type="text">
-                                                                            <div class="validation-fieldmessage" style="display:none" id="validate_effectivedate"> <i class="fa fa-minus-circle" aria-hidden="true"></i> Please provide correct date formatting.</div>
+                                                                      
+                                                                        <div class="col-sm-8 col-md-8 col-lg-6">
+                                                                            <div class="input-group">         <input class="form-control" id="effective_date" name="effective_date" type="text"><span class="input-group-addon">
+                                                                                <label><input type="checkbox" aria-label="..."><span class="small text-muted" style=" font-weight:normal"> Recur Annually</span></label>
+                                                                                </span>
+                                                                               
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -271,8 +275,8 @@ $page_title = 'create-new';
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="hideable">
-                                                            <div class="form-group ">
+                                                        <div class="hideable"> 
+                                                            <!-- <div class="form-group ">
                                                                 <label class="control-label " for="vfy_recurrance"> Verification Recurrance </label>
                                                                 <span class="help-block small" > Select whether this verification will be posted annually, or only once. </span>
                                                                 <div class="row">
@@ -283,7 +287,7 @@ $page_title = 'create-new';
                                                                         </select>
                                                                     </div>
                                                                 </div>
-                                                            </div>
+                                                            </div>-->
                                                             <div class="form-group " id="select_end_date">
                                                                 <label class="control-label " for="vfy_enddate"> Verification End Date <span class="small" style="font-weight:normal">(optional)</span></label>
                                                                 <span class="help-block small" > Choose an ending date for this verification. </span>
@@ -503,7 +507,7 @@ $page_title = 'create-new';
                                                                         <div class="col-md-3">
                                                                             <p class="data-label">Effective Date:</p>
                                                                         </div>
-                                                                        <div class="col-md-9"> <i class="small">09/24/2016</i>
+                                                                        <div class="col-md-9"> <i class="small">09/24/2016 (recurs annually)</i>
                                                                             <div class="validation-fieldmessage" id="review_field_error" style="display:none"> <i class="fa fa-minus-circle" aria-hidden="true"></i> Please provide correct date formatting.</div>
                                                                         </div>
                                                                         <div class="clearfix"></div>
@@ -521,7 +525,7 @@ $page_title = 'create-new';
                                                                         <div class="col-md-3">
                                                                             <p class="data-label">Effective Date:</p>
                                                                         </div>
-                                                                        <div class="col-md-9"> <i class="small">10/24/2016</i> </div>
+                                                                        <div class="col-md-9"> <i class="small">10/24/2016 (recurs annually)</i> </div>
                                                                         <div class="clearfix"></div>
                                                                     </div>
                                                                     <hr>
@@ -555,11 +559,7 @@ $page_title = 'create-new';
                                                                         </div>
                                                                         <div class="col-md-9"> <i class="small">Active</i> </div>
                                                                         <div class="clearfix"></div>
-                                                                        <div class="col-md-3">
-                                                                            <p class="data-label">Recurrance:</p>
-                                                                        </div>
-                                                                        <div class="col-md-9"> <i class="small">One time</i> </div>
-                                                                        <div class="clearfix"></div>
+                                                                       
                                                                         <div class="col-md-3">
                                                                             <p class="data-label">End Date:</p>
                                                                         </div>
@@ -744,13 +744,13 @@ $page_title = 'create-new';
 
     }); //]]>
 </script> 
-<script type="text/javascript">
+    <script type="text/javascript">
     $(document).ready(function() {
         $('a.addstuff').click(function() {
             $('#myTable tbody').append('<tr> <td><select class="form-control"> <option>unspecified</option> <option>API Source 1</option> <option>API Source 2</option> <option>API Source 3</option> <option>API Source 4</option> <option>API Source 5</option> </select></td> <td><select class="form-control"> <option>unspecified</option> <option>API Source 1</option> <option>API Source 2</option> <option>API Source 3</option> <option>API Source 4</option> <option>API Source 5</option> </select></td> <td><input type="text" class="form-control"></td> <td><input type="text" class="form-control"></td> <td> <a href="#" class="btn btn-xs btn-default deleterow" style="margin-top:5px">delete</a> </td> </tr>');
         });
     });
-</script>
+</script> 
     <script>
 $(document).ready(function(){
 
@@ -978,7 +978,7 @@ $(document).ready(function() {
 });
     });
 </script> 
-<script>
+    <script>
     $("#form_save").click(function() {
         $("#review_button_fixerror").show();
         $("#review_field_error").show();
