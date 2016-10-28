@@ -1,6 +1,6 @@
 
 <nav>
-    <div class="nav-side-menu"><!--<i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>-->
+    <div class="nav-side-menu">
         
         <div class="toggle-btn toggle-menu" data-toggle="collapse" data-target="#menu-content" style="">menu <i class="fa fa-angle-down" aria-hidden="true"></i></div>
         <div class="menu-list">
