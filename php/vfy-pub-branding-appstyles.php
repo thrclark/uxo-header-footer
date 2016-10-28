@@ -64,43 +64,33 @@ $page_title = 'app-styles';
                                             </div>
                                         </div>
                                     </div>
-                                    
-                                    
-                                    
-                                    
                                 </div>
                             </fieldset>
                             <fieldset>
                                 <legend>Typography</legend>
                                 <div class="row">
-                                  
-                                    
-                                    
-                                    
-                                           <div class=" col-sm-6">
-                                       
+                                    <div class=" col-sm-6">
                                         <div class="form-group" id="">
-                                         <label for="linkColor" class="control-label">Link Color <small class="text-muted">@link-color</small></label>
-                                           <input type="text" name="linkColor" id="linkColor" ng-maxlength="100" class="form-control " countdown="" popover="The text color for links. Default is @brand-primary." placeholder="@brand-primary" data-original-title="" title="" aria-invalid="false">
+                                            <label for="linkColor" class="control-label">Link Color <small class="text-muted">@link-color</small></label>
+                                            <input type="text" name="linkColor" id="linkColor" ng-maxlength="100" class="form-control " countdown="" popover="The text color for links. Default is @brand-primary." placeholder="@brand-primary" data-original-title="" title="" aria-invalid="false">
                                         </div>
                                         <div class="form-group" id="">
-                                    <label for="linkHoverColor" class="control-label">Link Hover Color <small class="text-muted">@link-hover-color</small></label>
+                                            <label for="linkHoverColor" class="control-label">Link Hover Color <small class="text-muted">@link-hover-color</small></label>
                                             <input type="text" name="linkHoverColor" id="linkHoverColor" ng-maxlength="100" class="form-control " countdown="" popover="The color of links when hovering. Default is darken(@link-color, 15%)." placeholder="darken(@link-color, 15%)" data-original-title="" title="" aria-invalid="false">
                                         </div>
                                         <div class="form-group" id="">
                                             <label for="linkDecoration" class="control-label">Link Decoration <small class="text-muted">@link-decoration</small></label>
-                                               <input type="text" name="linkDecoration" id="linkDecoration" ng-maxlength="100" class="form-control " countdown="" popover="The text decoration for links. Default is none." placeholder="none" data-original-title="" title="" aria-invalid="false">
+                                            <input type="text" name="linkDecoration" id="linkDecoration" ng-maxlength="100" class="form-control " countdown="" popover="The text decoration for links. Default is none." placeholder="none" data-original-title="" title="" aria-invalid="false">
                                         </div>
                                         <div class="form-group" id="">
                                             <label for="linkHoverDecoration" class="control-label">Link Hover Decoration <small class="text-muted">@link-hover-decoration</small></label>
-                                              <input type="text" name="linkHoverDecoration" id="linkHoverDecoration" ng-maxlength="100" class="form-control " countdown="" popover="The text decoration for links when hovering. Default is underline." placeholder="underline" data-original-title="" title="" aria-invalid="false">
+                                            <input type="text" name="linkHoverDecoration" id="linkHoverDecoration" ng-maxlength="100" class="form-control " countdown="" popover="The text decoration for links when hovering. Default is underline." placeholder="underline" data-original-title="" title="" aria-invalid="false">
                                         </div>
                                     </div>
-                                    
-                                      <div class=" col-sm-6">
+                                    <div class=" col-sm-6">
                                         <div class="form-group" id="">
-                                              <label for="fontFamilyBody" class="control-label">Body Font Family <small class="text-muted">@font-family</small></label>
-                                           <input type="text" name="fontFamilyBody" id="fontFamilyBody" ng-maxlength="100" class="form-control ng-pristine ng-untouched ng-valid ng-valid-pattern ng-valid-maxlength ng-not-empty" countdown="" popover="The font family for main body text. Default is sans-serif." placeholder="sans-serif" data-original-title="" title="" aria-invalid="false">
+                                            <label for="fontFamilyBody" class="control-label">Body Font Family <small class="text-muted">@font-family</small></label>
+                                            <input type="text" name="fontFamilyBody" id="fontFamilyBody" ng-maxlength="100" class="form-control ng-pristine ng-untouched ng-valid ng-valid-pattern ng-valid-maxlength ng-not-empty" countdown="" popover="The font family for main body text. Default is sans-serif." placeholder="sans-serif" data-original-title="" title="" aria-invalid="false">
                                         </div>
                                         <div class="form-group" id="">
                                             <label for="fontFamilyHeader" class="control-label">Heading Font Family <small class="text-muted">@headings-font-family</small></label>
@@ -108,27 +98,18 @@ $page_title = 'app-styles';
                                         </div>
                                         <div class="form-group" id="">
                                             <label for="textColor" class="control-label">Text Color <small class="text-muted">@text-color</small></label>
-                                             <input type="text" name="textColor" id="textColor" ng-maxlength="100" class="form-control " countdown="" popover="The main text color. Default is @gray." placeholder="@gray" data-original-title="" title="" aria-invalid="false">
+                                            <input type="text" name="textColor" id="textColor" ng-maxlength="100" class="form-control " countdown="" popover="The main text color. Default is @gray." placeholder="@gray" data-original-title="" title="" aria-invalid="false">
                                         </div>
-                                     
                                     </div>
-                                    
                                 </div>
                             </fieldset>
-                   
                             <fieldset>
                                 <legend>Header</legend>
                                 <div class="row">
                                     <div class="form-group col-sm-12 col-md-6">
                                         <label for="headerBackgroundColor" class="control-label">Background Color <small class="text-muted">@header-background</small></label>
                                         <div class="counter-container">
-                                          
-                                            
-                                            
-                                             <input class="form-control jscolor" id="headerBackgroundColor" name="headerBackgroundColor" type="text" value="#163C50">
-                                             
-                                             
-                                             
+                                            <input class="form-control jscolor" id="headerBackgroundColor" name="headerBackgroundColor" type="text" value="#163C50">
                                             <span class="label pull-right label-info"><span class="counter">100</span><span class="sr-only"> characters remaining</span></span></div>
                                         <div field="headerBackgroundColor" messages="brandCtrl.pageData.validationMessages" class="ng-isolate-scope"> 
                                             <!-- ngRepeat: (validator, invalid) in form[field].$error --> 
@@ -138,7 +119,7 @@ $page_title = 'app-styles';
                                     <div class="form-group col-sm-12 col-md-6">
                                         <label for="headerTextColor" class="control-label">Text Color <small class="text-muted">@header-text</small></label>
                                         <div class="counter-container">
-                                               <input class="form-control jscolor" id="headerTextColor" name="headerTextColor" type="text" value="#ffffff">
+                                            <input class="form-control jscolor" id="headerTextColor" name="headerTextColor" type="text" value="#ffffff">
                                             <span class="label pull-right label-info"><span class="counter">100</span><span class="sr-only"> characters remaining</span></span></div>
                                         <div field="headerTextColor" messages="brandCtrl.pageData.validationMessages" class="ng-isolate-scope"> 
                                             <!-- ngRepeat: (validator, invalid) in form[field].$error --> 
@@ -153,7 +134,7 @@ $page_title = 'app-styles';
                                     <div class="form-group col-sm-12 col-md-6">
                                         <label for="sectionBackgroundColor" class="control-label">Section Background Color <small class="text-muted">@section-background</small></label>
                                         <div class="counter-container">
-                                              <input class="form-control jscolor" id="sectionBackgroundColor" name="sectionBackgroundColor" type="text" value="#ffffff">
+                                            <input class="form-control jscolor" id="sectionBackgroundColor" name="sectionBackgroundColor" type="text" value="#ffffff">
                                             <span class="label pull-right label-info"><span class="counter">100</span><span class="sr-only"> characters remaining</span></span></div>
                                         <div field="sectionBackgroundColor" messages="brandCtrl.pageData.validationMessages" class="ng-isolate-scope"> 
                                             <!-- ngRepeat: (validator, invalid) in form[field].$error --> 
@@ -183,7 +164,7 @@ $page_title = 'app-styles';
                                     <div class="form-group col-sm-12 col-md-6">
                                         <label for="buttonTextColor" class="control-label">Button Text Color <small class="text-muted">@verify-button-text</small></label>
                                         <div class="counter-container">
-                                                 <input class="form-control jscolor" id="buttonTextColor" name="buttonTextColor" type="text" value="#ffffff">
+                                            <input class="form-control jscolor" id="buttonTextColor" name="buttonTextColor" type="text" value="#ffffff">
                                             <span class="label pull-right label-info"><span class="counter">100</span><span class="sr-only"> characters remaining</span></span></div>
                                         <div field="buttonTextColor" messages="brandCtrl.pageData.validationMessages" class="ng-isolate-scope"> 
                                             <!-- ngRepeat: (validator, invalid) in form[field].$error --> 
@@ -208,7 +189,7 @@ $page_title = 'app-styles';
                                     <div class="form-group col-sm-12 col-md-6">
                                         <label for="horizontalRuleColor" class="control-label">Horizontal Rule Color <small class="text-muted">@hr-color</small></label>
                                         <div class="counter-container">
-                                           <input class="form-control jscolor" id="buttonTextColor" name="buttonTextColor" type="text" value="#cccccc">
+                                            <input class="form-control jscolor" id="buttonTextColor" name="buttonTextColor" type="text" value="#cccccc">
                                             <span class="label pull-right label-info"><span class="counter">100</span><span class="sr-only"> characters remaining</span></span></div>
                                         <div field="horizontalRuleColor" messages="brandCtrl.pageData.validationMessages" class="ng-isolate-scope"> 
                                             <!-- ngRepeat: (validator, invalid) in form[field].$error --> 
@@ -217,7 +198,16 @@ $page_title = 'app-styles';
                                     </div>
                                 </div>
                             </fieldset>
-                            <div class="text-right"> <a href="#" class="btn btn-default">Cancel</a>
+                            <div class="text-right"> 
+                                
+                                <!-- Single button -->
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Restore Values <span class="caret"></span> </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Reset Default Values</a></li>
+                                        <li><a href="#">Restore Last Saved Values</a></li>
+                                    </ul>
+                                </div>
                                 <button type="submit" class="btn btn-primary">Save</button>
                             </div>
                         </section>

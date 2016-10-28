@@ -32,19 +32,22 @@ $page_title = 'header-footer';
                                     <h2 class="h3">Header &amp; Footer</h2>
                                 </div>
                             </div>
-                            <fieldset class="form-group">
-                                <legend>Header</legend>
-                                <textarea rows="8" class="form-control" aria-invalid="false"></textarea>
-                            </fieldset>
-                            <fieldset class="form-group">
-                                <legend>Footer</legend>
-                                <textarea rows="8" class="form-control " aria-invalid="false"></textarea>
-                            </fieldset>
-                            <fieldset class="form-group">
-                                <legend>CSS</legend>
-                                <textarea rows="8" class="form-control " aria-invalid="false"></textarea>
-                            </fieldset>
-                            <div class="text-right"> <a href="#" class="btn btn-default">Cancel</a>
+                            <div class="form-group" id="">
+                                <label class="control-label" for="custom_header"> Custom Header <span class="small" style="font-weight:normal">(html)</span></label>
+                                <span class="help-block small"> Add custom html to create a page header on all views of the verification application.</span>
+                                <textarea rows="8" class="form-control" aria-invalid="false" id="custom_header"></textarea>
+                            </div>
+                            <div class="form-group" id="">
+                                <label class="control-label" for="custom_header"> Custom Footer <span class="small" style="font-weight:normal">(html)</span></label>
+                                <span class="help-block small"> Add custom html to create a page footer on all views of the verification application.</span>
+                                <textarea rows="8" class="form-control" aria-invalid="false" id="custom_header"></textarea>
+                            </div>
+                            <div class="form-group" id="">
+                                <label class="control-label" for="custom_header"> Custom Header/Footer CSS</label>
+                                <span class="help-block small"> Add css styling to the custom header and footer sections.</span>
+                                <textarea rows="8" class="form-control" aria-invalid="false" id="custom_header"></textarea>
+                            </div>
+                            <div class="text-right"> <a href="#" class="btn btn-default">Revert</a>
                                 <button type="submit" class="btn btn-primary">Save</button>
                             </div>
                         </section>
