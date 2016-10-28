@@ -15,12 +15,12 @@ $page_title = 'publishers';
 <body class="view-admin" id="top">
 <div class="wrapper">
     <?php include ('includes/brand-header2.php') ?>
-    <?php include ('includes/pub-header.php') ?>
+    <?php include('includes/header-pub.php') ?>
     <div class="main-content container" role=main>
         <div id="main-content">
             <div class="row">
                 <div class="col-md-3">
-                    <?php include ('includes/pub-nav.php') ?>
+                    <?php include('includes/nav-pub.php') ?>
                 </div>
                 <div class="col-md-9">
                     <div class="primary-content">
