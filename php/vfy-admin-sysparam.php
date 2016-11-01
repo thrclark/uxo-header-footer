@@ -1,5 +1,5 @@
 <?php
-$section = 'settings';
+$section = 'admin';
 $page_title = 'system-param';
 ?>
 <!DOCTYPE html>
