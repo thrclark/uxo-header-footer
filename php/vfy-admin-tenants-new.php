@@ -115,8 +115,8 @@ $page_title = 'tenants-new';
                                                                 <td><a href="#" class="btn btn-xs btn-default disabled" style="margin-top:5px">Delete</a></td>
                                                             </tr>
                                                             <tr>
+                                                                <td><a href="#myTable" class="addstuff btn btn-xs btn-default pull-left"><i class="fa fa-plus" aria-hidden="true"></i> Add</a></td>
                                                                 <td></td>
-                                                                <td><a href="#myTable" class="addstuff btn btn-xs btn-default pull-right"><i class="fa fa-plus" aria-hidden="true"></i> Add</a></td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
