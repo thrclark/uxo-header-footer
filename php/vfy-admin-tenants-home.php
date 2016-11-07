@@ -29,7 +29,7 @@ $page_title = 'tenants-new';
                                 <div class="col-xs-12 col-sm-9 section-header">
                                     <h2 class="h3">Tenants</h2>
                                 </div>
-                                <div class="col-xs-12  col-sm-3 section-controls"> <a href="asdfasdfp" class="btn btn-xs btn-default"> <i class="fa fa-plus" aria-hidden="true"></i> New</a> </div>
+                                <div class="col-xs-12  col-sm-3 section-controls"> <a href="vfy-admin-tenants-new.php" class="btn btn-xs btn-default"> <i class="fa fa-plus" aria-hidden="true"></i> New</a> </div>
                             </div>
                             <table class="table table-condensed table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack">
                                 <caption class="sr-only">
@@ -54,8 +54,7 @@ $page_title = 'tenants-new';
                                         <td >No</td>
                                         <td class="text-center"><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
-                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                    <li><a href="xxx.php" target="">Edit</a></li>
+                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1"> <li><a href="vfy-admin-tenants-new.php" target="">Edit</a></li>
                                                     <li><a href="xxx.php" target="">User Attribute Mappings</a></li>
                                                     <li><a href="xxx.php" target="">View As</a></li>
                                                     <li role="separator" class="divider"></li>
@@ -71,8 +70,7 @@ $page_title = 'tenants-new';
                                         <td >No</td>
                                         <td class="text-center"><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
-                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                    <li><a href="xxx.php" target="">Edit</a></li>
+                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1"> <li><a href="vfy-admin-tenants-new.php" target="">Edit</a></li>
                                                     <li><a href="xxx.php" target="">User Attribute Mappings</a></li>
                                                     <li><a href="xxx.php" target="">View As</a></li>
                                                     <li role="separator" class="divider"></li>
@@ -88,8 +86,7 @@ $page_title = 'tenants-new';
                                         <td >Yes</td>
                                         <td class="text-center"><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
-                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
-                                                    <li><a href="xxx.php" target="">Edit</a></li>
+                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1"> <li><a href="vfy-admin-tenants-new.php" target="">Edit</a></li>
                                                     <li><a href="xxx.php" target="">User Attribute Mappings</a></li>
                                                     <li><a href="xxx.php" target="">View As</a></li>
                                                     <li role="separator" class="divider"></li>

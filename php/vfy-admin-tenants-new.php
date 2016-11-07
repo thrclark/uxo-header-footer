@@ -173,19 +173,7 @@ $page_title = 'tenants-new';
                                                 </div>
                                             </div>
                                         </div>
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                          <div class="form-group auth-cas">
+                                        <div class="form-group auth-cas">
                                             <label class="control-label" for="artifact_param"> Artifact Parameter Name </label>
                                             <span class="help-block small">The name of the URL request parameter for the artifact. This will be the value of the cas ticket received from CAS Server and then used to call validate. Typically this parameter is named 'ticket'.</span>
                                             <div class="row">
@@ -195,12 +183,7 @@ $page_title = 'tenants-new';
                                                 </div>
                                             </div>
                                         </div>
-                                        
-                                        
-                                        
-                                        
-                                        
-                                          <div class="form-group auth-cas">
+                                        <div class="form-group auth-cas">
                                             <label class="control-label" for="service_param"> Service Parameter Name </label>
                                             <span class="help-block small">The name of the URL request parameter for the service. The service is the URL that is passed to the CAS Server. Typically this parameter is named 'service'.</span>
                                             <div class="row">
@@ -210,13 +193,13 @@ $page_title = 'tenants-new';
                                                 </div>
                                             </div>
                                         </div>
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                          <div class="form-group auth-cas">
+                                      
+                                      
+                                      
+                                      
+                                      
+                                      
+                                        <div class="form-group auth-cas">
                                             <label class="control-label" for="service_param">Encoding </label>
                                             <span class="help-block small">The encoding type used by the CAS Server in the response. If not set, it will use the platforms default encoding type.</span>
                                             <div class="row">
@@ -230,13 +213,196 @@ $page_title = 'tenants-new';
                                         
                                         
                                         
+                                          
+                                      
+                                      
+                                        <div class="form-group auth-cas">
+                                            <label class="control-label" for="cas_server_notification">CAS Server Client Notification </label>
+                                            <span class="help-block small">Specify if the CAS Server supports notifying clients during single sign-out.</span>
+                                             <div class="row">
+                                                <div class="col-sm-4">
+                                                    <select class="select form-control" id="cas_server_notification" name="select">
+                                               
+                                                        <option value="true"> True </option>
+                                                        <option value="false"> False </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
                                         
                                         
                                         
                                         
                                         
                                         
+                                        
+                                        
+                                        
+                                      
+                                        <div class="form-group auth-cas cas-server-notification">
+                                            <label class="control-label" for="relay_state">Relay State Parameter Name </label>
+                                            <span class="help-block small">The name of the URL request parameter for the relay state. The relay state is used in single sign out using the front channel feature in CAS. Typically this parameter is named 'RelayState'.</span>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <input class="form-control" id="relay_state" name="relay_state" type="text" required="required">
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                      
+                                        <div class="form-group auth-cas cas-server-notification">
+                                            <label class="control-label" for="front_logout">Front Logout Parameter Name </label>
+                                            <span class="help-block small">The name of the URL request parameter for front logout. The front logout parameter is used for single sign out using the front channel feature in CAS. Typically this parameter is named 'SAMLRequest'.</span>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <input class="form-control" id="front_logout" name="front_logout" type="text" required="required">
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                      
+                                        <div class="form-group auth-cas cas-server-notification">
+                                            <label class="control-label" for="logout_param_name">Logout Parameter Name </label>
+                                            <span class="help-block small">The name of the URL request parameter for logout. The logout parameter is used for single sign out using the front channel feature in CAS. Typically this parameter is named 'logoutRequest'.</span>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <input class="form-control" id="logout_param_name" name="logout_param_name" type="text" required="required">
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        <div class="auth-saml">
+                                            <label class="control-label" for="service_param">SAML Configurations </label>
+                                            <span class="help-block small">At least one SAML configuration is required.</span>
+                                            <div class="panel-group" id="accordion1">
+                                                <div id="sortable" class="ui-sortable">
+                                                    <div class="panel panel-default template-add-data ui-sortable-handle">
+                                                        <div class="panel-heading">
+                                                            <p class="panel-title"> <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapse-data1" aria-expanded="false"> Configuration 1 </a></p>
+                                                            <span class="pull-right"><i class="fa fa-close clickable" aria-hidden="true"></i></span> </div>
+                                                        <div id="collapse-data1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                                                            <div class="panel-body">
+                                                                <div class="row">
+                                                                    <div class="col-sm-6">
+                                                                        <div class="form-group ">
+                                                                            <label for="samlUrl" class="control-label">URL</label>
+                                                                            <select name="samlUrl" id="samlUrl" required class="form-control  ">
+                                                                                <option value="?" selected="selected"></option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="form-group ">
+                                                                            <label for="sp" class="control-label">Service Provider</label>
+                                                                            <select name="sp" id="sp" required class="form-control  ">
+                                                                                <option value="?" selected="selected"></option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="form-group ">
+                                                                            <label for="idp" class="control-label">Identity Provider</label>
+                                                                            <select name="idp" id="idp" required class="form-control  ">
+                                                                                <option value="?" selected="selected"></option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-6">
+                                                                        <div class="form-group ">
+                                                                            <label for="serviceProviderAlias" class="control-label">Service Provider Alias</label>
+                                                                            <div class="counter-container">
+                                                                                <input type="text" name="serviceProviderAlias" id="serviceProviderAlias" required="" ng-maxlength="2000" countdown="" class="form-control  " title="">
+                                                                                <span class="label label-info" style="position:absolute;right:0;"><span class="counter">2000</span><span class="sr-only"> characters remaining</span></span></div>
+                                                                        </div>
+                                                                        <div class="form-group ">
+                                                                            <label for="serviceProviderEntityId" class="control-label">Service Provider Entity ID</label>
+                                                                            <div class="counter-container">
+                                                                                <input type="text" name="serviceProviderEntityId" id="serviceProviderEntityId" required="" ng-maxlength="2000" countdown="" class="form-control  " title="">
+                                                                                <span class="label label-info" style="position:absolute;right:0;"><span class="counter">2000</span><span class="sr-only"> characters remaining</span></span></div>
+                                                                        </div>
+                                                                        <div class="form-group ">
+                                                                            <label for="identityProviderEntityId" class="control-label">Identity Provider Entity ID</label>
+                                                                            <div class="counter-container">
+                                                                                <input type="text" name="identityProviderEntityId" id="identityProviderEntityId" required="" ng-maxlength="2000" countdown="" class="form-control  " title="">
+                                                                                <span class="label label-info" style="position:absolute;right:0;"><span class="counter">2000</span><span class="sr-only"> characters remaining</span></span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-xs btn-default btn-add-data pull-right"> <i class="fa fa-plus" aria-hidden="true"></i> SAML Configuration</button>
+                                        </div>
                                     </fieldset>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                     <fieldset>
+                                        <legend>User Attributes</legend>
+                                        
+                                        
+                                         <div class="form-group ">
+                                            <label class="control-label " for="user_att_source">User Attribute Sourcee </label>
+                                            <span class="help-block small">The source of user attributes when a user logs in (e.g. user name, first name, etc...)</span>
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <select class="select form-control" id="user_att_source" name="select">
+                                                        <option value="active"> None </option>
+                                                        <option value="cas"> CAS </option>
+                                                        <option value="ldap"> LDAP </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                           <div class="form-group second-ldap">
+                                            <label class="control-label " for="allow_sec_ldap">Allow a Secondary LDAP</label>
+                                            <span class="help-block small">Allow a second LDAP connection to another LDAP server. User will go to the primary first and if fail, it will try the secondary LDAP server. The next time this user logs in, the user will go to the second LDAP connection first.</span>
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <select class="select form-control" id="allow_sec_ldap" name="select">
+                                                 
+                                                        <option value="allow"> Allow </option>
+                                                        <option value="dontallow"> Don't Allow </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        
+                                        
+                                        </fieldset>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
                                     <div class="text-right"> <a href="vfy-pub-publishers-home.php" class="btn btn-default">Cancel</a>
                                         <button type="submit" class="btn btn-primary" id="form_save">Save</button>
                                     </div>
@@ -348,6 +514,106 @@ $page_title = 'tenants-new';
             alert(JSON.stringify(result, null, 2));
         }
     });
+</script> 
+<script type='text/javascript'>
+    //<![CDATA[
+    $(window).load(function() {
+        $(function() {
+            $('.auth-cas, .auth-saml').hide();
+            $('#auth_type').change(function() {
+                if ($('#auth_type').val() == 'cas') {
+                    $('.auth-cas').slideDown();
+                } else {
+                    $('.auth-cas').slideUp();
+                }
+            });
+
+            $('#auth_type').change(function() {
+                if ($('#auth_type').val() == 'saml') {
+                    $('.auth-saml').slideDown();
+                } else {
+                    $('.auth-saml').slideUp();
+                }
+            });
+
+        });
+    }); //]]>
+</script> 
+
+
+
+
+
+
+<script type='text/javascript'>
+    //<![CDATA[
+    $(window).load(function() {
+        $(function() {
+      
+            $('#cas_server_notification').change(function() {
+                if ($('#cas_server_notification').val() == 'true') {
+                    $('.cas-server-notification').slideDown();
+                } else {
+                    $('.cas-server-notification').slideUp();
+                }
+            });
+
+           
+
+        });
+    }); //]]>
+</script> 
+
+
+
+
+<script type='text/javascript'>
+    //<![CDATA[
+    $(window).load(function() {
+        $(function() {
+       $('.second-ldap').hide();
+            $('#user_att_source').change(function() {
+                if ($('#user_att_source').val() == 'ldap') {
+                    $('.second-ldap').slideDown();
+                } else {
+                    $('.second-ldap').slideUp();
+                }
+            });
+
+           
+
+        });
+    }); //]]>
+</script> 
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    //<![CDATA[
+    $(document).ready(function() {
+        var $template = $(".template-add-data");
+        var hash = 1;
+        $(".btn-add-data").on("click", function() {
+            var $newPanel = $template.clone();
+            $newPanel.find(".collapse").removeClass("in");
+            $newPanel.find(".accordion-toggle").attr("href", "#collapse-data" + (++hash))
+                .text("Configuration " + hash);
+            $newPanel.find(".panel-collapse").attr("id", "collapse-data" + (hash)).addClass("collapse").removeClass("in");
+            //$newPanel.find(".panel-heading").append("<span class='pull-right'><i class='fa fa-close clickable'></i></span>");
+            $("#sortable").append($newPanel.fadeIn());
+            $(document).on('click', '.fa.fa-close', function() {
+                $(this).parents('.panel').get(0).remove();
+            });
+        });
+
+    }); //]]>
 </script>
 </body>
 </html>
