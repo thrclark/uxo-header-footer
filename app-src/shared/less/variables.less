@@ -1,3 +1,43 @@
+///////// App styles set by user
+
+//@header-background:      #163C50;
+@header-background:         #163C50;
+@bodybackground:            #ebebeb;
+
+
+///////// Calculated app styles
+
+//Header text color (white or black, based on header background color)
+header {
+  background:@header-background;
+}
+.contrast-headertextcolor (@a) when (lightness(@a) >= 50%) {
+  color: #000;
+}
+.contrast-headertextcolor (@a) when (lightness(@a) < 50%) {
+  color: #fff;
+}
+.navbar-brand, .sub-header, header .container .dropdown.navbar-text .btn-link {
+  .contrast-headertextcolor(@header-background)
+}
+
+
+.contrast-bodytextcolor (@a) when (lightness(@a) >= 50%) {
+  color: #555;
+}
+.contrast-bodytextcolor (@a) when (lightness(@a) < 50%) {
+  color: #fff;
+}
+.nav-side-menu li a {
+  .contrast-bodytextcolor(@bodybackground)
+}
+
+
+
+
+
+//all others
+
 @brand-primary: 		#2879B8;
 @brand-success:         #387f38;
 @brand-info:            #5bc0de;
@@ -15,19 +55,8 @@
 @font-family-sans-serif:    BentonSansRegular;
 
 
-@accentcolor1:#7D110C;
-@accentcolor2:#E1D8B7;
-@accentcolor3:#82786F;
-@accentcolor4:#AEA79F;
-@accentcolor5:#44697D;
-@accentcolor6:#C59217;
-@accentcolor7:#4B306A;
-@accentcolor8:#9ADCC6;
-@accentcolor9:#CD894E;
-@accentcolor10:#4A3C31;
 
-@header-background:      #163C50;
-@bodybackground:            #ebebeb;
+
 @searchbutton-background:   @brand-danger;
 
 @header-text:                 #fff;
