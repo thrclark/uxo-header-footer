@@ -1,9 +1,21 @@
 ///////// App styles set by user
 
-//@header-background:      #163C50;
-@header-background:         #163C50;
-@bodybackground:            #ebebeb;
 
+@header-background:         #163C50; // default #163C50
+@bodybackground:            #ebebeb; // default #ebebeb
+@vfy-card-background:       #ffffff; // default #ffffff
+@text-color:                #555555; // default #555555
+@text-color-darkbkg:        #ffffff; // default #ffffff
+@link-color:                #2879B8; // default #2879B8
+@btn-primary-bg:            #2879B8; // default #2879B8
+@btn-default-bg:            #ffffff; // default #ffffff
+
+
+
+
+.well, .well.vfy-section, .primary-content {
+  background-color: @vfy-card-background;
+}
 
 ///////// Calculated app styles
 
@@ -12,29 +24,50 @@ header {
   background:@header-background;
 }
 .contrast-headertextcolor (@a) when (lightness(@a) >= 50%) {
-  color: #000;
+  color: @text-color;
 }
 .contrast-headertextcolor (@a) when (lightness(@a) < 50%) {
-  color: #fff;
+  color: @text-color-darkbkg;
 }
-.navbar-brand, .sub-header, header .container .dropdown.navbar-text .btn-link {
+.navbar-brand, .sub-header, header .container .dropdown.navbar-text .btn-link, .navbar-text {
   .contrast-headertextcolor(@header-background)
 }
 
 
 .contrast-bodytextcolor (@a) when (lightness(@a) >= 50%) {
-  color: #555;
+  color: @text-color;
 }
 .contrast-bodytextcolor (@a) when (lightness(@a) < 50%) {
-  color: #fff;
+  color: @text-color-darkbkg;
 }
-.nav-side-menu li a {
+.nav-side-menu li a, body {
   .contrast-bodytextcolor(@bodybackground)
 }
 
+legend {
+  .contrast-bodytextcolor(@vfy-card-background)
+}
+
+
+.contrast-welltextcolor (@a) when (lightness(@a) >= 50%) {
+  color: @text-color;
+}
+.contrast-welltextcolor (@a) when (lightness(@a) < 50%) {
+  color: @text-color-darkbkg;
+}
+.well, .primary-content {
+  .contrast-welltextcolor(@vfy-card-background)
+}
+
+.btn-primary {
+  .contrast-welltextcolor(@btn-primary-bg)
+}
 
 
 
+.btn-default {
+  .contrast-welltextcolor(@btn-default-bg)
+}
 
 //all others
 
@@ -86,11 +119,11 @@ header {
 //** Background color for textual input addons
 @input-group-addon-bg:           #ffffff;
 
-@text-color:                @gray;
+
 @text-muted:                #747474;
 
 //** Global textual link color.
-@link-color:                @brand-primary;
+
 //** Link hover color set via `darken()` function.
 @link-hover-color:          darken(@link-color, 15%);
 //** Link hover decoration.
@@ -106,7 +139,7 @@ header {
 
 @tooltip-bg:                 @brand-primary;
 
-@well-bg:                     #ffffff;
+
 
 
 

@@ -24,8 +24,8 @@
                 <li data-toggle="collapse" data-target="#nav-branding" class="collapsed"><a href="#">Branding <span class="arrow"></span></a>
                     <ul <?php if ($section == 'branding') {echo 'class="sub-menu"';} else {echo 'class="sub-menu collapse"';} ?> id="nav-branding">
                         <li <?php if ($page_title == 'header-footer') { echo 'class="active"'; } ?>><a href="vfy-pub-branding-headfoot.php">Header &amp; Footer</a></li>
-                        <li <?php if ($page_title == 'app-styles') { echo 'class="active"'; } ?>><a href="vfy-pub-branding-appstyles.php">Application Styles</a></li>
-                        <li <?php if ($page_title == 'custom-fonts') { echo 'class="active"'; } ?>><a href="vfy-pub-branding-customfonts.php">Custom Fonts</a></li>
+                        <li <?php if ($page_title == 'app-styles') { echo 'class="active"'; } ?>><a href="vfy-pub-branding-appstyles.php">Colors</a></li>
+                        <li <?php if ($page_title == 'custom-fonts') { echo 'class="active"'; } ?>><a href="vfy-pub-branding-customfonts.php">Fonts</a></li>
                     </ul>
                 </li>
             </ul>
