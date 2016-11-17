@@ -108,7 +108,7 @@ $page_title = 'app-styles';
 										<!-- Single button -->
 										<div class="btn-group"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Restore Values <span class="caret"></span></button>
 											<ul class="dropdown-menu">
-												<li><a href="#">Reset Default Values</a>
+												<li><a href="#">Restore Default Values</a>
 												</li>
 												<li><a href="#">Restore Last Saved Values</a>
 												</li>

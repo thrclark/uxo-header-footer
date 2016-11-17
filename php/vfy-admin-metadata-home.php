@@ -29,7 +29,7 @@ $page_title = 'tenants-metadata';
                                 <div class="col-xs-12 col-sm-9 section-header">
                                     <h2 class="h3">Metadata</h2>
                                 </div>
-                                <div class="col-xs-12  col-sm-3 section-controls"> <a href="vfy-admin-metadata-new.php" class="btn btn-xs btn-default"> <i class="fa fa-plus" aria-hidden="true"></i> New</a> </div>
+                                <div class="col-xs-12  col-sm-3 section-controls"> <a href="vfy-admin-metadata-new.php" class="btn btn-xs btn-default"> <i class="fa fa-plus" aria-hidden="true"></i> Metadata</a> </div>
                             </div>
                             <table class="table table-condensed table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack">
                                 <caption class="sr-only">

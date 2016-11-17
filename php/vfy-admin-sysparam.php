@@ -185,7 +185,7 @@ $page_title = 'system-param';
                                 </tr>
                                 <tr>
                                     <td></td>
-                                    <td><a href="#myTable" class="addstuff btn btn-xs btn-default pull-right"><i class="fa fa-plus"></i> Add</a></td>
+                                    <td><a href="#myTable" class="addstuff btn btn-xs btn-default pull-right"><i class="fa fa-plus"></i> Email</a></td>
                                 </tr>
                             </tbody>
                         </table>

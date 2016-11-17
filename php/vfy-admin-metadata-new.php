@@ -77,7 +77,7 @@ $page_title = 'tenants-metadata';
                                     <fieldset>
                                         <legend>Metadata Source</legend>
                                         <div class="form-group ">
-                                            <label class="control-label " for="user_att_source">User Attribute Sourcee </label>
+                                            <label class="control-label " for="user_att_source">User Attribute Source </label>
                                             <span class="help-block small">The source of user attributes when a user logs in (e.g. user name, first name, etc...)</span>
                                             <div class="row">
                                                 <div class="col-sm-4">

@@ -181,7 +181,7 @@ $page_title = 'custom-fonts';
 															</td>
 														</tr>
 														<tr>
-															<td><a href="#myTable" class="addstuff btn btn-xs btn-default pull-left"><i class="fa fa-plus" aria-hidden="true"></i> Add</a>
+															<td><a href="#myTable" class="addstuff btn btn-xs btn-default pull-left"><i class="fa fa-plus" aria-hidden="true"></i> URL</a>
 															</td>
 															<td></td>
 														</tr>
@@ -381,7 +381,7 @@ $page_title = 'custom-fonts';
 															</td>
 														</tr>
 														<tr>
-															<td><a href="#myTable" class="addstuff btn btn-xs btn-default pull-left"><i class="fa fa-plus" aria-hidden="true"></i> Add</a>
+															<td><a href="#myTable" class="addstuff btn btn-xs btn-default pull-left"><i class="fa fa-plus" aria-hidden="true"></i> URL</a>
 															</td>
 															<td></td>
 														</tr>
