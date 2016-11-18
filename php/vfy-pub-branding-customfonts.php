@@ -146,10 +146,7 @@ $page_title = 'custom-fonts';
 
 
 									<div class="form-group custom-headerfont">
-										<div style="    display: inline-block;
-    max-width: 100%;
-    margin-bottom: 5px;
-    font-weight: bold;"> Font URLs</div>
+										<div class="form-label"> Font URLs</div>
 										<span class="help-block small"> Specify URLs for this custom font.</span>
 										<div class="row">
 											<div class="col-sm-9">
@@ -346,10 +343,7 @@ $page_title = 'custom-fonts';
 
 
 									<div class="form-group custom-bodyfont">
-										<div style="    display: inline-block;
-    max-width: 100%;
-    margin-bottom: 5px;
-    font-weight: bold;"> Font URLs</div>
+										<div class="form-label"> Font URLs</div>
 										<span class="help-block small"> Specify URLs for this custom font.</span>
 										<div class="row">
 											<div class="col-sm-9">

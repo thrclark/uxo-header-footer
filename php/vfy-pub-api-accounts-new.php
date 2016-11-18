@@ -102,10 +102,7 @@ $page_title = 'api-accounts';
                                             </div>
                                         </div>
                                         <div class="form-group show4extapi">
-                                            <div style="    display: inline-block;
-    max-width: 100%;
-    margin-bottom: 5px;
-    font-weight: bold;"> External Rest API URLs</div>
+                                            <div class="form-label"> External Rest API URLs</div>
                                             <table class="table table-condensed table-responsive table-actions" id="myTable">
                                                 <thead>
                                                     <tr>
