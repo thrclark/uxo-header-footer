@@ -47,8 +47,8 @@ $page_title = 'header-footer';
                                 <span class="help-block small"> Add css styling to the custom header and footer sections.</span>
                                 <textarea rows="8" class="form-control" aria-invalid="false" id="custom_header"></textarea>
                             </div>
-                            <div class="text-right"> <a href="#" class="btn btn-default">Revert</a>
-                                <button type="submit" class="btn btn-primary">Save</button>
+                            <div class="text-right"> <a href="" class="btn btn-default" data-toggle="modal" data-target="#confirm_exit">Cancel</a>
+                                <button type="submit" class="btn btn-primary" id="" data-toggle="modal" data-target="#confirm_save">Save</button>
                             </div>
                         </section>
                     </div>
@@ -84,6 +84,46 @@ $page_title = 'header-footer';
         });
     });
 </script> 
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="confirm_exit" tabindex="-1" role="dialog" aria-labelledby="">
+    <div class="modal-dialog modal-default" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title"><i class="icon-user-3"></i>Unsaved Changes</h4>
+            </div>
+            <div class="modal-body">
+                <div class="message">
+                    <div class="message-content">
+                        <p>There are unsaved changes on this page. Would you like to continue editing?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer"> <a href="#" class="btn btn-default btn-sm" data-dismiss="modal" >Discard Changes</a> <a href="#" class="btn btn-primary btn-sm" data-dismiss="modal">Continue Editing</a> </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="confirm_save" tabindex="-1" role="dialog" aria-labelledby="">
+    <div class="modal-dialog modal-default" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title"><i class="icon-user-3"></i>Settings Saved</h4>
+            </div>
+            <div class="modal-body">
+                <div class="message">
+                    <div class="message-content">
+                        <p>Your settings have been saved.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer"> <a href="#" class="btn btn-default btn-sm" data-dismiss="modal" >Close</a> </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>

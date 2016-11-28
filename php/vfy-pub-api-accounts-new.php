@@ -150,7 +150,8 @@ $page_title = 'api-accounts';
                                                         <option value="2">FINA Team</option>
                                                         <option value="2">IT Team</option>
                                                         <option value="3">FAC Team</option>
-                                                    </select>  <div class="validation-fieldmessage" style="display:none" id="val_status"> <i class="fa fa-minus-circle" aria-hidden="true"></i> Please select a status.</div>
+                                                    </select>
+                                                    <div class="validation-fieldmessage" style="display:none" id="val_status"> <i class="fa fa-minus-circle" aria-hidden="true"></i> Please select a status.</div>
                                                 </div>
                                                 <div class="col-xs-2" style="padding-top:22px">
                                                     <button type="button" id="multiselect_rightSelected" class="btn btn-xs btn-default btn-block"><i class="glyphicon glyphicon-chevron-right"></i></button>
@@ -216,8 +217,8 @@ $page_title = 'api-accounts';
                                             </div>
                                         </div>
                                     </fieldset>
-                                    <div class="text-right"> <a href="vfy-pub-api-accounts-home.php" class="btn btn-default">Cancel</a>
-                                        <button type="submit" class="btn btn-primary" id="form_save">Save</button>
+                                    <div class="text-right"> <a href="" class="btn btn-default" data-toggle="modal" data-target="#confirm_exit">Cancel</a>
+                                        <button type="submit" class="btn btn-primary" id="form_save" data-toggle="modal" data-target="#confirm_save">Save</button>
                                     </div>
                                 </div>
                             </div>
@@ -336,6 +337,48 @@ $(function() {
 });//]]> 
 
 </script> 
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="confirm_exit" tabindex="-1" role="dialog" aria-labelledby="">
+    <div class="modal-dialog modal-default" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title"><i class="icon-user-3"></i>Unsaved Changes</h4>
+            </div>
+            <div class="modal-body">
+                <div class="message">
+                    <div class="message-content">
+                        <p>There are unsaved changes on this page. Would you like to continue editing?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer"> <a href="vfy-pub-api-accounts-home.php" class="btn btn-default btn-sm">Discard Changes</a> <a href="#" class="btn btn-primary btn-sm" data-dismiss="modal">Continue Editing</a> </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="confirm_save" tabindex="-1" role="dialog" aria-labelledby="">
+    <div class="modal-dialog modal-default" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title"><i class="icon-user-3"></i>Settings Saved</h4>
+            </div>
+            <div class="modal-body">
+                <div class="message">
+                    <div class="message-content">
+                        <p>Your settings for this API account have been saved.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>

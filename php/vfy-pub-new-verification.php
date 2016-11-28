@@ -73,8 +73,8 @@ $page_title = 'create-new';
                                                     <textarea class="form-control text-formatter" cols="40" id="disclaimer" name="textarea" rows="3"></textarea>
                                                 </div>
                                                 <div class="form-group ">
-                                                    <label class="control-label " for="verify_now_select"> 'Verify Now' Text </label>
-                                                    <span class="help-block small" > Select the text that will appear next to the 'Verify Now' radio/checkbox control. </span>
+                                                    <label class="control-label " for="verify_now_select"> Verification Confirmation Text </label>
+                                                    <span class="help-block small" > Select the text that will appear next to the verification confirmation radio/checkbox control. </span>
                                                     <div class="row">
                                                         <div class="col-sm-4">
                                                             <select class="select form-control" id="verify_now_select" name="select">
@@ -86,17 +86,17 @@ $page_title = 'create-new';
                                                 </div>
                                                 <div class="form-group ">
                                                     <div style=" display:block">
-                                                        <label class="control-label sr-only" for="verify_now_standard"> 'Verify Now' Standard Text </label>
+                                                        <label class="control-label sr-only" for="verify_now_standard"> Verification Confirmation Standard Text </label>
                                                         <textarea class="form-control" cols="40" id="verify_now_standard" name="textarea1" rows="3" disabled>I have verified that the information on this page is currently accurate.</textarea>
                                                     </div>
                                                     <div id="verify_now_custom" style="display:none">
-                                                        <label class="control-label sr-only" for="verify_now_custommm"> 'Verify Now' Custom Text </label>
+                                                        <label class="control-label sr-only" for="verify_now_custommm"> Verification Confirmation Custom Text </label>
                                                         <textarea class="form-control" cols="40" id="verify_now_custommm" name="textarea1" rows="3" ></textarea>
                                                     </div>
                                                 </div>
                                                 <div class="form-group ">
-                                                    <label class="control-label " for="verify_later_select"> 'Verify Later' Text </label>
-                                                    <span class="help-block small" > Select the text that will appear next to the 'Verify Now' radio/checkbox control. </span>
+                                                    <label class="control-label " for="verify_later_select"> Verification Deferral Text </label>
+                                                    <span class="help-block small" > Select the text that will appear next to the verification deferral radio/checkbox control. </span>
                                                     <div class="row">
                                                         <div class="col-sm-4">
                                                             <select class="select form-control" id="verify_later_select" name="select" >
@@ -108,11 +108,11 @@ $page_title = 'create-new';
                                                 </div>
                                                 <div class="form-group ">
                                                     <div style=" display:block">
-                                                        <label class="control-label sr-only" for="verify_later_standard"> 'Verify Later' Standard Text </label>
+                                                        <label class="control-label sr-only" for="verify_later_standard"> Verification Deferral Standard Text </label>
                                                         <textarea class="form-control" cols="40" id="verify_later_standard" name="textarea1" rows="3" disabled>I choose to verify this information later.</textarea>
                                                     </div>
                                                     <div id="verify_later_custom" style=" display:none">
-                                                        <label class="control-label sr-only" for="verify_later_custommm"> 'Verify Later' Custom Text </label>
+                                                        <label class="control-label sr-only" for="verify_later_custommm"> Verification Deferral Custom Text </label>
                                                         <textarea class="form-control" cols="40" id="verify_later_custommm" name="textarea1" rows="3"></textarea>
                                                     </div>
                                                 </div>
@@ -136,9 +136,15 @@ $page_title = 'create-new';
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 wizard-actions">
-                                                <div class="btn-group pull-right" role="group" aria-label="">
-                                                    <button class="btn btn-primary nextBtn" id="next1" type="button" >Next<i class="icon-angle-right"></i> </button>
+                                                <div class="btn-toolbar pull-right" role="toolbar" aria-label="Toolbar with button groups">
+                                                    <div class="btn-group" role="group" aria-label="Second group">
+                                                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#confirm_exit" >Cancel</button>
+                                                    </div>
+                                                    <div class="btn-group" role="group" aria-label="First group">
+                                                        <button class="btn btn-primary nextBtn" id="next1" type="button" >Next <i class="fa fa-angle-right" aria-hidden="true"></i> </button>
+                                                    </div>
                                                 </div>
+                                                <div class="btn-group pull-right" role="group" aria-label=""> </div>
                                             </div>
                                         </div>
                                         <div class="row setup-content" id="step-2">
@@ -153,16 +159,27 @@ $page_title = 'create-new';
                                                             <div id="collapse-data1" class="panel-collapse collapse in">
                                                                 <div class="panel-body">
                                                                     <div class="form-group ">
-                                                                        <label class="control-label" for="section_title"> Section Title </label>
-                                                                        <input class="form-control" id="section_title" name="name" type="text" />
-                                                                    </div>
-                                                                    <div class="form-group ">
-                                                                        <label class="control-label " for="section_description"> Section Description <span class="small" style="font-weight:normal">(optional)</span></label>
-                                                                        <textarea class="form-control text-formatter" cols="40" id="section_description" name="message" rows="3"></textarea>
+                                                                        <label class="control-label" for="section_title">Data Section Title </label>
+                                                                        <span class="help-block small" > Provide a name for this data section.</span>
+                                                                        <div class="row">
+                                                                            <div class="col-sm-4">
+                                                                                <input class="form-control" id="section_title" name="name" type="text" />
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                     <div class="form-group ">
                                                                         <label class="control-label" for="unique_key"> Unique Key </label>
-                                                                        <input class="form-control" id="unique_key" name="name" type="text" />
+                                                                        <span class="help-block small" > Provide a unique key for this data section.</span>
+                                                                        <div class="row">
+                                                                            <div class="col-sm-4">
+                                                                                <input class="form-control" id="unique_key" name="name" type="text" />
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group ">
+                                                                        <label class="control-label " for="section_description"> Section Description <span class="small" style="font-weight:normal">(optional)</span></label>
+                                                                        <span class="help-block small" > Provide an optional description of this data to be displayed with the verification.</span>
+                                                                        <textarea class="form-control text-formatter" cols="40" id="section_description" name="message" rows="3"></textarea>
                                                                     </div>
                                                                     <p class="control-label"> Field Groups </p>
                                                                     <table class="table table-condensed table-responsive table-actions" id="myTable">
@@ -207,9 +224,14 @@ $page_title = 'create-new';
                                                 <button class="btn btn-xs btn-default btn-add-data pull-right"> <i class="fa fa-plus"></i> Section</button>
                                             </div>
                                             <div class="col-xs-12 wizard-actions">
-                                                <div class="pull-right" role="group" aria-label="">
-                                                    <button class="btn btn-default prevBtn " type="button" ><i class="icon-angle-left"></i>Previous</button>
-                                                    <button class="btn btn-primary nextBtn " type="button" >Next<i class="icon-angle-right"></i> </button>
+                                                <div class="btn-toolbar pull-right" role="toolbar" aria-label="Toolbar with button groups">
+                                                    <div class="btn-group" role="group" aria-label="Second group">
+                                                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#confirm_exit" >Cancel</button>
+                                                    </div>
+                                                    <div class="btn-group" role="group" aria-label="First group">
+                                                        <button class="btn btn-default prevBtn " type="button" > <i class="fa fa-angle-left" aria-hidden="true"></i> Previous</button>
+                                                        <button class="btn btn-primary nextBtn " type="button" > Next <i class="fa fa-angle-right" aria-hidden="true"></i> </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -219,25 +241,37 @@ $page_title = 'create-new';
                                                 <div class="panel-group" id="accordion2">
                                                     <div class="panel panel-default template-add-group">
                                                         <div class="panel-heading">
-                                                            <p class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse-group1"> Recipient Rule 1 </a> </p>
+                                                            <p class="panel-title"> <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse-group1"> Recipient Rule Set 1 </a> </p>
                                                         </div>
                                                         <div id="collapse-group1" class="panel-collapse collapse in">
                                                             <div class="panel-body">
-                                                                <div id="builder-basic"> </div>
-                                                                <div class="form-group" id="vfy_effectivedate">
-                                                                    <label class="control-label " for="effective_date"> Effective Date </label>
-                                                                    <span class="help-block small" > Select the date on which the verification will be sent to this specified recipient.</span>
+                                                                <div class="form-group" id="">
+                                                                    <label class="control-label " for="recipientrule_name"> Recipient Rule Set Title </label>
+                                                                    <span class="help-block small" > Provide a name for this set of recipient rules.</span>
                                                                     <div class="row">
-                                                                      
-                                                                        <div class="col-sm-8 col-md-8 col-lg-6">
-                                                                            <div class="input-group">         <input class="form-control" id="effective_date" name="effective_date" type="text"><span class="input-group-addon">
-                                                                                <label><input type="checkbox" aria-label="..."><span class="small text-muted" style=" font-weight:normal"> Recur Annually</span></label>
-                                                                                </span>
-                                                                               
-                                                                            </div>
+                                                                        <div class="col-sm-4">
+                                                                            <input class="form-control" id="recipientrule_name" name="recipientrule_name" type="text">
                                                                         </div>
                                                                     </div>
                                                                 </div>
+                                                                <div class="form-group" id="vfy_effectivedate">
+                                                                    <label class="control-label " for="effective_date"> Effective Date </label>
+                                                                    <span class="help-block small" > Select the date on which the verification will be sent to the specified recipient(s).</span>
+                                                                    <div class="row">
+                                                                        <div class="col-sm-8 col-md-8 col-lg-6">
+                                                                            <div class="input-group">
+                                                                                <input class="form-control" id="effective_date" name="effective_date" type="text">
+                                                                                <span class="input-group-addon">
+                                                                                <label>
+                                                                                    <input type="checkbox" aria-label="...">
+                                                                                    <span class="small text-muted" style=" font-weight:normal"> Recur Annually</span></label>
+                                                                                </span> </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-label"> Recipient Rules</div>
+                                                                <span class="help-block small"> Specify the rules for the intented recipients.</span>
+                                                                <div id="builder-basic"> </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -254,9 +288,14 @@ $page_title = 'create-new';
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 wizard-actions">
-                                                <div class="pull-right" role="group" aria-label="">
-                                                    <button class="btn btn-default prevBtn " type="button" ><i class="icon-angle-left"></i>Previous</button>
-                                                    <button class="btn btn-primary nextBtn " type="button" >Next<i class="icon-angle-right"></i> </button>
+                                                <div class="btn-toolbar pull-right" role="toolbar" aria-label="Toolbar with button groups">
+                                                    <div class="btn-group" role="group" aria-label="Second group">
+                                                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#confirm_exit" >Cancel</button>
+                                                    </div>
+                                                    <div class="btn-group" role="group" aria-label="First group">
+                                                        <button class="btn btn-default prevBtn " type="button" > <i class="fa fa-angle-left" aria-hidden="true"></i> Previous</button>
+                                                        <button class="btn btn-primary nextBtn " type="button" >Next <i class="fa fa-angle-right" aria-hidden="true"></i> </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -302,10 +341,16 @@ $page_title = 'create-new';
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 wizard-actions">
-                                                <div class="pull-right" role="group" aria-label="">
-                                                    <button class="btn btn-default prevBtn " type="button" ><i class="icon-angle-left"></i>Previous</button>
-                                                    <button class="btn btn-primary nextBtn " type="button" >Next<i class="icon-angle-right"></i> </button>
+                                                <div class="btn-toolbar pull-right" role="toolbar" aria-label="Toolbar with button groups">
+                                                    <div class="btn-group" role="group" aria-label="Second group">
+                                                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#confirm_exit" >Cancel</button>
+                                                    </div>
+                                                    <div class="btn-group" role="group" aria-label="First group">
+                                                        <button class="btn btn-default prevBtn " type="button" > <i class="fa fa-angle-left" aria-hidden="true"></i> Previous</button>
+                                                        <button class="btn btn-primary nextBtn " type="button" >Next <i class="fa fa-angle-right" aria-hidden="true"></i> </button>
+                                                    </div>
                                                 </div>
+                                                <div class="pull-right" role="group" aria-label=""> </div>
                                             </div>
                                         </div>
                                         <div class="row setup-content" id="step-5">
@@ -559,7 +604,6 @@ $page_title = 'create-new';
                                                                         </div>
                                                                         <div class="col-md-9"> <i class="small">Active</i> </div>
                                                                         <div class="clearfix"></div>
-                                                                       
                                                                         <div class="col-md-3">
                                                                             <p class="data-label">End Date:</p>
                                                                         </div>
@@ -573,9 +617,23 @@ $page_title = 'create-new';
                                                 </div>
                                             </div>
                                             <div class="col-xs-12 wizard-actions">
-                                                <div class="pull-right" role="group" aria-label="">
-                                                    <button class="btn btn-default prevBtn" type="button" ><i class="icon-angle-left"></i>Previous</button>
-                                                    <button class="btn btn-primary" type="button" id="form_save">Save</button>
+                                                <div class="btn-toolbar pull-right" role="toolbar" aria-label="Toolbar with button groups">
+                                                    <div class="btn-group" role="group" aria-label="Second group">
+                                                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#confirm_exit" >Cancel</button>
+                                                    </div>
+                                                    <div class="btn-group" role="group" aria-label="First group">
+                                                        <button class="btn btn-default prevBtn" type="button" > <i class="fa fa-angle-left" aria-hidden="true"></i> Previous</button>
+                                                        <button class="btn btn-primary" type="button" id="form_save" data-toggle="modal" data-target="#confirm_save">Save</button>
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                        
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -733,7 +791,7 @@ $page_title = 'create-new';
             var $newPanel = $template.clone();
             $newPanel.find(".collapse").removeClass("in");
             $newPanel.find(".accordion-toggle").attr("href", "#collapse-group" + (++hash))
-                .text("Recipient Rule " + hash);
+                .text("Recipient Rule Set " + hash);
             $newPanel.find(".panel-collapse").attr("id", "collapse-group" + (hash)).addClass("collapse").removeClass("in");
             $newPanel.find(".panel-heading").append("<span class='pull-right'><i class='fa fa-close clickable'></i></span>");
             $("#accordion2").append($newPanel.fadeIn());
@@ -991,6 +1049,50 @@ $(document).ready(function() {
 		$("#vfy_effectivedate").addClass("form-group-error");
     });
 </script> 
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="confirm_exit" tabindex="-1" role="dialog" aria-labelledby="">
+    <div class="modal-dialog modal-default" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title"><i class="icon-user-3"></i>Unsaved Changes</h4>
+            </div>
+            <div class="modal-body">
+                <div class="message">
+                    <div class="message-content">   <p>There are unsaved changes on this page. Would you like to continue editing?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Discard Changes</button>
+                <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Continue Editing</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="confirm_save" tabindex="-1" role="dialog" aria-labelledby="">
+    <div class="modal-dialog modal-default" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title"><i class="icon-user-3"></i>Verification Saved</h4>
+            </div>
+            <div class="modal-body">
+                <div class="message">
+                    <div class="message-content">
+                        <p>This verification has been saved.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
