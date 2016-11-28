@@ -15,12 +15,12 @@ $page_title = 'api-accounts';
 <body class="view-admin" id="top">
 <div class="wrapper">
     <?php include ('includes/brand-header2.php') ?>
-    <?php include ('includes/pub-header.php') ?>
+    <?php include('includes/header-pub.php') ?>
     <div class="main-content container" role=main>
         <div id="main-content">
             <div class="row">
                 <div class="col-md-3">
-                    <?php include ('includes/pub-nav.php') ?>
+                    <?php include('includes/nav-pub.php') ?>
                 </div>
                 <div class="col-md-9">
                     <div class="primary-content">
@@ -29,7 +29,7 @@ $page_title = 'api-accounts';
                                 <div class="col-xs-12 col-sm-9 section-header">
                                     <h2 class="h3">API Accounts</h2>
                                 </div>
-                                <div class="col-xs-12  col-sm-3 section-controls"> <a href="vfy-pub-api-accounts-new.php" class="btn btn-xs btn-default"> <i class="fa fa-plus" aria-hidden="true"></i> new</a> </div>
+                                <div class="col-xs-12  col-sm-3 section-controls"> <a href="vfy-pub-api-accounts-new.php" class="btn btn-xs btn-default"> <i class="fa fa-plus" aria-hidden="true"></i> API Account</a> </div>
                             </div>
                             <table class="table table-condensed table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack">
                                 <caption class="sr-only">
@@ -39,8 +39,8 @@ $page_title = 'api-accounts';
                                     <tr>
                                         <th scope="col" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="1">Name</th>
                                         <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="2">Type</th>
-                                        <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Access Level</th>
-                                        <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Auth Type</th>
+                                        <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Expires</th>
+                                        <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Locked</th>
                                         <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="3">Status</th>
                                         <th scope="col" data-tablesaw-sortable-col data-tablesaw-priority="4"><span class="visible-xs">Actions</span></th>
                                     </tr>
@@ -48,9 +48,9 @@ $page_title = 'api-accounts';
                                 <tbody>
                                     <tr>
                                         <td >API Account 1</td>
-                                        <td >external</td>
-                                        <td >publisher</td>
-                                        <td >basic</td>
+                                        <td >External API </td>
+                                        <td >-</td>
+                                        <td >-</td>
                                         <td >active</td>
                                         <td class="text-center"><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
@@ -62,9 +62,9 @@ $page_title = 'api-accounts';
                                     </tr>
                                     <tr>
                                         <td >API Account 10</td>
-                                        <td >maintenance</td>
-                                        <td >admin</td>
-                                        <td >basic</td>
+                                        <td >Maintenance API</td>
+                                        <td >12/12/2017</td>
+                                        <td >yes</td>
                                         <td >inactive</td>
                                         <td class="text-center"><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
@@ -76,9 +76,9 @@ $page_title = 'api-accounts';
                                     </tr>
                                     <tr>
                                         <td >API Account 11</td>
-                                        <td >external</td>
-                                        <td >publisher</td>
-                                        <td >basic</td>
+                                        <td >External API </td>
+                                        <td >-</td>
+                                        <td >-</td>
                                         <td >active</td>
                                         <td class="text-center"><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
@@ -90,9 +90,9 @@ $page_title = 'api-accounts';
                                     </tr>
                                     <tr>
                                         <td >API Account 12</td>
-                                        <td >maintenance</td>
-                                        <td >admin</td>
-                                        <td >basic</td>
+                                        <td >Maintenance API</td>
+                                        <td >12/12/2017</td>
+                                        <td >no</td>
                                         <td >inactive</td>
                                         <td class="text-center"><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
@@ -104,9 +104,9 @@ $page_title = 'api-accounts';
                                     </tr>
                                     <tr>
                                         <td >API Account 2</td>
-                                        <td >maintenance</td>
-                                        <td >admin</td>
-                                        <td >basic</td>
+                                        <td >Maintenance API</td>
+                                        <td >12/12/2017</td>
+                                        <td >no</td>
                                         <td >inactive</td>
                                         <td class="text-center"><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
@@ -118,9 +118,9 @@ $page_title = 'api-accounts';
                                     </tr>
                                     <tr>
                                         <td >API Account 3</td>
-                                        <td >external</td>
-                                        <td >publisher</td>
-                                        <td >basic</td>
+                                        <td >External API</td>
+                                        <td >-</td>
+                                        <td >-</td>
                                         <td >active</td>
                                         <td class="text-center"><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu6" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
@@ -132,9 +132,9 @@ $page_title = 'api-accounts';
                                     </tr>
                                     <tr>
                                         <td >API Account 4</td>
-                                        <td >maintenance</td>
-                                        <td >admin</td>
-                                        <td >basic</td>
+                                        <td >Maintenance API</td>
+                                        <td >-</td>
+                                        <td >no</td>
                                         <td >inactive</td>
                                         <td class="text-center"><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu7" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
@@ -146,9 +146,9 @@ $page_title = 'api-accounts';
                                     </tr>
                                     <tr>
                                         <td >API Account 5</td>
-                                        <td >external</td>
-                                        <td >publisher</td>
-                                        <td >basic</td>
+                                        <td >External API</td>
+                                        <td >-</td>
+                                        <td >-</td>
                                         <td >active</td>
                                         <td class="text-center"><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
@@ -160,9 +160,9 @@ $page_title = 'api-accounts';
                                     </tr>
                                     <tr>
                                         <td >API Account 6</td>
-                                        <td >maintenance</td>
-                                        <td >admin</td>
-                                        <td >basic</td>
+                                        <td >Maintenance API</td>
+                                        <td >12/12/2017</td>
+                                        <td >no</td>
                                         <td >inactive</td>
                                         <td class="text-center"><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu9" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
@@ -174,9 +174,9 @@ $page_title = 'api-accounts';
                                     </tr>
                                     <tr>
                                         <td >API Account 7</td>
-                                        <td >external</td>
-                                        <td >publisher</td>
-                                        <td >basic</td>
+                                        <td >External API</td>
+                                        <td >-</td>
+                                        <td >-</td>
                                         <td >active</td>
                                         <td class="text-center"><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
@@ -188,9 +188,9 @@ $page_title = 'api-accounts';
                                     </tr>
                                     <tr>
                                         <td >API Account 8</td>
-                                        <td >maintenance</td>
-                                        <td >admin</td>
-                                        <td >basic</td>
+                                        <td >Maintenance API</td>
+                                        <td >-</td>
+                                        <td >no</td>
                                         <td >inactive</td>
                                         <td class="text-center"><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu11" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
@@ -202,9 +202,9 @@ $page_title = 'api-accounts';
                                     </tr>
                                     <tr>
                                         <td >API Account 9</td>
-                                        <td >external</td>
-                                        <td >publisher</td>
-                                        <td >basic</td>
+                                        <td >External API</td>
+                                        <td >-</td>
+                                        <td >-</td>
                                         <td >active</td>
                                         <td class="text-center"><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
@@ -216,6 +216,7 @@ $page_title = 'api-accounts';
                                     </tr>
                                 </tbody>
                             </table>
+                            <div class="text-center"> <a href="#" class="btn btn-xs btn-default"><i class="fa fa-angle-down" aria-hidden="true"></i> View More </a> </div>
                         </section>
                     </div>
                 </div>

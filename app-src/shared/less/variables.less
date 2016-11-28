@@ -1,3 +1,78 @@
+///////// App styles set by user
+
+
+@header-background:         #163C50; // default #163C50
+@bodybackground:            #ebebeb; // default #ebebeb
+@vfy-card-background:       #ffffff; // default #ffffff
+@text-color:                #555555; // default #555555
+@text-color-darkbkg:        #ffffff; // default #ffffff
+@link-color:                #2879B8; // default #2879B8
+@btn-primary-bg:            #2879B8; // default #2879B8
+@btn-default-bg:            #ffffff; // default #ffffff
+
+
+
+
+
+
+.well, .well.vfy-section, .primary-content {
+  background-color: @vfy-card-background;
+}
+
+///////// Calculated app styles
+
+//Header text color (white or black, based on header background color)
+header {
+  background:@header-background;
+}
+.contrast-headertextcolor (@a) when (lightness(@a) >= 50%) {
+  color: @text-color;
+}
+.contrast-headertextcolor (@a) when (lightness(@a) < 50%) {
+  color: @text-color-darkbkg;
+}
+.navbar-brand, .sub-header, header .container .dropdown.navbar-text .btn-link, .navbar-text {
+  .contrast-headertextcolor(@header-background)
+}
+
+
+.contrast-bodytextcolor (@a) when (lightness(@a) >= 50%) {
+  color: @text-color;
+}
+.contrast-bodytextcolor (@a) when (lightness(@a) < 50%) {
+  color: @text-color-darkbkg;
+}
+.nav-side-menu li a, body {
+  .contrast-bodytextcolor(@bodybackground)
+}
+
+legend {
+  .contrast-bodytextcolor(@vfy-card-background)
+}
+
+
+.contrast-welltextcolor (@a) when (lightness(@a) >= 50%) {
+  color: @text-color;
+}
+.contrast-welltextcolor (@a) when (lightness(@a) < 50%) {
+  color: @text-color-darkbkg;
+}
+.well, .primary-content {
+  .contrast-welltextcolor(@vfy-card-background)
+}
+
+.btn-primary {
+  .contrast-welltextcolor(@btn-primary-bg)
+}
+
+
+
+.btn-default {
+  .contrast-welltextcolor(@btn-default-bg)
+}
+
+//all others
+
 @brand-primary: 		#2879B8;
 @brand-success:         #387f38;
 @brand-info:            #5bc0de;
@@ -15,19 +90,8 @@
 @font-family-sans-serif:    BentonSansRegular;
 
 
-@accentcolor1:#7D110C;
-@accentcolor2:#E1D8B7;
-@accentcolor3:#82786F;
-@accentcolor4:#AEA79F;
-@accentcolor5:#44697D;
-@accentcolor6:#C59217;
-@accentcolor7:#4B306A;
-@accentcolor8:#9ADCC6;
-@accentcolor9:#CD894E;
-@accentcolor10:#4A3C31;
 
-@header-background:      #163C50;
-@bodybackground:            #ebebeb;
+
 @searchbutton-background:   @brand-danger;
 
 @header-text:                 #fff;
@@ -54,12 +118,14 @@
 
 @comment-borderreply:       #ccc;
 @comment-backgroundnew:     #5bc0de;
+//** Background color for textual input addons
+@input-group-addon-bg:           #ffffff;
 
-@text-color:                @gray;
+
 @text-muted:                #747474;
 
 //** Global textual link color.
-@link-color:                @brand-primary;
+
 //** Link hover color set via `darken()` function.
 @link-hover-color:          darken(@link-color, 15%);
 //** Link hover decoration.
@@ -75,7 +141,7 @@
 
 @tooltip-bg:                 @brand-primary;
 
-@well-bg:                     #ffffff;
+
 
 
 

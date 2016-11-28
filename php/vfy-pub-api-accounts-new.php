@@ -12,12 +12,12 @@ $page_title = 'api-accounts';
 <body class="view-admin" id="top">
 <div class="wrapper">
     <?php include ('includes/brand-header2.php') ?>
-    <?php include ('includes/pub-header.php') ?>
+    <?php include('includes/header-pub.php') ?>
     <div class="main-content container" role=main>
         <div id="main-content">
             <div class="row">
                 <div class="col-md-3">
-                    <?php include ('includes/pub-nav.php') ?>
+                    <?php include('includes/nav-pub.php') ?>
                 </div>
                 <div class="col-md-9">
                     <div class="primary-content">
@@ -77,20 +77,7 @@ $page_title = 'api-accounts';
                                         <div class="checkbox show4maintapi">
                                             <label>
                                                 <input type="checkbox">
-                                                Unlock Account <span class="help-block small">Unlock this API Account so it may be used again.</span> </label>
-                                        </div>
-                                        <div class="form-group show4maintapi">
-                                            <label class="control-label " for="permissionAccessLevel"> Permission Access Level </label>
-                                            <span class="help-block small"> Shall. Itself deep she'd good behold you're made lights fly.</span>
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <select name="permissionAccessLevel" id="permissionAccessLevel"  class="form-control" aria-invalid="false">
-                                                        <option value="" class="" selected="selected">Select</option>
-                                                        <option label="Publisher Access" value="string:PUBLISHER" selected="selected">Publisher Access</option>
-                                                        <option label="Admin Access" value="string:TENANT_ADMIN">Admin Access</option>
-                                                    </select>
-                                                </div>
-                                            </div>
+                                                Locked Account <span class="help-block small">Unlock this API Account so it may be used again.</span> </label>
                                         </div>
                                         <div class="form-group show4maintapi">
                                             <label class="control-label" for=""> Maximum New Resources </label>
@@ -101,11 +88,21 @@ $page_title = 'api-accounts';
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="form-group show4maintapi">
+                                            <label class="control-label " for="permissionAccessLevel"> Permission Access Level </label>
+                                            <span class="help-block small"> Shall. Itself deep she'd good behold you're made lights fly.</span>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <select name="permissionAccessLevel" id="permissionAccessLevel"  class="form-control" aria-invalid="false">
+                                                        <option value="" class="" selected="selected">Select</option>
+                                                        <option label="Publisher Access" value="PUBLISHER" selected="selected">Publisher Access</option>
+                                                        <option label="Admin Access" value="TENANT_ADMIN">Admin Access</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="form-group show4extapi">
-                                            <div style="    display: inline-block;
-    max-width: 100%;
-    margin-bottom: 5px;
-    font-weight: bold;"> External Rest API URLs</div>
+                                            <div class="form-label"> External Rest API URLs</div>
                                             <table class="table table-condensed table-responsive table-actions" id="myTable">
                                                 <thead>
                                                     <tr>
@@ -141,7 +138,7 @@ $page_title = 'api-accounts';
                                             </table>
                                             <a href="#myTable" class="addstuff btn btn-xs btn-default pull-right"><i class="fa fa-plus"></i> URL</a> </div>
                                     </fieldset>
-                                    <fieldset>
+                                    <fieldset class="publishers">
                                         <legend>Publishers</legend>
                                         <div class="form-group ">
                                             <div class="row">
@@ -153,7 +150,7 @@ $page_title = 'api-accounts';
                                                         <option value="2">FINA Team</option>
                                                         <option value="2">IT Team</option>
                                                         <option value="3">FAC Team</option>
-                                                    </select>
+                                                    </select>  <div class="validation-fieldmessage" style="display:none" id="val_status"> <i class="fa fa-minus-circle" aria-hidden="true"></i> Please select a status.</div>
                                                 </div>
                                                 <div class="col-xs-2" style="padding-top:22px">
                                                     <button type="button" id="multiselect_rightSelected" class="btn btn-xs btn-default btn-block"><i class="glyphicon glyphicon-chevron-right"></i></button>
@@ -166,18 +163,9 @@ $page_title = 'api-accounts';
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group ">
-                                            <label class="control-label " for="auth_type">Authentication Type </label>
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <select class="select form-control" id="auth_type" name="select">
-                                                        <option label="" value=""></option>
-                                                        <option label="" value="">Basic Authentication</option>
-                                                    </select>
-                                                    <div class="validation-fieldmessage" style="display:none" id="val_auth"> <i class="fa fa-minus-circle" aria-hidden="true"></i> Please select an authentication type.</div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend> Email &amp; Authentication</legend>
                                         <div class="form-group ">
                                             <label class="control-label" for="email"> Email </label>
                                             <span class="help-block small">The email is used to send a daily reminder starting 30 days from the API Account expiring.</span>
@@ -189,6 +177,18 @@ $page_title = 'api-accounts';
                                             </div>
                                         </div>
                                         <div class="form-group ">
+                                            <label class="control-label " for="auth_type">Authentication Type </label>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <select class="select form-control" id="auth_type" name="select">
+                                                        <option label="" value=""></option>
+                                                        <option label="" value="basic-authentication">Basic Authentication</option>
+                                                    </select>
+                                                    <div class="validation-fieldmessage" style="display:none" id="val_auth"> <i class="fa fa-minus-circle" aria-hidden="true"></i> Please select an authentication type.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group base-auth">
                                             <label class="control-label" for="user_name"> User Name </label>
                                             <span class="help-block small">Used for identification of the account.</span>
                                             <div class="row">
@@ -197,7 +197,7 @@ $page_title = 'api-accounts';
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group ">
+                                        <div class="form-group base-auth">
                                             <label class="control-label" for="password">Password </label>
                                             <span class="help-block small">Used to Secure the API Account.</span>
                                             <div class="row">
@@ -206,7 +206,7 @@ $page_title = 'api-accounts';
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group ">
+                                        <div class="form-group base-auth">
                                             <label class="control-label" for="confirm_password">Confirm Password </label>
                                             <span class="help-block small">Confirm the password. Passwords must match.</span>
                                             <div class="row">
@@ -269,6 +269,7 @@ $page_title = 'api-accounts';
     <script>
     $("#form_save").click(function() {
         $("#val_name, #val_api, #val_status, #val_auth, #val_email").show();
+		$(".form-group").addClass("form-group-error");
        
 		
 		
@@ -295,6 +296,40 @@ $(function() {
         } else {
             $('.show4maintapi').slideUp(); 
 			$('.show4extapi').slideDown(); 
+        } 
+    });
+});
+});//]]> 
+
+</script> 
+    <script type='text/javascript'>//<![CDATA[
+$(window).load(function(){
+$(function() {
+    $('.base-auth').hide(); 
+    $('#auth_type').change(function(){
+        if($('#auth_type').val() == 'basic-authentication') {
+          
+			$('.base-auth').slideDown(); 
+        } else {
+            $('.base-auth').slideUp(); 
+			
+        } 
+    });
+});
+});//]]> 
+
+</script> 
+    <script type='text/javascript'>//<![CDATA[
+$(window).load(function(){
+$(function() {
+
+    $('#permissionAccessLevel').change(function(){
+        if($('#permissionAccessLevel').val() == 'PUBLISHER') {
+          
+			$('.publishers').slideDown(); 
+        } else {
+            $('.publishers').slideUp(); 
+			
         } 
     });
 });

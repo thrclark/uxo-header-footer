@@ -10,7 +10,7 @@
 <body id="top">
 <div class="wrapper">
     <div class="banner-preview">
-        <div class="preview-text">Preview Only</div>
+        <div class="preview-text">Verification Preview</div>
     </div>
     <?php include ('includes/brand-header2.php') ?>
     <?php include ('includes/header2.php') ?>
@@ -100,7 +100,12 @@
                 </fieldset>
                 <div class="row">
                     <div class="col-md-12 text-center" style="padding-bottom:15px; padding-top:15px;">
-                        <button class="btn btn-lg btn-primary" id="submit"> Submit</button>
+                        <button class="btn btn-lg btn-primary"  data-toggle="modal" data-target="#demo_only"> Submit</button>
+                        
+                        
+                        
+                    
+                        
                     </div>
                 </div>
             </div>
@@ -128,6 +133,30 @@
         });
     });
 </script> 
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="demo_only" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-default" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title"><i class="icon-user-3"></i>Verification Preview</h4>
+            </div>
+            <div class="modal-body">
+                <div class="message">
+                    <div class="message-content">
+                        <p>This is only a preview of a verification. If this were an actual verification, the 'submit' action would record that the verification has taken place. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>

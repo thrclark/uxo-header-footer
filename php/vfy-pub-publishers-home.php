@@ -15,12 +15,12 @@ $page_title = 'publishers';
 <body class="view-admin" id="top">
 <div class="wrapper">
     <?php include ('includes/brand-header2.php') ?>
-    <?php include ('includes/pub-header.php') ?>
+    <?php include('includes/header-pub.php') ?>
     <div class="main-content container" role=main>
         <div id="main-content">
             <div class="row">
                 <div class="col-md-3">
-                    <?php include ('includes/pub-nav.php') ?>
+                    <?php include('includes/nav-pub.php') ?>
                 </div>
                 <div class="col-md-9">
                     <div class="primary-content">
@@ -29,7 +29,7 @@ $page_title = 'publishers';
                                 <div class="col-xs-12 col-sm-9 section-header">
                                     <h2 class="h3">Publishers</h2>
                                 </div>
-                                <div class="col-xs-12  col-sm-3 section-controls"> <a href="vfy-pub-publishers-new.php" class="btn btn-xs btn-default"> <i class="fa fa-plus" aria-hidden="true"></i> new</a> </div>
+                                <div class="col-xs-12  col-sm-3 section-controls"> <a href="vfy-pub-publishers-new.php" class="btn btn-xs btn-default"> <i class="fa fa-plus" aria-hidden="true"></i> Publisher</a> </div>
                             </div>
                             <table class="table table-condensed table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack">
                                 <caption class="sr-only">
@@ -111,6 +111,7 @@ $page_title = 'publishers';
                                     </tr>
                                 </tbody>
                             </table>
+                            <div class="text-center"> <a href="#" class="btn btn-xs btn-default"><i class="fa fa-angle-down" aria-hidden="true"></i> View More </a> </div>
                         </section>
                     </div>
                 </div>

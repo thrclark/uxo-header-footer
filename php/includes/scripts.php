@@ -17,3 +17,4 @@
 <script type="text/javascript" src="../node_modules/jquery-toast-plugin/dist/jquery.toast.min.js"></script>
 <script type="text/javascript" src="../js/multiselect.min.js"></script>
 <script type="text/javascript" src="../js/bootstrap-slider.js"></script>
+<script type="text/javascript" src="../js/jscolor.js"></script>
