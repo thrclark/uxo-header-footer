@@ -31,19 +31,19 @@ $page_title = 'create-new';
                                 <div class="col-xs-12">
                                     <div class="stepwizard">
                                         <div class="stepwizard-row setup-panel">
-                                            <div class="stepwizard-step"> <a href="#step-1"  class="btn btn-primary btn-circle"><i class="fa fa-wrench" aria-hidden="true"></i></a>
+                                            <div class="stepwizard-step"> <a href="#step-1"  class="btn btn-primary btn-circle"><i class="fa fa-wrench" aria-hidden="true"><span class="sr-only">Setup</span></i></a>
                                                 <p class="hidden-xs">Setup</p>
                                             </div>
-                                            <div class="stepwizard-step"> <a href="#step-2"  class="btn btn-default btn-circle" ><i class="fa fa-database" aria-hidden="true"></i></a>
+                                            <div class="stepwizard-step"> <a href="#step-2"  class="btn btn-default btn-circle" ><i class="fa fa-database" aria-hidden="true"><span class="sr-only">Data</span></i></a>
                                                 <p class="hidden-xs">Data</p>
                                             </div>
-                                            <div class="stepwizard-step"> <a href="#step-3" class="btn btn-default btn-circle"  id="step_recipients"><i class="fa fa-users"></i></a>
+                                            <div class="stepwizard-step"> <a href="#step-3" class="btn btn-default btn-circle"  id="step_recipients"><i class="fa fa-users"><span class="sr-only">Recipients</span></i></a>
                                                 <p class="hidden-xs" id="step_recipients_label">Recipients</p>
                                             </div>
-                                            <div class="stepwizard-step"> <a href="#step-4" class="btn btn-default btn-circle"><i class="fa fa-calendar"></i></a>
+                                            <div class="stepwizard-step"> <a href="#step-4" class="btn btn-default btn-circle"><i class="fa fa-calendar"><span class="sr-only">Scheduling</span></i></a>
                                                 <p class="hidden-xs">Scheduling</p>
                                             </div>
-                                            <div class="stepwizard-step"> <a href="#step-5" class="btn btn-default btn-circle"><i class="fa fa-eye"></i></a>
+                                            <div class="stepwizard-step"> <a href="#step-5" class="btn btn-default btn-circle"><i class="fa fa-eye"><span class="sr-only">Review/Save</span></i></a>
                                                 <p class="hidden-xs">Review/Save</p>
                                             </div>
                                         </div>
