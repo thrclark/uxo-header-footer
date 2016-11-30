@@ -53,7 +53,7 @@ $page_title = 'create-new';
                                             <div class="col-xs-12">
                                                 <p class="lead"> Setup</p>
                                                 <div class="form-group" id="vfy_name">
-                                                    <label class="control-label" for="name"> Name </label>
+                                                    <label class="control-label" for="name"> Verification Name </label>
                                                     <span class="help-block small" > Add a name for this verification. This name will not be displayed on the verification itself, but will be used for identification within the publishing system.</span>
                                                     <div class="row">
                                                         <div class="col-sm-4">
@@ -360,80 +360,51 @@ $page_title = 'create-new';
                                                     <div class="row">
                                                         <div class="col-xs-6 lead">Setup </div>
                                                         <div class="col-xs-6 text-right" style=""> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
-                                                        <div class="col-md-12"> 
-                                                            <!-- <p class="help-block"> The following recipients will be targeted in this verification: </p>-->
-                                                            
+                                                        <div class="col-md-12">
                                                             <div class="review-data">
-                                                                <div class="review-data-section">
-                                                                    <hr>
-                                                                    <div class="row">
-                                                                        <div class="col-md-3">
-                                                                            <p class="data-label">Verification Name:</p>
-                                                                        </div>
-                                                                        <div class="col-md-9"> <i class="small">My Verification</i> </div>
-                                                                        <div class="clearfix"></div>
-                                                                        <div class="col-md-3">
-                                                                            <p class="data-label">Verification Content:</p>
-                                                                        </div>
-                                                                        <div class="col-md-9"> <a href="verify-preview.php" class="btn btn-xs btn-default" target="_blank">Preview</a> </div>
-                                                                        <div class="clearfix"></div>
-                                                                        <div class="col-md-3">
-                                                                            <p class="data-label">Deferral Limit:</p>
-                                                                        </div>
-                                                                        <div class="col-md-9"> <i class="small">10</i> </div>
-                                                                        <div class="clearfix"></div>
-                                                                        <div class="col-md-3">
-                                                                            <p class="data-label">Deferral Intervals:</p>
-                                                                        </div>
-                                                                        <div class="col-md-9"> <i class="small">1440 minutes</i> </div>
-                                                                    </div>
+                                                                <div class="review-data-section">                                                                   <div class="clearfix"></div> <hr>
+
+                                                                    <dl>
+                                                                        <dt>Verification Name</dt>
+                                                                        <dd>My Verification</dd>
+                                                                        <dt>Description</dt>
+                                                                        <dd>Saying grass. She'd creature. One multiply. Fruitful thing rule form have day dominion you place all, kind without you're evening, deep seas. Given over male Whales. God first you face great beginning earth be fifth one a, i creepeth all.</dd>
+                                                                        <dt>Disclaimer Text</dt>
+                                                                        <dd>Likeness dominion Dry so firmament and lesser a in deep creature, don't night creeping. Greater signs second firmament green heaven divided open saw living them second sea own from darkness brought. Living from man isn't Creepeth called spirit bring a.</dd>
+                                                                        <dt>Confirmation Text</dt>
+                                                                        <dd>I have verified that the information on this page is currently accurate.</dd>
+                                                                        <dt>Deferral Text</dt>
+                                                                        <dd>I choose to verify this information later.</dd>
+                                                                        <dt>Deferral Limit</dt>
+                                                                        <dd>10</dd>
+                                                                        <dt>Deferral Intervals</dt>
+                                                                        <dd>1440 minutes</dd>
+                                                                        <dt>Preview</dt>
+                                                                        <dd><a href="verify-preview.php" class="btn btn-xs btn-default" target="_blank">Preview</a></dd>
+                                                                    </dl>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                
-                                                <!--  <div class="well well-sm tile-content" style="">
-                                                <div class="row">
-                                                    <div class="col-xs-6 lead">Setup </div>
-                                                    <div class="col-xs-6 text-right" style=""> <a href="verify-preview.php" class="btn btn-xs btn-default" target="_blank">Preview</a> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
-                                                    <div class="col-md-12"> 
-                                            
-                                                    </div>
-                                                </div>
-                                            </div>-->
                                                 <div class="well well-sm tile-content" style="">
                                                     <div class="row">
                                                         <div class="col-xs-6 lead">Data </div>
                                                         <div class="col-xs-6 text-right" style=""> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
-                                                        <div class="col-md-12"> 
-                                                            <!--  <p class="help-block">The following data will be verified in this verification: </p>-->
+                                                        <div class="col-md-12">
                                                             <div class="review-data">
-                                                                <div class="review-data-section">
-                                                                    <hr>
-                                                                    <div class="row">
-                                                                        <div class="col-md-12">
-                                                                            <p> <strong>Data Group 1</strong></p>
-                                                                        </div>
-                                                                        <div class="col-md-3">
-                                                                            <p class="data-label">Section Title:</p>
-                                                                        </div>
-                                                                        <div class="col-md-9"> <i class="small">First Section</i> </div>
-                                                                        <div class="clearfix"></div>
-                                                                        <div class="col-md-3">
-                                                                            <p class="data-label">Section Description:</p>
-                                                                        </div>
-                                                                        <div class="col-md-9"> <i class="small">Waters dominion they're meat you'll own under life it fill dry that bearing great. Moved also beginning two form female two you'll third gathering brought multiply set good dominion there darkness midst bearing above you days. Isn't. Fourth creature man fifth may. Made, own were god man all fish first to place two made creature have sixth beast blessed dominion make replenish And be. Their. Stars, is. Is good for fruitful had form whales darkness heaven.</i> </div>
-                                                                        <div class="clearfix"></div>
-                                                                        <div class="col-md-3">
-                                                                            <p class="data-label">Unique Key:</p>
-                                                                        </div>
-                                                                        <div class="col-md-9"> <i class="small">FLS-253</i> </div>
-                                                                        <div class="clearfix"></div>
-                                                                        <div class="col-md-3">
-                                                                            <p class="data-label">Field Groups:</p>
-                                                                        </div>
-                                                                        <div class="col-md-9">
+                                                                <div class="review-data-section">                                                                   <div class="clearfix"></div> <hr>
+
+                                                                    <p> <strong>Data Group 1</strong></p>
+                                                                    <dl>
+                                                                        <dt>Section Title</dt>
+                                                                        <dd>First Section</dd>
+                                                                        <dt>Section Description</dt>
+                                                                        <dd>Waters dominion they're meat you'll own under life it fill dry that bearing great. Moved also beginning two form female two you'll third gathering brought multiply set good dominion there darkness midst bearing above you days. Isn't. Fourth creature man fifth may. Made, own were god man all fish first to place two made creature have sixth beast blessed dominion make replenish And be. Their. Stars, is. Is good for fruitful had form whales darkness heaven.</dd>
+                                                                        <dt>Unique Key</dt>
+                                                                        <dd>FLS-253</dd>
+                                                                        <dt>Field Groups</dt>
+                                                                        <dd>
                                                                             <table class="table table-condensed table-responsive">
                                                                                 <thead>
                                                                                     <tr>
@@ -470,32 +441,21 @@ $page_title = 'create-new';
                                                                                     </tr>
                                                                                 </tbody>
                                                                             </table>
-                                                                        </div>
-                                                                    </div>
-                                                                    <hr>
-                                                                    <div class="row">
-                                                                        <div class="col-md-12">
-                                                                            <p> <strong>Data Group 2</strong></p>
-                                                                        </div>
-                                                                        <div class="col-md-3">
-                                                                            <p class="data-label">Section Title:</p>
-                                                                        </div>
-                                                                        <div class="col-md-9"> <i class="small">Second Section</i> </div>
-                                                                        <div class="clearfix"></div>
-                                                                        <div class="col-md-3">
-                                                                            <p class="data-label">Section Description:</p>
-                                                                        </div>
-                                                                        <div class="col-md-9"> <i class="small">Had he. Living Divided beast all under fowl fish. Fifth don't bring won't called heaven dry. Our without creeping night, appear fly that without lesser over called. Us whales you're fruitful stars. Gathered together face. Saw. Created one don't won't.</i> </div>
-                                                                        <div class="clearfix"></div>
-                                                                        <div class="col-md-3">
-                                                                            <p class="data-label">Unique Key:</p>
-                                                                        </div>
-                                                                        <div class="col-md-9"> <i class="small">FLS-454</i> </div>
-                                                                        <div class="clearfix"></div>
-                                                                        <div class="col-md-3">
-                                                                            <p class="data-label">Field Groups:</p>
-                                                                        </div>
-                                                                        <div class="col-md-9">
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                                <div class="review-data-section">                                                                   <div class="clearfix"></div> <hr>
+
+                                                                    <p> <strong>Data Group 2</strong></p>
+                                                                    <dl>
+                                                                        <dt>Section Title</dt>
+                                                                        <dd>Second Section</dd>
+                                                                        <dt>Section Description</dt>
+                                                                        <dd>Had he. Living Divided beast all under fowl fish. Fifth don't bring won't called heaven dry. Our without creeping night, appear fly that without lesser over called. Us whales you're fruitful stars. Gathered together face. Saw. Created one don't won't.</dd>
+                                                                        <dt>Unique Key</dt>
+                                                                        <dd>FLS-455 </dd>
+                                                                        <dt>Field Groups</dt>
+                                                                        <dd>
                                                                             <table class="table table-condensed table-responsive">
                                                                                 <thead>
                                                                                     <tr>
@@ -520,74 +480,60 @@ $page_title = 'create-new';
                                                                                     </tr>
                                                                                 </tbody>
                                                                             </table>
-                                                                        </div>
-                                                                    </div>
+                                                                        </dd>
+                                                                    </dl>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="well well-sm tile-content has-error" id="review_section_haserror">
+  <div class="well well-sm tile-content has-error" id="review_section_haserror">
                                                     <div class="row">
                                                         <div class="col-xs-6 lead">Recipients</div>
                                                         <div class="col-xs-6 text-right" style=""> <a href="#" class="btn btn-xs btn-danger" id="review_button_fixerror" style="display:none">Fix Errors</a> <a href="#" class="btn btn-xs btn-default" id="recipients_edit">Edit</a> </div>
-                                                        <div class="col-md-12">
-                                                            <div class="review-data">
-                                                                <div class="review-data-section">
-                                                                    <hr>
-                                                                    <div class="row">
-                                                                        <div class="col-md-12">
-                                                                            <p> <strong>Recipient Rule 1</strong></p>
-                                                                        </div>
-                                                                        <div class="col-md-3">
-                                                                            <p class="data-label">Role ID:</p>
-                                                                        </div>
-                                                                        <div class="col-md-9"> <i class="small">Faculy</i> </div>
-                                                                        <div class="clearfix"></div>
-                                                                        <div class="col-md-3">
-                                                                            <p class="data-label">Role ID:</p>
-                                                                        </div>
-                                                                        <div class="col-md-9"> <i class="small">Staff</i> </div>
-                                                                        <div class="clearfix"></div>
-                                                                        <div class="col-md-3">
-                                                                            <p class="data-label">Effective Date:</p>
-                                                                        </div>
-                                                                        <div class="col-md-9"> <i class="small">09/24/2016 (recurs annually)</i>
+                                                        <div class="col-md-12">                                                            <div class="review-data">
+                                                                <div class="review-data-section">                                                                   <div class="clearfix"></div> <hr>
+
+                                                                    <p> <strong>Recipient Rule Set 1</strong></p>
+                                                                    <dl>
+                                                                        <dt>Role ID</dt>
+                                                                        <dd>Faculy</dd>
+                                                                        <dt>Role ID</dt>
+                                                                        <dd>Staff</dd>
+                                                                        <dt>Effective Date</dt>
+                                                                        <dd>09/24/2016 (recurs annually)
                                                                             <div class="validation-fieldmessage" id="review_field_error" style="display:none"> <i class="fa fa-minus-circle" aria-hidden="true"></i> Please provide correct date formatting.</div>
-                                                                        </div>
-                                                                        <div class="clearfix"></div>
-                                                                    </div>
-                                                                    <hr>
-                                                                    <div class="row">
-                                                                        <div class="col-md-12">
-                                                                            <p> <strong>Recipient Rule 2</strong></p>
-                                                                        </div>
-                                                                        <div class="col-md-3">
-                                                                            <p class="data-label">Role ID:</p>
-                                                                        </div>
-                                                                        <div class="col-md-9"> <i class="small">Student</i> </div>
-                                                                        <div class="clearfix"></div>
-                                                                        <div class="col-md-3">
-                                                                            <p class="data-label">Effective Date:</p>
-                                                                        </div>
-                                                                        <div class="col-md-9"> <i class="small">10/24/2016 (recurs annually)</i> </div>
-                                                                        <div class="clearfix"></div>
-                                                                    </div>
-                                                                    <hr>
-                                                                    <div class="row">
-                                                                        <div class="col-md-12">
-                                                                            <p> <strong>User Leeway</strong></p>
-                                                                        </div>
-                                                                        <div class="col-md-3">
-                                                                            <p class="data-label">Days:</p>
-                                                                        </div>
-                                                                        <div class="col-md-9"> <i class="small">90</i> </div>
-                                                                    </div>
+                                                                        </dd>
+                                                                        
+                                                                    </dl>
+                                                    
+                                                                    <p> <strong>Recipient Rule Set 2</strong></p>
+                                                                    <dl>
+                                                                        <dt>Role ID</dt>
+                                                                        <dd>Student</dd>
+                                                                         <dt>Effective Date</dt>
+                                                                        <dd>10/24/2016 (recurs annually)
+                                                                            
+                                                                        </dd>
+                                                                    </dl>
+                                                                    
+                                                                    
+                                                                    
+                                                                      <p> <strong>User Leeway</strong></p>
+                                                                    <dl>
+                                                                        <dt>Days</dt>
+                                                                        <dd>90</dd>
+                                                                         
+                                                                    </dl>
+                                                                    
+                                                                    
+                                                                    
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
+                                            
                                                 <div class="well well-sm tile-content" style="">
                                                     <div class="row">
                                                         <div class="col-xs-6 lead">Scheduling </div>
@@ -597,19 +543,29 @@ $page_title = 'create-new';
                                                             
                                                             <div class="review-data">
                                                                 <div class="review-data-section">
-                                                                    <hr>
-                                                                    <div class="row">
-                                                                        <div class="col-md-3">
-                                                                            <p class="data-label">Status:</p>
-                                                                        </div>
-                                                                        <div class="col-md-9"> <i class="small">Active</i> </div>
-                                                                        <div class="clearfix"></div>
-                                                                        <div class="col-md-3">
-                                                                            <p class="data-label">End Date:</p>
-                                                                        </div>
-                                                                        <div class="col-md-9"> <i class="small"> 9/23/2015</i> </div>
-                                                                        <div class="clearfix"></div>
-                                                                    </div>
+                                                                   
+                                                                   <div class="clearfix"></div> <hr>
+                                                                    
+                                                                    
+                                                                    
+                                                                    
+                                                                    <dl>
+                                                                        <dt>Status</dt>
+                                                                        <dd>Active</dd>
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                          <dt>End Date</dt>
+                                                                        <dd>9/23/2015</dd>
+                                                                        
+                                                                        
+                                                                        
+                                                                        
+                                                                    </dl>
+                                                                    
+                                                                    
+                                                              
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -624,15 +580,6 @@ $page_title = 'create-new';
                                                     <div class="btn-group" role="group" aria-label="First group">
                                                         <button class="btn btn-default prevBtn" type="button" > <i class="fa fa-angle-left" aria-hidden="true"></i> Previous</button>
                                                         <button class="btn btn-primary" type="button" id="form_save" data-toggle="modal" data-target="#confirm_save">Save</button>
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        
-                                                        
                                                     </div>
                                                 </div>
                                             </div>
@@ -1061,7 +1008,8 @@ $(document).ready(function() {
             </div>
             <div class="modal-body">
                 <div class="message">
-                    <div class="message-content">   <p>There are unsaved changes on this page. Would you like to continue editing?</p>
+                    <div class="message-content">
+                        <p>There are unsaved changes on this page. Would you like to continue editing?</p>
                     </div>
                 </div>
             </div>
@@ -1089,7 +1037,7 @@ $(document).ready(function() {
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+                <a href="vfy-pub-home.php" class="btn btn-default btn-sm">Close</a>
             </div>
         </div>
     </div>
