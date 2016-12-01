@@ -342,8 +342,17 @@ $page_title = 'tenants-new';
 												</div>
 											</div>
 										</fieldset>
-										<div class="text-right"><a href="vfy-pub-publishers-home.php" class="btn btn-default">Cancel</a><button type="submit" class="btn btn-primary" id="form_save">Save</button>
-										</div>
+										
+                                        
+                                        
+                                        
+                                        
+                                        <div class="text-right"> <a href="" class="btn btn-default" data-toggle="modal" data-target="#confirm_exit">Cancel</a>
+                                        <button type="submit" class="btn btn-primary" id="form_save" data-toggle="modal" data-target="#confirm_save">Save</button>
+                                    </div>
+                                    
+                                    
+                                    
 									</div>
 								</div>
 								<div class="clearfix"></div>
@@ -530,6 +539,54 @@ $page_title = 'tenants-new';
 
 		} ); //]]>
 	</script>
+    
+    
+    
+    
+    
+    
+    
+    
+ <!-- Modal -->
+    <div class="modal fade" id="confirm_exit" tabindex="-1" role="dialog" aria-labelledby="">
+        <div class="modal-dialog modal-default" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title"><i class="icon-user-3"></i>Unsaved Changes</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="message">
+                        <div class="message-content">   <p>There are unsaved changes on this page. Would you like to continue editing?</p>
+                        </div>
+                    </div>
+                </div>
+              <div class="modal-footer"> <a href="vfy-admin-tenants-home.php" class="btn btn-default btn-sm">Discard Changes</a> <a href="#" class="btn btn-primary btn-sm" data-dismiss="modal">Continue Editing</a> </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="confirm_save" tabindex="-1" role="dialog" aria-labelledby="">
+        <div class="modal-dialog modal-default" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title"><i class="icon-user-3"></i>Settings Saved</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="message">
+                        <div class="message-content">
+                            <p>Your settings have been saved.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer"> <a href="vfy-admin-tenants-home.php" class="btn btn-default btn-sm">Close</a> </div>
+            </div>
+        </div>
+    </div>
+    
+    
 </body>
 
 </html>
