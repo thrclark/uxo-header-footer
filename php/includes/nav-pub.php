@@ -1,7 +1,6 @@
 
 <nav>
     <div class="nav-side-menu">
-        
         <div class="toggle-btn toggle-menu" data-toggle="collapse" data-target="#menu-content" style="">menu <i class="fa fa-angle-down" aria-hidden="true"></i></div>
         <div class="menu-list">
             <ul id="menu-content" class="menu-content collapse out">
@@ -26,6 +25,7 @@
                         <li <?php if ($page_title == 'header-footer') { echo 'class="active"'; } ?>><a href="vfy-pub-branding-headfoot.php">Header &amp; Footer</a></li>
                         <li <?php if ($page_title == 'app-styles') { echo 'class="active"'; } ?>><a href="vfy-pub-branding-appstyles.php">Colors</a></li>
                         <li <?php if ($page_title == 'custom-fonts') { echo 'class="active"'; } ?>><a href="vfy-pub-branding-customfonts.php">Fonts</a></li>
+                        <li <?php if ($page_title == 'app-icon') { echo 'class="active"'; } ?>><a href="vfy-pub-branding-appicon.php">Application Icon</a></li>
                     </ul>
                 </li>
             </ul>

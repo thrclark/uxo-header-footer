@@ -362,8 +362,9 @@ $page_title = 'create-new';
                                                         <div class="col-xs-6 text-right" style=""> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
                                                         <div class="col-md-12">
                                                             <div class="review-data">
-                                                                <div class="review-data-section">                                                                   <div class="clearfix"></div> <hr>
-
+                                                                <div class="review-data-section">
+                                                                    <div class="clearfix"></div>
+                                                                    <hr>
                                                                     <dl>
                                                                         <dt>Verification Name</dt>
                                                                         <dd>My Verification</dd>
@@ -393,8 +394,9 @@ $page_title = 'create-new';
                                                         <div class="col-xs-6 text-right" style=""> <a href="#" class="btn btn-xs btn-default">Edit</a> </div>
                                                         <div class="col-md-12">
                                                             <div class="review-data">
-                                                                <div class="review-data-section">                                                                   <div class="clearfix"></div> <hr>
-
+                                                                <div class="review-data-section">
+                                                                    <div class="clearfix"></div>
+                                                                    <hr>
                                                                     <p> <strong>Data Group 1</strong></p>
                                                                     <dl>
                                                                         <dt>Section Title</dt>
@@ -444,8 +446,9 @@ $page_title = 'create-new';
                                                                         </dd>
                                                                     </dl>
                                                                 </div>
-                                                                <div class="review-data-section">                                                                   <div class="clearfix"></div> <hr>
-
+                                                                <div class="review-data-section">
+                                                                    <div class="clearfix"></div>
+                                                                    <hr>
                                                                     <p> <strong>Data Group 2</strong></p>
                                                                     <dl>
                                                                         <dt>Section Title</dt>
@@ -487,53 +490,65 @@ $page_title = 'create-new';
                                                         </div>
                                                     </div>
                                                 </div>
-  <div class="well well-sm tile-content has-error" id="review_section_haserror">
+                                                <div class="well well-sm tile-content has-error" id="review_section_haserror">
                                                     <div class="row">
                                                         <div class="col-xs-6 lead">Recipients</div>
                                                         <div class="col-xs-6 text-right" style=""> <a href="#" class="btn btn-xs btn-danger" id="review_button_fixerror" style="display:none">Fix Errors</a> <a href="#" class="btn btn-xs btn-default" id="recipients_edit">Edit</a> </div>
-                                                        <div class="col-md-12">                                                            <div class="review-data">
-                                                                <div class="review-data-section">                                                                   <div class="clearfix"></div> <hr>
-
+                                                        <div class="col-md-12">
+                                                            <div class="review-data">
+                                                                <div class="review-data-section">
+                                                                    <div class="clearfix"></div>
+                                                                    <hr>
                                                                     <p> <strong>Recipient Rule Set 1</strong></p>
+                                                                    Rule Criteria
+                                                                    <ul>
+                                                                        <li>Person ID is not: ahettlin</li>
+                                                                        <li class="and-or">- and -</li>
+                                                                        <li>Person ID is not: jhopf</li>
+                                                                        <li class="and-or">- and -</li>
+                                                                        <li>Group ID is: BL-STUDENT</li>
+                                                                        <ul>
+                                                                            <li>Person ID is: josshmoe</li>
+                                                                            <li class="and-or">- or -</li>
+                                                                            <li>Person ID is: janedoe</li>
+                                                                        </ul>
+                                                                        </li>
+                                                                    </ul>
                                                                     <dl>
-                                                                        <dt>Role ID</dt>
-                                                                        <dd>Faculy</dd>
-                                                                        <dt>Role ID</dt>
-                                                                        <dd>Staff</dd>
                                                                         <dt>Effective Date</dt>
                                                                         <dd>09/24/2016 (recurs annually)
                                                                             <div class="validation-fieldmessage" id="review_field_error" style="display:none"> <i class="fa fa-minus-circle" aria-hidden="true"></i> Please provide correct date formatting.</div>
                                                                         </dd>
-                                                                        
                                                                     </dl>
-                                                    
+                                                                    <hr>
                                                                     <p> <strong>Recipient Rule Set 2</strong></p>
+                                                                    Rule Criteria
+                                                                    <ul>
+                                                                        <li>Group ID is: BL-FACULTY</li>
+                                                                        <li class="and-or">- and -</li>
+                                                                        <li>Group ID is: BL-STAFF</li>
+                                                                        <ul>
+                                                                            <li>Person ID is not: josshmoe</li>
+                                                                            <li class="and-or">- or -</li>
+                                                                            <li>Person ID is not: janedoe</li>
+                                                                        </ul>
+                                                                        </li>
+                                                                    </ul>
                                                                     <dl>
-                                                                        <dt>Role ID</dt>
-                                                                        <dd>Student</dd>
-                                                                         <dt>Effective Date</dt>
-                                                                        <dd>10/24/2016 (recurs annually)
-                                                                            
-                                                                        </dd>
+                                                                        <dt>Effective Date</dt>
+                                                                        <dd>10/24/2016 (recurs annually) </dd>
                                                                     </dl>
-                                                                    
-                                                                    
-                                                                    
-                                                                      <p> <strong>User Leeway</strong></p>
+                                                                    <hr>
+                                                                    <p> <strong>User Leeway</strong></p>
                                                                     <dl>
                                                                         <dt>Days</dt>
                                                                         <dd>90</dd>
-                                                                         
                                                                     </dl>
-                                                                    
-                                                                    
-                                                                    
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            
                                                 <div class="well well-sm tile-content" style="">
                                                     <div class="row">
                                                         <div class="col-xs-6 lead">Scheduling </div>
@@ -543,29 +558,14 @@ $page_title = 'create-new';
                                                             
                                                             <div class="review-data">
                                                                 <div class="review-data-section">
-                                                                   
-                                                                   <div class="clearfix"></div> <hr>
-                                                                    
-                                                                    
-                                                                    
-                                                                    
+                                                                    <div class="clearfix"></div>
+                                                                    <hr>
                                                                     <dl>
                                                                         <dt>Status</dt>
                                                                         <dd>Active</dd>
-                                                                        
-                                                                        
-                                                                        
-                                                                        
-                                                                          <dt>End Date</dt>
+                                                                        <dt>End Date</dt>
                                                                         <dd>9/23/2015</dd>
-                                                                        
-                                                                        
-                                                                        
-                                                                        
                                                                     </dl>
-                                                                    
-                                                                    
-                                                              
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1036,9 +1036,7 @@ $(document).ready(function() {
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <a href="vfy-pub-home.php" class="btn btn-default btn-sm">Close</a>
-            </div>
+            <div class="modal-footer"> <a href="vfy-pub-home.php" class="btn btn-default btn-sm">Close</a> </div>
         </div>
     </div>
 </div>
