@@ -51,14 +51,15 @@ $page_title = 'tenants-metadata';
                                         <div class="form-group ">
                                             <label class="control-label" for="status"> Status </label>
                                             <span class="help-block small">Enter a status for this metadata.</span>
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <select class="select form-control" id="status" name="select">
-                                                        <option value="active"> Active </option>
-                                                        <option value="inactive"> Inactive </option>
-                                                    </select>
-                                                </div>
-                                            </div>
+                                             <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                Active </label>
+                        </div><div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                Inactive </label>
+                        </div>
                                         </div>
                                         <div class="form-group ">
                                             <label class="control-label" for="type"> Type </label>
@@ -92,14 +93,15 @@ $page_title = 'tenants-metadata';
                                         <div class="form-group second-ldap">
                                             <label class="control-label " for="allow_sec_ldap">Allow a Secondary LDAP</label>
                                             <span class="help-block small">Allow a second LDAP connection to another LDAP server. User will go to the primary first and if fail, it will try the secondary LDAP server. The next time this user logs in, the user will go to the second LDAP connection first.</span>
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <select class="select form-control" id="allow_sec_ldap" name="select">
-                                                        <option value="allow"> Allow </option>
-                                                        <option value="dontallow"> Don't Allow </option>
-                                                    </select>
-                                                </div>
-                                            </div>
+                                              <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                Allow </label>
+                        </div><div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                Don't Allow </label>
+                        </div>
                                         </div>
                                     </fieldset>
                                    <div class="text-right"> <a href="" class="btn btn-default" data-toggle="modal" data-target="#confirm_exit">Cancel</a>

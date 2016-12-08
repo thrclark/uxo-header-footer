@@ -148,7 +148,7 @@ $page_title = 'general-settings';
                     <div class="form-group" id="vfy_name">
                         <label class="control-label" for="sysemail"> System Email </label>
                         <span class="help-block small"> Email address from which email is sent.</span>
-                       <div class="row">
+                        <div class="row">
                             <div class="col-sm-6">
                                 <input type="text" class="form-control" placeholder="" id="sysemail">
                             </div>
@@ -164,9 +164,6 @@ $page_title = 'general-settings';
     </div>
 </div>
 
-
-
-
 <!-- Modal -->
 <div class="modal fade" id="settings_enableemail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog modal-default" role="document">
@@ -180,13 +177,15 @@ $page_title = 'general-settings';
                     <div class="form-group" id="vfy_name">
                         <label class="control-label" for="name"> Enable Email </label>
                         <span class="help-block small"> Turn on email functionality. Default is no.</span>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <select class="form-control">
-                                    <option> Yes</option>
-                                    <option>No</option>
-                                </select>
-                            </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                Yes </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" checked="">
+                                No </label>
                         </div>
                     </div>
                 </form>
@@ -198,10 +197,6 @@ $page_title = 'general-settings';
         </div>
     </div>
 </div>
-
-
-
-
 
 <!-- Modal -->
 <div class="modal fade" id="maintresourcecount" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -216,7 +211,7 @@ $page_title = 'general-settings';
                     <div class="form-group" id="asdfasdfasdfasdfasdf">
                         <label class="control-label" for="sysemail">Maintenance Resource Page Count </label>
                         <span class="help-block small">The number of items displayed on a page at one time.</span>
-                       <div class="row">
+                        <div class="row">
                             <div class="col-sm-6">
                                 <input type="text" class="form-control" placeholder="" id="asdfasdfasdfasdfasdfasdfasdf">
                             </div>
@@ -231,8 +226,6 @@ $page_title = 'general-settings';
         </div>
     </div>
 </div>
-
-
 
 <!-- Modal -->
 <div class="modal fade" id="appname" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -247,7 +240,7 @@ $page_title = 'general-settings';
                     <div class="form-group" id="asdfasdfasdfasdfasdf">
                         <label class="control-label" for="sysemail">Application Name </label>
                         <span class="help-block small">The name of the application. This is displayed in the header.</span>
-                       <div class="row">
+                        <div class="row">
                             <div class="col-sm-6">
                                 <input type="text" class="form-control" placeholder="" id="asdfasdfasdfasdfasdfasdfasdf">
                             </div>
@@ -262,8 +255,6 @@ $page_title = 'general-settings';
         </div>
     </div>
 </div>
-
-
 
 <!-- Modal -->
 <div class="modal fade" id="vfyintro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -278,9 +269,9 @@ $page_title = 'general-settings';
                     <div class="form-group" id="asdfasdfasdfasdfasdf">
                         <label class="control-label" for="sysemail">Verification Intro </label>
                         <span class="help-block small">Text to be displayed at the top of every verification.</span>
-                       <div class="row">
+                        <div class="row">
                             <div class="col-sm-12">
-                               <textarea class="form-control" rows="3"></textarea>
+                                <textarea class="form-control" rows="3"></textarea>
                             </div>
                         </div>
                     </div>
@@ -293,8 +284,6 @@ $page_title = 'general-settings';
         </div>
     </div>
 </div>
-
-
 
 <!-- Modal -->
 <div class="modal fade" id="defaultvfymsg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -309,9 +298,9 @@ $page_title = 'general-settings';
                     <div class="form-group" id="asdfasdfasdfasdfasdf">
                         <label class="control-label" for="sysemail">Default Verify Message </label>
                         <span class="help-block small">Text to be displayed next to the Verify option. This can be overridden by an individual verification.</span>
-                       <div class="row">
+                        <div class="row">
                             <div class="col-sm-12">
-                               <textarea class="form-control" rows="3"></textarea>
+                                <textarea class="form-control" rows="3"></textarea>
                             </div>
                         </div>
                     </div>
@@ -324,8 +313,6 @@ $page_title = 'general-settings';
         </div>
     </div>
 </div>
-
-
 
 <!-- Modal -->
 <div class="modal fade" id="defaultdefermsg" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -340,9 +327,9 @@ $page_title = 'general-settings';
                     <div class="form-group" id="asdfasdfasdfasdfasdf">
                         <label class="control-label" for="sysemail">Default Defer Message </label>
                         <span class="help-block small">Text to be displayed next to the Defer option. This can be overridden by an individual verification.</span>
-                       <div class="row">
-                           <div class="col-sm-12">
-                               <textarea class="form-control" rows="3"></textarea>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <textarea class="form-control" rows="3"></textarea>
                             </div>
                         </div>
                     </div>
@@ -355,8 +342,6 @@ $page_title = 'general-settings';
         </div>
     </div>
 </div>
-
-
 
 <!-- Modal -->
 <div class="modal fade" id="defaulttargeturl" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -371,7 +356,7 @@ $page_title = 'general-settings';
                     <div class="form-group" id="asdfasdfasdfasdfasdf">
                         <label class="control-label" for="sysemail">Default Target URL </label>
                         <span class="help-block small">Users will be directed to this URL after completing their verifications if no target URL is passed to the system.</span>
-                       <div class="row">
+                        <div class="row">
                             <div class="col-sm-6">
                                 <input type="text" class="form-control" placeholder="" id="asdfasdfasdfasdfasdfasdfasdf">
                             </div>
@@ -386,8 +371,6 @@ $page_title = 'general-settings';
         </div>
     </div>
 </div>
-
-
 
 <!-- Modal -->
 <div class="modal fade" id="errormessage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -402,9 +385,9 @@ $page_title = 'general-settings';
                     <div class="form-group" id="asdfasdfasdfasdfasdf">
                         <label class="control-label" for="sysemail">Error Message </label>
                         <span class="help-block small">A message that is displayed when an error occurs preventing a verification from being completed.</span>
-                       <div class="row">
+                        <div class="row">
                             <div class="col-sm-12">
-                               <textarea class="form-control" rows="3"></textarea>
+                                <textarea class="form-control" rows="3"></textarea>
                             </div>
                         </div>
                     </div>
@@ -417,8 +400,6 @@ $page_title = 'general-settings';
         </div>
     </div>
 </div>
-
-
 
 <!-- Modal -->
 <div class="modal fade" id="googleana" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -433,7 +414,7 @@ $page_title = 'general-settings';
                     <div class="form-group" id="asdfasdfasdfasdfasdf">
                         <label class="control-label" for="sysemail">Google Analytics ID </label>
                         <span class="help-block small">The ID assigned to your domain in the Google Analytics administration tool</span>
-                       <div class="row">
+                        <div class="row">
                             <div class="col-sm-6">
                                 <input type="text" class="form-control" placeholder="" id="asdfasdfasdfasdfasdfasdfasdf">
                             </div>
@@ -448,23 +429,5 @@ $page_title = 'general-settings';
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>

@@ -6,6 +6,11 @@ $page_title = 'create-new';
 <html lang=en-us>
 <head>
 <?php include ('includes/head-meta.php') ?>
+<style type="text/css">
+.review-data .review-data-section ul li {
+	margin-bottom: 5px;
+}
+</style>
 <?php include ('includes/styles-publishing.php') ?>
 <?php include ('includes/scripts.php') ?>
 </head>
@@ -380,8 +385,7 @@ $page_title = 'create-new';
                                                                         <dd>10</dd>
                                                                         <dt>Deferral Intervals</dt>
                                                                         <dd>1440 minutes</dd>
-                                                                        <dt>Preview</dt>
-                                                                        <dd><a href="verify-preview.php" class="btn btn-xs btn-default" target="_blank">Preview</a></dd>
+                                                                     
                                                                     </dl>
                                                                 </div>
                                                             </div>
@@ -502,15 +506,16 @@ $page_title = 'create-new';
                                                                     <p> <strong>Recipient Rule Set 1</strong></p>
                                                                     Rule Criteria
                                                                     <ul>
-                                                                        <li>Person ID is not: ahettlin</li>
+                                                                        <li><span class="label label-primary">Person ID</span> is not: <span class="label label-default">ahettlin</span></li>
                                                                         <li class="and-or">- and -</li>
-                                                                        <li>Person ID is not: jhopf</li>
+                                                                        <li><span class="label label-primary">Person ID</span> is not: <span class="label label-default">jhopf</span></li>
                                                                         <li class="and-or">- and -</li>
-                                                                        <li>Group ID is: BL-STUDENT</li>
-                                                                        <ul>
-                                                                            <li>Person ID is: josshmoe</li>
+                                                                        <li><span class="label label-primary"> Group ID</span> is: <span class="label label-default">BL-STUDENT</span></li>
+                                                                            <li class="and-or">- and -</li> 
+                                                                             <ul>
+                                                                            <li><span class="label label-primary"> Person ID</span> is: <span class="label label-default">josshmoe</span></li>
                                                                             <li class="and-or">- or -</li>
-                                                                            <li>Person ID is: janedoe</li>
+                                                                            <li><span class="label label-primary"> Person ID</span> is: <span class="label label-default">janedoe</span></li>
                                                                         </ul>
                                                                         </li>
                                                                     </ul>
@@ -524,13 +529,13 @@ $page_title = 'create-new';
                                                                     <p> <strong>Recipient Rule Set 2</strong></p>
                                                                     Rule Criteria
                                                                     <ul>
-                                                                        <li>Group ID is: BL-FACULTY</li>
+                                                                        <li><span class="label label-primary">Group ID</span> is: <span class="label label-default">BL-FACULTY</span></li>
                                                                         <li class="and-or">- and -</li>
-                                                                        <li>Group ID is: BL-STAFF</li>
-                                                                        <ul>
-                                                                            <li>Person ID is not: josshmoe</li>
+                                                                        <li><span class="label label-primary">Group ID</span> is: <span class="label label-default">BL-STAFF</span></li>
+                                                                        <li class="and-or">- and -</li><ul>
+                                                                            <li><span class="label label-primary">Person ID</span> is not: <span class="label label-default">josshmoe</span></li>
                                                                             <li class="and-or">- or -</li>
-                                                                            <li>Person ID is not: janedoe</li>
+                                                                            <li><span class="label label-primary">Person ID</span> is not: <span class="label label-default">janedoe</span></li>
                                                                         </ul>
                                                                         </li>
                                                                     </ul>
@@ -574,9 +579,12 @@ $page_title = 'create-new';
                                             </div>
                                             <div class="col-xs-12 wizard-actions">
                                                 <div class="btn-toolbar pull-right" role="toolbar" aria-label="Toolbar with button groups">
-                                                    <div class="btn-group" role="group" aria-label="Second group">
                                                         <button type="button" class="btn btn-default" data-toggle="modal" data-target="#confirm_exit" >Cancel</button>
-                                                    </div>
+                                                        
+                                                        <a href="verify-preview.php" class="btn btn-default" target="_blank">Preview</a>
+                                                        
+                                                        
+                                               
                                                     <div class="btn-group" role="group" aria-label="First group">
                                                         <button class="btn btn-default prevBtn" type="button" > <i class="fa fa-angle-left" aria-hidden="true"></i> Previous</button>
                                                         <button class="btn btn-primary" type="button" id="form_save" data-toggle="modal" data-target="#confirm_save">Save</button>

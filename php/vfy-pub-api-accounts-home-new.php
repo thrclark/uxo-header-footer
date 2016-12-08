@@ -59,23 +59,29 @@ $page_title = 'api-accounts';
                                         <div class="row">
                                             <div class="col-sm-4">
                                                 <select class="select form-control" id="auth_type" name="select">
-                                                    <option label="" value=""></option>
+                                        
                                                     <option label="" value="">Basic Authentication</option>
                                                 </select>
                                             </div>
                                         </div>
                                     </div>
+                                    
+                                 
+                                        
+                                        
+                                        
                                     <div class="form-group ">
                                         <label class="control-label " for="status">Status </label>
-                                        <div class="row">
-                                            <div class="col-sm-4">
-                                                <select class="select form-control" id="status" name="select">
-                                                    <option label="" value=""></option>
-                                                    <option label="" value="">Active</option>
-                                                    <option label="" value="">Inactive</option>
-                                                </select>
+                                          <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                                    Active </label>
                                             </div>
-                                        </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                                    Inactive </label>
+                                            </div>
                                     </div>
                                     <div class="form-group ">
                                         <label class="control-label" for="email"> Email </label>

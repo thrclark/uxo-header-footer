@@ -32,10 +32,10 @@ $page_title = 'tenant-userattribute';
                                         <div class="form-group">
                                             <label for="selecttenant" class="sr-only">Select Tenant</label>
                                             <select id="selecttenant" class="form-control">
-                                                <option>Select Tenant</option>
-                                                <option>iu-verify-unt</option>
-                                                <option>iu-verify-snd</option>
-                                                <option>iu-verify-prd</option>
+                                                <option >Select Tenant</option>
+                                                <option value="loadtenant">iu-verify-unt</option>
+                                                <option value="loadtenant">iu-verify-snd</option>
+                                                <option value="loadtenant">iu-verify-prd</option>
                                             </select>
                                         </div>
                                     </div>
@@ -52,57 +52,57 @@ $page_title = 'tenant-userattribute';
                                         <th><span class="sr-only">Actions</span></th>
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr >
+                                <tbody >
+                                    <tr class="tenant-info">
                                         <td >Email Address</td>
                                         <td >mail</td>
                                         <td >Default</td>
                                         <td >Inactive</td>
                                         <td><a class="btn btn-default btn-xs" href="#">Edit</a></td>
                                     </tr>
-                                    <tr >
+                                    <tr class="tenant-info">
                                         <td >First Name</td>
                                         <td >givenName</td>
                                         <td >Default</td>
                                         <td >Inactive</td>
                                         <td><a class="btn btn-default btn-xs" href="#">Edit</a></td>
                                     </tr>
-                                    <tr >
+                                    <tr class="tenant-info">
                                         <td >Groups</td>
                                         <td ></td>
                                         <td >Default</td>
                                         <td >Inactive</td>
                                         <td><a class="btn btn-default btn-xs" href="#">Edit</a></td>
                                     </tr>
-                                    <tr >
+                                    <tr class="tenant-info">
                                         <td >Last Name</td>
                                         <td >sn</td>
                                         <td >Default</td>
                                         <td >Inactive</td>
                                         <td><a class="btn btn-default btn-xs" href="#">Edit</a></td>
                                     </tr>
-                                    <tr >
+                                    <tr class="tenant-info">
                                         <td >Person ID</td>
                                         <td >iuEduPSEMPLID</td>
                                         <td >Default</td>
                                         <td >Active</td>
                                         <td><a class="btn btn-default btn-xs" href="#">Edit</a></td>
                                     </tr>
-                                    <tr >
+                                    <tr class="tenant-info">
                                         <td >Roles</td>
                                         <td >eduPersonAffiliation</td>
                                         <td >Default</td>
                                         <td >Inactive</td>
                                         <td><a class="btn btn-default btn-xs" href="#">Edit</a></td>
                                     </tr>
-                                    <tr >
+                                    <tr class="tenant-info">
                                         <td >User Name</td>
                                         <td >sAMAccountName</td>
                                         <td >Default</td>
                                         <td >Active</td>
                                         <td><a class="btn btn-default btn-xs" href="#">Edit</a></td>
                                     </tr>
-                                    <tr >
+                                    <tr class="tenant-info">
                                         <td >Custom 1</td>
                                         <td >customsourcekey1</td>
                                         <td >Custom</td>
@@ -167,13 +167,15 @@ $page_title = 'tenant-userattribute';
                     </div>
                     <div class="form-group" >
                         <label class="control-label" for="name"> Status </label>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <select class="form-control">
-                                    <option>Active</option>
-                                    <option>Inactive</option>
-                                </select>
-                            </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                Active </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                Inactive </label>
                         </div>
                     </div>
                 </form>
@@ -185,5 +187,23 @@ $page_title = 'tenant-userattribute';
         </div>
     </div>
 </div>
+<script type="text/javascript">
+		//<![CDATA[
+		$( window ).load( function () {
+			$( function () {
+				$( '.tenant-info' ).hide();
+				$( '#user_att_source' ).change( function () {
+					if ( $( '#user_att_source' ).val() == 'ldap' ) {
+						$( '.second-ldap' ).slideDown();
+					} else {
+						$( '.second-ldap' ).slideUp();
+					}
+				} );
+
+
+
+			} );
+		} ); //]]>
+	</script>
 </body>
 </html>
