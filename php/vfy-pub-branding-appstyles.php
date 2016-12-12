@@ -30,7 +30,7 @@ $page_title = 'app-styles';
 <section>
 <div class="row section-head">
         <div class="col-sm-12 section-header">
-        <h2 class="h3">Application Styles</h2>
+        <h2 class="h3">Colors</h2>
     </div>
     </div>
 <fieldset>
