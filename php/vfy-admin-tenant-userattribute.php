@@ -6,11 +6,16 @@ $page_title = 'tenant-userattribute';
 <html lang=en-us>
 <head>
 <?php include ('includes/head-meta.php') ?>
+<style type="text/css">
+.tablesaw-stack.tenant-info {
+	display: none;
+}
+</style>
 <?php include ('includes/styles-publishing.php') ?>
 <?php include ('includes/scripts.php') ?>
 <!-- Responsive Tables-->
-<script type="text/javascript" src="../js/tablesaw.js"></script>
-<script type="text/javascript" src="../js/tablesaw-init.js"></script>
+<!--<script type="text/javascript" src="../js/tablesaw.js"></script>
+<script type="text/javascript" src="../js/tablesaw-init.js"></script>-->
 </head>
 <body class="view-admin" id="top">
 <div class="wrapper">
@@ -23,7 +28,7 @@ $page_title = 'tenant-userattribute';
                     <?php include('includes/nav-admin.php') ?>
                 </div>
                 <div class="col-md-9">
-                    <div class="primary-content">
+                    <div class="primary-content" style="min-height:300px">
                         <section>
                             <div class="row section-head">
                                 <div class="col-xs-12 col-sm-9 section-header">
@@ -32,7 +37,7 @@ $page_title = 'tenant-userattribute';
                                         <div class="form-group">
                                             <label for="selecttenant" class="sr-only">Select Tenant</label>
                                             <select id="selecttenant" class="form-control">
-                                                <option >Select Tenant</option>
+                                                <option value="hidetenant">Select Tenant</option>
                                                 <option value="loadtenant">iu-verify-unt</option>
                                                 <option value="loadtenant">iu-verify-snd</option>
                                                 <option value="loadtenant">iu-verify-prd</option>
@@ -42,7 +47,7 @@ $page_title = 'tenant-userattribute';
                                 </div>
                                 <div class="col-xs-12  col-sm-3 section-controls"> <a href="#" class="btn btn-xs btn-default"  data-toggle="modal" data-target="#new_mapping"> <i class="fa fa-plus" aria-hidden="true"></i> Custom Mapping</a> </div>
                             </div>
-                            <table class="table table-condensed table-actions tablesaw tablesaw-stack" data-tablesaw-mode="stack">
+                            <table class="table table-condensed table-actions tablesaw tablesaw-stack tenant-info" data-tablesaw-mode="stack" >
                                 <thead>
                                     <tr>
                                         <th>Name</th>
@@ -53,56 +58,56 @@ $page_title = 'tenant-userattribute';
                                     </tr>
                                 </thead>
                                 <tbody >
-                                    <tr class="tenant-info">
+                                    <tr >
                                         <td >Email Address</td>
                                         <td >mail</td>
                                         <td >Default</td>
                                         <td >Inactive</td>
                                         <td><a class="btn btn-default btn-xs" href="#">Edit</a></td>
                                     </tr>
-                                    <tr class="tenant-info">
+                                    <tr>
                                         <td >First Name</td>
                                         <td >givenName</td>
                                         <td >Default</td>
                                         <td >Inactive</td>
                                         <td><a class="btn btn-default btn-xs" href="#">Edit</a></td>
                                     </tr>
-                                    <tr class="tenant-info">
+                                    <tr>
                                         <td >Groups</td>
                                         <td ></td>
                                         <td >Default</td>
                                         <td >Inactive</td>
                                         <td><a class="btn btn-default btn-xs" href="#">Edit</a></td>
                                     </tr>
-                                    <tr class="tenant-info">
+                                    <tr>
                                         <td >Last Name</td>
                                         <td >sn</td>
                                         <td >Default</td>
                                         <td >Inactive</td>
                                         <td><a class="btn btn-default btn-xs" href="#">Edit</a></td>
                                     </tr>
-                                    <tr class="tenant-info">
+                                    <tr>
                                         <td >Person ID</td>
                                         <td >iuEduPSEMPLID</td>
                                         <td >Default</td>
                                         <td >Active</td>
                                         <td><a class="btn btn-default btn-xs" href="#">Edit</a></td>
                                     </tr>
-                                    <tr class="tenant-info">
+                                    <tr>
                                         <td >Roles</td>
                                         <td >eduPersonAffiliation</td>
                                         <td >Default</td>
                                         <td >Inactive</td>
                                         <td><a class="btn btn-default btn-xs" href="#">Edit</a></td>
                                     </tr>
-                                    <tr class="tenant-info">
+                                    <tr>
                                         <td >User Name</td>
                                         <td >sAMAccountName</td>
                                         <td >Default</td>
                                         <td >Active</td>
                                         <td><a class="btn btn-default btn-xs" href="#">Edit</a></td>
                                     </tr>
-                                    <tr class="tenant-info">
+                                    <tr>
                                         <td >Custom 1</td>
                                         <td >customsourcekey1</td>
                                         <td >Custom</td>
@@ -115,7 +120,7 @@ $page_title = 'tenant-userattribute';
                                                 </ul>
                                             </div></td>
                                     </tr>
-                                    <tr >
+                                    <tr>
                                         <td >Custom 2</td>
                                         <td >customsourcekey2</td>
                                         <td >Custom</td>
@@ -188,22 +193,34 @@ $page_title = 'tenant-userattribute';
     </div>
 </div>
 <script type="text/javascript">
-		//<![CDATA[
-		$( window ).load( function () {
-			$( function () {
-				$( '.tenant-info' ).hide();
-				$( '#user_att_source' ).change( function () {
-					if ( $( '#user_att_source' ).val() == 'ldap' ) {
-						$( '.second-ldap' ).slideDown();
-					} else {
-						$( '.second-ldap' ).slideUp();
-					}
-				} );
-
-
-
-			} );
-		} ); //]]>
-	</script>
+    //<![CDATA[
+    $(window).load(function() {
+        $(function() {
+            $('.tenant-info').hide();
+            $('#user_att_source').change(function() {
+                if ($('#user_att_source').val() == 'ldap') {
+                    $('.second-ldap').slideDown();
+                } else {
+                    $('.second-ldap').slideUp();
+                }
+            });
+        });
+    }); //]]>
+</script>
+<script type="text/javascript">
+    //<![CDATA[
+    $(window).load(function() {
+        $(function() {
+            $('').hide();
+            $('#selecttenant').change(function() {
+                if ($('#selecttenant').val() == 'loadtenant') {
+                    $('.tenant-info').fadeIn();
+                } else {
+                    $('.tenant-info').fadeOut();
+                }
+            });
+        });
+    }); //]]>
+</script>
 </body>
 </html>
