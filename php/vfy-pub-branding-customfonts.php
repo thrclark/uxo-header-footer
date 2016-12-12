@@ -158,7 +158,7 @@ $page_title = 'custom-fonts';
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group custom-headerfont">
+                              <!--  <div class="form-group custom-headerfont">
                                     <label class="control-label custom-headerfont" for="backupfont">Backup Font </label>
                                     <span class="help-block small">Select a font that will be used in the case that the custom font becomes unavailable.</span>
                                     <div class="row">
@@ -178,7 +178,7 @@ $page_title = 'custom-fonts';
                                             </select>
                                         </div>
                                     </div>
-                                </div>
+                                </div>-->
                             </fieldset>
                             <fieldset>
                                 <legend>Font for Body Text</legend>
@@ -303,7 +303,7 @@ $page_title = 'custom-fonts';
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-group custom-bodyfont">
+                               <!-- <div class="form-group custom-bodyfont">
                                     <label class="control-label" for="backupfont">Backup Font </label>
                                     <span class="help-block small">Select a font that will be used in the case that the custom font becomes unavailable.</span>
                                     <div class="row">
@@ -323,7 +323,7 @@ $page_title = 'custom-fonts';
                                             </select>
                                         </div>
                                     </div>
-                                </div>
+                                </div>-->
                             </fieldset>
                             <div class="clearfix"></div>
                             <div class="text-right"> <a href="" class="btn btn-default" data-toggle="modal" data-target="#confirm_exit">Cancel</a>
