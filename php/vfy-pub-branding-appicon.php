@@ -13,6 +13,14 @@ $page_title = 'app-icon';
 }
 </style>
 <?php include ('includes/scripts.php') ?>
+
+<link  href="../node_modules/cropper/dist/cropper.css" rel="stylesheet" type="text/css">
+<script src="../node_modules/cropper/dist/cropper.js"></script>
+
+
+
+
+
 </head>
 <body class="view-admin" id="top">
 <div class="wrapper">
@@ -26,6 +34,19 @@ $page_title = 'app-icon';
                 </div>
                 <div class="col-md-9">
                     <div class="primary-content">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <div>
+  <img id="image" src="../img/picture.jpg">
+</div><br><br><br><br><br><br>
                         <section>
                             <div class="row section-head">
                                 <div class="col-sm-12 section-header">
@@ -110,5 +131,23 @@ $page_title = 'app-icon';
         </div>
     </div>
 </div>
+
+
+
+<script>
+$('#image').cropper({
+  aspectRatio: 1 / 1,
+  crop: function(e) {
+    // Output the result data for cropping image.
+    console.log(e.x);
+    console.log(e.y);
+    console.log(e.width);
+    console.log(e.height);
+    console.log(e.rotate);
+    console.log(e.scaleX);
+    console.log(e.scaleY);
+  }
+});
+</script>
 </body>
 </html>
