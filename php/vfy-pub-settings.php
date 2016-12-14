@@ -9,8 +9,8 @@ $page_title = 'general-settings';
 <?php include ('includes/styles-publishing.php') ?>
 <?php include ('includes/scripts.php') ?>
 <!-- Responsive Tables-->
-<script type="text/javascript" src="../js/tablesaw.js"></script>
-<script type="text/javascript" src="../js/tablesaw-init.js"></script>
+<script type="text/javascript" src="../js/tablesaw.jsss"></script>
+<script type="text/javascript" src="../js/tablesaw-init.jsss"></script>
 </head>
 <body class="view-admin" id="top">
 <div class="wrapper">
@@ -123,6 +123,24 @@ $page_title = 'general-settings';
                                             <div ></div>
                                             </span></td>
                                         <td><a href="#" class="btn btn-default btn-xs"  data-toggle="modal" data-target="#googleana">Edit</a></td>
+                                    </tr>
+                                    <tr >
+                                        <td >ACL </td>
+                                        <td >Specified users and groups</td>
+                                        <td><ul class="list-unstyled">
+                                                <li><span class="label label-primary">Person ID</span> is not: <span class="label label-default">ahettlin</span></li>
+                                                <li class="and-or">- and -</li>
+                                                <li><span class="label label-primary">Person ID</span> is not: <span class="label label-default">jhopf</span></li>
+                                                <li class="and-or">- and -</li>
+                                                <li><span class="label label-primary"> Group ID</span> is: <span class="label label-default">BL-STUDENT</span></li>
+                                                <li class="and-or">- and -</li>
+                                                <ul>
+                                                    <li><span class="label label-primary"> Person ID</span> is: <span class="label label-default">josshmoe</span></li>
+                                                    <li class="and-or">- or -</li>
+                                                    <li><span class="label label-primary"> Person ID</span> is: <span class="label label-default">janedoe</span></li>
+                                                </ul>
+                                            </ul></td>
+                                        <td><a href="#" class="btn btn-default btn-xs"  data-toggle="modal" data-target="#acl">Edit</a></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -429,5 +447,121 @@ $page_title = 'general-settings';
         </div>
     </div>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="acl" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-default" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title"><i class="icon-user-3"></i>General Settings</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group" id="asdfasdfasdfasdfasdf">
+                        <label class="control-label" for="sysemail">ACL</label>
+                        <span class="help-block small">Specified users and groups</span>
+                        <div id="builder-basic"> </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary btn-sm">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    var rules_basic = {
+        condition: 'AND',
+        rules: [{
+            id: 'groupid'
+           
+        }]
+    };
+
+    $('#builder-basic').queryBuilder({
+        plugins: ['bt-tooltip-errors'],
+
+        filters: [{
+            id: 'firstname',
+            label: 'First Name',
+            type: 'string',
+			operators: ['equal', 'not_equal']
+        },
+		{
+            id: 'lastname',
+            label: 'Last Name',
+            type: 'string',
+			operators: ['equal', 'not_equal']
+        },
+		
+		
+		{
+            id: 'email',
+            label: 'Email',
+            type: 'string',
+			operators: ['equal', 'not_equal']
+        },
+		
+		{
+            id: 'username',
+            label: 'Username',
+            type: 'string',
+			operators: ['equal', 'not_equal']
+        },
+		{
+            id: 'groupid',
+            label: 'Group ID',
+            type: 'string',
+			operators: ['equal', 'not_equal']
+        },
+		
+		{
+            id: 'personid',
+            label: 'Person ID',
+            type: 'string',
+			operators: ['equal', 'not_equal']
+        },
+		
+		
+		
+		
+		 {
+            id: 'role',
+            label: 'Role',
+            type: 'integer',
+            input: 'select',
+            values: {
+                1: 'Faculty',
+                2: 'Staff',
+                3: 'Student',
+                
+            },
+            operators: ['equal', 'not_equal']
+        } 
+		 ],
+
+        rules: rules_basic
+    });
+
+    $('#btn-reset').on('click', function() {
+        $('#builder-basic').queryBuilder('reset');
+    });
+
+    $('#btn-set').on('click', function() {
+        $('#builder-basic').queryBuilder('setRules', rules_basic);
+    });
+
+    $('#btn-get').on('click', function() {
+        var result = $('#builder-basic').queryBuilder('getRules');
+
+        if (!$.isEmptyObject(result)) {
+            alert(JSON.stringify(result, null, 2));
+        }
+    });
+</script>
 </body>
 </html>
