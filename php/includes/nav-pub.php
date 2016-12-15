@@ -25,7 +25,7 @@
                         <li <?php if ($page_title == 'header-footer') { echo 'class="active"'; } ?>><a href="vfy-pub-branding-headfoot.php">Header &amp; Footer</a></li>
                         <li <?php if ($page_title == 'app-styles') { echo 'class="active"'; } ?>><a href="vfy-pub-branding-appstyles.php">Colors</a></li>
                         <li <?php if ($page_title == 'custom-fonts') { echo 'class="active"'; } ?>><a href="vfy-pub-branding-customfonts.php">Fonts</a></li>
-                        <li <?php if ($page_title == 'app-icon') { echo 'class="active"'; } ?>><a href="vfy-pub-branding-appicon.php">Application Icon</a></li>
+                        <li <?php if ($page_title == 'app-icon') { echo 'class="active"'; } ?>><a href="vfy-pub-branding-appicon.php">Icons</a></li>
                     </ul>
                 </li>
             </ul>
