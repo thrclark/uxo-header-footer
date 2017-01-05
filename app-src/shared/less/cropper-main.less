@@ -5,24 +5,35 @@ body {
 .avatar-view {
   display: block;
   //margin: 15% auto 5%;
-  height: 168px;
-  width: 168px;
+  //height: 168px;
+  width: 100%;
   border: 3px solid #fff;
   //border-radius: 5px;
   box-shadow: 0 0 5px rgba(0,0,0,.15);
   cursor: pointer;
   overflow: hidden;
   margin-bottom: 5px;
-  .pull-right;
+  padding-bottom: 5px;
+  //.pull-right;
 }
+.avatar-btns {
+  margin-top: 5px;
+  //margin-bottom: 15px;
+}
+
+.avatar-btns .btn-group {
+  margin-right: 5px;
+}
+
 
 .avatar-view img {
   width: 100%;
+  margin-bottom: 5px;
 }
 
 .avatar-body {
-  padding-right: 15px;
-  padding-left: 15px;
+  //padding-right: 15px;
+  //padding-left: 15px;
 }
 
 .avatar-upload {
@@ -105,14 +116,7 @@ body {
   }
 }
 
-.avatar-btns {
-  margin-top: 5px;
-  margin-bottom: 15px;
-}
 
-.avatar-btns .btn-group {
-  margin-right: 5px;
-}
 
 .loading {
   display: none;
@@ -125,4 +129,28 @@ body {
   opacity: .75;
   filter: alpha(opacity=75);
   z-index: 20140628;
+}
+
+
+@media (max-width: @screen-xs-max) {
+  .avatar-view {
+    padding-bottom: 5px;
+  }
+  .avatar-view, .avatar-view + .form-control {
+    width: 66%;
+  }
+  .avatar-view .btn {
+    margin-bottom: 5px;
+  }
+  .avatar-view img{
+    //display: block;
+  }
+  .avatar-btns {
+    margin-top: 30px;
+  }
+  .avatar-wrapper {
+    height: 220px;
+
+  }
+
 }
