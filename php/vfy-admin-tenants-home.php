@@ -55,7 +55,7 @@ $page_title = 'tenants-new';
                                         <td class="text-center"><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span> </button>
                                                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1"> <li><a href="vfy-admin-tenants-new.php" target="">Edit</a></li>
-                                                    <li><a href="xxx.php" target="">User Attribute Mappings</a></li>
+                                                    <li><a href="vfy-admin-tenant-userattribute.php" target="">User Attribute Mappings</a></li>
                                                     <li><a href="xxx.php" target="">View As</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Delete</a></li>
@@ -70,8 +70,7 @@ $page_title = 'tenants-new';
                                         <td >No</td>
                                         <td class="text-center"><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
-                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1"> <li><a href="vfy-admin-tenants-new.php" target="">Edit</a></li>
-                                                    <li><a href="xxx.php" target="">User Attribute Mappings</a></li>
+                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1"> <li><a href="vfy-admin-tenants-new.php" target="">Edit</a></li> <li><a href="vfy-admin-tenant-userattribute.php" target="">User Attribute Mappings</a></li>
                                                     <li><a href="xxx.php" target="">View As</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Delete</a></li>
@@ -86,8 +85,7 @@ $page_title = 'tenants-new';
                                         <td >Yes</td>
                                         <td class="text-center"><div class="dropdown">
                                                 <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <span class="caret"></span></button>
-                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1"> <li><a href="vfy-admin-tenants-new.php" target="">Edit</a></li>
-                                                    <li><a href="xxx.php" target="">User Attribute Mappings</a></li>
+                                                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1"> <li><a href="vfy-admin-tenants-new.php" target="">Edit</a></li> <li><a href="vfy-admin-tenant-userattribute.php" target="">User Attribute Mappings</a></li>
                                                     <li><a href="xxx.php" target="">View As</a></li>
                                                     <li role="separator" class="divider"></li>
                                                     <li><a href="#">Delete</a></li>

@@ -83,11 +83,11 @@ $page_title = 'ldap';
                                     <fieldset>
                                         <legend>Timeouts</legend>
                                         <div class="form-group ">
-                                            <label class="control-label" for="connection_timeout"> Connection timeoutfff <span class="small" style="font-weight:normal">(milliseconds)</span></label>
+                                            <label class="control-label" for="connection_timeout"> Connection timeout <span class="small" style="font-weight:normal">(milliseconds)</span></label>
                                             <span class="help-block small">Number of Milliseconds to wait to establish connection to ldap server. Default is 5000 milliseconds (5 seconds).</span>
                                             <div class="row">
                                                 <div class="col-sm-6">
-                                                   <input id="connection_timeout" type="text" class="form-control" />
+                                                    <input id="connection_timeout" type="text" class="form-control" />
                                                 </div>
                                             </div>
                                         </div>
@@ -117,7 +117,7 @@ $page_title = 'ldap';
                                             <span class="help-block small">Default is 8. Use -1 for no limit.</span>
                                             <div class="row">
                                                 <div class="col-sm-6">
-                                                  <input id="idle_connections_max" type="text" data-slider-min="-1" data-slider-max="100" data-slider-step="1" data-slider-value="8" class="form-control" />
+                                                    <input id="idle_connections_max" type="text" data-slider-min="-1" data-slider-max="100" data-slider-step="1" data-slider-value="8" class="form-control" />
                                                 </div>
                                             </div>
                                         </div>
@@ -126,7 +126,7 @@ $page_title = 'ldap';
                                             <span class="help-block small">Default is 8. Use -1 for no limit.</span>
                                             <div class="row">
                                                 <div class="col-sm-6">
-                                                   <input id="active_connections_max" type="text" data-slider-min="-1" data-slider-max="100" data-slider-step="1" data-slider-value="8" class="form-control" />
+                                                    <input id="active_connections_max" type="text" data-slider-min="-1" data-slider-max="100" data-slider-step="1" data-slider-value="8" class="form-control" />
                                                 </div>
                                             </div>
                                         </div>
@@ -149,9 +149,7 @@ $page_title = 'ldap';
                                             </div>
                                         </div>
                                     </fieldset>
-                                    <div class="text-right"> <a href="vfy-pub-publishers-home.php" class="btn btn-default">Cancel</a>
-                                        <button type="submit" class="btn btn-primary" id="form_save">Save</button>
-                                    </div>
+                                    <div class="text-right"> <a href="" class="btn btn-default" data-toggle="modal" data-target="#confirm_exit">Cancel</a> <a href="" class="btn btn-primary" data-toggle="modal" data-target="#confirm_save">Save</a> </div>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
@@ -162,7 +160,54 @@ $page_title = 'ldap';
         </div>
     </div>
     <?php include ('includes/brand-footer.php') ?>
+    
    
 </div>
+
+ <!-- Modal -->
+    <div class="modal fade" id="confirm_exit" tabindex="-1" role="dialog" aria-labelledby="">
+        <div class="modal-dialog modal-default" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title"><i class="icon-user-3"></i>Unsaved Changes</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="message">
+                        <div class="message-content">   <p>There are unsaved changes on this page. Would you like to continue editing?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Discard Changes</button>
+                    <button type="button" class="btn btn-primary btn-sm">Continue Editing</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="confirm_save" tabindex="-1" role="dialog" aria-labelledby="">
+        <div class="modal-dialog modal-default" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title"><i class="icon-user-3"></i>Settings Saved</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="message">
+                        <div class="message-content">
+                            <p>Your settings have been saved.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
 </body>
 </html>

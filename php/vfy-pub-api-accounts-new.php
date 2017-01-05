@@ -44,42 +44,42 @@ $page_title = 'api-accounts';
                                         <div class="form-group ">
                                             <label class="control-label " for="status">Status </label>
                                             <span class="help-block small">Herb seasons which days darkness. Together called. Man said. Great life brought fish Whose. Have without. Saying void man him.</span>
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <select class="select form-control" id="status" name="select">
-                                                        <option label="" value=""></option>
-                                                        <option label="" value="">Active</option>
-                                                        <option label="" value="">Inactive</option>
-                                                    </select>
-                                                    <div class="validation-fieldmessage" style="display:none" id="val_status"> <i class="fa fa-minus-circle" aria-hidden="true"></i> Please select a status.</div>
-                                                </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                                    Active </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="">
+                                                    Inactive </label>
                                             </div>
                                         </div>
                                         <div class="form-group ">
                                             <label class="control-label " for="api_account_type"> API Account Type </label>
                                             <span class="help-block small"> They're there i set have night morning fowl won't likeness. Fifth. Multiply forth given so seasons beginning. Under deep the. </span>
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <select class="select form-control" id="api_account_type" name="select">
-                                                        <option label="" value=""></option>
-                                                        <option label="External API" value="EXTERNAL_API">External API</option>
-                                                        <option label="Maintenance API" value="MAINTENANCE_API">Maintenance API</option>
-                                                    </select>
-                                                    <div class="validation-fieldmessage" style="display:none" id="val_api"> <i class="fa fa-minus-circle" aria-hidden="true"></i> Please select an API account type.</div>
-                                                </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="cars" value="1"  />
+                                                    External API </label>
+                                            </div>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" name="cars" value="2"  />
+                                                    Maintenance API </label>
                                             </div>
                                         </div>
-                                        <div class="checkbox show4maintapi">
+                                        <div class="checkbox api_accounttype1">
                                             <label>
                                                 <input type="checkbox">
                                                 Renew Account <span class="help-block small">This account may be renewed within 30 days of expiration (expires on Tue Oct 18 2016).</span> </label>
                                         </div>
-                                        <div class="checkbox show4maintapi">
+                                        <div class="checkbox api_accounttype1">
                                             <label>
                                                 <input type="checkbox">
                                                 Locked Account <span class="help-block small">Unlock this API Account so it may be used again.</span> </label>
                                         </div>
-                                        <div class="form-group show4maintapi">
+                                        <div class="form-group api_accounttype1">
                                             <label class="control-label" for=""> Maximum New Resources </label>
                                             <span class="help-block small">Number of resources that are allowed to be created by this API Account. This prevents outside systems from accidentally over populating the system.</span>
                                             <div class="row">
@@ -88,7 +88,7 @@ $page_title = 'api-accounts';
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group show4maintapi">
+                                        <div class="form-group api_accounttype1">
                                             <label class="control-label " for="permissionAccessLevel"> Permission Access Level </label>
                                             <span class="help-block small"> Shall. Itself deep she'd good behold you're made lights fly.</span>
                                             <div class="row">
@@ -101,7 +101,7 @@ $page_title = 'api-accounts';
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group show4extapi">
+                                        <div class="form-group api_accounttype2">
                                             <div class="form-label"> External Rest API URLs</div>
                                             <table class="table table-condensed table-responsive table-actions" id="myTable">
                                                 <thead>
@@ -150,7 +150,8 @@ $page_title = 'api-accounts';
                                                         <option value="2">FINA Team</option>
                                                         <option value="2">IT Team</option>
                                                         <option value="3">FAC Team</option>
-                                                    </select>  <div class="validation-fieldmessage" style="display:none" id="val_status"> <i class="fa fa-minus-circle" aria-hidden="true"></i> Please select a status.</div>
+                                                    </select>
+                                                    <div class="validation-fieldmessage" style="display:none" id="val_status"> <i class="fa fa-minus-circle" aria-hidden="true"></i> Please select a status.</div>
                                                 </div>
                                                 <div class="col-xs-2" style="padding-top:22px">
                                                     <button type="button" id="multiselect_rightSelected" class="btn btn-xs btn-default btn-block"><i class="glyphicon glyphicon-chevron-right"></i></button>
@@ -216,8 +217,8 @@ $page_title = 'api-accounts';
                                             </div>
                                         </div>
                                     </fieldset>
-                                    <div class="text-right"> <a href="vfy-pub-api-accounts-home.php" class="btn btn-default">Cancel</a>
-                                        <button type="submit" class="btn btn-primary" id="form_save">Save</button>
+                                    <div class="text-right"> <a href="" class="btn btn-default" data-toggle="modal" data-target="#confirm_exit">Cancel</a>
+                                        <button type="submit" class="btn btn-primary" id="form_save" data-toggle="modal" data-target="#confirm_save">Save</button>
                                     </div>
                                 </div>
                             </div>
@@ -336,6 +337,63 @@ $(function() {
 });//]]> 
 
 </script> 
+    <script type='text/javascript'>//<![CDATA[
+
+
+
+$(document).ready(function() {
+	 $(".api_accounttype1,.api_accounttype2").slideUp();
+    $("input[name$='cars']").click(function() {
+        var test = $(this).val();
+
+        $(".api_accounttype1,.api_accounttype2").slideUp();
+        $(".api_accounttype" + test).slideDown();
+    });
+});
+
+</script> 
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="confirm_exit" tabindex="-1" role="dialog" aria-labelledby="">
+    <div class="modal-dialog modal-default" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title"><i class="icon-user-3"></i>Unsaved Changes</h4>
+            </div>
+            <div class="modal-body">
+                <div class="message">
+                    <div class="message-content">
+                        <p>There are unsaved changes on this page. Would you like to continue editing?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer"> <a href="vfy-pub-api-accounts-home.php" class="btn btn-default btn-sm">Discard Changes</a> <a href="#" class="btn btn-primary btn-sm" data-dismiss="modal">Continue Editing</a> </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="confirm_save" tabindex="-1" role="dialog" aria-labelledby="">
+    <div class="modal-dialog modal-default" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title"><i class="icon-user-3"></i>Settings Saved</h4>
+            </div>
+            <div class="modal-body">
+                <div class="message">
+                    <div class="message-content">
+                        <p>Your settings for this API account have been saved.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
