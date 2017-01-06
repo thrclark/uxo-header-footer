@@ -113,6 +113,18 @@ $page_title = 'app-icon';
                                         <div class="loading" aria-label="Loading" role="img" tabindex="-1"></div>
                                     </div>
                                 </div>
+                                
+                                
+                                
+                          <div class="col-sm-3">
+                                
+                                </div>
+                                
+                    
+  
+  
+  
+  
                             </div>
                         </fieldset>
                         <fieldset>
@@ -123,10 +135,118 @@ $page_title = 'app-icon';
                                     <p> Once an icon has been uploaded, select a background color on which the icon will be displayed.</p>
                                 </div>
                                 <div class="col-sm-3">
-                                    <div class="avatar-view" style="text-align:center; background:#163C50;" data-toggle="tooltip" data-placement="bottom" title="Upload/Edit Icon" id="changethis"><img src="img/MS_TILE_310x310.png" />
-                                        <div class="btn btn-default btn-xs">Edit</div>
+                                
+                                
+                                
+                                
+                                    <div id="crop-avatar2">
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                        <div class="avatar-view avatar-view2 text-center" style="background:#163C50;"  title="Upload/Edit Icon"id="changethis"><img src="img/MS_TILE_310x310.png" />
+                                            <div class="btn btn-default btn-xs">Edit</div>
+                                        </div>
+                                        
+                                        
+                                        
+                                        
+                                  
+                                  
+                                  
+                                  
+                                  
+                                        
+                                          <input class="form-control jscolor {onFineChange:'update(this)'}" id="bkg_header" name="bkg_header" type="text" value="#163C50" style="text-align:center">
+                                          
+                                          
+                                          
+                                        <div class="modal fade" id="avatar-modal2" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">
+                                            <div class="modal-dialog modal-default modal-lg">
+                                                <div class="modal-content">
+                                                    <form class="avatar-form avatar-form2" action="crop.php" enctype="multipart/form-data" method="post">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                            <h4 class="modal-title" id="avatar-modal-label">Edit Application Icon</h4>
+                                                        </div>
+                                                       
+                                                       
+                                                       
+                                                       
+                                                       
+                                                        <div class="modal-body">
+                                                            <div class="avatar-body">
+                                                                <div class="avatar-upload avatar-upload2"> </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-9">
+                                                                        <div class="avatar-wrapper avatar-wrapper2"></div>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <div class="avatar-preview avatar-preview2 preview-lg hidden-xs " id="changethis2" style="background:#163C50"></div>
+                                                                        <div class="avatar-preview avatar-preview2 preview-md" id="changethis3" style="background:#163C50"></div>
+                                                                        <div class="avatar-preview avatar-preview2 preview-sm" id="changethis4" style="background:#163C50"></div>
+                                                                        <div class="avatar-preview avatar-preview2 preview-xs" id="changethis5" style="background:#163C50"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row avatar-btns avatar-btns2">
+                                                                    <div class="col-md-3 col-xs-2">
+                                                                        <div class="btn-group">
+                                                                            <input type="hidden" class="avatar-src2" name="avatar_src">
+                                                                            <input type="hidden" class="avatar-data2" name="avatar_data">
+                                                                            <label class="btn btn-default btn-upload btn-xs" for="avatarInput2" title="Upload image file">
+                                                                                <input type="file" class="sr-only avatar-input avatar-input2" id="avatarInput2" name="avatar_file" accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff">
+                                                                                <span class="docs-tooltip" data-toggle="tooltip" title=""><span class="hidden-xsdd">Upload</span> </span> </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6 col-xs-10 text-right">
+                                                                        <div class="btn-group">
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="zoom" data-option="0.1" title="Zoom In"> <span class="fa fa-search-plus" data-method="zoom" data-option="0.1" title="Zoom In"></span> </button>
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="zoom" data-option="-0.1" title="Zoom Out"> <span class="fa fa-search-minus" data-method="zoom" data-option="-0.1" title="Zoom Out"></span></button>
+                                                                        </div>
+                                                                        <div class="btn-group">
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="-10" data-second-option="0" title="Move Left">  <span class="fa fa-arrow-left" data-method="move" data-option="-10" data-second-option="0" title="Move Left"></span></button>
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="10" data-second-option="0" title="Move Right"> <span class="fa fa-arrow-right" data-method="move" data-option="10" data-second-option="0" title="Move Right"></span></button>
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="0" data-second-option="-10" title="Move Up"> <span class="fa fa-arrow-up" data-method="move" data-option="0" data-second-option="-10" title="Move Up"></span> </button>
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="0" data-second-option="10" title="Move Down">  <span class="fa fa-arrow-down" data-method="move" data-option="0" data-second-option="10" title="Move Down"></span> </button>
+                                                                        </div>
+                                                                        <div class="btn-group hidden-xs">
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="rotate" data-option="-45" title="Rotate Left"> <span class="fa fa-rotate-left" data-method="rotate" data-option="-45" title="Rotate Left"></span> </button>
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="rotate" data-option="45" title="Rotate Right"> <span class="fa fa-rotate-right" data-method="rotate" data-option="45" title="Rotate Right"></span> </button>
+                                                                        </div>
+                                                                        <div class="btn-group">
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="reset" title="Reset"> <span class="fa fa-refresh" data-method="reset" title="Reset"></span> </button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3"> </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                                            <button type="submit" class="btn btn-primary avatar-save avatar-save2">Done</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.modal --> 
+                                        
+                                        <!-- Loading state -->
+                                        <div class="loading" aria-label="Loading" role="img" tabindex="-1"></div>
                                     </div>
-                                    <input class="form-control jscolor {onFineChange:'update(this)'}" id="bkg_header" name="bkg_header" type="text" value="#163C50" style="text-align:center">
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
                                     
                                     <!-- <input class="form-control jscolor jscolor-active" id="bkg_header" name="bkg_header" type="text" value="#163C50" autocomplete="off" style="background-image: none; background-color: rgb(22, 60, 80); color: rgb(255, 255, 255);">--> 
                                     
@@ -219,8 +339,9 @@ $page_title = 'app-icon';
     </div>
 </div>
 <script src="../js/cropper-main.js"></script> 
-<script>
+<script src="../js/cropper-main2.js"></script> 
 
+<script>
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 })
@@ -228,10 +349,13 @@ $(function () {
 
 </script> 
 <script>
-function update(jscolor) {
-    // 'jscolor' instance can be used as a string
-    document.getElementById('changethis').style.backgroundColor = '#' + jscolor
-}
+    function update(jscolor) {
+        document.getElementById('changethis').style.backgroundColor = '#' + jscolor;
+		document.getElementById('changethis2').style.backgroundColor = '#' + jscolor;
+		document.getElementById('changethis3').style.backgroundColor = '#' + jscolor;
+		document.getElementById('changethis4').style.backgroundColor = '#' + jscolor;
+		document.getElementById('changethis5').style.backgroundColor = '#' + jscolor;
+    }
 </script>
 </body>
 </html>
