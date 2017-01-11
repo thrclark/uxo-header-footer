@@ -18,21 +18,21 @@
   function CropAvatar($element) {
     this.$container = $element;
 
-    this.$avatarView = this.$container.find('.avatar-view2');
+    this.$avatarView = this.$container.find('.avatar-view3');
     this.$avatar = this.$avatarView.find('img');
-    this.$avatarModal = this.$container.find('#avatar-modal2');
+    this.$avatarModal = this.$container.find('#avatar-modal3');
     this.$loading = this.$container.find('.loading');
 
-    this.$avatarForm = this.$avatarModal.find('.avatar-form2');
-    this.$avatarUpload = this.$avatarForm.find('.avatar-upload2');
-    this.$avatarSrc = this.$avatarForm.find('.avatar-src2');
-    this.$avatarData = this.$avatarForm.find('.avatar-data2');
-    this.$avatarInput2 = this.$avatarForm.find('.avatar-input2');
-    this.$avatarSave = this.$avatarForm.find('.avatar-save2');
-    this.$avatarBtns = this.$avatarForm.find('.avatar-btns2');
+    this.$avatarForm = this.$avatarModal.find('.avatar-form3');
+    this.$avatarUpload = this.$avatarForm.find('.avatar-upload3');
+    this.$avatarSrc = this.$avatarForm.find('.avatar-src3');
+    this.$avatarData = this.$avatarForm.find('.avatar-data3');
+    this.$avatarInput3 = this.$avatarForm.find('.avatar-input3');
+    this.$avatarSave = this.$avatarForm.find('.avatar-save3');
+    this.$avatarBtns = this.$avatarForm.find('.avatar-btns3');
 
-    this.$avatarWrapper = this.$avatarModal.find('.avatar-wrapper2');
-    this.$avatarPreview = this.$avatarModal.find('.avatar-preview2');
+    this.$avatarWrapper = this.$avatarModal.find('.avatar-wrapper3');
+    this.$avatarPreview = this.$avatarModal.find('.avatar-preview3');
 
     this.init();
   }
@@ -60,7 +60,7 @@
 
     addListener: function () {
       this.$avatarView.on('click', $.proxy(this.click, this));
-      this.$avatarInput2.on('change', $.proxy(this.change, this));
+      this.$avatarInput3.on('change', $.proxy(this.change, this));
       this.$avatarForm.on('submit', $.proxy(this.submit, this));
       this.$avatarBtns.on('click', $.proxy(this.rotate, this));
     },
@@ -135,7 +135,7 @@
       var file;
 
       if (this.support.datauri) {
-        files = this.$avatarInput2.prop('files');
+        files = this.$avatarInput3.prop('files');
 
         if (files.length > 0) {
           file = files[0];
@@ -150,7 +150,7 @@
           }
         }
       } else {
-        file = this.$avatarInput2.val();
+        file = this.$avatarInput3.val();
 
         if (this.isImageFile(file)) {
           this.syncUpload();
@@ -159,7 +159,7 @@
     },
 
     submit: function () {
-      if (!this.$avatarSrc.val() && !this.$avatarInput2.val()) {
+      if (!this.$avatarSrc.val() && !this.$avatarInput3.val()) {
         return false;
       }
 
@@ -198,7 +198,7 @@
         this.$img = $('<img src="' + this.url + '">');
         this.$avatarWrapper.empty().html(this.$img);
         this.$img.cropper({
-          aspectRatio: 2.06666666667,
+          aspectRatio: 1,
           preview: this.$avatarPreview.selector,
           crop: function (e) {
             var json = [
@@ -284,7 +284,7 @@
             this.startCropper();
           }
 
-          this.$avatarInput2.val('');
+          this.$avatarInput3.val('');
         } else if (data.message) {
           this.alert(data.message);
         }
@@ -321,7 +321,7 @@
   };
 
   $(function () {
-    return new CropAvatar($('#crop-avatar2'));
+    return new CropAvatar($('#crop-avatar3'));
   });
 
 });

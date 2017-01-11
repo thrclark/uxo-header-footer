@@ -82,10 +82,10 @@ $page_title = 'app-icon';
                                                                             <button type="button" class="btn btn-default btn-xs" data-method="zoom" data-option="-0.1" title="Zoom Out"> <span class="fa fa-search-minus" data-method="zoom" data-option="-0.1" title="Zoom Out"></span></button>
                                                                         </div>
                                                                         <div class="btn-group">
-                                                                            <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="-10" data-second-option="0" title="Move Left">  <span class="fa fa-arrow-left" data-method="move" data-option="-10" data-second-option="0" title="Move Left"></span></button>
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="-10" data-second-option="0" title="Move Left"> <span class="fa fa-arrow-left" data-method="move" data-option="-10" data-second-option="0" title="Move Left"></span></button>
                                                                             <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="10" data-second-option="0" title="Move Right"> <span class="fa fa-arrow-right" data-method="move" data-option="10" data-second-option="0" title="Move Right"></span></button>
                                                                             <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="0" data-second-option="-10" title="Move Up"> <span class="fa fa-arrow-up" data-method="move" data-option="0" data-second-option="-10" title="Move Up"></span> </button>
-                                                                            <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="0" data-second-option="10" title="Move Down">  <span class="fa fa-arrow-down" data-method="move" data-option="0" data-second-option="10" title="Move Down"></span> </button>
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="0" data-second-option="10" title="Move Down"> <span class="fa fa-arrow-down" data-method="move" data-option="0" data-second-option="10" title="Move Down"></span> </button>
                                                                         </div>
                                                                         <div class="btn-group hidden-xs">
                                                                             <button type="button" class="btn btn-default btn-xs" data-method="rotate" data-option="-45" title="Rotate Left"> <span class="fa fa-rotate-left" data-method="rotate" data-option="-45" title="Rotate Left"></span> </button>
@@ -113,57 +113,22 @@ $page_title = 'app-icon';
                                         <div class="loading" aria-label="Loading" role="img" tabindex="-1"></div>
                                     </div>
                                 </div>
-                                
-                                
-                                
-                          <div class="col-sm-3">
-                                
-                                </div>
-                                
-                    
-  
-  
-  
-  
+                                <div class="col-sm-3"> </div>
                             </div>
                         </fieldset>
                         <fieldset>
-                            <legend>MS Tile Icon</legend>
+                            <legend>MS Tile Icons</legend>
                             <div class="row">
                                 <div class="col-sm-9">
-                                    <p>Select an icon to be used as a Microsoft Tile. Microsoft Tile icons must be white (#ffffff) and on a transparent background. The file type must be in the Portable Network Graphics (.png) file format. </p>
-                                    <p> Once an icon has been uploaded, select a background color on which the icon will be displayed.</p>
+                                    <p>Select icons to be used as Microsoft Tiles. Microsoft Tile icons must be white (#ffffff) and on a transparent background. The file type must be in the Portable Network Graphics (.png) file format. </p>
+                                    <p> Once icons have been uploaded, select a background color on which the icons will be displayed.</p>
                                 </div>
                                 <div class="col-sm-3">
-                                
-                                
-                                
-                                
                                     <div id="crop-avatar2">
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                        <div class="avatar-view avatar-view2 text-center" style="background:#163C50;"  title="Upload/Edit Icon"id="changethis"><img src="img/MS_TILE_310x310.png" />
+                                        <div class="small"> Wide Tile</div>
+                                        <div class="avatar-view avatar-view2 text-center" style="background:#163C50;"  title="Upload/Edit Icon" id="changethis"><img src="img/MS_WIDE_TILE_310x150.png" />
                                             <div class="btn btn-default btn-xs">Edit</div>
                                         </div>
-                                        
-                                        
-                                        
-                                        
-                                  
-                                  
-                                  
-                                  
-                                  
-                                        
-                                          <input class="form-control jscolor {onFineChange:'update(this)'}" id="bkg_header" name="bkg_header" type="text" value="#163C50" style="text-align:center">
-                                          
-                                          
-                                          
                                         <div class="modal fade" id="avatar-modal2" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">
                                             <div class="modal-dialog modal-default modal-lg">
                                                 <div class="modal-content">
@@ -172,11 +137,6 @@ $page_title = 'app-icon';
                                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                                                             <h4 class="modal-title" id="avatar-modal-label">Edit Application Icon</h4>
                                                         </div>
-                                                       
-                                                       
-                                                       
-                                                       
-                                                       
                                                         <div class="modal-body">
                                                             <div class="avatar-body">
                                                                 <div class="avatar-upload avatar-upload2"> </div>
@@ -185,10 +145,7 @@ $page_title = 'app-icon';
                                                                         <div class="avatar-wrapper avatar-wrapper2"></div>
                                                                     </div>
                                                                     <div class="col-md-3">
-                                                                        <div class="avatar-preview avatar-preview2 preview-lg hidden-xs " id="changethis2" style="background:#163C50"></div>
-                                                                        <div class="avatar-preview avatar-preview2 preview-md" id="changethis3" style="background:#163C50"></div>
-                                                                        <div class="avatar-preview avatar-preview2 preview-sm" id="changethis4" style="background:#163C50"></div>
-                                                                        <div class="avatar-preview avatar-preview2 preview-xs" id="changethis5" style="background:#163C50"></div>
+                                                                        <div class="avatar-preview avatar-preview2 preview-lg hidden-xs " id="changethis2" style="background:#163C50; height:96px"></div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row avatar-btns avatar-btns2">
@@ -207,10 +164,10 @@ $page_title = 'app-icon';
                                                                             <button type="button" class="btn btn-default btn-xs" data-method="zoom" data-option="-0.1" title="Zoom Out"> <span class="fa fa-search-minus" data-method="zoom" data-option="-0.1" title="Zoom Out"></span></button>
                                                                         </div>
                                                                         <div class="btn-group">
-                                                                            <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="-10" data-second-option="0" title="Move Left">  <span class="fa fa-arrow-left" data-method="move" data-option="-10" data-second-option="0" title="Move Left"></span></button>
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="-10" data-second-option="0" title="Move Left"> <span class="fa fa-arrow-left" data-method="move" data-option="-10" data-second-option="0" title="Move Left"></span></button>
                                                                             <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="10" data-second-option="0" title="Move Right"> <span class="fa fa-arrow-right" data-method="move" data-option="10" data-second-option="0" title="Move Right"></span></button>
                                                                             <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="0" data-second-option="-10" title="Move Up"> <span class="fa fa-arrow-up" data-method="move" data-option="0" data-second-option="-10" title="Move Up"></span> </button>
-                                                                            <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="0" data-second-option="10" title="Move Down">  <span class="fa fa-arrow-down" data-method="move" data-option="0" data-second-option="10" title="Move Down"></span> </button>
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="0" data-second-option="10" title="Move Down"> <span class="fa fa-arrow-down" data-method="move" data-option="0" data-second-option="10" title="Move Down"></span> </button>
                                                                         </div>
                                                                         <div class="btn-group hidden-xs">
                                                                             <button type="button" class="btn btn-default btn-xs" data-method="rotate" data-option="-45" title="Rotate Left"> <span class="fa fa-rotate-left" data-method="rotate" data-option="-45" title="Rotate Left"></span> </button>
@@ -237,16 +194,78 @@ $page_title = 'app-icon';
                                         <!-- Loading state -->
                                         <div class="loading" aria-label="Loading" role="img" tabindex="-1"></div>
                                     </div>
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
+                                    <div id="crop-avatar3">
+                                        <div class="small"> Standard Tile</div>
+                                        <div class="avatar-view avatar-view3 text-center" style="background:#163C50;"  title="Upload/Edit Icon"id="changethis10"><img src="img/MS_TILE_310x310.png" />
+                                            <div class="btn btn-default btn-xs">Edit</div>
+                                        </div>
+                                        <div class="small"> Background Color</div>
+                                        <input class="form-control jscolor {onFineChange:'update(this)'}" id="bkg_header" name="bkg_header" type="text" value="#163C50" style="text-align:center">
+                                        <div class="modal fade" id="avatar-modal3" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">
+                                            <div class="modal-dialog modal-default modal-lg">
+                                                <div class="modal-content">
+                                                    <form class="avatar-form avatar-form3" action="crop.php" enctype="multipart/form-data" method="post">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                            <h4 class="modal-title" id="avatar-modal-label">Edit Application Icon</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="avatar-body">
+                                                                <div class="avatar-upload avatar-upload3"> </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-9">
+                                                                        <div class="avatar-wrapper avatar-wrapper3"></div>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <div class="avatar-preview avatar-preview3 preview-lg hidden-xs " id="changethis6" style="background:#163C50"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row avatar-btns avatar-btns3">
+                                                                    <div class="col-md-3 col-xs-2">
+                                                                        <div class="btn-group">
+                                                                            <input type="hidden" class="avatar-src3" name="avatar_src">
+                                                                            <input type="hidden" class="avatar-data3" name="avatar_data">
+                                                                            <label class="btn btn-default btn-upload btn-xs" for="avatarInput3" title="Upload image file">
+                                                                                <input type="file" class="sr-only avatar-input avatar-input3" id="avatarInput3" name="avatar_file" accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff">
+                                                                                <span class="docs-tooltip" data-toggle="tooltip" title=""><span class="hidden-xsdd">Upload</span> </span> </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6 col-xs-10 text-right">
+                                                                        <div class="btn-group">
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="zoom" data-option="0.1" title="Zoom In"> <span class="fa fa-search-plus" data-method="zoom" data-option="0.1" title="Zoom In"></span> </button>
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="zoom" data-option="-0.1" title="Zoom Out"> <span class="fa fa-search-minus" data-method="zoom" data-option="-0.1" title="Zoom Out"></span></button>
+                                                                        </div>
+                                                                        <div class="btn-group">
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="-10" data-second-option="0" title="Move Left"> <span class="fa fa-arrow-left" data-method="move" data-option="-10" data-second-option="0" title="Move Left"></span></button>
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="10" data-second-option="0" title="Move Right"> <span class="fa fa-arrow-right" data-method="move" data-option="10" data-second-option="0" title="Move Right"></span></button>
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="0" data-second-option="-10" title="Move Up"> <span class="fa fa-arrow-up" data-method="move" data-option="0" data-second-option="-10" title="Move Up"></span> </button>
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="0" data-second-option="10" title="Move Down"> <span class="fa fa-arrow-down" data-method="move" data-option="0" data-second-option="10" title="Move Down"></span> </button>
+                                                                        </div>
+                                                                        <div class="btn-group hidden-xs">
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="rotate" data-option="-45" title="Rotate Left"> <span class="fa fa-rotate-left" data-method="rotate" data-option="-45" title="Rotate Left"></span> </button>
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="rotate" data-option="45" title="Rotate Right"> <span class="fa fa-rotate-right" data-method="rotate" data-option="45" title="Rotate Right"></span> </button>
+                                                                        </div>
+                                                                        <div class="btn-group">
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="reset" title="Reset"> <span class="fa fa-refresh" data-method="reset" title="Reset"></span> </button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3"> </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                                            <button type="submit" class="btn btn-primary avatar-save avatar-save3">Done</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.modal --> 
+                                        
+                                        <!-- Loading state -->
+                                        <div class="loading" aria-label="Loading" role="img" tabindex="-1"></div>
+                                    </div>
                                     
                                     <!-- <input class="form-control jscolor jscolor-active" id="bkg_header" name="bkg_header" type="text" value="#163C50" autocomplete="off" style="background-image: none; background-color: rgb(22, 60, 80); color: rgb(255, 255, 255);">--> 
                                     
@@ -340,7 +359,7 @@ $page_title = 'app-icon';
 </div>
 <script src="../js/cropper-main.js"></script> 
 <script src="../js/cropper-main2.js"></script> 
-
+<script src="../js/cropper-main3.js"></script> 
 <script>
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
@@ -352,9 +371,8 @@ $(function () {
     function update(jscolor) {
         document.getElementById('changethis').style.backgroundColor = '#' + jscolor;
 		document.getElementById('changethis2').style.backgroundColor = '#' + jscolor;
-		document.getElementById('changethis3').style.backgroundColor = '#' + jscolor;
-		document.getElementById('changethis4').style.backgroundColor = '#' + jscolor;
-		document.getElementById('changethis5').style.backgroundColor = '#' + jscolor;
+		document.getElementById('changethis6').style.backgroundColor = '#' + jscolor;
+		document.getElementById('changethis10').style.backgroundColor = '#' + jscolor;
     }
 </script>
 </body>
