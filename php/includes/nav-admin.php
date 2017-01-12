@@ -7,7 +7,7 @@
                 <li data-toggle="collapse" data-target="#nav-publishing"><a href="vfy-admin-tenant-userattribute.php">User Attribute Mapping</a> </li>
                 <li data-toggle="collapse" data-target="#nav-publishing"><a href="vfy-admin-sysparam.php">System Parameters</a> </li>
                 <li data-toggle="collapse" data-target="#nav-publishing"><a href="vfy-admin-metadata-home.php">Metadata</a> </li>
-                <li data-toggle="collapse" data-target="#nav-publishing"><a href="asdfaasdfasdfasdf">Google Analytics</a> </li>
+                <li data-toggle="collapse" data-target="#nav-publishing"><a href="vfy-admin-google.php">Google Analytics</a> </li>
             </ul>
         </div>
     </div>
