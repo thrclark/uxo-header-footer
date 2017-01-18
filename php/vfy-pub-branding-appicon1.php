@@ -8,10 +8,8 @@ $page_title = 'app-icon';
 <?php include ('includes/head-meta.php') ?>
 <?php include ('includes/styles-publishing.php') ?>
 <style>
-.avatar-preview.avatar-preview3.preview-md img {
-	height: 100%;
-	width: 90px;
-	margin-left: 45px;
+.nav-tabs {
+	margin-bottom: 15px;
 }
 </style>
 <?php include ('includes/scripts.php') ?>
@@ -43,8 +41,9 @@ $page_title = 'app-icon';
                                 </div>
                                 <div class="col-sm-3">
                                     <div id="crop-avatar">
-                                        <div class="avatar-view text-center" title="Upload/Edit Icon"> <img src="img/appicon.png" alt="Avatar"> </div>
-                                        <div class="text-center"> <a href="#" class="">Edit</a></div>
+                                        <div class="avatar-view text-center" title="Upload/Edit Icon"> <img src="img/appicon.png" alt="Avatar">
+                                            <div class="btn btn-default btn-xs">Edit</div>
+                                        </div>
                                         <div class="modal fade" id="avatar-modal" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">
                                             <div class="modal-dialog modal-default modal-lg">
                                                 <div class="modal-content">
@@ -68,22 +67,21 @@ $page_title = 'app-icon';
                                                                     </div>
                                                                 </div>
                                                                 <div class="row avatar-btns">
-                                                                    <div class="col-md-3 col-xs-4">
+                                                                    <div class="col-md-3 col-xs-2">
                                                                         <div class="btn-group">
                                                                             <input type="hidden" class="avatar-src" name="avatar_src">
                                                                             <input type="hidden" class="avatar-data" name="avatar_data">
                                                                             <label class="btn btn-default btn-upload btn-xs" for="avatarInput" title="Upload image file">
                                                                                 <input type="file" class="sr-only avatar-input" id="avatarInput" name="avatar_file" accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff">
                                                                                 <span class="docs-tooltip" data-toggle="tooltip" title=""><span class="hidden-xsdd">Upload</span> </span> </label>
-                                                                                  <button type="button" class="btn btn-default btn-xs" data-method="reset" title="Reset"> <span class="fa fa-refresh" data-method="reset" title="Reset"></span> </button>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-6 col-xs-8 text-right">
+                                                                    <div class="col-md-6 col-xs-10 text-right">
                                                                         <div class="btn-group">
                                                                             <button type="button" class="btn btn-default btn-xs" data-method="zoom" data-option="0.1" title="Zoom In"> <span class="fa fa-search-plus" data-method="zoom" data-option="0.1" title="Zoom In"></span> </button>
                                                                             <button type="button" class="btn btn-default btn-xs" data-method="zoom" data-option="-0.1" title="Zoom Out"> <span class="fa fa-search-minus" data-method="zoom" data-option="-0.1" title="Zoom Out"></span></button>
                                                                         </div>
-                                                                        <div class="btn-group hidden-xs">
+                                                                        <div class="btn-group">
                                                                             <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="-10" data-second-option="0" title="Move Left"> <span class="fa fa-arrow-left" data-method="move" data-option="-10" data-second-option="0" title="Move Left"></span></button>
                                                                             <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="10" data-second-option="0" title="Move Right"> <span class="fa fa-arrow-right" data-method="move" data-option="10" data-second-option="0" title="Move Right"></span></button>
                                                                             <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="0" data-second-option="-10" title="Move Up"> <span class="fa fa-arrow-up" data-method="move" data-option="0" data-second-option="-10" title="Move Up"></span> </button>
@@ -93,7 +91,9 @@ $page_title = 'app-icon';
                                                                             <button type="button" class="btn btn-default btn-xs" data-method="rotate" data-option="-45" title="Rotate Left"> <span class="fa fa-rotate-left" data-method="rotate" data-option="-45" title="Rotate Left"></span> </button>
                                                                             <button type="button" class="btn btn-default btn-xs" data-method="rotate" data-option="45" title="Rotate Right"> <span class="fa fa-rotate-right" data-method="rotate" data-option="45" title="Rotate Right"></span> </button>
                                                                         </div>
-                                                                        
+                                                                        <div class="btn-group">
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="reset" title="Reset"> <span class="fa fa-refresh" data-method="reset" title="Reset"></span> </button>
+                                                                        </div>
                                                                     </div>
                                                                     <div class="col-md-3"> </div>
                                                                 </div>
@@ -124,9 +124,83 @@ $page_title = 'app-icon';
                                     <p> Once icons have been uploaded, select a background color on which the icons will be displayed.</p>
                                 </div>
                                 <div class="col-sm-3">
+                                    <div id="crop-avatar2">
+                                        <div class="small"> Wide Tile</div>
+                                        <div class="avatar-view avatar-view2 text-center" style="background:#163C50;"  title="Upload/Edit Icon" id="changethis"><img src="img/MS_WIDE_TILE_310x150.png" />
+                                            <div class="btn btn-default btn-xs">Edit</div>
+                                        </div>
+                                        <div class="modal fade" id="avatar-modal2" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">
+                                            <div class="modal-dialog modal-default modal-lg">
+                                                <div class="modal-content">
+                                                    <form class="avatar-form avatar-form2" action="crop.php" enctype="multipart/form-data" method="post">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                            <h4 class="modal-title" id="avatar-modal-label">Edit Application Icon</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <div class="avatar-body">
+                                                                <div class="avatar-upload avatar-upload2"> </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-9">
+                                                                        <div class="avatar-wrapper avatar-wrapper2"></div>
+                                                                    </div>
+                                                                    <div class="col-md-3">
+                                                                        <div class="avatar-preview avatar-preview2 preview-lg hidden-xs " id="changethis2" style="background:#163C50; height:96px"></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row avatar-btns avatar-btns2">
+                                                                    <div class="col-md-3 col-xs-2">
+                                                                        <div class="btn-group">
+                                                                            <input type="hidden" class="avatar-src2" name="avatar_src">
+                                                                            <input type="hidden" class="avatar-data2" name="avatar_data">
+                                                                            <label class="btn btn-default btn-upload btn-xs" for="avatarInput2" title="Upload image file">
+                                                                                <input type="file" class="sr-only avatar-input avatar-input2" id="avatarInput2" name="avatar_file" accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff">
+                                                                                <span class="docs-tooltip" data-toggle="tooltip" title=""><span class="hidden-xsdd">Upload</span> </span> </label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-6 col-xs-10 text-right">
+                                                                        <div class="btn-group">
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="zoom" data-option="0.1" title="Zoom In"> <span class="fa fa-search-plus" data-method="zoom" data-option="0.1" title="Zoom In"></span> </button>
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="zoom" data-option="-0.1" title="Zoom Out"> <span class="fa fa-search-minus" data-method="zoom" data-option="-0.1" title="Zoom Out"></span></button>
+                                                                        </div>
+                                                                        <div class="btn-group">
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="-10" data-second-option="0" title="Move Left"> <span class="fa fa-arrow-left" data-method="move" data-option="-10" data-second-option="0" title="Move Left"></span></button>
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="10" data-second-option="0" title="Move Right"> <span class="fa fa-arrow-right" data-method="move" data-option="10" data-second-option="0" title="Move Right"></span></button>
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="0" data-second-option="-10" title="Move Up"> <span class="fa fa-arrow-up" data-method="move" data-option="0" data-second-option="-10" title="Move Up"></span> </button>
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="0" data-second-option="10" title="Move Down"> <span class="fa fa-arrow-down" data-method="move" data-option="0" data-second-option="10" title="Move Down"></span> </button>
+                                                                        </div>
+                                                                        <div class="btn-group hidden-xs">
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="rotate" data-option="-45" title="Rotate Left"> <span class="fa fa-rotate-left" data-method="rotate" data-option="-45" title="Rotate Left"></span> </button>
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="rotate" data-option="45" title="Rotate Right"> <span class="fa fa-rotate-right" data-method="rotate" data-option="45" title="Rotate Right"></span> </button>
+                                                                        </div>
+                                                                        <div class="btn-group">
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="reset" title="Reset"> <span class="fa fa-refresh" data-method="reset" title="Reset"></span> </button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3"> </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                                            <button type="submit" class="btn btn-primary avatar-save avatar-save2">Done</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.modal --> 
+                                        
+                                        <!-- Loading state -->
+                                        <div class="loading" aria-label="Loading" role="img" tabindex="-1"></div>
+                                    </div>
                                     <div id="crop-avatar3">
-                                        <div class="avatar-view avatar-view3 text-center" style="background:#163C50;"  title="Upload/Edit Icon"id="changethis"><img src="img/MS_TILE_310x310.png" /> </div>
-                                        <div class="text-center"> <a href="#" class="">Edit</a></div>
+                                        <div class="small"> Standard Tile</div>
+                                        <div class="avatar-view avatar-view3 text-center" style="background:#163C50;"  title="Upload/Edit Icon"id="changethis10"><img src="img/MS_TILE_310x310.png" />
+                                            <div class="btn btn-default btn-xs">Edit</div>
+                                        </div>
+                                        <div class="small"> Background Color</div>
+                                        <input class="form-control jscolor {onFineChange:'update(this)'}" id="bkg_header" name="bkg_header" type="text" value="#163C50" style="text-align:center">
                                         <div class="modal fade" id="avatar-modal3" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">
                                             <div class="modal-dialog modal-default modal-lg">
                                                 <div class="modal-content">
@@ -143,31 +217,25 @@ $page_title = 'app-icon';
                                                                         <div class="avatar-wrapper avatar-wrapper3"></div>
                                                                     </div>
                                                                     <div class="col-md-3">
-                                                                        <div> 
-                                                                            <!--       <div class="small text-muted" style="margin-top:15px"> Standard Tile</div>-->
-                                                                            <div class="avatar-preview avatar-preview3 preview-lg" id="changethis6" style="background:#163C50;"></div>
-                                                                        </div>
-                                                                        <div> 
-                                                                            <!--<div class="small text-muted"> Wide Tile</div>-->
-                                                                            <div class="avatar-preview avatar-preview3 preview-md" id="changethis7" style="background:#163C50; width:185px; height:90px;"> </div>
-                                                                        </div>
+                                                                        <div class="avatar-preview avatar-preview3 preview-lg hidden-xs " id="changethis6" style="background:#163C50"></div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row avatar-btns avatar-btns3">
-                                                                    <div class="col-md-3 col-xs-4">
-                                                                        <input type="hidden" class="avatar-src3" name="avatar_src">
-                                                                        <input type="hidden" class="avatar-data3" name="avatar_data">
-                                                                        <label class="btn btn-default btn-upload btn-xs" for="avatarInput3" title="Upload image file">
-                                                                            <input type="file" class="sr-only avatar-input avatar-input3" id="avatarInput3" name="avatar_file" accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff">
-                                                                            <span class="docs-tooltip" data-toggle="tooltip" title=""> <span class="hidden-xsdd">Upload</span> </span> </label>
-                                                                        <button type="button" class="btn btn-default btn-xs" data-method="reset" title="Reset"> <span class="fa fa-refresh" data-method="reset" title="Reset"></span> </button>
+                                                                    <div class="col-md-3 col-xs-2">
+                                                                        <div class="btn-group">
+                                                                            <input type="hidden" class="avatar-src3" name="avatar_src">
+                                                                            <input type="hidden" class="avatar-data3" name="avatar_data">
+                                                                            <label class="btn btn-default btn-upload btn-xs" for="avatarInput3" title="Upload image file">
+                                                                                <input type="file" class="sr-only avatar-input avatar-input3" id="avatarInput3" name="avatar_file" accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff">
+                                                                                <span class="docs-tooltip" data-toggle="tooltip" title=""><span class="hidden-xsdd">Upload</span> </span> </label>
+                                                                        </div>
                                                                     </div>
-                                                                    <div class="col-md-6 col-xs-8 text-right">
+                                                                    <div class="col-md-6 col-xs-10 text-right">
                                                                         <div class="btn-group">
                                                                             <button type="button" class="btn btn-default btn-xs" data-method="zoom" data-option="0.1" title="Zoom In"> <span class="fa fa-search-plus" data-method="zoom" data-option="0.1" title="Zoom In"></span> </button>
                                                                             <button type="button" class="btn btn-default btn-xs" data-method="zoom" data-option="-0.1" title="Zoom Out"> <span class="fa fa-search-minus" data-method="zoom" data-option="-0.1" title="Zoom Out"></span></button>
                                                                         </div>
-                                                                        <div class="btn-group hidden-xs">
+                                                                        <div class="btn-group">
                                                                             <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="-10" data-second-option="0" title="Move Left"> <span class="fa fa-arrow-left" data-method="move" data-option="-10" data-second-option="0" title="Move Left"></span></button>
                                                                             <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="10" data-second-option="0" title="Move Right"> <span class="fa fa-arrow-right" data-method="move" data-option="10" data-second-option="0" title="Move Right"></span></button>
                                                                             <button type="button" class="btn btn-default btn-xs" data-method="move" data-option="0" data-second-option="-10" title="Move Up"> <span class="fa fa-arrow-up" data-method="move" data-option="0" data-second-option="-10" title="Move Up"></span> </button>
@@ -178,7 +246,7 @@ $page_title = 'app-icon';
                                                                             <button type="button" class="btn btn-default btn-xs" data-method="rotate" data-option="45" title="Rotate Right"> <span class="fa fa-rotate-right" data-method="rotate" data-option="45" title="Rotate Right"></span> </button>
                                                                         </div>
                                                                         <div class="btn-group">
-                                                                            <input class="btn btn-xs btn-default jscolor {onFineChange:'update(this)', hash:true}" id="bkg_header" name="bkg_header" type="text" value="#163C50" style="text-align:center; width:85px">
+                                                                            <button type="button" class="btn btn-default btn-xs" data-method="reset" title="Reset"> <span class="fa fa-refresh" data-method="reset" title="Reset"></span> </button>
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-3"> </div>
@@ -213,8 +281,8 @@ $page_title = 'app-icon';
                                 <div class="col-sm-3">
                                     <div class="avatar-view" style="text-align:center" data-toggle="tooltip" data-placement="bottom" title="Upload Icon">
                                         <div style="padding:30px"><img src="../img/favicon.ico" style="width:16px; height:16px"/></div>
+                                        <div class="btn btn-default btn-xs">Edit</div>
                                     </div>
-                                    <div class="text-center"> <a href="#" class="">Edit</a></div>
                                 </div>
                             </div>
                         </fieldset>
@@ -302,9 +370,9 @@ $(function () {
 <script>
     function update(jscolor) {
         document.getElementById('changethis').style.backgroundColor = '#' + jscolor;
+		document.getElementById('changethis2').style.backgroundColor = '#' + jscolor;
 		document.getElementById('changethis6').style.backgroundColor = '#' + jscolor;
-		document.getElementById('changethis7').style.backgroundColor = '#' + jscolor;
-		
+		document.getElementById('changethis10').style.backgroundColor = '#' + jscolor;
     }
 </script>
 </body>
