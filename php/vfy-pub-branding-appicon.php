@@ -214,7 +214,7 @@ $page_title = 'app-icon';
                                     <div class="avatar-view" style="text-align:center" data-toggle="tooltip" data-placement="bottom" title="Upload Icon">
                                         <div style="padding:30px"><img src="../img/favicon.ico" style="width:16px; height:16px"/></div>
                                     </div>
-                                    <div class="text-center"> <a href="#" class="">Edit</a></div>
+                                    <div class="text-center"> <a href="#" class="">Upload</a></div>
                                 </div>
                             </div>
                         </fieldset>
