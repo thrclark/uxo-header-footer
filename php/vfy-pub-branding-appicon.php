@@ -39,7 +39,7 @@ $page_title = 'app-icon';
                             <legend>Application Icon</legend>
                             <div class="row">
                                 <div class="col-sm-9">
-                                    <p>Select an application icon to be used as a visual identifier for the verification application. The icon will be used when a user creates a home screen bookmark on mobile devices. </p>
+                                    <p>Select an application icon to be used as a visual identifier for the verification application. The icon will be used when a user creates a home screen bookmark on mobile devices. The image size must be a minimum of 196x196 px.</p>
                                 </div>
                                 <div class="col-sm-3">
                                     <div id="crop-avatar">
@@ -69,14 +69,12 @@ $page_title = 'app-icon';
                                                                 </div>
                                                                 <div class="row avatar-btns">
                                                                     <div class="col-md-3 col-xs-4">
-                                                                        <div class="btn-group">
-                                                                            <input type="hidden" class="avatar-src" name="avatar_src">
-                                                                            <input type="hidden" class="avatar-data" name="avatar_data">
-                                                                            <label class="btn btn-default btn-upload btn-xs" for="avatarInput" title="Upload image file">
-                                                                                <input type="file" class="sr-only avatar-input" id="avatarInput" name="avatar_file" accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff">
-                                                                                <span class="docs-tooltip" data-toggle="tooltip" title=""><span class="hidden-xsdd">Upload</span> </span> </label>
-                                                                                  <button type="button" class="btn btn-default btn-xs" data-method="reset" title="Reset"> <span class="fa fa-refresh" data-method="reset" title="Reset"></span> </button>
-                                                                        </div>
+                                                                        <input type="hidden" class="avatar-src" name="avatar_src">
+                                                                        <input type="hidden" class="avatar-data" name="avatar_data">
+                                                                        <label class="btn btn-default btn-upload btn-xs" for="avatarInput" title="Upload image file">
+                                                                            <input type="file" class="sr-only avatar-input" id="avatarInput" name="avatar_file" accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff">
+                                                                            <span class="docs-tooltip" data-toggle="tooltip" title=""><span class="hidden-xsdd">Upload</span> </span> </label>
+                                                                        <button type="button" class="btn btn-default btn-xs" data-method="reset" title="Reset"> <span class="fa fa-refresh" data-method="reset" title="Reset"></span> </button>
                                                                     </div>
                                                                     <div class="col-md-6 col-xs-8 text-right">
                                                                         <div class="btn-group">
@@ -93,7 +91,6 @@ $page_title = 'app-icon';
                                                                             <button type="button" class="btn btn-default btn-xs" data-method="rotate" data-option="-45" title="Rotate Left"> <span class="fa fa-rotate-left" data-method="rotate" data-option="-45" title="Rotate Left"></span> </button>
                                                                             <button type="button" class="btn btn-default btn-xs" data-method="rotate" data-option="45" title="Rotate Right"> <span class="fa fa-rotate-right" data-method="rotate" data-option="45" title="Rotate Right"></span> </button>
                                                                         </div>
-                                                                        
                                                                     </div>
                                                                     <div class="col-md-3"> </div>
                                                                 </div>
@@ -120,7 +117,7 @@ $page_title = 'app-icon';
                             <legend>MS Tile Icons</legend>
                             <div class="row">
                                 <div class="col-sm-9">
-                                    <p>Select icons to be used as Microsoft Tiles. Microsoft Tile icons must be white (#ffffff) and on a transparent background. The file type must be in the Portable Network Graphics (.png) file format. </p>
+                                    <p>Select icons to be used as Microsoft Tiles. Microsoft Tile icons must be white (#ffffff) and on a transparent background. The file type must be in the Portable Network Graphics (.png) file format. The image size must be a minimum of 196x196 px.</p>
                                     <p> Once icons have been uploaded, select a background color on which the icons will be displayed.</p>
                                 </div>
                                 <div class="col-sm-3">
