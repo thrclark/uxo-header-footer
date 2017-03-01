@@ -21,13 +21,21 @@ body {
 }
 
 header {
-  margin-bottom: 20px;
+  //margin-bottom: 20px;
   background: @header-background;
 }
 
 .main-content {
   flex: 1 0 auto;
+  background: @maincontent-background;
+  padding-top: 20px;
 }
+
+header .container {
+  background: @header-container-background;
+}
+
+
 
 .list-unstyled li {
   //margin-bottom: 15px;
@@ -64,7 +72,7 @@ header {
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   //need a different place for Benton
-  font-family: BentonSansCondBold;
+  font-family: @font-family-headings;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;

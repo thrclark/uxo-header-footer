@@ -30,93 +30,162 @@ $page_title = 'app-styles';
                         <section>
                             <div class="row section-head">
                                 <div class="col-sm-12 section-header">
-                                    <h2 class="h3">Colors</h2>
+                                    <h2 class="h3">Colors & Layout</h2>
                                 </div>
                             </div>
-                            <fieldset>
-                                <legend>Background Colors</legend>
-                                <div class="form-group" id="">
-                                    <label class="control-label" for="bkg_header"> Header Background Color </label>
-                                    <span class="help-block small">Specify the background color of the application header area.</span>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <input class="form-control jscolor" id="bkg_header" name="bkg_header" type="text" value="#163C50">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group" id="">
-                                    <label class="control-label" for="bkg_body"> Body Background Color </label>
-                                    <span class="help-block small">Specify the background color of the application body.</span>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <input class="form-control jscolor" id="bkg_body" name="bkg_body" type="text" value="#ebebeb">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group" id="">
-                                    <label class="control-label" for="bkg_panel"> Panel Background Color </label>
-                                    <span class="help-block small">Specify the background color of the application panels.</span>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <input class="form-control jscolor" id="bkg_panel" name="bkg_panel" type="text" value="#ffffff">
-                                        </div>
-                                    </div>
-                                </div>
-                            </fieldset>
-                            <fieldset>
-                                <legend>Text Colors</legend>
-                                <div class="form-group" id="">
-                                    <label class="control-label" for="txtcolor_onlight"> Text Color - on Light Backgrounds </label>
-                                    <span class="help-block small">Specify the text color that will be used over light-colored backgrounds.</span>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <input class="form-control jscolor" id="txtcolor_onlight" name="txtcolor_onlight" type="text" value="#ffffff">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group" id="">
-                                    <label class="control-label" for="txtcolor_ondark"> Text Color - on Dark Backgrounds </label>
-                                    <span class="help-block small">Specify the text color that will be used over dark-colored backgrounds.</span>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <input class="form-control jscolor" id="txtcolor_ondark" name="txtcolor_ondark" type="text" value="#555555">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group" id="">
-                                    <label class="control-label" for="link_color"> Link Color </label>
-                                    <span class="help-block small">Specify the color for links.</span>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <input class="form-control jscolor" id="link_color" name="link_color" type="text" value="#2879B8">
-                                        </div>
-                                    </div>
-                                </div>
-                                <fieldset>
-                                    <legend>Button Colors</legend>
-                                    <div class="form-group" id="">
-                                        <label class="control-label" for="btncolor_primary"> Primary Button Color </label>
-                                        <span class="help-block small">Specify the text color that will be used over light-colored backgrounds.</span>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <input class="form-control jscolor" id="btncolor_primary" name="btncolor_primary" type="text" value="#2879B8">
+                            
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active"><a href="#colors" aria-controls="colors" role="tab" data-toggle="tab">Colors</a></li>
+                                <li role="presentation"><a href="#layout" aria-controls="layout" role="tab" data-toggle="tab">Layout</a></li>
+                            </ul>
+                            
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div role="tabpanel" class="tab-pane active" id="colors">
+                                    <fieldset>
+                                        <legend>Background Colors</legend>
+                                        <div class="form-group" id="">
+                                            <label class="control-label" for="bkg_header"> Header Background Color </label>
+                                            <span class="help-block small">Specify the background color of the application header area.</span>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <input class="form-control jscolor" id="bkg_header" name="bkg_header" type="text" value="#163C50">
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="form-group" id="">
-                                        <label class="control-label" for="btncolor_secondary"> Secondary Button Color</label>
-                                        <span class="help-block small">Specify the text color that will be used over dark-colored backgrounds.</span>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <input class="form-control jscolor" id="btncolor_secondary" name="btncolor_secondary" type="text" value="#ffffff">
+                                        <div class="form-group" id="">
+                                            <label class="control-label" for="bkg_header_container"> Header Background Container Color </label>
+                                            <span class="help-block small">Specify the background color of the application header container area.</span>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <input class="form-control jscolor" id="bkg_header_container" name="bkg_header_container" type="text" value="#163C50">
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </fieldset>
-                                <div class="text-right"> <a href="" class="btn btn-default" data-toggle="modal" data-target="#confirm_exit">Cancel</a>
-                                    <button type="submit" class="btn btn-primary" id="" data-toggle="modal" data-target="#confirm_save">Save</button>
+                                        <div class="form-group" id="">
+                                            <label class="control-label" for="bkg_body"> Body Background Color </label>
+                                            <span class="help-block small">Specify the background color of the application body.</span>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <input class="form-control jscolor" id="bkg_body" name="bkg_body" type="text" value="#ebebeb">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group" id="">
+                                            <label class="control-label" for="bkg_panel"> Panel Background Color </label>
+                                            <span class="help-block small">Specify the background color of the application panels.</span>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <input class="form-control jscolor" id="bkg_panel" name="bkg_panel" type="text" value="#ffffff">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Text Colors</legend>
+                                        <div class="form-group" id="">
+                                            <label class="control-label" for="txtcolor_onlight"> Text Color - on Light Backgrounds </label>
+                                            <span class="help-block small">Specify the text color that will be used over light-colored backgrounds.</span>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <input class="form-control jscolor" id="txtcolor_onlight" name="txtcolor_onlight" type="text" value="#ffffff">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group" id="">
+                                            <label class="control-label" for="txtcolor_ondark"> Text Color - on Dark Backgrounds </label>
+                                            <span class="help-block small">Specify the text color that will be used over dark-colored backgrounds.</span>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <input class="form-control jscolor" id="txtcolor_ondark" name="txtcolor_ondark" type="text" value="#555555">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group" id="">
+                                            <label class="control-label" for="link_color"> Link Color </label>
+                                            <span class="help-block small">Specify the color for links.</span>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <input class="form-control jscolor" id="link_color" name="link_color" type="text" value="#2879B8">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Button Colors</legend>
+                                        <div class="form-group" id="">
+                                            <label class="control-label" for="btncolor_primary"> Primary Button Color </label>
+                                            <span class="help-block small">Specify the text color that will be used over light-colored backgrounds.</span>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <input class="form-control jscolor" id="btncolor_primary" name="btncolor_primary" type="text" value="#2879B8">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group" id="">
+                                            <label class="control-label" for="btncolor_secondary"> Secondary Button Color</label>
+                                            <span class="help-block small">Specify the text color that will be used over dark-colored backgrounds.</span>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <input class="form-control jscolor" id="btncolor_secondary" name="btncolor_secondary" type="text" value="#ffffff">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
                                 </div>
-                            </fieldset>
+                                <div role="tabpanel" class="tab-pane" id="layout">
+                                    <fieldset>
+                                        <legend>Body Width</legend>
+                                        <div class="form-group ">
+                                            <label class="control-label" for="width_lg"> Large Desktop</label>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <input id="width_lg" type="text" class="form-control" value="950px">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group ">
+                                            <label class="control-label" for="width_md"> Small Desktop</label>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <input id="width_md" type="text" class="form-control" value="950px">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group ">
+                                            <label class="control-label" for="width_sm"> Tablet</label>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <input id="width_sm" type="text" class="form-control" value="750px">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group ">
+                                            <label class="control-label" for="width_xs"> Mobile</label>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <input id="width_xs" type="text" class="form-control" disabled value="100%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Border Radius</legend>
+                                        <div class="form-group ">
+                                            <label class="control-label" for="width_lg">Button &amp; Layout Border Radiuses</label>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <input id="width_lg" type="text" class="form-control" value="0px">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="text-right"> <a href="" class="btn btn-default" data-toggle="modal" data-target="#confirm_exit">Cancel</a>
+                                <button type="submit" class="btn btn-primary" id="" data-toggle="modal" data-target="#confirm_save">Save</button>
+                            </div>
                         </section>
                     </div>
                 </div>

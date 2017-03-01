@@ -1,13 +1,18 @@
 ///////// App styles set by user
 
 
-@header-background:         #163C50; // default #163C50
-@bodybackground:            #ebebeb; // default #ebebeb
-@vfy-card-background:       #ffffff; // default #ffffff
+@header-background:         #163C50; // default #163C50  4C1213
+
+@header-container-background:         #163C50; // default #163C50  ffffff
+
+
+@bodybackground:            #ebebeb; // default #ebebeb  4C1213
+@maincontent-background:    #ebebeb; // default #ebebeb  ffffff
+@vfy-card-background:       #ffffff; // default #ffffff  ebebeb
 @text-color:                #555555; // default #555555
 @text-color-darkbkg:        #ffffff; // default #ffffff
 @link-color:                #2879B8; // default #2879B8
-@btn-primary-bg:            #2879B8; // default #2879B8
+@btn-primary-bg:            #2879B8; // default #2879B8  990000
 @btn-default-bg:            #ffffff; // default #ffffff
 
 
@@ -20,7 +25,7 @@
 
 //Header text color (white or black, based on header background color)
 header {
-  background:@header-background;
+  background:@header-container-background;
 }
 .contrast-headertextcolor (@a) when (lightness(@a) >= 50%) {
   color: @text-color;
@@ -29,7 +34,7 @@ header {
   color: @text-color-darkbkg;
 }
 .navbar-brand, .sub-header, header .container .dropdown.navbar-text .btn-link, .navbar-text {
-  .contrast-headertextcolor(@header-background)
+  .contrast-headertextcolor(@header-container-background)
 }
 
 
@@ -40,7 +45,7 @@ header {
   color: @text-color-darkbkg;
 }
 .nav-side-menu li a, body {
-  .contrast-bodytextcolor(@bodybackground)
+  .contrast-bodytextcolor(@maincontent-background)
 }
 
 legend {
@@ -82,7 +87,7 @@ legend {
 @font-family-serif:       @font-family;
 
 
-@font-family-headings:    BentonSansCondBold;
+@font-family-headings:    BentonSansBold, Helvetica Neue, Helvetica, Arial, sans-serif; // default BentonSansCondBold
 @font-family-sans-serif:    BentonSansRegular;
 
 
