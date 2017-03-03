@@ -26,7 +26,7 @@ $page_title = 'app-styles';
                     <?php include('includes/nav-pub.php') ?>
                 </div>
                 <div class="col-md-9">
-                    <div class="primary-content">
+                <div class="primary-content">
                         <section>
                             <div class="row section-head">
                                 <div class="col-sm-12 section-header">
@@ -51,7 +51,7 @@ $page_title = 'app-styles';
                                             <span class="help-block small">Specify the background color of the application header area.</span>
                                             <div class="row">
                                                 <div class="col-sm-6">
-                                                    <input class="form-control jscolor" id="bkg_header" name="bkg_header" type="text" value="#163C50">
+                                                    <input class="form-control jscolor" id="bkg_header" name="bkg_header" type="text" value="#4C1213">
                                                 </div>
                                             </div>
                                         </div>
@@ -60,7 +60,7 @@ $page_title = 'app-styles';
                                             <span class="help-block small">Specify the background color of the application header container area.</span>
                                             <div class="row">
                                                 <div class="col-sm-6">
-                                                    <input class="form-control jscolor" id="bkg_header_container" name="bkg_header_container" type="text" value="#163C50">
+                                                    <input class="form-control jscolor" id="bkg_header_container" name="bkg_header_container" type="text" value="#ffffff">
                                                 </div>
                                             </div>
                                         </div>
@@ -69,7 +69,7 @@ $page_title = 'app-styles';
                                             <span class="help-block small">Specify the background color of the application body.</span>
                                             <div class="row">
                                                 <div class="col-sm-6">
-                                                    <input class="form-control jscolor" id="bkg_body" name="bkg_body" type="text" value="#ebebeb">
+                                                    <input class="form-control jscolor" id="bkg_body" name="bkg_body" type="text" value="#ffffff">
                                                 </div>
                                             </div>
                                         </div>
@@ -78,7 +78,7 @@ $page_title = 'app-styles';
                                             <span class="help-block small">Specify the background color of the application panels.</span>
                                             <div class="row">
                                                 <div class="col-sm-6">
-                                                    <input class="form-control jscolor" id="bkg_panel" name="bkg_panel" type="text" value="#ffffff">
+                                                    <input class="form-control jscolor" id="bkg_panel" name="bkg_panel" type="text" value="#ebebeb">
                                                 </div>
                                             </div>
                                         </div>
@@ -120,7 +120,7 @@ $page_title = 'app-styles';
                                             <span class="help-block small">Specify the text color that will be used over light-colored backgrounds.</span>
                                             <div class="row">
                                                 <div class="col-sm-6">
-                                                    <input class="form-control jscolor" id="btncolor_primary" name="btncolor_primary" type="text" value="#2879B8">
+                                                    <input class="form-control jscolor" id="btncolor_primary" name="btncolor_primary" type="text" value="#990000">
                                                 </div>
                                             </div>
                                         </div>
@@ -143,7 +143,7 @@ $page_title = 'app-styles';
                                             <label class="control-label" for="width_lg"> Large Desktop</label>
                                             <div class="row">
                                                 <div class="col-sm-6">
-                                                    <input id="width_lg" type="text" class="form-control" value="950px">
+                                                    <input id="width_lg" type="text" class="form-control" value="570px">
                                                 </div>
                                             </div>
                                         </div>
@@ -151,7 +151,7 @@ $page_title = 'app-styles';
                                             <label class="control-label" for="width_md"> Small Desktop</label>
                                             <div class="row">
                                                 <div class="col-sm-6">
-                                                    <input id="width_md" type="text" class="form-control" value="950px">
+                                                    <input id="width_md" type="text" class="form-control" value="570px">
                                                 </div>
                                             </div>
                                         </div>
@@ -159,7 +159,7 @@ $page_title = 'app-styles';
                                             <label class="control-label" for="width_sm"> Tablet</label>
                                             <div class="row">
                                                 <div class="col-sm-6">
-                                                    <input id="width_sm" type="text" class="form-control" value="750px">
+                                                    <input id="width_sm" type="text" class="form-control" value="570px">
                                                 </div>
                                             </div>
                                         </div>
@@ -190,7 +190,7 @@ $page_title = 'app-styles';
                                             <span class="help-block small">Applies to small buttons. </span>
                                             <div class="row">
                                                 <div class="col-sm-6">
-                                                    <input id="radius_small" type="text" class="form-control" value="0px">
+                                                    <input id="radius_small" type="text" class="form-control" value="15px">
                                                 </div>
                                             </div>
                                         </div>
@@ -199,7 +199,7 @@ $page_title = 'app-styles';
                                             <span class="help-block small">Applies to large buttons. </span>
                                             <div class="row">
                                                 <div class="col-sm-6">
-                                                    <input id="radius_large" type="text" class="form-control" value="0px">
+                                                    <input id="radius_large" type="text" class="form-control" value="30px">
                                                 </div>
                                             </div>
                                         </div>
