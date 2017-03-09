@@ -5,4 +5,3 @@
         <p>This is an additional, optional paragraph that may be customized as needed. This paragraph can include <a href="#">links</a> that could take the user to help content, or <a href="#">contact information</a>. </p>
     </div>
 </div>
-<hr>
