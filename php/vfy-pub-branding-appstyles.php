@@ -33,15 +33,11 @@ $page_title = 'app-styles';
                                     <h2 class="h3">Colors & Layout</h2>
                                 </div>
                             </div>
-                            
-                            <!-- Nav tabs -->
                             <ul class="nav nav-tabs" role="tablist">
                                 <li role="presentation" class="active"><a href="#colors" aria-controls="colors" role="tab" data-toggle="tab">Colors</a></li>
                                 <li role="presentation"><a href="#layout" aria-controls="layout" role="tab" data-toggle="tab">Layout</a></li>
                                 <li role="presentation"><a href="#radius" aria-controls="radius" role="tab" data-toggle="tab">Border Radius</a></li>
                             </ul>
-                            
-                            <!-- Tab panes -->
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane active" id="colors">
                                     <fieldset>
@@ -109,6 +105,18 @@ $page_title = 'app-styles';
                                             <div class="row">
                                                 <div class="col-sm-6">
                                                     <input class="form-control jscolor" id="link_color" name="link_color" type="text" value="#2879B8">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Rule Color</legend>
+                                        <div class="form-group" id="">
+                                            <label class="control-label" for="btncolor_primary"> Primary Rule Color </label>
+                                            <span class="help-block small">Specify the color for horizontal rules and table borders.</span>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <input class="form-control jscolor" id="hr_color" name="hr_color" type="text" value="#cccccc">
                                                 </div>
                                             </div>
                                         </div>
