@@ -85,7 +85,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 hr {
-  border-top: 1px solid @maincontent-background;
+  border-top: 1px solid @horizonal-rules;
 }
 
 .section-head {
@@ -260,4 +260,11 @@ fieldset {
 .form-horizontal .form-group {
   margin-left: 0;
   margin-right: 0;
+}
+
+
+
+
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td {
+  border-top: 1px solid @horizonal-rules;
 }
