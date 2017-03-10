@@ -29,7 +29,7 @@ $page_title = 'header-footer';
                         <section>
                             <div class="row section-head">
                                 <div class="col-sm-12 section-header">
-                                    <h2 class="h3">Header &amp; Footer</h2>
+                                    <h2 class="h3">Custom Header &amp; Footer</h2>
                                 </div>
                             </div>
                             <div class="form-group" id="">
