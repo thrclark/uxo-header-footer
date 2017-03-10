@@ -145,12 +145,12 @@ $page_title = 'app-styles';
                                 </div>
                                 <div role="tabpanel" class="tab-pane" id="layout">
                                     <fieldset>
-                                        <legend>Body Width <span class="small">(applies only to verification view)</span></legend>
-                                        <p> Note that these settings will only apply to the verification view, and not to the publishing and admin views.</p>
+                                        <legend>Page Width</legend>
+                                        <p> Note that the settings on this page will only apply to the verification view, and not to the publishing and admin views.</p>
                                         <div class="form-group ">
                                             <label class="control-label" for="width_lg"> Large Desktop</label>
                                             <div class="row">
-                                                <div class="col-sm-6">
+                                                <div class="col-sm-2">
                                                     <input id="width_lg" type="text" class="form-control" value="950px">
                                                 </div>
                                             </div>
@@ -158,7 +158,7 @@ $page_title = 'app-styles';
                                         <div class="form-group ">
                                             <label class="control-label" for="width_md"> Small Desktop</label>
                                             <div class="row">
-                                                <div class="col-sm-6">
+                                                <div class="col-sm-2">
                                                     <input id="width_md" type="text" class="form-control" value="950px">
                                                 </div>
                                             </div>
@@ -166,7 +166,7 @@ $page_title = 'app-styles';
                                         <div class="form-group ">
                                             <label class="control-label" for="width_sm"> Tablet</label>
                                             <div class="row">
-                                                <div class="col-sm-6">
+                                                <div class="col-sm-2">
                                                     <input id="width_sm" type="text" class="form-control" value="750px">
                                                 </div>
                                             </div>
@@ -174,8 +174,44 @@ $page_title = 'app-styles';
                                         <div class="form-group ">
                                             <label class="control-label" for="width_xs"> Mobile</label>
                                             <div class="row">
-                                                <div class="col-sm-6">
+                                                <div class="col-sm-2">
                                                     <input id="width_xs" type="text" class="form-control" disabled value="100%">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Main Content Padding</legend>
+                                        <p> Specify the amount of padding for the main content section of a verification screen (does not apply to publishing/admin screens)</p>
+                                        <div class="form-group ">
+                                            <label class="control-label" for="width_lg">Top</label>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <input id="width_lg" type="text" class="form-control" value="20px">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group ">
+                                            <label class="control-label" for="width_md">Bottom</label>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <input id="width_md" type="text" class="form-control" value="60px">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group ">
+                                            <label class="control-label" for="width_sm"> Left</label>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <input id="width_sm" type="text" class="form-control" value="15px">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group ">
+                                            <label class="control-label" for="width_xs"> Right</label>
+                                            <div class="row">
+                                                <div class="col-sm-2">
+                                                    <input id="width_sm" type="text" class="form-control" value="15px">
                                                 </div>
                                             </div>
                                         </div>
@@ -188,7 +224,7 @@ $page_title = 'app-styles';
                                             <label class="control-label" for="radius_general">General Border Radius</label>
                                             <span class="help-block small">Applies to tabs & panels. </span>
                                             <div class="row">
-                                                <div class="col-sm-6">
+                                                <div class="col-sm-2">
                                                     <input id="radius_general" type="text" class="form-control" value="0px">
                                                 </div>
                                             </div>
@@ -197,7 +233,7 @@ $page_title = 'app-styles';
                                             <label class="control-label" for="radius_small">Small Border Radius</label>
                                             <span class="help-block small">Applies to small buttons. </span>
                                             <div class="row">
-                                                <div class="col-sm-6">
+                                                <div class="col-sm-2">
                                                     <input id="radius_small" type="text" class="form-control" value="0px">
                                                 </div>
                                             </div>
@@ -206,7 +242,7 @@ $page_title = 'app-styles';
                                             <label class="control-label" for="radius_large">Large Border Radius</label>
                                             <span class="help-block small">Applies to large buttons. </span>
                                             <div class="row">
-                                                <div class="col-sm-6">
+                                                <div class="col-sm-2">
                                                     <input id="radius_large" type="text" class="form-control" value="0px">
                                                 </div>
                                             </div>
