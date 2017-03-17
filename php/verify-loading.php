@@ -35,19 +35,18 @@
                 </div>
                 <p class="verify-desc"> Indiana University periodically invites all employees to update their veteran status. At this time, we ask all employees to review their current status below and click edit if this information is incorrect. Definitions of each veteran category can be seen by clicking the edit button. Data collected will be used for reporting and analysis purposes and will not be used against you in anyway. </p>
                 <hr>
-                <div class="form-horizontal">
-                   <!-- <div class="form-group form-group-sm" id="test-updated">
+                <div class="form-horizontal"> 
+                    <!-- <div class="form-group form-group-sm" id="test-updated">
                         <label class="col-sm-3 control-label">Military Status:</label>
                         <div class="col-sm-9">
                             <p class="form-control-static" id="checkmark-here">Not a Veteran </p>
                         </div>
                     </div>-->
-                    <div class="form-group form-group-sm form-section-control">
-                        <div class="col-sm-offset-2 col-sm-10 text-right"> <!--<a href="#" class="btn btn-xs btn-default">Refresh</a>--> <a href="#" class="btn btn-xs btn-primary edit-group">Edit</a> </div>
+                    <div class="form-group form-group-sm form-section-control"> <a href="#" class="btn btn-xs btn-primary">Edit</a>
+                        <hr>
                     </div>
                 </div>
             </div>
-         
             <div class="submission">
                 <?php include ('includes/instructions-bottom.php') ?>
                 <fieldset>

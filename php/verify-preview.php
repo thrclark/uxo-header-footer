@@ -58,8 +58,8 @@
                             <p class="form-control-static">xxxxxxxxxx</p>
                         </div>
                     </div>
-                    <div class="form-group form-group-sm form-section-control">
-                        <div class="col-sm-offset-2 col-sm-10 text-right"> <!--<a href="#" class="btn btn-xs btn-default">Refresh</a>--> <a href="#" class="btn btn-xs btn-primary edit-group">Edit</a> </div>
+                    <div class="form-group form-group-sm form-section-control"> <a href="#" class="btn btn-xs btn-primary">Edit</a>
+                        <hr>
                     </div>
                     <div class="form-group form-group-sm">
                         <div class="col-sm-3 control-label">Label:</div>
@@ -79,8 +79,8 @@
                             <p class="form-control-static">xxxxxxxxxx</p>
                         </div>
                     </div>
-                    <div class="form-group form-group-sm form-section-control">
-                        <div class="col-sm-offset-2 col-sm-10 text-right"> <!--<a href="#" class="btn btn-xs btn-default">Refresh</a>--> <a href="#" class="btn btn-xs btn-primary edit-group">Edit</a> </div>
+                    <div class="form-group form-group-sm form-section-control"> <a href="#" class="btn btn-xs btn-primary">Edit</a>
+                        <hr>
                     </div>
                 </div>
             </div>
@@ -101,11 +101,6 @@
                 <div class="row">
                     <div class="col-md-12 text-center" style="padding-bottom:15px; padding-top:15px;">
                         <button class="btn btn-lg btn-primary"  data-toggle="modal" data-target="#demo_only"> Submit</button>
-                        
-                        
-                        
-                    
-                        
                     </div>
                 </div>
             </div>
@@ -135,7 +130,6 @@
 </script> 
 </div>
 
-
 <!-- Modal -->
 <div class="modal fade" id="demo_only" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog modal-default" role="document">
@@ -153,7 +147,6 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Close</button>
-
             </div>
         </div>
     </div>

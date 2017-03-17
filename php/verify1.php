@@ -37,8 +37,8 @@
                             <p class="form-control-static "> Not a Veteran </p>
                         </div>
                     </div>
-                    <div class="form-group form-group-sm form-section-control">
-                        <div class="col-sm-offset-2 col-sm-10 text-right"><!--<a href="#" class="btn btn-xs btn-default">Refresh</a>--> <a href="#" class="btn btn-xs btn-primary edit-group">Edit</a> </div>
+                    <div class="form-group form-group-sm form-section-control"> <a href="#" class="btn btn-xs btn-primary">Edit</a>
+                        <hr>
                     </div>
                 </div>
             </div>
@@ -64,8 +64,8 @@
                             <p class="form-control-static">Not Specified </p>
                         </div>
                     </div>
-                    <div class="form-group form-group-sm form-section-control">
-                        <div class="col-sm-offset-2 col-sm-10 text-right"><!--<a href="#" class="btn btn-xs btn-default">Refresh</a>--> <a href="#" class="btn btn-xs btn-primary edit-group">Edit</a> </div>
+                    <div class="form-group form-group-sm form-section-control"> <a href="#" class="btn btn-xs btn-primary">Edit</a>
+                        <hr>
                     </div>
                 </div>
             </div>
