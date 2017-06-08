@@ -48,7 +48,7 @@ footer .btn.btn-link:hover {
 	padding-bottom: 90px;
 	box-shadow: 0 0px 5px 0 rgba(0,0,0,0.26);
 	display: none;
-    color: #ffffff;
+	color: #ffffff;
 }
 .blurr {
 	-webkit-filter: blur(2px);
@@ -129,7 +129,7 @@ footer .btn.btn-link:hover {
             </div>
         </div>
     </section>
-   <div class="main-content container" role="main" style="display:block" id="view_home">
+    <div class="main-content container" role="main" style="display:block" id="view_home">
         <div class="row" style="margin-top:20px">
             <div class="col-md-4 col-sm-6 col-xs-12"> <a href="#" class="searchbutton">
                 <div class="well well-sm">
@@ -238,7 +238,6 @@ footer .btn.btn-link:hover {
                 </a> </div>
         </div>
     </div>
- 
     <?php include ('includes/modaless-userinfo.php') ?>
     <?php include ('includes/modaless-locations.php') ?>
     <?php include ('includes/modaless-appinfo.php') ?>
@@ -246,7 +245,6 @@ footer .btn.btn-link:hover {
 </div>
 <script type="text/javascript" src="../js/jquery.js"></script> 
 <script type="text/javascript" src="../js/bootstrap.min.js"></script> 
-
 <script>
     $(document).ready(function() {
         $("#toggle_userinfo").click(function() {
